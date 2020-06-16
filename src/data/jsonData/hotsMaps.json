@@ -1,0 +1,317 @@
+[
+  {
+    "mName": "Alterac Pass",
+    "mapObj": {
+      "objectiveA": {
+        "objName": "Prison Camps",
+        "objDescription": "Capture the enemy Prison Camp to summon your Cavalry. Camps can be retaken by Heroes and Minions, so guard them well!",
+        "objImg": "https://static.heroesofthestorm.com/images/battlegrounds/maps/alterac-pass/map-objective-1-a93a55b159.jpg"
+      },
+      "objectiveB": {
+        "objName": "Cavalry",
+        "objDescription": "Cavalry soldiers charge down each lane when summoned granting increased damage and movement speed to nearby Allied Heroes.",
+        "objImg": "https://static.heroesofthestorm.com/images/battlegrounds/maps/alterac-pass/map-objective-2-bc766e095a.jpg"
+      },
+      "objectiveC": {
+        "objName": "Generals",
+        "objDescription": "Each team’s Core has been replaced by a General who fights against attacking enemies. Destroying a Keep reduces the General’s Armor.",
+        "objImg": "https://static.heroesofthestorm.com/images/battlegrounds/maps/alterac-pass/map-objective-3-5da2183026.jpg"
+      }
+    },
+    "mapWider": "https://static.heroesofthestorm.com/images/battlegrounds/maps/alterac-pass/map-full-3235c534ac.jpg"
+  },
+  {
+    "mName": "Garden of Terror",
+    "mapObj": {
+      "objectiveA": {
+        "objName": "Seeds Spawn",
+        "objDescription": "Queen Nightshade will periodically summon a Seed. Defeat its Shambler Defenders and gather it for your team!",
+        "objImg": "https://static.heroesofthestorm.com/images/battlegrounds/maps/garden-of-terror/map-objective-1-c25ac56826.jpg"
+      },
+      "objectiveB": {
+        "objName": "Collect Seeds",
+        "objDescription": "Upon gathering three Seeds, Garden Terrors will immediately burrow to each lane.",
+        "objImg": "https://static.heroesofthestorm.com/images/battlegrounds/maps/garden-of-terror/map-objective-2-9a7343f522.jpg"
+      },
+      "objectiveC": {
+        "objName": "Garden Terrors",
+        "objDescription": "Garden Terrors disable enemy towers and forts, so fight alongside them!",
+        "objImg": "https://static.heroesofthestorm.com/images/battlegrounds/maps/garden-of-terror/map-objective-3-c54d1b2eea.jpg"
+      }
+    },
+    "mapWider": "https://static.heroesofthestorm.com/images/battlegrounds/maps/garden-of-terror/map-full-bcf2229a9c.jpg"
+  },
+  {
+    "mName": "Hanamura Temple",
+    "mapObj": {
+      "objectiveA": {
+        "objName": "Single Payload",
+        "objDescription": "At regular intervals, a payload spawns at the center of the battleground that can be contested by both teams.",
+        "objImg": "https://static.heroesofthestorm.com/images/battlegrounds/maps/hanamura/map-objective-1-9295d269a9.jpg"
+      },
+      "objectiveB": {
+        "objName": "Escort Payload",
+        "objDescription": "Stand next to the payload and move it to its destination. Prevent the enemy from trying to do the same.",
+        "objImg": "https://static.heroesofthestorm.com/images/battlegrounds/maps/hanamura/map-objective-2-5b04771e04.jpg"
+      },
+      "objectiveC": {
+        "objName": "Bombard your Enemy",
+        "objDescription": "Once a team escorts the payload to its destination, it will fire upon the enemy’s forts!",
+        "objImg": "https://static.heroesofthestorm.com/images/battlegrounds/maps/hanamura/map-objective-3-6363578470.jpg"
+      }
+    },
+    "mapWider": "https://static.heroesofthestorm.com/images/battlegrounds/maps/hanamura/map-full-7ae9d077e0.jpg"
+  },
+  {
+    "mName": "Volskaya Foundry",
+    "mapObj": {
+      "objectiveA": {
+        "objName": "Capture Points",
+        "objDescription": "Control points activate occasionally. Stand within them to capture them. Fully capturing a point grants you control of a giant mech.",
+        "objImg": "https://static.heroesofthestorm.com/images/battlegrounds/maps/volskaya/map-objective-1-b641235f1e.jpg"
+      },
+      "objectiveB": {
+        "objName": "Control the Protector",
+        "objDescription": "The Triglav Protector mech is controlled by two players: one pilot and one gunner. Work together!",
+        "objImg": "https://static.heroesofthestorm.com/images/battlegrounds/maps/volskaya/map-objective-2-c6ff0c9cfb.jpg"
+      },
+      "objectiveC": {
+        "objName": "Destroy Everything",
+        "objDescription": "The Protector's abilities deal incredible damage to structures and Heroes alike. Use it to lay waste to your enemy.",
+        "objImg": "https://static.heroesofthestorm.com/images/battlegrounds/maps/volskaya/map-objective-3-2db35c6eaa.jpg"
+      }
+    },
+    "mapWider": "https://static.heroesofthestorm.com/images/battlegrounds/maps/volskaya/map-full-fde3ee205e.jpg"
+  },
+  {
+    "mName": "Haunted Mines",
+    "mapObj": {
+      "objectiveA": {
+        "objName": "Venture Underground",
+        "objDescription": "The Haunted Mines will periodically open with an Undead Army underneath!",
+        "objImg": "https://static.heroesofthestorm.com/images/battlegrounds/maps/haunted-mines/map-objective-1-fcaecfc7e6.jpg"
+      },
+      "objectiveB": {
+        "objName": "Collect the Skulls",
+        "objDescription": "Destroy the Undead and collect their Skulls to power your Golems!",
+        "objImg": "https://static.heroesofthestorm.com/images/battlegrounds/maps/haunted-mines/map-objective-2-4531bc2075.jpg"
+      },
+      "objectiveC": {
+        "objName": "Unleash the Golems",
+        "objDescription": "After the Army has been defeated, the Golems will arise for both teams! The more Skulls your team collects, the stronger your Golem!",
+        "objImg": "https://static.heroesofthestorm.com/images/battlegrounds/maps/haunted-mines/map-objective-3-6226c9be44.jpg"
+      }
+    },
+    "mapWider": "https://static.heroesofthestorm.com/images/battlegrounds/maps/haunted-mines/map-full-121b6f8c80.jpg"
+  },
+  {
+    "mName": "Towers of Doom",
+    "mapObj": {
+      "objectiveA": {
+        "objName": "Protected Cores",
+        "objDescription": "Both Cores are protected by a barrier that cannot be attacked by Heroes. To be victorious, you must activate Altars.",
+        "objImg": "https://static.heroesofthestorm.com/images/battlegrounds/maps/towers-of-doom/map-objective-1-4db189ac2c.jpg"
+      },
+      "objectiveB": {
+        "objName": "Activate Altars",
+        "objDescription": "Periodically Altars will rise across the battlefield. Activate them to have your Bell Towers fire upon the enemy's Core.",
+        "objImg": "https://static.heroesofthestorm.com/images/battlegrounds/maps/towers-of-doom/map-objective-2-fb663b8d53.jpg"
+      },
+      "objectiveC": {
+        "objName": "Claim Bell Towers",
+        "objDescription": "Destroy your enemy's Towers to bring them under your team's control. The more Towers you have, the more damage an altar will do.",
+        "objImg": "https://static.heroesofthestorm.com/images/battlegrounds/maps/towers-of-doom/map-objective-3-75b43596a7.jpg"
+      }
+    },
+    "mapWider": "https://static.heroesofthestorm.com/images/battlegrounds/maps/towers-of-doom/map-full-f4eee0deaa.jpg"
+  },
+  {
+    "mName": "Infernal Shrines",
+    "mapObj": {
+      "objectiveA": {
+        "objName": "Activate the Shrines",
+        "objDescription": "The Infernal Shrines periodically gather power. Activate them and prepare for a fight.",
+        "objImg": "https://static.heroesofthestorm.com/images/battlegrounds/maps/infernal-shrines/map-objective-1-5a904ecadd.jpg"
+      },
+      "objectiveB": {
+        "objName": "Defeat Guardians",
+        "objDescription": "Slay 40 Guardians before the enemy team to bring forth a mighty Punisher.",
+        "objImg": "https://static.heroesofthestorm.com/images/battlegrounds/maps/infernal-shrines/map-objective-2-767cba0a8b.jpg"
+      },
+      "objectiveC": {
+        "objName": "Beware the Punisher",
+        "objDescription": "Punishers have one of three devastating powers. Be careful, they focus on attacking Heroes above all else.",
+        "objImg": "https://static.heroesofthestorm.com/images/battlegrounds/maps/infernal-shrines/map-objective-3-8ba0c0c026.jpg"
+      }
+    },
+    "mapWider": "https://static.heroesofthestorm.com/images/battlegrounds/maps/infernal-shrines/map-full-247d36e970.jpg"
+  },
+  {
+    "mName": "Battlefield of Eternity",
+    "mapObj": {
+      "objectiveA": {
+        "objName": "Battling Immortals",
+        "objDescription": "The angel lieutenant Ilarian and the demon lord Beleth are locked in an endless war.",
+        "objImg": "https://static.heroesofthestorm.com/images/battlegrounds/maps/battlefield-of-eternity/map-objective-1-0b293941dc.jpg"
+      },
+      "objectiveB": {
+        "objName": "Defeat the Enemy",
+        "objDescription": "Aid your immortal ally against his foe to claim victory.",
+        "objImg": "https://static.heroesofthestorm.com/images/battlegrounds/maps/battlefield-of-eternity/map-objective-2-ac0d839c9e.jpg"
+      },
+      "objectiveC": {
+        "objName": "Devastate Forts",
+        "objDescription": "Rally to your immortal as he wreaks havoc on the enemy's forts!",
+        "objImg": "https://static.heroesofthestorm.com/images/battlegrounds/maps/battlefield-of-eternity/map-objective-3-bbc985b807.jpg"
+      }
+    },
+    "mapWider": "https://static.heroesofthestorm.com/images/battlegrounds/maps/battlefield-of-eternity/map-full-83a7142121.jpg"
+  },
+  {
+    "mName": "Tomb of the Spider Queen",
+    "mapObj": {
+      "objectiveA": {
+        "objName": "Collect Gems",
+        "objDescription": "Enemy spider minions and Heroes drop magical Gems upon death. Gather as many as you can.",
+        "objImg": "https://static.heroesofthestorm.com/images/battlegrounds/maps/tomb-of-the-spider-queen/map-objective-1-d6431e9e54.jpg"
+      },
+      "objectiveB": {
+        "objName": "Turn in Gems",
+        "objDescription": "Relinquish your Gems at one of the Spider Queen's Altars or you will drop them all when you die!",
+        "objImg": "https://static.heroesofthestorm.com/images/battlegrounds/maps/tomb-of-the-spider-queen/map-objective-2-e6dc697901.jpg"
+      },
+      "objectiveC": {
+        "objName": "Summon Webweavers",
+        "objDescription": "Whichever team turns in enough Gems first will unleash the Webweavers to destroy their enemy's defenses.",
+        "objImg": "https://static.heroesofthestorm.com/images/battlegrounds/maps/tomb-of-the-spider-queen/map-objective-3-23f224295c.jpg"
+      }
+    },
+    "mapWider": "https://static.heroesofthestorm.com/images/battlegrounds/maps/tomb-of-the-spider-queen/map-full-8cc5c93b80.jpg"
+  },
+  {
+    "mName": "Sky Temple",
+    "mapObj": {
+      "objectiveA": {
+        "objName": "Capture the Temples",
+        "objDescription": "Temples will periodically activate. Stand within their grounds to capture their power!",
+        "objImg": "https://static.heroesofthestorm.com/images/battlegrounds/maps/sky-temple/map-objective-1-5a27aad9ec.jpg"
+      },
+      "objectiveB": {
+        "objName": "Hold the Temples",
+        "objDescription": "Stand firm and the Temple will unleash a blistering onslaught on your enemy's forts!",
+        "objImg": "https://static.heroesofthestorm.com/images/battlegrounds/maps/sky-temple/map-objective-2-66247be73d.jpg"
+      },
+      "objectiveC": {
+        "objName": "Defend the Temples",
+        "objDescription": "Guardians will try to wrest control of their Temples from your team. Hold them off to keep the Temple's power for yourselves!",
+        "objImg": "https://static.heroesofthestorm.com/images/battlegrounds/maps/sky-temple/map-objective-3-7c316a439c.jpg"
+      }
+    },
+    "mapWider": "https://static.heroesofthestorm.com/images/battlegrounds/maps/sky-temple/map-full-4d879030b4.jpg"
+  },
+  {
+    "mName": "Blackheart's Bay",
+    "mapObj": {
+      "objectiveA": {
+        "objName": "Collect Doubloons",
+        "objDescription": "Attack Treasure Chests and Mercenaries to collect Doubloons.",
+        "objImg": "https://static.heroesofthestorm.com/images/battlegrounds/maps/blackhearts-bay/map-objective-1-a3f0eed402.jpg"
+      },
+      "objectiveB": {
+        "objName": "Turn in Doubloons",
+        "objDescription": "Hand your Doubloons over to Blackheart or you will drop them all when you die!",
+        "objImg": "https://static.heroesofthestorm.com/images/battlegrounds/maps/blackhearts-bay/map-objective-2-cb9f2b9694.jpg"
+      },
+      "objectiveC": {
+        "objName": "Bombard your Enemies",
+        "objDescription": "After receiving enough Doubloons from your Team, Blackheart will bombard your Enemy's forts!",
+        "objImg": "https://static.heroesofthestorm.com/images/battlegrounds/maps/blackhearts-bay/map-objective-3-97c36c9e75.jpg"
+      }
+    },
+    "mapWider": "https://static.heroesofthestorm.com/images/battlegrounds/maps/blackhearts-bay/map-full-86f034bcb0.jpg"
+  },
+  {
+    "mName": "Dragon Shire",
+    "mapObj": {
+      "objectiveA": {
+        "objName": "Control the Shrines",
+        "objDescription": "There are two Shrines your team needs to control to activate the Dragon Knight's statue!",
+        "objImg": "https://static.heroesofthestorm.com/images/battlegrounds/maps/dragon-shire/map-objective-1-7bc2e696e1.jpg"
+      },
+      "objectiveB": {
+        "objName": "Free the Dragon Knight",
+        "objDescription": "While activated, bring a Hero to the statue to free him from his prison!",
+        "objImg": "https://static.heroesofthestorm.com/images/battlegrounds/maps/dragon-shire/map-objective-2-305c04b3b6.jpg"
+      },
+      "objectiveC": {
+        "objName": "Devastate Enemy Forts",
+        "objDescription": "Use the Dragon's immense power to level enemy Forts!",
+        "objImg": "https://static.heroesofthestorm.com/images/battlegrounds/maps/dragon-shire/map-objective-3-6e023a363c.jpg"
+      }
+    },
+    "mapWider": "https://static.heroesofthestorm.com/images/battlegrounds/maps/dragon-shire/map-full-269fbeb534.jpg"
+  },
+  {
+    "mName": "Cursed Hollow",
+    "mapObj": {
+      "objectiveA": {
+        "objName": "Collect Tributes",
+        "objDescription": "The Raven Lord will create Tributes periodically. Gather them for your team!",
+        "objImg": "https://static.heroesofthestorm.com/images/battlegrounds/maps/cursed-hollow/map-objective-1-15a22180a7.jpg"
+      },
+      "objectiveB": {
+        "objName": "Curse Your Enemies",
+        "objDescription": "Upon capturing three Tributes, the Raven Lord will curse your enemies!",
+        "objImg": "https://static.heroesofthestorm.com/images/battlegrounds/maps/cursed-hollow/map-objective-2-1065a89b73.jpg"
+      },
+      "objectiveC": {
+        "objName": "Cursed Forts and Minions",
+        "objDescription": "Cursed Forts will not attack, and cursed Minions are reduced to 1 Health.",
+        "objImg": "https://static.heroesofthestorm.com/images/battlegrounds/maps/cursed-hollow/map-objective-3-a1e6dcc3e0.jpg"
+      }
+    },
+    "mapWider": "https://static.heroesofthestorm.com/images/battlegrounds/maps/cursed-hollow/map-full-4513f85b74.jpg"
+  },
+  {
+    "mName": "Braxis Holdout",
+    "mapObj": {
+      "objectiveA": {
+        "objName": "Capture the Beacons",
+        "objDescription": "Periodically two beacons will activate. Capture both to fill your Holding Cell with Zerg.",
+        "objImg": "https://static.heroesofthestorm.com/images/battlegrounds/maps/braxis-holdout/map-objective-1-374834618d.jpg"
+      },
+      "objectiveB": {
+        "objName": "Fill Holding Cells",
+        "objDescription": "Once either Holding Cell fills, both open and unleash waves of Zerg at each team’s base.",
+        "objImg": "https://static.heroesofthestorm.com/images/battlegrounds/maps/braxis-holdout/map-objective-2-998c12eb81.jpg"
+      },
+      "objectiveC": {
+        "objName": "Zerg Rush",
+        "objDescription": "Hold out against the enemy’s Zerg while helping yours. The Zerg will attack Heroes, so engage cautiously.",
+        "objImg": "https://static.heroesofthestorm.com/images/battlegrounds/maps/braxis-holdout/map-objective-3-68036ea92d.jpg"
+      }
+    },
+    "mapWider": "https://static.heroesofthestorm.com/images/battlegrounds/maps/braxis-holdout/map-full-1c496e0a69.jpg"
+  },
+  {
+    "mName": "Warhead Junction",
+    "mapObj": {
+      "objectiveA": {
+        "objName": "Warhead Deployment",
+        "objDescription": "Multiple Warheads spawn periodically across the battleground.",
+        "objImg": "https://static.heroesofthestorm.com/images/battlegrounds/maps/warhead-junction/map-objective-1-5c40ae9384.jpg"
+      },
+      "objectiveB": {
+        "objName": "Collect Warheads",
+        "objDescription": "Pick up a Warhead to activate your Nuke. Use it or you will drop it when you die!",
+        "objImg": "https://static.heroesofthestorm.com/images/battlegrounds/maps/warhead-junction/map-objective-2-73440a3c66.jpg"
+      },
+      "objectiveC": {
+        "objName": "Call Down the Thunder",
+        "objDescription": "Launch Nukes to devastate the enemy team's fortifications.",
+        "objImg": "https://static.heroesofthestorm.com/images/battlegrounds/maps/warhead-junction/map-objective-3-cd43c2ba08.jpg"
+      }
+    },
+    "mapWider": "https://static.heroesofthestorm.com/images/battlegrounds/maps/warhead-junction/map-full-3659fb40f7.jpg"
+  }
+]

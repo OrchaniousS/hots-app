@@ -1,0 +1,409 @@
+/*-- General --*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("./images/general/main.jpg") center top #000;
+  background-color: lightsteelblue;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", Courier,
+    monospace;
+}
+
+.container {
+  margin: 15px 15px 15px 15px;
+  border: solid 3px #191919;
+  color: #fff;
+  background: rgba(35, 35, 35, 0.223);
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.35);
+  width: auto;
+}
+.mainContent {
+  width: 100%;
+  margin: auto;
+  padding-bottom: 50px;
+}
+
+.mainContent h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.container h2 {
+  padding-top: 25px;
+}
+/*-- General --*/
+
+/*-- Navigation part ----*/
+nav {
+  display: flex;
+  justify-content: space-between;
+  vertical-align: top;
+  border-bottom: 1px solid #fff;
+  background-color: rgb(7, 45, 92);
+  padding: 10px 15px;
+  background: rgb(29, 29, 29);
+  background-image: linear-gradient(
+    180deg,
+    rgba(29, 29, 29, 0.165703781512605) 36%,
+    rgba(0, 0, 0, 1) 100%,
+    rgba(9, 21, 121, 0.8491771708683473) 100%
+  );
+}
+
+nav h2 a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navMenu li {
+  display: inline-block;
+  list-style: none;
+  line-height: 1.8;
+}
+
+.navMenu a {
+  display: inline-block;
+  margin: 5px;
+  border: 1px solid black;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 5px;
+  padding: 3px 8px;
+  background-color: black;
+  color: #fff;
+  width: 64px;
+}
+
+.navMenu a:hover {
+  border: 1px solid black;
+  background-image: linear-gradient(to bottom, #3479d9 0%, #10448f 78%);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.activate {
+  background: #3479d9;
+  background-image: linear-gradient(to bottom, #3479d9 0%, #10448f 78%);
+}
+/*-- Navigation part ----*/
+
+/*-- App page --*/
+
+.app {
+  border: 3px solid #222;
+  background: #141414;
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.35);
+  padding: 20px;
+  max-width: 1450px;
+  margin: auto;
+  margin-top: 2%;
+}
+/*-- App page ----*/
+
+/*-- Home page----*/
+
+.homeImg {
+  background-image: url("./images/general/hots_logo.png");
+  width: 100%;
+  height: 350px;
+  background-size: cover;
+  margin-bottom: 50px;
+}
+
+.homeImg:hover {
+  background-image: url("https://assets1.ignimgs.com/2018/03/19/heroesofthestorm-blogroll-1521503788593.jpg");
+  transition: all 0.7s ease-in-out;
+  cursor: pointer;
+  transform: scale(1.08);
+}
+
+.thumbnailContainer {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
+  padding-bottom: 50px;
+  width: 100%;
+}
+
+.thumbnail1 {
+  background-image: url("./images/ingame/thumb1.jpg");
+}
+
+.thumbnail2 {
+  background-image: url("./images/ingame/thumb2.jpg");
+}
+
+.thumbnail3 {
+  background-image: url("./images/ingame/thumb3.jpg");
+}
+
+.thumbnail1,
+.thumbnail2,
+.thumbnail3 {
+  background-size: cover;
+  width: 200px;
+  height: 100px;
+  transition: all 0.3 ease-in-out;
+}
+.thumbnail1:hover,
+.thumbnail2:hover,
+.thumbnail3:hover {
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  transform: scale(1.05);
+}
+/*-- Home page----*/
+
+/*-- Heroes page ----*/
+
+.heroContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container h2 {
+  margin: 6px 6px 6px 6px;
+  padding-left: 35px;
+  text-align: left;
+}
+
+.heroLink {
+  color: #fff;
+  text-decoration: none;
+}
+
+.heroGrid {
+  text-align: center;
+  background: #161616;
+  box-shadow: 0 0 15px rgba(75, 72, 72, 0.288);
+  /* display: flex;
+  flex-direction: row; */
+  padding: 12px 12px 12px 12px;
+  /* width: 150px; */
+  transform: scale(0.82);
+}
+
+.heroGrid:hover {
+  background-color: rgba(22, 4, 4, 0.164);
+  transform: scale(0.9);
+}
+
+.heroGridRowColumon {
+  padding: 2px 2px 2px 2px;
+  margin: 5px 5px 5px 5px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 75%;
+  vertical-align: top;
+  line-height: 1;
+}
+
+.heroPersonal {
+  font-size: 14px;
+  text-align: center;
+}
+
+.heroPersonalText {
+  padding: 5px 5px 5px 5px;
+  margin: 5px 5px 5px 5px;
+  width: 147px;
+  line-height: 1.6;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.heroPersonalImg {
+  /* display: flex;
+  flex-direction: column; */
+  justify-content: center;
+
+  padding-bottom: 12px;
+}
+.heroPersonalImg div {
+  font-size: 16px;
+  margin: 5px 5px 5px 5px;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.filterHero select {
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 1.8;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+/*SIDEHERO*/
+
+.heroPanelFixed {
+  position: absolute;
+  width: 450px;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+@media (min-width: 960px) {
+  .heroPanelContainer {
+    display: block;
+    height: auto;
+  }
+}
+
+.heroPanelContainer {
+  display: none;
+  position: relative;
+  height: 500px;
+  width: 900px;
+  margin-right: 40px;
+  margin-left: 10px;
+}
+
+.heroPanelMoveable {
+  overflow: visible;
+  position: absolute;
+}
+
+.heroPanelImage {
+  overflow: hidden;
+  height: 320px;
+  width: 100%;
+  position: relative;
+  background: transparent top no-repeat;
+}
+
+.heroPanelImage::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: linear-gradient(
+    0deg,
+    rgba(30, 92, 153, 0.6) 25%,
+    rgba(30, 92, 153, 0.4) 35%,
+    rgba(30, 92, 153, 0.2) 50%,
+    rgba(41, 102, 163, 0)
+  );
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(25%, rgba(30, 92, 153, 0.6)),
+    color-stop(35%, rgba(30, 92, 153, 0.4)),
+    color-stop(50%, rgba(30, 92, 153, 0.2)),
+    to(rgba(41, 102, 163, 0))
+  );
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.heroPanelImageImg {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+}
+
+.heroPanelInfo {
+  width: 100%;
+  display: block;
+  position: relative;
+  text-align: center;
+}
+
+/*SIDEHERO*/
+
+/*-- Heroes page----*/
+
+/*-- Single Hero Info page----*/
+
+.heroMainInfo {
+  display: flex;
+  padding: 8px 8px 8px 8px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.heroRightInfo {
+  transform: scale(0.9);
+  width: 150px;
+  background: rgba(35, 35, 35, 0.223);
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.35);
+}
+
+.heroTitle {
+  font-size: 13px;
+  padding: 2px 2px 2px 2px;
+}
+
+.heroName {
+  padding: 5px 5px 5px 5px;
+  font-size: 26px;
+  width: 140px;
+  height: 180px;
+}
+
+.heroTitleImg {
+  padding: 5px 5px 5px 5px;
+  display: block;
+}
+.heroBaseStats {
+  padding: 5px 5px 5px 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  background: rgba(35, 35, 35, 0.223);
+  box-shadow: 0 0 35px rgba(255, 153, 0, 0.158);
+  border: 1px outset lightslategray;
+  /* width: 140px; */
+}
+
+.heroLeftInfo {
+  transform: scale(0.9);
+  background: rgba(35, 35, 35, 0.223);
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.35);
+  width: 150px;
+  font-size: 16px;
+}
+
+.heroSynCou {
+}
+
+.mapSynCou {
+}
+
+.heroQoute {
+  text-align: center;
+  padding: 5px 5px 5px 5px;
+  /* transform: scale(0.9); */
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 75%;
+  background: rgba(35, 35, 35, 0.223);
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.35);
+}
+
+.basicInfo {
+  padding-top: 50%;
+  padding-bottom: 50%;
+  height: 20%;
+}
+.multiplyHero {
+  display: flex;
+}
+
+/*-- Single Hero Info page----*/

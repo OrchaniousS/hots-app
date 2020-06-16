@@ -1,0 +1,1762 @@
+[
+  {
+    "basicInfo": {
+      "name": "Abathur",
+      "title": "Evolution Master",
+      "role": "Support",
+      "difficulty": "Very Hard",
+      "price": "10000",
+      "qoute": "Abathur, the Evolution Master of Kerrigan's Swarm, works ceaselessly to improve the zerg from the genetic level up. His hate for chaos and imperfection almost rivals his hatred of pronouns."
+    },
+    "baseStats": {
+      "attackType": "Melee",
+      "health": "685",
+      "healthRegen": "1.4257",
+      "resourceAmount": "0",
+      "resourceType": "None",
+      "attackDamage": "26",
+      "attackSpeed": "1.43",
+      "attackRange": "1"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Alarak",
+      "title": "Highlord of the Tal'darim",
+      "role": "Melee Assassin",
+      "difficulty": "Hard",
+      "price": "7000",
+      "qoute": "Not all heroes are born of altruism... some, like Alarak, simply desire vengeance. As the new Highlord of the Tal'darim, Alarak leads his people to a destiny free of the corrupt influence of the fallen xel'naga, Amon."
+    },
+    "baseStats": {
+      "attackType": "Melee",
+      "health": "1900",
+      "healthRegen": "3.957",
+      "resourceAmount": "500",
+      "resourceType": "Mana",
+      "attackDamage": "150",
+      "attackSpeed": "1.2",
+      "attackRange": "1.5"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": ["Alexstrasza", "Dragon"],
+      "title": "The Life Binder",
+      "role": "Healer",
+      "difficulty": "Medium",
+      "price": "10000",
+      "qoute": "Alexstrasza, the queen of dragons, was empowered by the titans to be the guardian of all life on Azeroth. She has aided mortals time and again, even at great personal cost. Now, she soars across the Nexus, protecting life wherever she finds it."
+    },
+    "baseStats": {
+      "attackType": "Ranged",
+      "health": ["1698", "2287"],
+      "healthRegen": ["3.539", "3.7226"],
+      "resourceAmount": "500",
+      "resourceType": "Mana",
+      "attackDamage": ["73", "143"],
+      "attackSpeed": ["1.00", "0.8"],
+      "attackRange": ["5.5", "9"]
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Ana",
+      "title": "Veteran Sniper",
+      "role": "Healer",
+      "difficulty": "Hard",
+      "price": "10000",
+      "qoute": "As a founding member of Overwatch and one of the world's best snipers, Ana Amari uses her skills to protect the innocent. Though she went MIA after losing her eye, Ana's sense of duty and responsibility has brought her back to the fight."
+    },
+    "baseStats": {
+      "attackType": "Ranged",
+      "health": "1598",
+      "healthRegen": "3.3281",
+      "resourceAmount": "500",
+      "resourceType": "Mana",
+      "attackDamage": "30",
+      "attackSpeed": "1.33",
+      "attackRange": "6.5"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Anduin",
+      "title": "King of Stormwind",
+      "role": "Healer",
+      "difficulty": "Medium",
+      "price": "10000",
+      "qoute": "As a young man, Anduin sought peace as a priest of the Holy Light and an envoy of the Alliance. After his father, Varian, fell to the Burning Legion, Anduin took up the crown as High King of the Alliance. He soon learned that peace must be fought for, even in the Nexus."
+    },
+    "baseStats": {
+      "attackType": "Melee",
+      "health": "1665",
+      "healthRegen": "3.4687",
+      "resourceAmount": "500",
+      "resourceType": "Mana",
+      "attackDamage": "85",
+      "attackSpeed": "0.83",
+      "attackRange": "5.5"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Anub'arak",
+      "title": "Traitor King",
+      "role": "Tank",
+      "difficulty": "Medium",
+      "price": "4000",
+      "qoute": "Once a proud nerubian king, Anub'arak dared to stand against the Lich King's invasion, but despite his bravery, he too fell to the unrelenting Scourge. Resurrected into undeath, the Traitor King now serves as a towering weapon of destruction."
+    },
+    "baseStats": {
+      "attackType": "Melee",
+      "health": "2100",
+      "healthRegen": "4.375",
+      "resourceAmount": "500",
+      "resourceType": "Mana",
+      "attackDamage": "81",
+      "attackSpeed": "1",
+      "attackRange": "1.5"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Artanis",
+      "title": "Hierarch of the Daelaam",
+      "role": "Bruiser",
+      "difficulty": "Medium",
+      "price": "7000",
+      "qoute": "Despite his relative youth, Artanis was named Hierarch of the Daelaam after the fall of Aiur. Driven by the promise of a brighter future, he hopes to reclaim the protoss' fallen home world and rebuild their once glorious civilization."
+    },
+    "baseStats": {
+      "attackType": "Melee",
+      "health": "2525",
+      "healthRegen": "5.2617",
+      "resourceAmount": "500",
+      "resourceType": "Mana",
+      "attackDamage": "111",
+      "attackSpeed": "1",
+      "attackRange": "1.25"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Arthas",
+      "title": "The Lich King",
+      "role": "Tank",
+      "difficulty": "Medium",
+      "price": "7000",
+      "qoute": "Once the crown prince of Lordaeron, and protégé of Uther the Lightbringer, Arthas was corrupted by the cursed blade Frostmourne in a bid to save his people. Now he rules over the damned as the Lich King and all shall know his wrath."
+    },
+    "baseStats": {
+      "attackType": "Melee",
+      "health": "2860",
+      "healthRegen": "5.957",
+      "resourceAmount": "500",
+      "resourceType": "Mana",
+      "attackDamage": "95",
+      "attackSpeed": "1",
+      "attackRange": "2"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Auriel",
+      "title": "Archangel of Hope",
+      "role": "Healer",
+      "difficulty": "Medium",
+      "price": "10000",
+      "qoute": "It is through the archangel Auriel that the power of hope flows into the fabric of creation. Her eternal light illuminates even the darkest souls. Seeking harmony in all things, she is a mediator, a counselor, and when the need arises, a fearless warrior."
+    },
+    "baseStats": {
+      "attackType": "Ranged",
+      "health": "1700",
+      "healthRegen": "3.539",
+      "resourceAmount": "475",
+      "resourceType": "Energy",
+      "attackDamage": "64",
+      "attackSpeed": "1.25",
+      "attackRange": "5.5"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Azmodan",
+      "title": "Lord of Sin",
+      "role": "Ranged Assassin",
+      "difficulty": "Medium",
+      "price": "2000",
+      "qoute": "The Lord of Sin rules over a densely populated land of Hell where both the greatest joys and despair, and the deepest depravities can be experienced. But it is never enough for Azmodan, who has set his eyes on the realm of Sanctuary."
+    },
+    "baseStats": {
+      "attackType": "Ranged",
+      "health": "2464",
+      "healthRegen": "5.1328",
+      "resourceAmount": "500",
+      "resourceType": "Mana",
+      "attackDamage": "85",
+      "attackSpeed": "1",
+      "attackRange": "5.5"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Blaze",
+      "title": "Veteran Firebat",
+      "role": "Tank",
+      "difficulty": "Medium",
+      "price": "10000",
+      "qoute": "Cpl. Miles \"Blaze\" Lewis has always been drawn to the flame, but it wasn't until he joined up with Raynor's Raiders that he put his pyromania to good use. He's seen his fair share of battles since then, and has never failed to bring the heat."
+    },
+    "baseStats": {
+      "attackType": "Ranged",
+      "health": "2900",
+      "healthRegen": "6.04",
+      "resourceAmount": "500",
+      "resourceType": "Mana",
+      "attackDamage": "55",
+      "attackSpeed": "1.00",
+      "attackRange": "4.5"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Brightwing",
+      "title": "Faerie Dragon",
+      "role": "Healer",
+      "difficulty": "Hard",
+      "price": "7000",
+      "qoute": "Like many Faerie Dragons, Brightwing is happiest darting around the forests of Ashenvale, healing friends, and then grabbing a light snack. By the way, did you know a human head only weighs ten pounds? Talk about light!"
+    },
+    "baseStats": {
+      "attackType": "Ranged",
+      "health": "1450",
+      "healthRegen": "3.0195",
+      "resourceAmount": "500",
+      "resourceType": "Mana",
+      "attackDamage": "81",
+      "attackSpeed": "1.11",
+      "attackRange": "5.5"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Cassia",
+      "title": "Amazon Warmatron",
+      "role": "Ranged Assassin",
+      "difficulty": "Medium",
+      "price": "10000",
+      "qoute": "After shattering the Worldstone, the young Amazon Cassia had changed. She had seen hatred, terror, and destruction firsthand. If the Askari were to survive the coming darkness, they needed an army. She would begin their training immediately."
+    },
+    "baseStats": {
+      "attackType": "Ranged",
+      "health": "1700",
+      "healthRegen": "3.539",
+      "resourceAmount": "500",
+      "resourceType": "Mana",
+      "attackDamage": "130",
+      "attackSpeed": "1.11",
+      "attackRange": "4.5"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Chen",
+      "title": "Legendary Brewmaster",
+      "role": "Bruiser",
+      "difficulty": "Hard",
+      "price": "4000",
+      "qoute": "To be a Brewmaster is to be an explorer, a lover of nature, and when the need arises; a powerful fighter. For years Chen Stormstout has wandered the world of Azeroth in search of rare ingredients, stirring stories, and of course, good brew."
+    },
+    "baseStats": {
+      "attackType": "Melee",
+      "health": "2473",
+      "healthRegen": "5.1523",
+      "resourceAmount": "100",
+      "resourceType": "Brew",
+      "attackDamage": "90",
+      "attackSpeed": "1.11",
+      "attackRange": "2"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Cho",
+      "title": "Twilight's Hammer Chieftain",
+      "role": "Tank",
+      "difficulty": "Medium",
+      "price": "10000",
+      "qoute": "Cho’gall is one of the most powerful, intelligent, and insane ogre-magi to have ever lived. As the leader of the Twilight's Hammer the two brothers seek to bring about an age of destruction... whenever they aren’t bickering that is."
+    },
+    "baseStats": {
+      "attackType": "Melee",
+      "health": "2950",
+      "healthRegen": "6.1445",
+      "resourceAmount": "0",
+      "resourceType": "None",
+      "attackDamage": "130",
+      "attackSpeed": "0.91",
+      "attackRange": "2"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Chromie",
+      "title": "Keeper of Time",
+      "role": "Ranged Assassin",
+      "difficulty": "Hard",
+      "price": "10000",
+      "qoute": "At first glance, Chromie appears to be an ordinary gnome. In truth, she is Chronormu, Bronze Dragon and a master of time. When it comes to temporal manipulation, there's no problem she can't solve... with some help from her future self, of course."
+    },
+    "baseStats": {
+      "attackType": "Ranged",
+      "health": "1390",
+      "healthRegen": "2.8984",
+      "resourceAmount": "500",
+      "resourceType": "Mana",
+      "attackDamage": "82",
+      "attackSpeed": "1.0",
+      "attackRange": "7"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": ["D.Va(Mech)", "D.Va(Pilot)"],
+      "title": "MEKA Pilot",
+      "role": "Bruiser",
+      "difficulty": "Medium",
+      "price": "7000",
+      "qoute": "Hana Song, also known as \"D.Va,\" is both a world champion professional gamer and a burgeoning global icon. As a member of South Korea's elite MEKA unit, she fights to protect her homeland from the colossal omnic threat lurking within the East China Sea."
+    },
+    "baseStats": {
+      "attackType": "Ranged",
+      "health": ["2000", "1109"],
+      "healthRegen": ["4.168", "2.5664"],
+      "resourceAmount": "100",
+      "resourceType": "Charge",
+      "attackDamage": ["24", "55"],
+      "attackSpeed": "4.00",
+      "attackRange": ["3.75", "5.5"]
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Deathwing",
+      "title": "The Destroyer",
+      "role": "Bruiser",
+      "difficulty": "Medium",
+      "price": "15000",
+      "qoute": "One of the five Dragon Aspects and the leader of the Black Dragonflight, Neltharion the Earth-Warder was once a protector of Azeroth. During the War of the Ancients, he was driven mad by the Old Gods and turned against his former allies. Now known as Deathwing the Destroyer, he has found his way to the Nexus where his limitless rage drives his ultimate goal of widespread destruction and the eventual end of all living things."
+    },
+    "baseStats": {
+      "attackType": "Melee",
+      "health": "2750",
+      "healthRegen": "5.7292",
+      "resourceAmount": "100",
+      "resourceType": "Energy",
+      "attackDamage": "155",
+      "attackSpeed": "0.67",
+      "attackRange": "2.5"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Deckard",
+      "title": "The Last Horadrim",
+      "role": "Healer",
+      "difficulty": "Medium",
+      "price": "10000",
+      "qoute": "As an avid scholar, Deckard Cain has dedicated his life to the pursuit of knowledge. He has been an advisor, storyteller, and friend to Sanctuary's greatest heroes, guiding them through peril time and again. When Deckard speaks, it's wise to stay awhile and listen."
+    },
+    "baseStats": {
+      "attackType": "Melee",
+      "health": "1780",
+      "healthRegen": "3.7083",
+      "resourceAmount": "500",
+      "resourceType": "Mana",
+      "attackDamage": "63",
+      "attackSpeed": "0.91",
+      "attackRange": "1.5"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Dehaka",
+      "title": "Primal Pack Leader",
+      "role": "Bruiser",
+      "difficulty": "Hard",
+      "price": "10000",
+      "qoute": "Cunning and wise, Dehaka is one of the last surviving pack leaders of the forgotten world of Zerus. As with all primal zerg, he is driven by a powerful desire to consume the essence of his foes and evolve into newer and more deadly forms."
+    },
+    "baseStats": {
+      "attackType": "Melee",
+      "health": "2434",
+      "healthRegen": "5.0703",
+      "resourceAmount": "500",
+      "resourceType": "Mana",
+      "attackDamage": "100",
+      "attackSpeed": "1.11",
+      "attackRange": "1.00"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Diablo",
+      "title": "Lord of Terror",
+      "role": "Tank",
+      "difficulty": "Medium",
+      "price": "2000",
+      "qoute": "Known in the ancient tongue as Al'Diabolos, the Prime Evil of Terror, the Demon Lord Diablo seeks to claim the world of Sanctuary for the Burning Hells. His victims are innumerable, his schemes unknowable, and his gender... malleable."
+    },
+    "baseStats": {
+      "attackType": "Melee",
+      "health": "2825",
+      "healthRegen": "5.5625",
+      "resourceAmount": "500",
+      "resourceType": "Mana",
+      "attackDamage": "105",
+      "attackSpeed": "0.95",
+      "attackRange": "1.25"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "E.T.C.",
+      "title": "Rock God",
+      "role": "Tank",
+      "difficulty": "Medium",
+      "price": "2000",
+      "qoute": "The Power of the Horde incarnated by brutal rhythms and blistering guitar riffs into the most elite tauren chieftain to ever headbang across the surface of Azeroth. Don't bother putting on socks. He's just going to rock them off anyways."
+    },
+    "baseStats": {
+      "attackType": "Melee",
+      "health": "2250",
+      "healthRegen": "4.6",
+      "resourceAmount": "500",
+      "resourceType": "Mana",
+      "attackDamage": "99",
+      "attackSpeed": "1.25",
+      "attackRange": "1.5"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Falstad",
+      "title": "Wildhammer Thane",
+      "role": "Ranged Assassin",
+      "difficulty": "Medium",
+      "price": "7000",
+      "qoute": "Falstad is the High Thane of the Wildhammer Clan and a founding member of the Council of Three Hammers that presides over Ironforge. Despite speculation, Falstad has never been dead and anyone who claims such is a liar."
+    },
+    "baseStats": {
+      "attackType": "Ranged",
+      "health": "1365",
+      "healthRegen": "2.8437",
+      "resourceAmount": "500",
+      "resourceType": "Mana",
+      "attackDamage": "104",
+      "attackSpeed": "1.43",
+      "attackRange": "5.5"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Fenix",
+      "title": "Steward of the Templar",
+      "role": "Ranged Assassin",
+      "difficulty": "Medium",
+      "price": "10000",
+      "qoute": "As one of the greatest heroes in protoss history, Fenix's deeds on the battlefield are legendary. After falling to the zerg during the invasion of Aiur, his body was recovered and implanted into a dragoon so he could continue to fight. Not even death can stop Fenix from achieving glory and valor."
+    },
+    "baseStats": {
+      "attackType": "Ranged",
+      "health": "1140",
+      "healthRegen": "2.379",
+      "resourceAmount": "",
+      "resourceType": "None",
+      "attackDamage": "83",
+      "attackSpeed": "0.74",
+      "attackRange": "5.0"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Gall",
+      "title": "Twilight's Hammer Chieftain",
+      "role": "Ranged Assassin",
+      "difficulty": "Easy",
+      "price": "10000",
+      "qoute": "Cho’gall is one of the most powerful, intelligent, and insane ogre-magi to have ever lived. As the leader of the Twilight's Hammer the two brothers seek to bring about an age of destruction... whenever they aren’t bickering that is."
+    },
+    "baseStats": {
+      "attackType": "Ranged",
+      "health": "",
+      "healthRegen": "",
+      "resourceAmount": "",
+      "resourceType": "None",
+      "attackDamage": "",
+      "attackSpeed": "",
+      "attackRange": ""
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Garrosh",
+      "title": "Son of Hellscream",
+      "role": "Tank",
+      "difficulty": "Medium",
+      "price": "10000",
+      "qoute": "As the new warchief of the Horde, Garrosh is a proud and vicious warrior who rules with an iron fist. His hatred for the Alliance burns like wildfire, and he will stop at nothing to destroy them. By his axe, the orcs will reclaim their rightful glory."
+    },
+    "baseStats": {
+      "attackType": "Melee",
+      "health": "2060",
+      "healthRegen": "4.293",
+      "resourceAmount": "500",
+      "resourceType": "Mana",
+      "attackDamage": "137",
+      "attackSpeed": "0.83",
+      "attackRange": "1.2"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Gazlowe",
+      "title": "Boss of Ratchet",
+      "role": "Melee Assassin",
+      "difficulty": "Medium",
+      "price": "2000",
+      "qoute": "Few would consider Gazlowe a fighter, but what he lacks in height, he makes up in mechanical know-how. Besides, you don't get to be boss of a \"boom\"-town like Ratchet with just a charming personality, if you know what I mean."
+    },
+    "baseStats": {
+      "attackType": "Melee",
+      "health": "1826",
+      "healthRegen": "3.8046",
+      "resourceAmount": "500",
+      "resourceType": "Mana",
+      "attackDamage": "95",
+      "attackSpeed": "1.25",
+      "attackRange": "1.2"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Genji",
+      "title": "Cybernetic Ninja",
+      "role": "Ranged Assassin",
+      "difficulty": "Hard",
+      "price": "10000",
+      "qoute": "Once the carefree youngest scion of the Shimada clan, Genji was cut down by his own brother for refusing to take part in their illegal ventures. Grafted into a cyborg body by Overwatch, Genji walks his own path as one who fights for what's right."
+    },
+    "baseStats": {
+      "attackType": "Ranged",
+      "health": "1675",
+      "healthRegen": "3.4882",
+      "resourceAmount": "500",
+      "resourceType": "Mana",
+      "attackDamage": "44",
+      "attackSpeed": "1.00",
+      "attackRange": "4.5"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": ["Greymane \n(Human)", "Greymane \n(Worgen)"],
+      "title": "Lord of the Worgen",
+      "role": "Ranged Assassin",
+      "difficulty": "Hard",
+      "price": "7000",
+      "qoute": "Like most Gilneans, Genn Greymane is afflicted by the Worgen curse. Though he feels at fault for his people’s ill fate, he has embraced his inner beast without giving in to its feral nature. Now he leads his pack as both their alpha and their king."
+    },
+    "baseStats": {
+      "attackType": ["Ranged", "Melee"],
+      "health": "1876",
+      "healthRegen": "3.9062",
+      "resourceAmount": "500",
+      "resourceType": "Mana",
+      "attackDamage": ["148", "207.2"],
+      "attackSpeed": "1.00",
+      "attackRange": ["5.5", "1.25"]
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Gul'dan",
+      "title": "Darkness Incarnate",
+      "role": "Ranged Assassin",
+      "difficulty": "Medium",
+      "price": "7000",
+      "qoute": "Abandoning the ways of shamanism, Gul'dan entered a pact with the demon lord Kil'jaeden and betrayed his people in exchange for limitless power. With the orcish Horde under his master's thrall, both Draenor and Azeroth nearly fell into his grasp."
+    },
+    "baseStats": {
+      "attackType": "Ranged",
+      "health": "1700",
+      "healthRegen": "3.543",
+      "resourceAmount": "500",
+      "resourceType": "Mana",
+      "attackDamage": "60",
+      "attackSpeed": "1",
+      "attackRange": "5.5"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Hanzo",
+      "title": "Master Assassin",
+      "role": "Ranged Assassin",
+      "difficulty": "Easy",
+      "price": "10000",
+      "qoute": "Once heir to the Shimada clan's criminal empire, Hanzo abandoned his birthright after he almost killed his younger brother. He now strives to perfect his skills as a warrior, and sees the Nexus and its endless conflict as the ideal training ground."
+    },
+    "baseStats": {
+      "attackType": "Ranged",
+      "health": "1323",
+      "healthRegen": "2.7578",
+      "resourceAmount": "500",
+      "resourceType": "Mana",
+      "attackDamage": "198",
+      "attackSpeed": "0.67",
+      "attackRange": "6.5"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Illidan",
+      "title": "The Betrayer",
+      "role": "Melee Assassin",
+      "difficulty": "Medium",
+      "price": "4000",
+      "qoute": "Illidan Stormrage, the first Demon Hunter, betrayed his people and created a new Well of Eternity after the demonic invasion of Azeroth. Now Illidan lords over Outland slaying unsuitably prepared Heroes who venture into his domain."
+    },
+    "baseStats": {
+      "attackType": "Melee",
+      "health": "1725",
+      "healthRegen": "3.5898",
+      "resourceAmount": "0",
+      "resourceType": "None",
+      "attackDamage": "78",
+      "attackSpeed": "1.82",
+      "attackRange": "1.2"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Imperius",
+      "title": "Archangel of Valor",
+      "role": "Bruiser",
+      "difficulty": "Medium",
+      "price": "10000",
+      "qoute": "Leader of the Angiris Council and Aspect of Valor, Imperius has valiantly led the armies of the High Heavens to innumerous victories over the demons of the Burning Hells. While his methods are exact and severe, there is no greater defender of righteousness in the entirety of creation."
+    },
+    "baseStats": {
+      "attackType": "Melee",
+      "health": "2450",
+      "healthRegen": "5.1054",
+      "resourceAmount": "500",
+      "resourceType": "Mana",
+      "attackDamage": "122",
+      "attackSpeed": "0.83",
+      "attackRange": "2.0"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Jaina",
+      "title": "Archmage",
+      "role": "Ranged Assassin",
+      "difficulty": "Medium",
+      "price": "4000",
+      "qoute": "Once the apprentice of the Archmage Antonidas, Jaina Proudmoore led the survivors of Lordaeron to Kalimdor and founded the city of Theramore. Now, she serves the Alliance as a powerful voice fighting for reason and diplomacy."
+    },
+    "baseStats": {
+      "attackType": "Ranged",
+      "health": "1365",
+      "healthRegen": "2.8437",
+      "resourceAmount": "500",
+      "resourceType": "Mana",
+      "attackDamage": "60",
+      "attackSpeed": "1",
+      "attackRange": "5.5"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Johanna",
+      "title": "Crusader of Zakarum",
+      "role": "Tank",
+      "difficulty": "Medium",
+      "price": "4000",
+      "qoute": "There have been many women who have borne the name Johanna in service of the crusade, and each has given her life to purify her faith. Johanna carries on their legacy as she searches the kingdom of Khanduras for the fallen star."
+    },
+    "baseStats": {
+      "attackType": "Melee",
+      "health": "2625",
+      "healthRegen": "5.4687",
+      "resourceAmount": "500",
+      "resourceType": "Mana",
+      "attackDamage": "99",
+      "attackSpeed": "0.91",
+      "attackRange": "1.5"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Junkrat",
+      "title": "Junker Demolitionist",
+      "role": "Ranged Assassin",
+      "difficulty": "Medium",
+      "price": "10000",
+      "qoute": "The destruction of the Australian omnium left the area an irradiated waste and survivors like Jamison Fawkes were greatly affected by radiation. Now as the explosive-obsessed criminal Junkrat, he is renowned for leaving havoc and bedlam in his wake."
+    },
+    "baseStats": {
+      "attackType": "Ranged",
+      "health": "1425",
+      "healthRegen": "2.9687",
+      "resourceAmount": "0",
+      "resourceType": "None",
+      "attackDamage": "110",
+      "attackSpeed": "1.00",
+      "attackRange": "5.5"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Kael'thas",
+      "title": "The Sun King",
+      "role": "Ranged Assassin",
+      "difficulty": "Hard",
+      "price": "7000",
+      "qoute": "Like all Blood Elves, Prince Kael'thas was transformed by the fall of Quel'thalas. Desperate to save his people from being consumed by their magical addiction, he joined forces with the Burning Legion and now lords over Tempest Keep."
+    },
+    "baseStats": {
+      "attackType": "Ranged",
+      "health": "1520",
+      "healthRegen": "3.168",
+      "resourceAmount": "500",
+      "resourceType": "Mana",
+      "attackDamage": "65",
+      "attackSpeed": "1.11",
+      "attackRange": "5.5"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Kel'Thuzad",
+      "title": "Archlich of Naxxramas",
+      "role": "Ranged Assassin",
+      "difficulty": "Hard",
+      "price": "10000",
+      "qoute": "Kel'Thuzad has faithfully served the Lich King both in life and after death. Reanimated as the Archlich of the Scourge and given domain of the Dread Necropolis, Naxxramas, Kel'Thuzad remains Arthas's most trusted advisor and master of the cold dark."
+    },
+    "baseStats": {
+      "attackType": "Ranged",
+      "health": "1445",
+      "healthRegen": "3.0117",
+      "resourceAmount": "500",
+      "resourceType": "Mana",
+      "attackDamage": "72",
+      "attackSpeed": "1.0",
+      "attackRange": "5.5"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Kerrigan",
+      "title": "Queen of Blades",
+      "role": "Melee Assassin",
+      "difficulty": "Hard",
+      "price": "4000",
+      "qoute": "Once a terran ghost with formidable psionic abilities, Sarah Kerrigan was betrayed by her allies and transformed into the Queen of Blades. Now freed of the dark one's corruption, Kerrigan faces a threat that could destroy the galaxy itself."
+    },
+    "baseStats": {
+      "attackType": "Melee",
+      "health": "1764",
+      "healthRegen": "3.6757",
+      "resourceAmount": "500",
+      "resourceType": "Mana",
+      "attackDamage": "115",
+      "attackSpeed": "1.25",
+      "attackRange": "2"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Kharazim",
+      "title": "Veradani Monk",
+      "role": "Healer",
+      "difficulty": "Medium",
+      "price": "7000",
+      "qoute": "To the monks of Ivgorod, the gods are in all things, and their divine will is proclaimed by the Patriarchs. With unshakable faith, Kharazim carries forth the decrees of the thousand and one gods to the ends of Sanctuary and the realms beyond."
+    },
+    "baseStats": {
+      "attackType": "Melee",
+      "health": "2027",
+      "healthRegen": "4.2226",
+      "resourceAmount": "500",
+      "resourceType": "Mana",
+      "attackDamage": "64",
+      "attackSpeed": "2",
+      "attackRange": "1.75"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Leoric",
+      "title": "The Skeleton King",
+      "role": "Bruiser",
+      "difficulty": "Easy",
+      "price": "7000",
+      "qoute": "Madness. Betrayal. Death. These are the legacy of the Black King Leoric's reign. Driven to madness by the spirit of Diablo, Leoric brought untold suffering on his kingdom. Even after his death there was no release for the Skeleton King."
+    },
+    "baseStats": {
+      "attackType": "Melee",
+      "health": "2550",
+      "healthRegen": "5.3125",
+      "resourceAmount": "500",
+      "resourceType": "Mana",
+      "attackDamage": "109",
+      "attackSpeed": "0.77",
+      "attackRange": "2"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Li Li",
+      "title": "World Wanderer",
+      "role": "Healer",
+      "difficulty": "Easy",
+      "price": "2000",
+      "qoute": "Born upon Shen-zin Su, the Wandering Isle, Li Li Stormstout led an uneventful life until she began reading her uncle Chen's journals. Soon, nothing would sate her desire for adventure, exploration, and pestering adventurers around Halfhill."
+    },
+    "baseStats": {
+      "attackType": "Ranged",
+      "health": "1500",
+      "healthRegen": "3.125",
+      "resourceAmount": "500",
+      "resourceType": "Mana",
+      "attackDamage": "60",
+      "attackSpeed": "1.25",
+      "attackRange": "5.5"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Li-Ming",
+      "title": "Rebellious Wizard",
+      "role": "Ranged Assassin",
+      "difficulty": "Medium",
+      "price": "7000",
+      "qoute": "The derogatory moniker 'wizard' is often given to mages with rebellious attitudes or an obsession with power. Li-Ming displays a little of both and she's hardly ashamed of it. After all, who are they to judge a wielder of limitless arcane magic?"
+    },
+    "baseStats": {
+      "attackType": "Ranged",
+      "health": "1270",
+      "healthRegen": "2.6458",
+      "resourceAmount": "500",
+      "resourceType": "Mana",
+      "attackDamage": "63",
+      "attackSpeed": "1.00",
+      "attackRange": "5.5"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Lt. Morales",
+      "title": "Combat Medic",
+      "role": "Healer",
+      "difficulty": "Medium",
+      "price": "7000",
+      "qoute": "To good marines, the only thing more important than the rifle in their hand is the medic at their back. As one of the first officers deployed during the United Earth Directorate's invasion, Lt. Rosa Morales is the best of the best."
+    },
+    "baseStats": {
+      "attackType": "Ranged",
+      "health": "1545",
+      "healthRegen": "3.2187",
+      "resourceAmount": "100",
+      "resourceType": "Energy",
+      "attackDamage": "83",
+      "attackSpeed": "1",
+      "attackRange": "5.5"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Lunara",
+      "title": "First Daughter of Cenarius",
+      "role": "Ranged Assassin",
+      "difficulty": "Medium",
+      "price": "7000",
+      "qoute": "While her younger sisters frolicked in idyllic forests, Lunara watched as mortals exploited nature’s splendor. On Azeroth, her father Cenarius forbade her from retaliating. But this is the Nexus, and it’s time for nature to take its revenge."
+    },
+    "baseStats": {
+      "attackType": "Ranged",
+      "health": "1430",
+      "healthRegen": "2.9804",
+      "resourceAmount": "500",
+      "resourceType": "Mana",
+      "attackDamage": "90",
+      "attackSpeed": "1.11",
+      "attackRange": "5.5"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Lúcio",
+      "title": "Freedom Fighting DJ",
+      "role": "Healer",
+      "difficulty": "Medium",
+      "price": "10000",
+      "qoute": "From the streets of Rio to the clubs on King's Row, Lúcio's beats bring the party to life, and drive the people to action. Now he's on tour in the Nexus, ready to break it down, and to continue fighting for what's right."
+    },
+    "baseStats": {
+      "attackType": "Melee",
+      "health": "1442",
+      "healthRegen": "3",
+      "resourceAmount": "500",
+      "resourceType": "Mana",
+      "attackDamage": "23",
+      "attackSpeed": "0.8",
+      "attackRange": "5.5"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Maiev",
+      "title": "The Warden",
+      "role": "Melee Assassin",
+      "difficulty": "Hard",
+      "price": "10000",
+      "qoute": "Maiev Shadowsong stood watch over the imprisoned Betrayer for ten thousand years, and hunted him relentlessly after he was released. Some say she's determined; others say she's obsessed. Either way, she will stop at nothing to ensure the security of her world."
+    },
+    "baseStats": {
+      "attackType": "Melee",
+      "health": "2021",
+      "healthRegen": "4.211",
+      "resourceAmount": "500",
+      "resourceType": "Mana",
+      "attackDamage": "145",
+      "attackSpeed": "1.11",
+      "attackRange": "1.5"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Mal'Ganis",
+      "title": "Nathrezim Lord",
+      "role": "Tank",
+      "difficulty": "Medium",
+      "price": "10000",
+      "qoute": "Cunning and Intelligent, Mal'Ganis was chosen to bring Arthas Menthil into the Lich King’s service. After manipulating the prince into purging Stratholme of life, he finally fell to Frostmourne as Arthas's first act as the Lich King's champion... yet a demon does not die so easily."
+    },
+    "baseStats": {
+      "attackType": "Melee",
+      "health": "2500",
+      "healthRegen": "5.211",
+      "resourceAmount": "500",
+      "resourceType": "Mana",
+      "attackDamage": "100",
+      "attackSpeed": "0.91",
+      "attackRange": "1.3"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Malfurion",
+      "title": "Archdruid",
+      "role": "Healer",
+      "difficulty": "Easy",
+      "price": "2000",
+      "qoute": "Malfurion Stormrage is the greatest druid on Azeroth, and a student of the demi-god Cenarius. Communing with nature and Cenarius through the Emerald dream, Malfurion protects the wilds from demonic influences."
+    },
+    "baseStats": {
+      "attackType": "Ranged",
+      "health": "1525",
+      "healthRegen": "3.1796",
+      "resourceAmount": "500",
+      "resourceType": "Mana",
+      "attackDamage": "60",
+      "attackSpeed": "1.11",
+      "attackRange": "5.5"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Malthael",
+      "title": "Aspect of Death",
+      "role": "Bruiser",
+      "difficulty": "Medium",
+      "price": "10000",
+      "qoute": "Once the Aspect of Wisdom, Malthael abandoned heaven after the Worldstone's destruction. In secret, he had resolved to end the Eternal Conflict by becoming a Reaper of Souls and eliminating everything affected by demonic corruption, including humanity."
+    },
+    "baseStats": {
+      "attackType": "Melee",
+      "health": "1962",
+      "healthRegen": "4.086",
+      "resourceAmount": "500",
+      "resourceType": "Mana",
+      "attackDamage": "82",
+      "attackSpeed": "0.91",
+      "attackRange": "1.5"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Medivh",
+      "title": "The Last Guardian",
+      "role": "Support",
+      "difficulty": "Very Hard",
+      "price": "10000",
+      "qoute": "Under the demon lord Sargeras's influence, Medivh opened the Dark Portal and unleashed the Horde upon Azeroth. To atone for this sin, he rallied a new generation of heroes to stand against the Burning Legion. Now, he takes this place amongst legends."
+    },
+    "baseStats": {
+      "attackType": "Ranged",
+      "health": "1470",
+      "healthRegen": "3.0625",
+      "resourceAmount": "500",
+      "resourceType": "Mana",
+      "attackDamage": "80",
+      "attackSpeed": "1.11",
+      "attackRange": "5.5"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Mephisto",
+      "title": "Lord of Hatred",
+      "role": "Ranged Assassin",
+      "difficulty": "Medium",
+      "price": "10000",
+      "qoute": "Dul'Mephistos, the Lord of Hatred, is said to the be most cunning among his brethren. Even while imprisoned in a soulstone, his vile influence corrupted the Zakarum and manipulated them into breaking the seal, giving him free reign to reunite the Prime Evils and enslave humanity."
+    },
+    "baseStats": {
+      "attackType": "Ranged",
+      "health": "1968",
+      "healthRegen": "4.1015",
+      "resourceAmount": "500",
+      "resourceType": "Mana",
+      "attackDamage": "66",
+      "attackSpeed": "1",
+      "attackRange": "4.5"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Muradin",
+      "title": "Mountain King",
+      "role": "Tank",
+      "difficulty": "Easy",
+      "price": "4000",
+      "qoute": "Once a mentor to Prince Arthas, Muradin was unable to prevent his corruption. After recovering from a mild case of amnesia, he is now the leader of the Bronzebeard clan after the \"diamond-ization\" of his brother King Magni."
+    },
+    "baseStats": {
+      "attackType": "Melee",
+      "health": "2765",
+      "healthRegen": "5.7617",
+      "resourceAmount": "500",
+      "resourceType": "Mana",
+      "attackDamage": "88",
+      "attackSpeed": "1.11",
+      "attackRange": "1"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Murky",
+      "title": "Baby Murloc",
+      "role": "Melee Assassin",
+      "difficulty": "Hard",
+      "price": "7000",
+      "qoute": "Mrgglglbrlg rmrmgllg mrggggm. Mrrglglgy, mgllglgl mgggrrmgl? MRGGGLGLLM! Mrrggllgggllggll mrrglrlg mrrg mrrg mrrrg."
+    },
+    "baseStats": {
+      "attackType": "Melee",
+      "health": "730",
+      "healthRegen": "29.1992",
+      "resourceAmount": "0",
+      "resourceType": "None",
+      "attackDamage": "60",
+      "attackSpeed": "1.25",
+      "attackRange": "1.2"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Nazeebo",
+      "title": "Heretic Witch Doctor",
+      "role": "Ranged Assassin",
+      "difficulty": "Medium",
+      "price": "4000",
+      "qoute": "With cabalistic incantations and vestments of feather and bone, the Witch Doctor Nazeebo calls upon spirits from the Unformed Land to aid him. Few outlanders encounter a Witch Doctor in the flesh, without losing their own."
+    },
+    "baseStats": {
+      "attackType": "Ranged",
+      "health": "1502",
+      "healthRegen": "3.129",
+      "resourceAmount": "500",
+      "resourceType": "Mana",
+      "attackDamage": "88",
+      "attackSpeed": "1.11",
+      "attackRange": "5.5"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Nova",
+      "title": "Dominion Ghost",
+      "role": "Ranged Assassin",
+      "difficulty": "Medium",
+      "price": "7000",
+      "qoute": "November \"Nova\" Terra is a ghost of the Terran Dominion and one of the most powerful psionic soldiers ever known. Nova is highly focused, determined, and extremely deadly. Even Jim Raynor wouldn't want to be caught in her crosshairs."
+    },
+    "baseStats": {
+      "attackType": "Ranged",
+      "health": "1300",
+      "healthRegen": "2.711",
+      "resourceAmount": "500",
+      "resourceType": "Mana",
+      "attackDamage": "105",
+      "attackSpeed": "1",
+      "attackRange": "6.5"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Orphea",
+      "title": "Heir of Raven Court",
+      "role": "Ranged Assassin",
+      "difficulty": "Medium",
+      "price": "10000",
+      "qoute": "Rejecting the dark power her father had begun to consort with, Orphea tried to run away from the Raven Lord’s Influence. But after witnessing King’s Crest fall to his machinations, she was convinced she needed to stand and fight. She now vows to protect the innocent – as a Hero of the Nexus!"
+    },
+    "baseStats": {
+      "attackType": "Ranged",
+      "health": "1525",
+      "healthRegen": "3.1757",
+      "resourceAmount": "500",
+      "resourceType": "Mana",
+      "attackDamage": "88",
+      "attackSpeed": "1.2",
+      "attackRange": "5.5"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Probius",
+      "title": "Curious Probe",
+      "role": "Ranged Assassin",
+      "difficulty": "Hard",
+      "price": "10000",
+      "qoute": "Since his activation, Probius has always wanted to prove himself. He may be small, but he made a big difference by warping in a critical pylon during the retaking of Aiur. As the bravest of probes, Probius is eager to fulfill his purpose in the Nexus."
+    },
+    "baseStats": {
+      "attackType": "Ranged",
+      "health": "1260",
+      "healthRegen": "2.625",
+      "resourceAmount": "600",
+      "resourceType": "Mana",
+      "attackDamage": "33",
+      "attackSpeed": "1.11",
+      "attackRange": "3.0"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Qhira",
+      "title": "Realmless Bounty Hunter",
+      "role": "Melee Assassin",
+      "difficulty": "Medium",
+      "price": "10000",
+      "qoute": "A sworn knight and holder of a singularity shard, Qhira's only desire is to seek out others who may have escaped the destruction of her doomed home realm, Iresia. While she searches, she gets by as a bounty hunter a – job she loathes, despite her exceptional skill."
+    },
+    "baseStats": {
+      "attackType": "Melee",
+      "health": "2000",
+      "healthRegen": "4.168",
+      "resourceAmount": "500",
+      "resourceType": "Mana",
+      "attackDamage": "100",
+      "attackSpeed": "1.0",
+      "attackRange": "2.25"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Ragnaros",
+      "title": "The Firelord",
+      "role": "Bruiser",
+      "difficulty": "Medium",
+      "price": "7000",
+      "qoute": "As the lord of Azeroth’s fire elementals, Ragnaros desires nothing more than to burn the world to ash. Banished to the Firelands eons ago, the Firelord now turns his rage toward the Nexus, intent on incinerating everything and everyone within it."
+    },
+    "baseStats": {
+      "attackType": "Melee",
+      "health": "2075",
+      "healthRegen": "4.3242",
+      "resourceAmount": "500",
+      "resourceType": "Mana",
+      "attackDamage": "180",
+      "attackSpeed": "0.83",
+      "attackRange": "2.0"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Raynor",
+      "title": "Renegade Commander",
+      "role": "Ranged Assassin",
+      "difficulty": "Easy",
+      "price": "2000",
+      "qoute": "Ex-Confederate Marshal James Raynor has stood against whatever the universe can throw at him and survived. He stands as a beacon of hope among enigmatic aliens and monsters, fighting for justice in a cold uncaring universe."
+    },
+    "baseStats": {
+      "attackType": "Ranged",
+      "health": "1450",
+      "healthRegen": "3.0195",
+      "resourceAmount": "500",
+      "resourceType": "Mana",
+      "attackDamage": "101",
+      "attackSpeed": "1.25",
+      "attackRange": "6.5"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Rehgar",
+      "title": "Shaman of the Earthen Ring",
+      "role": "Healer",
+      "difficulty": "Medium",
+      "price": "7000",
+      "qoute": "Rehgar Earthfury has seen his share of combat, both as a gladiator, and a master of his own team. Now, having put that life aside, he serves as a simple shaman of the Earthen Ring, earning his redemption by healing the lands of Azeroth."
+    },
+    "baseStats": {
+      "attackType": "Melee",
+      "health": "2000",
+      "healthRegen": "4.168",
+      "resourceAmount": "500",
+      "resourceType": "Mana",
+      "attackDamage": "106",
+      "attackSpeed": "1.25",
+      "attackRange": "1.5"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Rexxar",
+      "title": "Champion of the Horde",
+      "role": "Bruiser",
+      "difficulty": "Hard",
+      "price": "4000",
+      "qoute": "It was a strange twist of fate that led the wandering half-ogre Rexxar to the fledgling city of Orgrimmar. With his aid, Thrall and the Horde were able to secure their homeland and defend it from the invading forces of Lord Admiral Daelin Proudmoore."
+    },
+    "baseStats": {
+      "attackType": "Ranged",
+      "health": "1810",
+      "healthRegen": "3.7695",
+      "resourceAmount": "500",
+      "resourceType": "Mana",
+      "attackDamage": "134",
+      "attackSpeed": "0.87",
+      "attackRange": "5.5"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Samuro",
+      "title": "The Blademaster",
+      "role": "Melee Assassin",
+      "difficulty": "Hard",
+      "price": "10000",
+      "qoute": "Samuro, the last remaining blademaster to wear the banner of the Burning Blade, is on a warrior's pilgrimage in search of vengeance and redemption for his fallen clan. It will be a long journey, but he has sworn an oath to restore his clan's honor."
+    },
+    "baseStats": {
+      "attackType": "Melee",
+      "health": "1725",
+      "healthRegen": "3.5898",
+      "resourceAmount": "0",
+      "resourceType": "None",
+      "attackDamage": "102",
+      "attackSpeed": "1.67",
+      "attackRange": "2.0"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Sgt. Hammer",
+      "title": "Siege Tank Operator",
+      "role": "Ranged Assassin",
+      "difficulty": "Hard",
+      "price": "7000",
+      "qoute": "Sergeant Bama \"the Hammer\" Kowalski has served some of the toughest tours around the Koprulu sector. The roar of her siege tank's shock cannon strikes fear right into the heart of the toughest of warriors... including some of her allies."
+    },
+    "baseStats": {
+      "attackType": "Ranged",
+      "health": "1720",
+      "healthRegen": "3.582",
+      "resourceAmount": "500",
+      "resourceType": "Mana",
+      "attackDamage": "140",
+      "attackSpeed": "1",
+      "attackRange": "5.5"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Sonya",
+      "title": "Wandering Barbarian",
+      "role": "Bruiser",
+      "difficulty": "Medium",
+      "price": "4000",
+      "qoute": "From the frozen Dreadlands of the north come the mighty Barbarian warriors. After surviving the destruction of her home and death of her tribe, Sonya wanders Sanctuary in search of battle and a better life for her people."
+    },
+    "baseStats": {
+      "attackType": "Melee",
+      "health": "2450",
+      "healthRegen": "5.1054",
+      "resourceAmount": "100",
+      "resourceType": "Fury",
+      "attackDamage": "84",
+      "attackSpeed": "1.25",
+      "attackRange": "1.5"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Stitches",
+      "title": "Terror of Darkshire",
+      "role": "Tank",
+      "difficulty": "Medium",
+      "price": "7000",
+      "qoute": "Take care when traversing the shadowed trails of Duskwood...\nEver since Abercrombie the Embalmer unleashed his vile abomination upon Darkshire, Stitches has wandered the road aimlessly, hungering for the flesh of low level Alliance players."
+    },
+    "baseStats": {
+      "attackType": "Melee",
+      "health": "3150",
+      "healthRegen": "6.5625",
+      "resourceAmount": "500",
+      "resourceType": "Mana",
+      "attackDamage": "85",
+      "attackSpeed": "0.91",
+      "attackRange": "1.5"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Stukov",
+      "title": "Infested Admiral",
+      "role": "Healer",
+      "difficulty": "Medium",
+      "price": "10000",
+      "qoute": "Alexei Stukov had a hard life, and an even harder death. He has been betrayed, shot into space, resurrected and infested, almost cured, and then experimented upon as the infestation returned. Now, his infestation spreads within the Nexus..."
+    },
+    "baseStats": {
+      "attackType": "Melee",
+      "health": "1850",
+      "healthRegen": "3.8554",
+      "resourceAmount": "500",
+      "resourceType": "Mana",
+      "attackDamage": "261",
+      "attackSpeed": "0.67",
+      "attackRange": "1.5"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Sylvanas",
+      "title": "The Banshee Queen",
+      "role": "Ranged Assassin",
+      "difficulty": "Medium",
+      "price": "7000",
+      "qoute": "Sylvanas Windrunner was not always the Dark Lady of the Forsaken. In another life, she was the Ranger-General of Silvermoon. But that was before the Death Knight Arthas slew her and her people and raised her as the first Banshee."
+    },
+    "baseStats": {
+      "attackType": "Ranged",
+      "health": "1650",
+      "healthRegen": "3.4414",
+      "resourceAmount": "500",
+      "resourceType": "Mana",
+      "attackDamage": "81",
+      "attackSpeed": "1.67",
+      "attackRange": "5.5"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Tassadar",
+      "title": "Savior of the Templar",
+      "role": "Ranged Assassin",
+      "difficulty": "Medium",
+      "price": "4000",
+      "qoute": "An Executor without equal, Tassadar has fought tirelessly to purify the Koprulu sector of zerg infestation. Only now, after learning to wield the power of the void, is Tassadar finally ready to face the Overmind and its all-consuming Swarm."
+    },
+    "baseStats": {
+      "attackType": "Ranged",
+      "health": "1650",
+      "healthRegen": "3.4375",
+      "resourceAmount": "500",
+      "resourceType": "Mana",
+      "attackDamage": "14",
+      "attackSpeed": "4.00",
+      "attackRange": "6.5"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "The Butcher",
+      "title": "Flesh Carver",
+      "role": "Melee Assassin",
+      "difficulty": "Medium",
+      "price": "7000",
+      "qoute": "An unrelenting hacking echoed off the walls of the Cathedral and as Prince Aiden made his way through its depths, the sound only grew louder. There were no screams; just that dreadful sound... over and over."
+    },
+    "baseStats": {
+      "attackType": "Melee",
+      "health": "2154",
+      "healthRegen": "4.4882",
+      "resourceAmount": "500",
+      "resourceType": "Mana",
+      "attackDamage": "130",
+      "attackSpeed": "1.11",
+      "attackRange": "1.5"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": ["Olaf", "Baleog", "Erik"],
+      "title": "Triple Trouble",
+      "role": "Support",
+      "difficulty": "Very Hard",
+      "price": "10000",
+      "qoute": "The Lost Vikings are back! While they briefly considered retirement after defeating the emperor Tomator, there were only so many polar bears they could wrestle before falling into a Nexus portal seemed like a solid life decision."
+    },
+    "baseStats": {
+      "attackType": ["Melee", "Ranged", "Ranged"],
+      "health": ["1540", "1180", "840"],
+      "healthRegen": ["3.207", "2.457", "1.75"],
+      "resourceAmount": "None",
+      "resourceType": "None",
+      "attackDamage": ["57", "78", "65"],
+      "attackSpeed": ["1", "1.11", "1.75"],
+      "attackRange": ["1.20", "4.0", "6.5"]
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Thrall",
+      "title": "Warchief of the Horde",
+      "role": "Bruiser",
+      "difficulty": "Medium",
+      "price": "4000",
+      "qoute": "As a child, Thrall served the cruel Aedelas Blackmoore as a slave. After gaining his freedom, he guided the liberated orcs to a land of their own and worked to recover their ancient traditions. Now and forever he is the Warchief of the Horde."
+    },
+    "baseStats": {
+      "attackType": "Melee",
+      "health": "1876",
+      "healthRegen": "3.9062",
+      "resourceAmount": "500",
+      "resourceType": "Mana",
+      "attackDamage": "173",
+      "attackSpeed": "0.91",
+      "attackRange": "1.5"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Tracer",
+      "title": "Agent of Overwatch",
+      "role": "Ranged Assassin",
+      "difficulty": "Hard",
+      "price": "10000",
+      "qoute": "Lena Oxton (call sign: \"Tracer\"), is both an adventurer and an irrepressible force for good. With the ability to alter her own time at will, she fights the good fight wherever she goes--even the Nexus. Don't worry, loves. The cavalry's finally here."
+    },
+    "baseStats": {
+      "attackType": "Ranged",
+      "health": "1330",
+      "healthRegen": "2.707",
+      "resourceAmount": "10",
+      "resourceType": "Ammo",
+      "attackDamage": "24",
+      "attackSpeed": "8.0",
+      "attackRange": "5.0"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Tychus",
+      "title": "Notorious Outlaw",
+      "role": "Ranged Assassin",
+      "difficulty": "Medium",
+      "price": "4000",
+      "qoute": "Tychus Findlay is a big man with a big ego and a bigger gun. Fortunately, his loyalty is easily won. Buy him a drink or three and promise him enough credits, and there's no job in the whole universe too dangerous for this outlaw."
+    },
+    "baseStats": {
+      "attackType": "Ranged",
+      "health": "1925",
+      "healthRegen": "4.0117",
+      "resourceAmount": "500",
+      "resourceType": "Mana",
+      "attackDamage": "50",
+      "attackSpeed": "4.00",
+      "attackRange": "4.5"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Tyrael",
+      "title": "Archangel of Justice",
+      "role": "Tank",
+      "difficulty": "Medium",
+      "price": "4000",
+      "qoute": "Among the angels it is the Archangel of Justice Tyrael who is humanity's greatest defender. Wielding his sword El'druin against the Burning Hells, the Prime Evils would have enslaved humanity long ago if Tyrael had not intervened."
+    },
+    "baseStats": {
+      "attackType": "Melee",
+      "health": "2517",
+      "healthRegen": "5.24",
+      "resourceAmount": "500",
+      "resourceType": "Mana",
+      "attackDamage": "78",
+      "attackSpeed": "1.25",
+      "attackRange": "1.5"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Tyrande",
+      "title": "High Priestess of Elune",
+      "role": "Healer",
+      "difficulty": "Medium",
+      "price": "4000",
+      "qoute": "Tyrande Whisperwind strikes fear into all who wish ill of the Kaldorei. As the highest ranking Sentinel and High Priestess of Elune, she is not only the Night Elves' most deadly warrior, but also their most cunning leader."
+    },
+    "baseStats": {
+      "attackType": "Ranged",
+      "health": "1511",
+      "healthRegen": "3.1484",
+      "resourceAmount": "500",
+      "resourceType": "Mana",
+      "attackDamage": "55",
+      "attackSpeed": "1.33",
+      "attackRange": "6"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Uther",
+      "title": "The Lightbringer",
+      "role": "Healer",
+      "difficulty": "Easy",
+      "price": "4000",
+      "qoute": "The first paladin and founder of the Order of the Silver Hand, Uther the Lightbringer is a faithful servant of the Light. Dispensing justice with the swing of his hammer, Uther is a bastion of truth and an unflinching symbol of the Alliance."
+    },
+    "baseStats": {
+      "attackType": "Melee",
+      "health": "2000",
+      "healthRegen": "4.168",
+      "resourceAmount": "500",
+      "resourceType": "Mana",
+      "attackDamage": "75",
+      "attackSpeed": "1",
+      "attackRange": "1"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Valeera",
+      "title": "Shadow of the Uncrowned",
+      "role": "Melee Assassin",
+      "difficulty": "Hard",
+      "price": "10000",
+      "qoute": "For a time, the gladiator Valeera Sanguinar served dutifully as one of Varian Wrynn's personal bodyguards. Now, her shadowy skills find her a natural fit within the secretive rogue order, the Uncrowned, in their fight against the Legion."
+    },
+    "baseStats": {
+      "attackType": "Melee",
+      "health": "2047",
+      "healthRegen": "4.2656",
+      "resourceAmount": "100",
+      "resourceType": "Energy",
+      "attackDamage": "79",
+      "attackSpeed": "2.00",
+      "attackRange": "1.25"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Valla",
+      "title": "Demon Hunter",
+      "role": "Ranged Assassin",
+      "difficulty": "Easy",
+      "price": "2000",
+      "qoute": "Valla witnessed the ferocity of hellspawn firsthand as the demons ravaged her village and left her for dead. Now, with no people to call her own, her only allegiance is to her cause: to rid Sanctuary of the demonic filth corrupting its lands."
+    },
+    "baseStats": {
+      "attackType": "Ranged",
+      "health": "1340",
+      "healthRegen": "2.7930",
+      "resourceAmount": "500",
+      "resourceType": "Mana",
+      "attackDamage": "75",
+      "attackSpeed": "1.67",
+      "attackRange": "5.5"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Varian",
+      "title": "High King of the Alliance",
+      "role": "Bruiser",
+      "difficulty": "Medium",
+      "price": "10000",
+      "qoute": "Few would have expected that the gladiator known only as Lo'Gosh was in truth the missing ruler of Stormwind, Varian Wrynn. Now the High King of the Alliance, his every action shapes the destiny of Azeroth itself."
+    },
+    "baseStats": {
+      "attackType": "Melee",
+      "health": "2116",
+      "healthRegen": "4.4062",
+      "resourceAmount": "500",
+      "resourceType": "Mana",
+      "attackDamage": "74",
+      "attackSpeed": "1.25",
+      "attackRange": "1.25"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Whitemane",
+      "title": "High Inquisitor",
+      "role": "Healer",
+      "difficulty": "Medium",
+      "price": "10000",
+      "qoute": "As the High Inquisitor of the Scarlet Crusade, Sally Whitemane zealously leads her champions in a neverending war against the undead. Under her guiding Light, all who have been touched by the plague of death will be purged by her cleansing flame... no matter how much they protest."
+    },
+    "baseStats": {
+      "attackType": "Melee",
+      "health": "1400",
+      "healthRegen": "2.9218",
+      "resourceAmount": "490",
+      "resourceType": "Mana",
+      "attackDamage": "62",
+      "attackSpeed": "1",
+      "attackRange": "5.5"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Xul",
+      "title": "Cryptic Necromancer",
+      "role": "Bruiser",
+      "difficulty": "Medium",
+      "price": "10000",
+      "qoute": "From the recesses of the eastern jungles comes a man cloaked in mystery. As a member of the secretive Priests of Rathma, or the Necromancers, Xul wields powerful death magic and fights to preserve the delicate balance between order and chaos."
+    },
+    "baseStats": {
+      "attackType": "Melee",
+      "health": "2080",
+      "healthRegen": "4.333",
+      "resourceAmount": "500",
+      "resourceType": "Mana",
+      "attackDamage": "95",
+      "attackSpeed": "1.2",
+      "attackRange": "1.5"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Yrel",
+      "title": "Light of Hope",
+      "role": "Bruiser",
+      "difficulty": "Medium",
+      "price": "10000",
+      "qoute": "After traveling to an Alternate Draenor, the forces of Azeroth saved the acolyte Yrel from the Iron Horde. With their aid, she rose to the rank of Exarch and fought back the demonic invasion of her world. Now, she finds herself where time, space, and dimensions converge: the Nexus."
+    },
+    "baseStats": {
+      "attackType": "Melee",
+      "health": "2678",
+      "healthRegen": "5.418",
+      "resourceAmount": "500",
+      "resourceType": "Mana",
+      "attackDamage": "155",
+      "attackSpeed": "0.77",
+      "attackRange": "1.5"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Zagara",
+      "title": "Broodmother of the Swarm",
+      "role": "Ranged Assassin",
+      "difficulty": "Medium",
+      "price": "4000",
+      "qoute": "If Kerrigan is the Queen of the Zerg, then Zagara is the mother of the brood. Cunning and tenacious, she commands her minions on the field of battle. Encounter her brood and beware: Mess with her children, and you answer to mama."
+    },
+    "baseStats": {
+      "attackType": "Ranged",
+      "health": "1575",
+      "healthRegen": "3.2812",
+      "resourceAmount": "500",
+      "resourceType": "Mana",
+      "attackDamage": "85",
+      "attackSpeed": "1.25",
+      "attackRange": "5.5"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Zarya",
+      "title": "Defender of Russia",
+      "role": "Support",
+      "difficulty": "Medium",
+      "price": "7000",
+      "qoute": "Aleksandra Zaryanova is one of the world's strongest women and was a promising athlete, but all that changed when the Siberian omnium reawakened. As a soldier in the Russian Defense Force, she now proudly uses her strength to protect the ones she loves."
+    },
+    "baseStats": {
+      "attackType": "Ranged",
+      "health": "2292",
+      "healthRegen": "4.7734",
+      "resourceAmount": "100",
+      "resourceType": "Energy",
+      "attackDamage": "20",
+      "attackSpeed": "4.00",
+      "attackRange": "4.5"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Zeratul",
+      "title": "Dark Prelate",
+      "role": "Melee Assassin",
+      "difficulty": "Hard",
+      "price": "10000",
+      "qoute": "The enigmatic Dark Templar Zeratul serves the Xel'Naga. While he expertly wields the power of the Void, it is his wisdom that earns him the respect of the Koprulu sector's leaders - despite his penchant for dramatic entrances."
+    },
+    "baseStats": {
+      "attackType": "Melee",
+      "health": "1622",
+      "healthRegen": "3.379",
+      "resourceAmount": "500",
+      "resourceType": "Mana",
+      "attackDamage": "126",
+      "attackSpeed": "1.11",
+      "attackRange": "1.5"
+    }
+  },
+  {
+    "basicInfo": {
+      "name": "Zul'jin",
+      "title": "Warlord of the Amani",
+      "role": "Ranged Assassin",
+      "difficulty": "Medium",
+      "price": "10000",
+      "qoute": "Before the elves and their Alliance, the forests of Lordaeron belonged to the trolls of the Amani empire. As their warlord, Zul'jin has united the tribes into an army that stands ready to take back what is theirs and to slay the elves who stole it from them."
+    },
+    "baseStats": {
+      "attackType": "Ranged",
+      "health": "1875",
+      "healthRegen": "3.9023",
+      "resourceAmount": "500",
+      "resourceType": "Mana",
+      "attackDamage": "94",
+      "attackSpeed": "1.25",
+      "attackRange": "5.5"
+    }
+  }
+]
