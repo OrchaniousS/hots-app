@@ -297,7 +297,7 @@
   },
   {
     "id": 37,
-    "name": "Kel'Thuzad",
+    "name": "Kelthuzad",
     "logo": "https://www.heroesfire.com/images/wikibase/icon/heroes/kelthuzad.png",
     "role": "Ranged Assassin",
     "difficulty": "Hard",
@@ -409,14 +409,22 @@
   },
   {
     "id": 51,
-    "name": "Mephisto",
-    "logo": "https://www.heroesfire.com/images/wikibase/icon/heroes/mephisto.png",
-    "role": "Ranged Assassin",
-    "difficulty": "",
-    "franchise": "Diablo"
+    "name": "Mei",
+    "logo": "https://www.heroesfire.com/images/wikibase/icon/heroes/mei.png",
+    "role": "Tank",
+    "difficulty": "Medium",
+    "franchise": "Overwatch"
   },
   {
     "id": 52,
+    "name": "Mephisto",
+    "logo": "https://www.heroesfire.com/images/wikibase/icon/heroes/mephisto.png",
+    "role": "Ranged Assassin",
+    "difficulty": "Medium",
+    "franchise": "Diablo"
+  },
+  {
+    "id": 53,
     "name": "Muradin",
     "logo": "https://www.heroesfire.com/images/wikibase/icon/heroes/muradin.png",
     "role": "Tank",
@@ -424,7 +432,7 @@
     "franchise": "Warcraft"
   },
   {
-    "id": 53,
+    "id": 54,
     "name": "Murky",
     "logo": "https://www.heroesfire.com/images/wikibase/icon/heroes/murky.png",
     "role": "Melee Assassin",
@@ -432,7 +440,7 @@
     "franchise": "Warcraft"
   },
   {
-    "id": 54,
+    "id": 55,
     "name": "Nazeebo",
     "logo": "https://www.heroesfire.com/images/wikibase/icon/heroes/nazeebo.png",
     "role": "Ranged Assassin",
@@ -440,7 +448,7 @@
     "franchise": "Diablo"
   },
   {
-    "id": 55,
+    "id": 56,
     "name": "Nova",
     "logo": "https://www.heroesfire.com/images/wikibase/icon/heroes/nova.png",
     "role": "Ranged Assassin",
@@ -448,7 +456,7 @@
     "franchise": "Starcraft"
   },
   {
-    "id": 56,
+    "id": 57,
     "name": "Orphea",
     "logo": "https://www.heroesfire.com/images/wikibase/icon/heroes/orphea.png",
     "role": "Ranged Assassin",
@@ -456,7 +464,7 @@
     "franchise": "Blizzard"
   },
   {
-    "id": 57,
+    "id": 58,
     "name": "Probius",
     "logo": "https://www.heroesfire.com/images/wikibase/icon/heroes/probius.png",
     "role": "Ranged Assassin",
@@ -464,7 +472,7 @@
     "franchise": "Starcraft"
   },
   {
-    "id": 58,
+    "id": 59,
     "name": "Qhira",
     "logo": "https://www.heroesfire.com/images/wikibase/icon/heroes/qhira.png",
     "role": "Melee Assassin",
@@ -472,7 +480,7 @@
     "franchise": "Blizzard"
   },
   {
-    "id": 59,
+    "id": 60,
     "name": "Ragnaros",
     "logo": "https://www.heroesfire.com/images/wikibase/icon/heroes/ragnaros.png",
     "role": "Bruiser",
@@ -480,7 +488,7 @@
     "franchise": "Warcraft"
   },
   {
-    "id": 60,
+    "id": 61,
     "name": "Raynor",
     "logo": "https://www.heroesfire.com/images/wikibase/icon/heroes/raynor.png",
     "role": "Ranged Assassin",
@@ -488,7 +496,7 @@
     "franchise": "Starcraft"
   },
   {
-    "id": 61,
+    "id": 62,
     "name": "Rehgar",
     "logo": "https://www.heroesfire.com/images/wikibase/icon/heroes/rehgar.png",
     "role": "Healer",
@@ -496,7 +504,7 @@
     "franchise": "Warcraft"
   },
   {
-    "id": 62,
+    "id": 63,
     "name": "Rexxar",
     "logo": "https://www.heroesfire.com/images/wikibase/icon/heroes/rexxar.png",
     "role": "Bruiser",
@@ -504,7 +512,7 @@
     "franchise": "Warcraft"
   },
   {
-    "id": 63,
+    "id": 64,
     "name": "Samuro",
     "logo": "https://www.heroesfire.com/images/wikibase/icon/heroes/samuro.png",
     "role": "Melee Assassin",
@@ -512,7 +520,7 @@
     "franchise": "Warcraft"
   },
   {
-    "id": 64,
+    "id": 65,
     "name": "Sgt. Hammer",
     "logo": "https://www.heroesfire.com/images/wikibase/icon/heroes/sgt-hammer.png",
     "role": "Ranged Assassin",
@@ -520,7 +528,7 @@
     "franchise": "Starcraft"
   },
   {
-    "id": 65,
+    "id": 66,
     "name": "Sonya",
     "logo": "https://www.heroesfire.com/images/wikibase/icon/heroes/sonya.png",
     "role": "Bruiser",
@@ -528,7 +536,7 @@
     "franchise": "Diablo"
   },
   {
-    "id": 66,
+    "id": 67,
     "name": "Stitches",
     "logo": "https://www.heroesfire.com/images/wikibase/icon/heroes/stitches.png",
     "role": "Tank",
@@ -536,7 +544,7 @@
     "franchise": "Warcraft"
   },
   {
-    "id": 67,
+    "id": 68,
     "name": "Stukov",
     "logo": "https://www.heroesfire.com/images/wikibase/icon/heroes/stukov.png",
     "role": "Healer",
@@ -544,7 +552,7 @@
     "franchise": "Starcraft"
   },
   {
-    "id": 68,
+    "id": 69,
     "name": "Sylvanas",
     "logo": "https://www.heroesfire.com/images/wikibase/icon/heroes/sylvanas.png",
     "role": "Ranged Assassin",
@@ -552,7 +560,7 @@
     "franchise": "Warcraft"
   },
   {
-    "id": 69,
+    "id": 70,
     "name": "Tassadar",
     "logo": "https://www.heroesfire.com/images/wikibase/icon/heroes/tassadar.png",
     "role": "Support",
@@ -560,7 +568,7 @@
     "franchise": "Starcraft"
   },
   {
-    "id": 70,
+    "id": 71,
     "name": "The Butcher",
     "logo": "https://www.heroesfire.com/images/wikibase/icon/heroes/the-butcher.png",
     "role": "Melee Assassin",
@@ -568,7 +576,7 @@
     "franchise": "Diablo"
   },
   {
-    "id": 71,
+    "id": 72,
     "name": "The Lost Vikings",
     "logo": "https://www.heroesfire.com/images/wikibase/icon/heroes/the-lost-vikings.png",
     "role": "Support",
@@ -576,7 +584,7 @@
     "franchise": "Blizzard"
   },
   {
-    "id": 72,
+    "id": 73,
     "name": "Thrall",
     "logo": "https://www.heroesfire.com/images/wikibase/icon/heroes/thrall.png",
     "role": "Bruiser",
@@ -584,7 +592,7 @@
     "franchise": "Warcraft"
   },
   {
-    "id": 73,
+    "id": 74,
     "name": "Tracer",
     "logo": "https://www.heroesfire.com/images/wikibase/icon/heroes/tracer.png",
     "role": "Ranged Assassin",
@@ -592,7 +600,7 @@
     "franchise": "Overwatch"
   },
   {
-    "id": 74,
+    "id": 75,
     "name": "Tychus",
     "logo": "https://www.heroesfire.com/images/wikibase/icon/heroes/tychus.png",
     "role": "Ranged Assassin",
@@ -600,7 +608,7 @@
     "franchise": "Starcraft"
   },
   {
-    "id": 75,
+    "id": 76,
     "name": "Tyrael",
     "logo": "https://www.heroesfire.com/images/wikibase/icon/heroes/tyrael.png",
     "role": "Tank",
@@ -608,7 +616,7 @@
     "franchise": "Diablo"
   },
   {
-    "id": 76,
+    "id": 77,
     "name": "Tyrande",
     "logo": "https://www.heroesfire.com/images/wikibase/icon/heroes/tyrande.png",
     "role": "Healer",
@@ -616,7 +624,7 @@
     "franchise": "Warcraft"
   },
   {
-    "id": 77,
+    "id": 78,
     "name": "Uther",
     "logo": "https://www.heroesfire.com/images/wikibase/icon/heroes/uther.png",
     "role": "Healer",
@@ -624,7 +632,7 @@
     "franchise": "Warcraft"
   },
   {
-    "id": 78,
+    "id": 79,
     "name": "Valeera",
     "logo": "https://www.heroesfire.com/images/wikibase/icon/heroes/valeera.png",
     "role": "Melee Assassin",
@@ -632,7 +640,7 @@
     "franchise": "Warcraft"
   },
   {
-    "id": 79,
+    "id": 80,
     "name": "Valla",
     "logo": "https://www.heroesfire.com/images/wikibase/icon/heroes/valla.png",
     "role": "Ranged Assassin",
@@ -640,7 +648,7 @@
     "franchise": "Diablo"
   },
   {
-    "id": 80,
+    "id": 81,
     "name": "Varian",
     "logo": "https://www.heroesfire.com/images/wikibase/icon/heroes/varian.png",
     "role": "Bruiser",
@@ -648,7 +656,7 @@
     "franchise": "Warcraft"
   },
   {
-    "id": 81,
+    "id": 82,
     "name": "Whitemane",
     "logo": "https://www.heroesfire.com/images/wikibase/icon/heroes/whitemane.png",
     "role": "Healer",
@@ -656,7 +664,7 @@
     "franchise": "Warcraft"
   },
   {
-    "id": 82,
+    "id": 83,
     "name": "Xul",
     "logo": "https://www.heroesfire.com/images/wikibase/icon/heroes/xul.png",
     "role": "Bruiser",
@@ -664,7 +672,7 @@
     "franchise": "Diablo"
   },
   {
-    "id": 83,
+    "id": 84,
     "name": "Yrel",
     "logo": "https://www.heroesfire.com/images/wikibase/icon/heroes/yrel.png",
     "role": "Bruiser",
@@ -672,7 +680,7 @@
     "franchise": "Warcraft"
   },
   {
-    "id": 84,
+    "id": 85,
     "name": "Zagara",
     "logo": "https://www.heroesfire.com/images/wikibase/icon/heroes/zagara.png",
     "role": "Ranged Assassin",
@@ -680,7 +688,7 @@
     "franchise": "Starcraft"
   },
   {
-    "id": 85,
+    "id": 86,
     "name": "Zarya",
     "logo": "https://www.heroesfire.com/images/wikibase/icon/heroes/zarya.png",
     "role": "Support",
@@ -688,7 +696,7 @@
     "franchise": "Overwatch"
   },
   {
-    "id": 86,
+    "id": 87,
     "name": "Zeratul",
     "logo": "https://www.heroesfire.com/images/wikibase/icon/heroes/zeratul.png",
     "role": "Melee Assassin",
@@ -696,7 +704,7 @@
     "franchise": "Starcraft"
   },
   {
-    "id": 87,
+    "id": 88,
     "name": "Zul'jin",
     "logo": "https://www.heroesfire.com/images/wikibase/icon/heroes/zuljin.png",
     "role": "Ranged Assassin",

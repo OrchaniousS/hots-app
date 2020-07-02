@@ -1,6 +1,9 @@
 const puppeteer = require("puppeteer");
 const fs = require("fs");
 
+const url = "https://www.heroesfire.com/hots/wiki/heroes";
+testScrape(url);
+
 async function testScrape(url) {
   const browser = await puppeteer.launch({ headless: false });
   const page = await browser.newPage();
@@ -25,7 +28,6 @@ async function testScrape(url) {
             franchise: compact
               .querySelector("div.stat:nth-child(4)")
               .innerText.trim(),
-            //title: compact.$x('//*[@id="chapter"]/div/table/tbody/tr/td[2]/table/tbody/tr[1]/td/table/tbody/tr/td[1]/text()[1]').getProperty('textContent'),
           })
         )
       );
@@ -38,13 +40,8 @@ async function testScrape(url) {
     default:
       console.log(`url is not right : ${url}`);
   }
-
   browser.close();
 }
-
-const url = "https://www.heroesfire.com/hots/wiki/heroes";
-testScrape(url);
-
 // getting info from chrome console -
 // Array.from(document.querySelectorAll('a.card-wrap')).map((item)=>item.innerText.trim())
 // heroes names

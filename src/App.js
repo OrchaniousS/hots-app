@@ -14,6 +14,7 @@ class App extends Component {
     heroesTitle: "Heroes",
     mapsTitle: "Maps quick info",
     links: ["Home", "Heroes", "Maps"],
+    paths: ["/", "/heroes", "/maps"],
   };
 
   render() {
@@ -22,6 +23,7 @@ class App extends Component {
         <div className={styles.app}>
           <header>
             <Navbar
+              paths={this.state.paths}
               links={this.state.links}
               title={this.state.navTitle}
             ></Navbar>

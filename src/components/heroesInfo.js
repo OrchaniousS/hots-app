@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { PureComponent } from "react";
 import { Route, BrowserRouter, Switch } from "react-router-dom";
 
 // import styles from "../app.module.css";
@@ -6,11 +6,14 @@ import * as data from "../data/jsonData/heroData.json";
 import Heroes from "../components/heroes";
 import HeroesData from "../data/heroesData/heroesData";
 
-class HeroStats extends Component {
+class HeroStats extends PureComponent {
+  state = {
+    heroStatsJson: JSON.parse(JSON.stringify(data)).default,
+    heroIdInfo: this.props.heroId,
+  };
   heroURL = () =>
-    JSON.parse(JSON.stringify(data)).default.map((link, index) => (
+    this.state.heroStatsJson.map((link, index) => (
       <div key={index}>
-        {/* {console.log(this.props)} */}
         <Route
           exact
           path={`/heroes/${link.name.toLowerCase()}`}

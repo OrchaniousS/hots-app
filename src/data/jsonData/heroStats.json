@@ -1021,6 +1021,26 @@
   },
   {
     "basicInfo": {
+      "name": "Mei",
+      "title": "Adventuring Climatologist",
+      "role": "Tank",
+      "difficulty": "Medium",
+      "price": "15000",
+      "qoute": "A brilliant mind with a sunny disposition, Dr. Mei-Ling Zhou joined Overwatch to help solve the world's growing climate problems. Armed with a host of weather-altering technologies, Mei now fights to protect her friends and secure a future for a troubled world."
+    },
+    "baseStats": {
+      "attackType": "Ranged",
+      "health": "2675",
+      "healthRegen": "5.5742",
+      "resourceAmount": "500",
+      "resourceType": "Mana",
+      "attackDamage": "78",
+      "attackSpeed": "1.0",
+      "attackRange": "4.5"
+    }
+  },
+  {
+    "basicInfo": {
       "name": "Mephisto",
       "title": "Lord of Hatred",
       "role": "Ranged Assassin",

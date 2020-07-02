@@ -1,98 +1,100 @@
-import React, { Component } from "react";
+import React, { PureComponent } from "react";
 import { Link } from "react-router-dom";
 
 import styles from "../../app.module.css";
 import * as data from "../jsonData/heroData.json";
 
-class HeroesData extends Component {
-  state = {
-    heroInfoJson: JSON.parse(JSON.stringify(data)).default,
-    heroId: [],
-  };
-
-  componentDidMount() {
-    let heroSidePG = () => {
-      for (let infoById of this.state.heroInfoJson) {
-        console.log(infoById);
-      }
+class HeroesData extends PureComponent {
+  constructor() {
+    super();
+    this.state = {
+      heroInfoJson: JSON.parse(JSON.stringify(data)).default,
+      indexNum: "",
+      displayPanelMode: "",
     };
-    this.setState({
-      heroId: heroSidePG,
-    });
-    console.log(heroSidePG());
-    // console.log(this.state.heroInfoJson);
   }
 
-  heroGenerator = () => {
-    let heroGene = this.state.heroInfoJson.map((compact) => {
-      return (
-        <div>
-          <div
-            onClick={() => this.onClickHeroPanel()}
-            key={compact.id}
-            className={styles.heroGrid}
-            heroUniqer={this.state.heroId}
-          >
-            {/* <Link
-            className={styles.heroLink}
-            to={`heroes/${compact.name.toLowerCase()}`}
-          > */}
-            <div className={styles.heroPersonal}>
-              <div className={styles.heroPersonalImg}>
-                <div>{compact.name}</div>
-                <img alt="heroIcon" src={compact.logo}></img>
-              </div>
-            </div>
-            {/* </Link> */}
-          </div>
-        </div>
-      );
-    });
-    return heroGene;
-  };
-
-  onClickHeroPanel = () => {
-    document.querySelector("div.app_heroPanelContainer__3Ai7v").style.display =
-      "block";
-  };
+  windowScroll() {
+    window.onscroll = () => {
+      return document.querySelector("#heroPanelFixed") === ""
+        ? null
+        : document.querySelector("#heroPanelFixed") === null
+        ? null
+        : (document.querySelector("#heroPanelFixed").style.position = "fixed");
+    };
+  }
 
   heroSidePanelGenerator = () => {
-    let heroPanelGene = this.state.heroInfoJson.map((compact) => {
-      // console.log(
-      //   compact.id == "0"
-      //     ? compact.id + " " + compact.name
-      //     : "hero doesnt exist"
-      // );
-      return (
-        <div className={styles.heroPanelMoveable}>
-          <div>
-            <div className={styles.heroPanelImage}>
-              <img
-                className={styles.heroPanelImageImg}
-                alt="dw"
-                src="https://static.heroesofthestorm.com/images/hero-select/card-portraits/deathwing-b007b23426.jpg"
-              />
-            </div>
-            <div className={styles.heroPanelFixed}>
-              <div className={styles.heroPanelInfo}>
+    return this.state.indexNum === "" ? null : (
+      <div className={styles.heroPanelMoveable}>
+        <div
+          id="heroPanelFixed"
+          render={this.windowScroll()}
+          className={styles.heroPanelFixed}
+        >
+          <div className={styles.heroPanelCard}>
+            <div className={styles.heroPanelInfo}>
+              <div className={styles.heroPanelImage}>
+                <img
+                  alt="dw"
+                  src="https://static.heroesofthestorm.com/images/hero-select/card-portraits/deathwing-b007b23426.jpg"
+                />
+              </div>
+              <div className={styles.heroPanelBottom}>
                 <div className={styles.heroPanelMainInfo}>
-                  <h1>{compact.name}</h1>
-                  <div>
-                    <div>Role: {compact.role}</div>
-                    <div>Difficulty: A</div>
-                    <div>Franchise: A</div>
+                  <div className={styles.heroTable}>
+                    <h1>{this.state.heroInfoJson[this.state.indexNum].name}</h1>
+                    {typeof this.state.heroInfoJson[this.state.indexNum] ===
+                    "undefined" ? null : (
+                      <table>
+                        <tbody>
+                          <tr>
+                            <th>Role</th>
+                            <td>
+                              {
+                                this.state.heroInfoJson[this.state.indexNum]
+                                  .role
+                              }
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>Difficulty</th>
+                            <td>
+                              {
+                                this.state.heroInfoJson[this.state.indexNum]
+                                  .difficulty
+                              }
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>Franchise</th>
+                            <td>
+                              {
+                                this.state.heroInfoJson[this.state.indexNum]
+                                  .franchise
+                              }
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    )}
                   </div>
                 </div>
-                <Link className={styles.heroLink} to={`heroes/deathwing`}>
-                  More
-                </Link>
+                <div className={styles.heroLink}>
+                  <Link
+                    to={`heroes/${
+                      this.state.heroInfoJson[this.state.indexNum].name
+                    }`}
+                  >
+                    More
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      );
-    });
-    return heroPanelGene;
+      </div>
+    );
   };
 
   render() {
@@ -104,9 +106,30 @@ class HeroesData extends Component {
           </div>
           <div className={styles.heroContainer}>
             <div className={styles.heroGridRowColumon}>
-              {this.heroGenerator()}
+              {this.state.heroInfoJson.map((compact) => {
+                return (
+                  <div key={compact.id}>
+                    <div
+                      className={styles.heroGrid}
+                      onClick={() => {
+                        this.setState({
+                          indexNum: compact.id,
+                        });
+                      }}
+                    >
+                      {}
+                      <div className={styles.heroPersonal}>
+                        <div className={styles.heroPersonalImg}>
+                          <div>{compact.name}</div>
+                          <img alt="heroIcon" src={compact.logo}></img>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
             </div>
-            <div className={styles.heroPanelContainer}>
+            <div id="heroPanelC" className={styles.heroPanelContainer}>
               <div className={styles.heroPanelMoveable}>
                 {this.heroSidePanelGenerator()}
               </div>
