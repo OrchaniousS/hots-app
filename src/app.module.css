@@ -593,3 +593,22 @@ nav h2 a {
 }
 
 /*-- Single Hero Info page----*/
+
+/* -- Map page --*/
+
+.mapHexUnit {
+  display: flex;
+  flex-direction: row;
+  /* width: 800px; */
+}
+.mapHexagonBG {
+  background-image: url("/images/general/mapHexagon.png");
+  /* width: 8%;
+  height: 8%; */
+}
+.mapWiderImg img {
+  width: 25%;
+  height: 25%;
+}
+
+/* -- Map page --*/
