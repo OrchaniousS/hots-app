@@ -1,0 +1,7575 @@
+[
+  {
+    "heroName": "Abathur",
+    "heroCounter": [
+      {
+        "heroCounterName": "dehaka"
+      },
+      {
+        "heroCounterName": "falstad"
+      },
+      {
+        "heroCounterName": "ragnaros"
+      },
+      {
+        "heroCounterName": "zarya"
+      },
+      {
+        "heroCounterName": "sylvanas"
+      },
+      {
+        "heroCounterName": "sgt-hammer"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "illidan"
+      },
+      {
+        "heroSynergyName": "zeratul"
+      },
+      {
+        "heroSynergyName": "tracer"
+      },
+      {
+        "heroSynergyName": "greymane"
+      },
+      {
+        "heroSynergyName": "genji"
+      },
+      {
+        "heroSynergyName": "malthael"
+      },
+      {
+        "heroSynergyName": "yrel"
+      },
+      {
+        "heroSynergyName": "sonya"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Alterac Pass"
+      },
+      {
+        "strongMapName": "Cursed Hollow"
+      },
+      {
+        "strongMapName": "Garden of Terror"
+      },
+      {
+        "strongMapName": "Sky Temple"
+      },
+      {
+        "strongMapName": "Towers of Doom"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Blackheart's Bay"
+      },
+      {
+        "naturalMapName": "Dragon Shire"
+      },
+      {
+        "naturalMapName": "Infernal Shrines"
+      },
+      {
+        "naturalMapName": "Warhead Junction"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "Battlefield of Eternity"
+      },
+      {
+        "weakMapName": "Braxis Holdout"
+      },
+      {
+        "weakMapName": "Hanamura Temple"
+      },
+      {
+        "weakMapName": "Tomb of the Spider Queen"
+      },
+      {
+        "weakMapName": "Volskaya Foundry"
+      }
+    ]
+  },
+  {
+    "heroName": "Alarak",
+    "heroCounter": [
+      {
+        "heroCounterName": "e.t.c."
+      },
+      {
+        "heroCounterName": "johanna"
+      },
+      {
+        "heroCounterName": "deathwing"
+      },
+      {
+        "heroCounterName": "medivh"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "raynor"
+      },
+      {
+        "heroSynergyName": "jaina"
+      },
+      {
+        "heroSynergyName": "e.t.c."
+      },
+      {
+        "heroSynergyName": "garrosh"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Battlefield of Eternity"
+      },
+      {
+        "strongMapName": "Towers of Doom"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Alterac Pass"
+      },
+      {
+        "naturalMapName": "Braxis Holdout"
+      },
+      {
+        "naturalMapName": "Cursed Hollow"
+      },
+      {
+        "naturalMapName": "Dragon Shire"
+      },
+      {
+        "naturalMapName": "Garden of Terror"
+      },
+      {
+        "naturalMapName": "Hanamura Temple"
+      },
+      {
+        "naturalMapName": "Tomb of the Spider Queen"
+      },
+      {
+        "naturalMapName": "Volskaya Foundry"
+      },
+      {
+        "naturalMapName": "Warhead Junction"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "Blackheart's Bay"
+      },
+      {
+        "weakMapName": "Infernal Shrines"
+      },
+      {
+        "weakMapName": "Sky Temple"
+      }
+    ]
+  },
+  {
+    "heroName": "Alexstrasza",
+    "heroCounter": [
+      {
+        "heroCounterName": "anubarak"
+      },
+      {
+        "heroCounterName": "yrel"
+      },
+      {
+        "heroCounterName": "kaelthas"
+      },
+      {
+        "heroCounterName": "sylvanas"
+      },
+      {
+        "heroCounterName": "ana"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "johanna"
+      },
+      {
+        "heroSynergyName": "blaze"
+      },
+      {
+        "heroSynergyName": "kaelthas"
+      },
+      {
+        "heroSynergyName": "azmodan"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Infernal Shrines"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Alterac Pass"
+      },
+      {
+        "naturalMapName": "Cursed Hollow"
+      },
+      {
+        "naturalMapName": "Sky Temple"
+      },
+      {
+        "naturalMapName": "Volskaya Foundry"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "Battlefield of Eternity"
+      },
+      {
+        "weakMapName": "Blackheart's Bay"
+      },
+      {
+        "weakMapName": "Braxis Holdout"
+      },
+      {
+        "weakMapName": "Dragon Shire"
+      },
+      {
+        "weakMapName": "Garden of Terror"
+      },
+      {
+        "weakMapName": "Hanamura Temple"
+      },
+      {
+        "weakMapName": "Tomb of the Spider Queen"
+      },
+      {
+        "weakMapName": "Towers of Doom"
+      },
+      {
+        "weakMapName": "Warhead Junction"
+      }
+    ]
+  },
+  {
+    "heroName": "Ana",
+    "heroCounter": [
+      {
+        "heroCounterName": "anubarak"
+      },
+      {
+        "heroCounterName": "zeratul"
+      },
+      {
+        "heroCounterName": "hanzo"
+      },
+      {
+        "heroCounterName": "lucio"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "e.t.c."
+      },
+      {
+        "heroSynergyName": "li-ming"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Hanamura Temple"
+      },
+      {
+        "strongMapName": "Tomb of the Spider Queen"
+      },
+      {
+        "strongMapName": "Towers of Doom"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Alterac Pass"
+      },
+      {
+        "naturalMapName": "Battlefield of Eternity"
+      },
+      {
+        "naturalMapName": "Braxis Holdout"
+      },
+      {
+        "naturalMapName": "Dragon Shire"
+      },
+      {
+        "naturalMapName": "Infernal Shrines"
+      },
+      {
+        "naturalMapName": "Volskaya Foundry"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "Blackheart's Bay"
+      },
+      {
+        "weakMapName": "Cursed Hollow"
+      },
+      {
+        "weakMapName": "Garden of Terror"
+      },
+      {
+        "weakMapName": "Sky Temple"
+      },
+      {
+        "weakMapName": "Warhead Junction"
+      }
+    ]
+  },
+  {
+    "heroName": "Anduin",
+    "heroCounter": [
+      {
+        "heroCounterName": "ana"
+      },
+      {
+        "heroCounterName": "illidan"
+      },
+      {
+        "heroCounterName": "tracer"
+      },
+      {
+        "heroCounterName": "diablo"
+      },
+      {
+        "heroCounterName": "falstad"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "diablo"
+      },
+      {
+        "heroSynergyName": "garrosh"
+      },
+      {
+        "heroSynergyName": "jaina"
+      },
+      {
+        "heroSynergyName": "raynor"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Alterac Pass"
+      },
+      {
+        "strongMapName": "Battlefield of Eternity"
+      },
+      {
+        "strongMapName": "Dragon Shire"
+      },
+      {
+        "strongMapName": "Tomb of the Spider Queen"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Blackheart's Bay"
+      },
+      {
+        "naturalMapName": "Braxis Holdout"
+      },
+      {
+        "naturalMapName": "Cursed Hollow"
+      },
+      {
+        "naturalMapName": "Garden of Terror"
+      },
+      {
+        "naturalMapName": "Hanamura Temple"
+      },
+      {
+        "naturalMapName": "Infernal Shrines"
+      },
+      {
+        "naturalMapName": "Sky Temple"
+      },
+      {
+        "naturalMapName": "Towers of Doom"
+      },
+      {
+        "naturalMapName": "Volskaya Foundry"
+      },
+      {
+        "naturalMapName": "Warhead Junction"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "None"
+      }
+    ]
+  },
+  {
+    "heroName": "Anub'arak",
+    "heroCounter": [
+      {
+        "heroCounterName": "leoric"
+      },
+      {
+        "heroCounterName": "malthael"
+      },
+      {
+        "heroCounterName": "tracer"
+      },
+      {
+        "heroCounterName": "valla"
+      },
+      {
+        "heroCounterName": "varian"
+      },
+      {
+        "heroCounterName": "zuljin"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "greymane"
+      },
+      {
+        "heroSynergyName": "jaina"
+      },
+      {
+        "heroSynergyName": "kaelthas"
+      },
+      {
+        "heroSynergyName": "kerrigan"
+      },
+      {
+        "heroSynergyName": "rehgar"
+      },
+      {
+        "heroSynergyName": "the-butcher"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Dragon Shire"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Alterac Pass"
+      },
+      {
+        "naturalMapName": "Blackheart's Bay"
+      },
+      {
+        "naturalMapName": "Braxis Holdout"
+      },
+      {
+        "naturalMapName": "Cursed Hollow"
+      },
+      {
+        "naturalMapName": "Garden of Terror"
+      },
+      {
+        "naturalMapName": "Hanamura Temple"
+      },
+      {
+        "naturalMapName": "Sky Temple"
+      },
+      {
+        "naturalMapName": "Tomb of the Spider Queen"
+      },
+      {
+        "naturalMapName": "Towers of Doom"
+      },
+      {
+        "naturalMapName": "Volskaya Foundry"
+      },
+      {
+        "naturalMapName": "Warhead Junction"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "Battlefield of Eternity"
+      },
+      {
+        "weakMapName": "Infernal Shrines"
+      }
+    ]
+  },
+  {
+    "heroName": "Artanis",
+    "heroCounter": [
+      {
+        "heroCounterName": "e.t.c."
+      },
+      {
+        "heroCounterName": "arthas"
+      },
+      {
+        "heroCounterName": "varian"
+      },
+      {
+        "heroCounterName": "jaina"
+      },
+      {
+        "heroCounterName": "lunara"
+      },
+      {
+        "heroCounterName": "li-li"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "garrosh"
+      },
+      {
+        "heroSynergyName": "arthas"
+      },
+      {
+        "heroSynergyName": "kaelthas"
+      },
+      {
+        "heroSynergyName": "lunara"
+      },
+      {
+        "heroSynergyName": "medivh"
+      },
+      {
+        "heroSynergyName": "malfurion"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Battlefield of Eternity"
+      },
+      {
+        "strongMapName": "Hanamura Temple"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Blackheart's Bay"
+      },
+      {
+        "naturalMapName": "Cursed Hollow"
+      },
+      {
+        "naturalMapName": "Garden of Terror"
+      },
+      {
+        "naturalMapName": "Sky Temple"
+      },
+      {
+        "naturalMapName": "Tomb of the Spider Queen"
+      },
+      {
+        "naturalMapName": "Warhead Junction"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "Alterac Pass"
+      },
+      {
+        "weakMapName": "Braxis Holdout"
+      },
+      {
+        "weakMapName": "Dragon Shire"
+      },
+      {
+        "weakMapName": "Infernal Shrines"
+      },
+      {
+        "weakMapName": "Towers of Doom"
+      },
+      {
+        "weakMapName": "Volskaya Foundry"
+      }
+    ]
+  },
+  {
+    "heroName": "Arthas",
+    "heroCounter": [
+      {
+        "heroCounterName": "garrosh"
+      },
+      {
+        "heroCounterName": "sonya"
+      },
+      {
+        "heroCounterName": "tracer"
+      },
+      {
+        "heroCounterName": "raynor"
+      },
+      {
+        "heroCounterName": "jaina"
+      },
+      {
+        "heroCounterName": "ana"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "diablo"
+      },
+      {
+        "heroSynergyName": "tyrael"
+      },
+      {
+        "heroSynergyName": "maiev"
+      },
+      {
+        "heroSynergyName": "greymane"
+      },
+      {
+        "heroSynergyName": "raynor"
+      },
+      {
+        "heroSynergyName": "chromie"
+      },
+      {
+        "heroSynergyName": "zarya"
+      },
+      {
+        "heroSynergyName": "stukov"
+      },
+      {
+        "heroSynergyName": "rehgar"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Battlefield of Eternity"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Alterac Pass"
+      },
+      {
+        "naturalMapName": "Blackheart's Bay"
+      },
+      {
+        "naturalMapName": "Cursed Hollow"
+      },
+      {
+        "naturalMapName": "Hanamura Temple"
+      },
+      {
+        "naturalMapName": "Infernal Shrines"
+      },
+      {
+        "naturalMapName": "Sky Temple"
+      },
+      {
+        "naturalMapName": "Tomb of the Spider Queen"
+      },
+      {
+        "naturalMapName": "Towers of Doom"
+      },
+      {
+        "naturalMapName": "Volskaya Foundry"
+      },
+      {
+        "naturalMapName": "Warhead Junction"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "Braxis Holdout"
+      },
+      {
+        "weakMapName": "Dragon Shire"
+      },
+      {
+        "weakMapName": "Garden of Terror"
+      }
+    ]
+  },
+  {
+    "heroName": "Auriel",
+    "heroCounter": [
+      {
+        "heroCounterName": "the-butcher"
+      },
+      {
+        "heroCounterName": "tyrande"
+      },
+      {
+        "heroCounterName": "kerrigan"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "cho"
+      },
+      {
+        "heroSynergyName": "gall"
+      },
+      {
+        "heroSynergyName": "guldan"
+      },
+      {
+        "heroSynergyName": "valla"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Braxis Holdout"
+      },
+      {
+        "strongMapName": "Dragon Shire"
+      },
+      {
+        "strongMapName": "Infernal Shrines"
+      },
+      {
+        "strongMapName": "Tomb of the Spider Queen"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Alterac Pass"
+      },
+      {
+        "naturalMapName": "Battlefield of Eternity"
+      },
+      {
+        "naturalMapName": "Cursed Hollow"
+      },
+      {
+        "naturalMapName": "Garden of Terror"
+      },
+      {
+        "naturalMapName": "Hanamura Temple"
+      },
+      {
+        "naturalMapName": "Towers of Doom"
+      },
+      {
+        "naturalMapName": "Volskaya Foundry"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "Blackheart's Bay"
+      },
+      {
+        "weakMapName": "Sky Temple"
+      },
+      {
+        "weakMapName": "Warhead Junction"
+      }
+    ]
+  },
+  {
+    "heroName": "Azmodan",
+    "heroCounter": [
+      {
+        "heroCounterName": "artanis"
+      },
+      {
+        "heroCounterName": "anubarak"
+      },
+      {
+        "heroCounterName": "diablo"
+      },
+      {
+        "heroCounterName": "leoric"
+      },
+      {
+        "heroCounterName": "malthael"
+      },
+      {
+        "heroCounterName": "muradin"
+      },
+      {
+        "heroCounterName": "sonya"
+      },
+      {
+        "heroCounterName": "the-butcher"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "jaina"
+      },
+      {
+        "heroSynergyName": "johanna"
+      },
+      {
+        "heroSynergyName": "maiev"
+      },
+      {
+        "heroSynergyName": "malfurion"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Infernal Shrines"
+      },
+      {
+        "strongMapName": "Tomb of the Spider Queen"
+      },
+      {
+        "strongMapName": "Warhead Junction"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Alterac Pass"
+      },
+      {
+        "naturalMapName": "Battlefield of Eternity"
+      },
+      {
+        "naturalMapName": "Blackheart's Bay"
+      },
+      {
+        "naturalMapName": "Cursed Hollow"
+      },
+      {
+        "naturalMapName": "Dragon Shire"
+      },
+      {
+        "naturalMapName": "Garden of Terror"
+      },
+      {
+        "naturalMapName": "Hanamura Temple"
+      },
+      {
+        "naturalMapName": "Sky Temple"
+      },
+      {
+        "naturalMapName": "Towers of Doom"
+      },
+      {
+        "naturalMapName": "Volskaya Foundry"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "Braxis Holdout"
+      }
+    ]
+  },
+  {
+    "heroName": "Blaze",
+    "heroCounter": [
+      {
+        "heroCounterName": "leoric"
+      },
+      {
+        "heroCounterName": "lunara"
+      },
+      {
+        "heroCounterName": "malthael"
+      },
+      {
+        "heroCounterName": "nova"
+      },
+      {
+        "heroCounterName": "tracer"
+      },
+      {
+        "heroCounterName": "valla"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "arthas"
+      },
+      {
+        "heroSynergyName": "kerrigan"
+      },
+      {
+        "heroSynergyName": "maiev"
+      },
+      {
+        "heroSynergyName": "malfurion"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Infernal Shrines"
+      },
+      {
+        "strongMapName": "Sky Temple"
+      },
+      {
+        "strongMapName": "Towers of Doom"
+      },
+      {
+        "strongMapName": "Volskaya Foundry"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Alterac Pass"
+      },
+      {
+        "naturalMapName": "Battlefield of Eternity"
+      },
+      {
+        "naturalMapName": "Blackheart's Bay"
+      },
+      {
+        "naturalMapName": "Braxis Holdout"
+      },
+      {
+        "naturalMapName": "Cursed Hollow"
+      },
+      {
+        "naturalMapName": "Dragon Shire"
+      },
+      {
+        "naturalMapName": "Garden of Terror"
+      },
+      {
+        "naturalMapName": "Hanamura Temple"
+      },
+      {
+        "naturalMapName": "Tomb of the Spider Queen"
+      },
+      {
+        "naturalMapName": "Warhead Junction"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "None"
+      }
+    ]
+  },
+  {
+    "heroName": "Brightwing",
+    "heroCounter": [
+      {
+        "heroCounterName": "anubarak"
+      },
+      {
+        "heroCounterName": "johanna"
+      },
+      {
+        "heroCounterName": "deathwing"
+      },
+      {
+        "heroCounterName": "e.t.c."
+      },
+      {
+        "heroCounterName": "fenix"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "dehaka"
+      },
+      {
+        "heroSynergyName": "falstad"
+      },
+      {
+        "heroSynergyName": "medivh"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Alterac Pass"
+      },
+      {
+        "strongMapName": "Cursed Hollow"
+      },
+      {
+        "strongMapName": "Sky Temple"
+      },
+      {
+        "strongMapName": "Towers of Doom"
+      },
+      {
+        "strongMapName": "Warhead Junction"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Battlefield of Eternity"
+      },
+      {
+        "naturalMapName": "Blackheart's Bay"
+      },
+      {
+        "naturalMapName": "Braxis Holdout"
+      },
+      {
+        "naturalMapName": "Dragon Shire"
+      },
+      {
+        "naturalMapName": "Garden of Terror"
+      },
+      {
+        "naturalMapName": "Hanamura Temple"
+      },
+      {
+        "naturalMapName": "Infernal Shrines"
+      },
+      {
+        "naturalMapName": "Volskaya Foundry"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "Tomb of the Spider Queen"
+      }
+    ]
+  },
+  {
+    "heroName": "Cassia",
+    "heroCounter": [
+      {
+        "heroCounterName": "kaelthas"
+      },
+      {
+        "heroCounterName": "guldan"
+      },
+      {
+        "heroCounterName": "sgt-hammer"
+      },
+      {
+        "heroCounterName": "e.t.c."
+      },
+      {
+        "heroCounterName": "malganis"
+      },
+      {
+        "heroCounterName": "johanna"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "li-li"
+      },
+      {
+        "heroSynergyName": "johanna"
+      },
+      {
+        "heroSynergyName": "artanis"
+      },
+      {
+        "heroSynergyName": "thrall"
+      },
+      {
+        "heroSynergyName": "jaina"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "None"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Alterac Pass"
+      },
+      {
+        "naturalMapName": "Battlefield of Eternity"
+      },
+      {
+        "naturalMapName": "Blackheart's Bay"
+      },
+      {
+        "naturalMapName": "Braxis Holdout"
+      },
+      {
+        "naturalMapName": "Cursed Hollow"
+      },
+      {
+        "naturalMapName": "Dragon Shire"
+      },
+      {
+        "naturalMapName": "Garden of Terror"
+      },
+      {
+        "naturalMapName": "Hanamura Temple"
+      },
+      {
+        "naturalMapName": "Infernal Shrines"
+      },
+      {
+        "naturalMapName": "Sky Temple"
+      },
+      {
+        "naturalMapName": "Tomb of the Spider Queen"
+      },
+      {
+        "naturalMapName": "Towers of Doom"
+      },
+      {
+        "naturalMapName": "Volskaya Foundry"
+      },
+      {
+        "naturalMapName": "Warhead Junction"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "None"
+      }
+    ]
+  },
+  {
+    "heroName": "Chen",
+    "heroCounter": [
+      {
+        "heroCounterName": "anubarak"
+      },
+      {
+        "heroCounterName": "muradin"
+      },
+      {
+        "heroCounterName": "johanna"
+      },
+      {
+        "heroCounterName": "varian"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "jaina"
+      },
+      {
+        "heroSynergyName": "kelthuzad"
+      },
+      {
+        "heroSynergyName": "greymane"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Braxis Holdout"
+      },
+      {
+        "strongMapName": "Dragon Shire"
+      },
+      {
+        "strongMapName": "Hanamura Temple"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Alterac Pass"
+      },
+      {
+        "naturalMapName": "Battlefield of Eternity"
+      },
+      {
+        "naturalMapName": "Blackheart's Bay"
+      },
+      {
+        "naturalMapName": "Cursed Hollow"
+      },
+      {
+        "naturalMapName": "Garden of Terror"
+      },
+      {
+        "naturalMapName": "Infernal Shrines"
+      },
+      {
+        "naturalMapName": "Sky Temple"
+      },
+      {
+        "naturalMapName": "Tomb of the Spider Queen"
+      },
+      {
+        "naturalMapName": "Towers of Doom"
+      },
+      {
+        "naturalMapName": "Volskaya Foundry"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "Warhead Junction"
+      }
+    ]
+  },
+  {
+    "heroName": "Cho",
+    "heroCounter": [
+      {
+        "heroCounterName": "anubarak"
+      },
+      {
+        "heroCounterName": "greymane"
+      },
+      {
+        "heroCounterName": "kharazim"
+      },
+      {
+        "heroCounterName": "leoric"
+      },
+      {
+        "heroCounterName": "malganis"
+      },
+      {
+        "heroCounterName": "malthael"
+      },
+      {
+        "heroCounterName": "raynor"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "alexstrasza"
+      },
+      {
+        "heroSynergyName": "ana"
+      },
+      {
+        "heroSynergyName": "auriel"
+      },
+      {
+        "heroSynergyName": "e.t.c."
+      },
+      {
+        "heroSynergyName": "rehgar"
+      },
+      {
+        "heroSynergyName": "uther"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Braxis Holdout"
+      },
+      {
+        "strongMapName": "Infernal Shrines"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Alterac Pass"
+      },
+      {
+        "naturalMapName": "Battlefield of Eternity"
+      },
+      {
+        "naturalMapName": "Blackheart's Bay"
+      },
+      {
+        "naturalMapName": "Cursed Hollow"
+      },
+      {
+        "naturalMapName": "Garden of Terror"
+      },
+      {
+        "naturalMapName": "Hanamura Temple"
+      },
+      {
+        "naturalMapName": "Sky Temple"
+      },
+      {
+        "naturalMapName": "Tomb of the Spider Queen"
+      },
+      {
+        "naturalMapName": "Towers of Doom"
+      },
+      {
+        "naturalMapName": "Volskaya Foundry"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "Dragon Shire"
+      },
+      {
+        "weakMapName": "Warhead Junction"
+      }
+    ]
+  },
+  {
+    "heroName": "Chromie",
+    "heroCounter": [
+      {
+        "heroCounterName": "illidan"
+      },
+      {
+        "heroCounterName": "diablo"
+      },
+      {
+        "heroCounterName": "zeratul"
+      },
+      {
+        "heroCounterName": "tracer"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "johanna"
+      },
+      {
+        "heroSynergyName": "ana"
+      },
+      {
+        "heroSynergyName": "malfurion"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Braxis Holdout"
+      },
+      {
+        "strongMapName": "Volskaya Foundry"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Alterac Pass"
+      },
+      {
+        "naturalMapName": "Battlefield of Eternity"
+      },
+      {
+        "naturalMapName": "Blackheart's Bay"
+      },
+      {
+        "naturalMapName": "Cursed Hollow"
+      },
+      {
+        "naturalMapName": "Dragon Shire"
+      },
+      {
+        "naturalMapName": "Garden of Terror"
+      },
+      {
+        "naturalMapName": "Hanamura Temple"
+      },
+      {
+        "naturalMapName": "Infernal Shrines"
+      },
+      {
+        "naturalMapName": "Sky Temple"
+      },
+      {
+        "naturalMapName": "Tomb of the Spider Queen"
+      },
+      {
+        "naturalMapName": "Towers of Doom"
+      },
+      {
+        "naturalMapName": "Warhead Junction"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "None"
+      }
+    ]
+  },
+  {
+    "heroName": "D.Va",
+    "heroCounter": [
+      {
+        "heroCounterName": "alarak"
+      },
+      {
+        "heroCounterName": "jaina"
+      },
+      {
+        "heroCounterName": "zeratul"
+      },
+      {
+        "heroCounterName": "tychus"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "e.t.c."
+      },
+      {
+        "heroSynergyName": "diablo"
+      },
+      {
+        "heroSynergyName": "johanna"
+      },
+      {
+        "heroSynergyName": "malfurion"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Cursed Hollow"
+      },
+      {
+        "strongMapName": "Garden of Terror"
+      },
+      {
+        "strongMapName": "Infernal Shrines"
+      },
+      {
+        "strongMapName": "Sky Temple"
+      },
+      {
+        "strongMapName": "Towers of Doom"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Alterac Pass"
+      },
+      {
+        "naturalMapName": "Battlefield of Eternity"
+      },
+      {
+        "naturalMapName": "Dragon Shire"
+      },
+      {
+        "naturalMapName": "Hanamura Temple"
+      },
+      {
+        "naturalMapName": "Tomb of the Spider Queen"
+      },
+      {
+        "naturalMapName": "Volskaya Foundry"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "Blackheart's Bay"
+      },
+      {
+        "weakMapName": "Braxis Holdout"
+      },
+      {
+        "weakMapName": "Warhead Junction"
+      }
+    ]
+  },
+  {
+    "heroName": "Deathwing",
+    "heroCounter": [
+      {
+        "heroCounterName": "tychus"
+      },
+      {
+        "heroCounterName": "greymane"
+      },
+      {
+        "heroCounterName": "valla"
+      },
+      {
+        "heroCounterName": "zeratul"
+      },
+      {
+        "heroCounterName": "tracer"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "e.t.c."
+      },
+      {
+        "heroSynergyName": "arthas"
+      },
+      {
+        "heroSynergyName": "johanna"
+      },
+      {
+        "heroSynergyName": "muradin"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Alterac Pass"
+      },
+      {
+        "strongMapName": "Braxis Holdout"
+      },
+      {
+        "strongMapName": "Infernal Shrines"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Battlefield of Eternity"
+      },
+      {
+        "naturalMapName": "Blackheart's Bay"
+      },
+      {
+        "naturalMapName": "Cursed Hollow"
+      },
+      {
+        "naturalMapName": "Dragon Shire"
+      },
+      {
+        "naturalMapName": "Garden of Terror"
+      },
+      {
+        "naturalMapName": "Hanamura Temple"
+      },
+      {
+        "naturalMapName": "Sky Temple"
+      },
+      {
+        "naturalMapName": "Tomb of the Spider Queen"
+      },
+      {
+        "naturalMapName": "Towers of Doom"
+      },
+      {
+        "naturalMapName": "Volskaya Foundry"
+      },
+      {
+        "naturalMapName": "Warhead Junction"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "None"
+      }
+    ]
+  },
+  {
+    "heroName": "Deckard Cain",
+    "heroCounter": [
+      {
+        "heroCounterName": "alarak"
+      },
+      {
+        "heroCounterName": "diablo"
+      },
+      {
+        "heroCounterName": "kerrigan"
+      },
+      {
+        "heroCounterName": "tracer"
+      },
+      {
+        "heroCounterName": "samuro"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "alarak"
+      },
+      {
+        "heroSynergyName": "arthas"
+      },
+      {
+        "heroSynergyName": "blaze"
+      },
+      {
+        "heroSynergyName": "diablo"
+      },
+      {
+        "heroSynergyName": "jaina"
+      },
+      {
+        "heroSynergyName": "johanna"
+      },
+      {
+        "heroSynergyName": "kerrigan"
+      },
+      {
+        "heroSynergyName": "kelthuzad"
+      },
+      {
+        "heroSynergyName": "tyrael"
+      },
+      {
+        "heroSynergyName": "varian"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Battlefield of Eternity"
+      },
+      {
+        "strongMapName": "Braxis Holdout"
+      },
+      {
+        "strongMapName": "Infernal Shrines"
+      },
+      {
+        "strongMapName": "Tomb of the Spider Queen"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Alterac Pass"
+      },
+      {
+        "naturalMapName": "Blackheart's Bay"
+      },
+      {
+        "naturalMapName": "Cursed Hollow"
+      },
+      {
+        "naturalMapName": "Dragon Shire"
+      },
+      {
+        "naturalMapName": "Hanamura Temple"
+      },
+      {
+        "naturalMapName": "Sky Temple"
+      },
+      {
+        "naturalMapName": "Towers of Doom"
+      },
+      {
+        "naturalMapName": "Volskaya Foundry"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "Garden of Terror"
+      },
+      {
+        "weakMapName": "Warhead Junction"
+      }
+    ]
+  },
+  {
+    "heroName": "Dehaka",
+    "heroCounter": [
+      {
+        "heroCounterName": "valla"
+      },
+      {
+        "heroCounterName": "raynor"
+      },
+      {
+        "heroCounterName": "e.t.c."
+      },
+      {
+        "heroCounterName": "sgt-hammer"
+      },
+      {
+        "heroCounterName": "lucio"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "anubarak"
+      },
+      {
+        "heroSynergyName": "jaina"
+      },
+      {
+        "heroSynergyName": "hanzo"
+      },
+      {
+        "heroSynergyName": "maiev"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Alterac Pass"
+      },
+      {
+        "strongMapName": "Braxis Holdout"
+      },
+      {
+        "strongMapName": "Cursed Hollow"
+      },
+      {
+        "strongMapName": "Dragon Shire"
+      },
+      {
+        "strongMapName": "Sky Temple"
+      },
+      {
+        "strongMapName": "Towers of Doom"
+      },
+      {
+        "strongMapName": "Warhead Junction"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Blackheart's Bay"
+      },
+      {
+        "naturalMapName": "Garden of Terror"
+      },
+      {
+        "naturalMapName": "Infernal Shrines"
+      },
+      {
+        "naturalMapName": "Tomb of the Spider Queen"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "Battlefield of Eternity"
+      },
+      {
+        "weakMapName": "Hanamura Temple"
+      },
+      {
+        "weakMapName": "Volskaya Foundry"
+      }
+    ]
+  },
+  {
+    "heroName": "Diablo",
+    "heroCounter": [
+      {
+        "heroCounterName": "leoric"
+      },
+      {
+        "heroCounterName": "malthael"
+      },
+      {
+        "heroCounterName": "raynor"
+      },
+      {
+        "heroCounterName": "tychus"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "alexstrasza"
+      },
+      {
+        "heroSynergyName": "deckard"
+      },
+      {
+        "heroSynergyName": "jaina"
+      },
+      {
+        "heroSynergyName": "maiev"
+      },
+      {
+        "heroSynergyName": "malfurion"
+      },
+      {
+        "heroSynergyName": "medivh"
+      },
+      {
+        "heroSynergyName": "thrall"
+      },
+      {
+        "heroSynergyName": "tyrande"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Dragon Shire"
+      },
+      {
+        "strongMapName": "Infernal Shrines"
+      },
+      {
+        "strongMapName": "Sky Temple"
+      },
+      {
+        "strongMapName": "Tomb of the Spider Queen"
+      },
+      {
+        "strongMapName": "Volskaya Foundry"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Alterac Pass"
+      },
+      {
+        "naturalMapName": "Battlefield of Eternity"
+      },
+      {
+        "naturalMapName": "Blackheart's Bay"
+      },
+      {
+        "naturalMapName": "Braxis Holdout"
+      },
+      {
+        "naturalMapName": "Cursed Hollow"
+      },
+      {
+        "naturalMapName": "Garden of Terror"
+      },
+      {
+        "naturalMapName": "Hanamura Temple"
+      },
+      {
+        "naturalMapName": "Towers of Doom"
+      },
+      {
+        "naturalMapName": "Warhead Junction"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "None"
+      }
+    ]
+  },
+  {
+    "heroName": "E.T.C.",
+    "heroCounter": [
+      {
+        "heroCounterName": "auriel"
+      },
+      {
+        "heroCounterName": "brightwing"
+      },
+      {
+        "heroCounterName": "johanna"
+      },
+      {
+        "heroCounterName": "leoric"
+      },
+      {
+        "heroCounterName": "malthael"
+      },
+      {
+        "heroCounterName": "raynor"
+      },
+      {
+        "heroCounterName": "tyrande"
+      },
+      {
+        "heroCounterName": "valla"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "falstad"
+      },
+      {
+        "heroSynergyName": "greymane"
+      },
+      {
+        "heroSynergyName": "jaina"
+      },
+      {
+        "heroSynergyName": "kaelthas"
+      },
+      {
+        "heroSynergyName": "nazeebo"
+      },
+      {
+        "heroSynergyName": "rehgar"
+      },
+      {
+        "heroSynergyName": "the-butcher"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "None"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Alterac Pass"
+      },
+      {
+        "naturalMapName": "Battlefield of Eternity"
+      },
+      {
+        "naturalMapName": "Blackheart's Bay"
+      },
+      {
+        "naturalMapName": "Braxis Holdout"
+      },
+      {
+        "naturalMapName": "Cursed Hollow"
+      },
+      {
+        "naturalMapName": "Dragon Shire"
+      },
+      {
+        "naturalMapName": "Garden of Terror"
+      },
+      {
+        "naturalMapName": "Hanamura Temple"
+      },
+      {
+        "naturalMapName": "Sky Temple"
+      },
+      {
+        "naturalMapName": "Tomb of the Spider Queen"
+      },
+      {
+        "naturalMapName": "Towers of Doom"
+      },
+      {
+        "naturalMapName": "Volskaya Foundry"
+      },
+      {
+        "naturalMapName": "Warhead Junction"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "Infernal Shrines"
+      }
+    ]
+  },
+  {
+    "heroName": "Falstad",
+    "heroCounter": [
+      {
+        "heroCounterName": "genji"
+      },
+      {
+        "heroCounterName": "greymane"
+      },
+      {
+        "heroCounterName": "illidan"
+      },
+      {
+        "heroCounterName": "nova"
+      },
+      {
+        "heroCounterName": "valeera"
+      },
+      {
+        "heroCounterName": "zeratul"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "arthas"
+      },
+      {
+        "heroSynergyName": "e.t.c."
+      },
+      {
+        "heroSynergyName": "tassadar"
+      },
+      {
+        "heroSynergyName": "uther"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Braxis Holdout"
+      },
+      {
+        "strongMapName": "Cursed Hollow"
+      },
+      {
+        "strongMapName": "Dragon Shire"
+      },
+      {
+        "strongMapName": "Hanamura Temple"
+      },
+      {
+        "strongMapName": "Towers of Doom"
+      },
+      {
+        "strongMapName": "Warhead Junction"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Alterac Pass"
+      },
+      {
+        "naturalMapName": "Battlefield of Eternity"
+      },
+      {
+        "naturalMapName": "Blackheart's Bay"
+      },
+      {
+        "naturalMapName": "Garden of Terror"
+      },
+      {
+        "naturalMapName": "Infernal Shrines"
+      },
+      {
+        "naturalMapName": "Sky Temple"
+      },
+      {
+        "naturalMapName": "Tomb of the Spider Queen"
+      },
+      {
+        "naturalMapName": "Volskaya Foundry"
+      }
+    ],
+    "weakMap": []
+  },
+  {
+    "heroName": "Fenix",
+    "heroCounter": [
+      {
+        "heroCounterName": "varian"
+      },
+      {
+        "heroCounterName": "e.t.c."
+      },
+      {
+        "heroCounterName": "genji"
+      },
+      {
+        "heroCounterName": "zeratul"
+      },
+      {
+        "heroCounterName": "lucio"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "johanna"
+      },
+      {
+        "heroSynergyName": "maiev"
+      },
+      {
+        "heroSynergyName": "thrall"
+      },
+      {
+        "heroSynergyName": "diablo"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Braxis Holdout"
+      },
+      {
+        "strongMapName": "Infernal Shrines"
+      },
+      {
+        "strongMapName": "Tomb of the Spider Queen"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Alterac Pass"
+      },
+      {
+        "naturalMapName": "Battlefield of Eternity"
+      },
+      {
+        "naturalMapName": "Blackheart's Bay"
+      },
+      {
+        "naturalMapName": "Cursed Hollow"
+      },
+      {
+        "naturalMapName": "Dragon Shire"
+      },
+      {
+        "naturalMapName": "Garden of Terror"
+      },
+      {
+        "naturalMapName": "Hanamura Temple"
+      },
+      {
+        "naturalMapName": "Sky Temple"
+      },
+      {
+        "naturalMapName": "Towers of Doom"
+      },
+      {
+        "naturalMapName": "Volskaya Foundry"
+      },
+      {
+        "naturalMapName": "Warhead Junction"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "None"
+      }
+    ]
+  },
+  {
+    "heroName": "Gall",
+    "heroCounter": [
+      {
+        "heroCounterName": "anubarak"
+      },
+      {
+        "heroCounterName": "greymane"
+      },
+      {
+        "heroCounterName": "kharazim"
+      },
+      {
+        "heroCounterName": "leoric"
+      },
+      {
+        "heroCounterName": "malthael"
+      },
+      {
+        "heroCounterName": "raynor"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "auriel"
+      },
+      {
+        "heroSynergyName": "e.t.c."
+      },
+      {
+        "heroSynergyName": "rehgar"
+      },
+      {
+        "heroSynergyName": "uther"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Braxis Holdout"
+      },
+      {
+        "strongMapName": "Infernal Shrines"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Alterac Pass"
+      },
+      {
+        "naturalMapName": "Battlefield of Eternity"
+      },
+      {
+        "naturalMapName": "Blackheart's Bay"
+      },
+      {
+        "naturalMapName": "Cursed Hollow"
+      },
+      {
+        "naturalMapName": "Garden of Terror"
+      },
+      {
+        "naturalMapName": "Hanamura Temple"
+      },
+      {
+        "naturalMapName": "Sky Temple"
+      },
+      {
+        "naturalMapName": "Tomb of the Spider Queen"
+      },
+      {
+        "naturalMapName": "Towers of Doom"
+      },
+      {
+        "naturalMapName": "Volskaya Foundry"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "Dragon Shire"
+      },
+      {
+        "weakMapName": "Warhead Junction"
+      }
+    ]
+  },
+  {
+    "heroName": "Garrosh",
+    "heroCounter": [
+      {
+        "heroCounterName": "malthael"
+      },
+      {
+        "heroCounterName": "tychus"
+      },
+      {
+        "heroCounterName": "valla"
+      },
+      {
+        "heroCounterName": "arthas"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "jaina"
+      },
+      {
+        "heroSynergyName": "tyrande"
+      },
+      {
+        "heroSynergyName": "uther"
+      },
+      {
+        "heroSynergyName": "malfurion"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Braxis Holdout"
+      },
+      {
+        "strongMapName": "Dragon Shire"
+      },
+      {
+        "strongMapName": "Tomb of the Spider Queen"
+      },
+      {
+        "strongMapName": "Towers of Doom"
+      },
+      {
+        "strongMapName": "Volskaya Foundry"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Alterac Pass"
+      },
+      {
+        "naturalMapName": "Battlefield of Eternity"
+      },
+      {
+        "naturalMapName": "Blackheart's Bay"
+      },
+      {
+        "naturalMapName": "Cursed Hollow"
+      },
+      {
+        "naturalMapName": "Garden of Terror"
+      },
+      {
+        "naturalMapName": "Hanamura Temple"
+      },
+      {
+        "naturalMapName": "Infernal Shrines"
+      },
+      {
+        "naturalMapName": "Sky Temple"
+      },
+      {
+        "naturalMapName": "Warhead Junction"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "None"
+      }
+    ]
+  },
+  {
+    "heroName": "Gazlowe",
+    "heroCounter": [
+      {
+        "heroCounterName": "greymane"
+      },
+      {
+        "heroCounterName": "guldan"
+      },
+      {
+        "heroCounterName": "kaelthas"
+      },
+      {
+        "heroCounterName": "nazeebo"
+      },
+      {
+        "heroCounterName": "nova"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "diablo"
+      },
+      {
+        "heroSynergyName": "e.t.c."
+      },
+      {
+        "heroSynergyName": "jaina"
+      },
+      {
+        "heroSynergyName": "johanna"
+      },
+      {
+        "heroSynergyName": "kaelthas"
+      },
+      {
+        "heroSynergyName": "malfurion"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Alterac Pass"
+      },
+      {
+        "strongMapName": "Braxis Holdout"
+      },
+      {
+        "strongMapName": "Cursed Hollow"
+      },
+      {
+        "strongMapName": "Infernal Shrines"
+      },
+      {
+        "strongMapName": "Sky Temple"
+      },
+      {
+        "strongMapName": "Warhead Junction"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Battlefield of Eternity"
+      },
+      {
+        "naturalMapName": "Blackheart's Bay"
+      },
+      {
+        "naturalMapName": "Dragon Shire"
+      },
+      {
+        "naturalMapName": "Garden of Terror"
+      },
+      {
+        "naturalMapName": "Hanamura Temple"
+      },
+      {
+        "naturalMapName": "Towers of Doom"
+      },
+      {
+        "naturalMapName": "Volskaya Foundry"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "Tomb of the Spider Queen"
+      }
+    ]
+  },
+  {
+    "heroName": "Genji",
+    "heroCounter": [
+      {
+        "heroCounterName": "varian"
+      },
+      {
+        "heroCounterName": "malfurion"
+      },
+      {
+        "heroCounterName": "lunara"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "jaina"
+      },
+      {
+        "heroSynergyName": "uther"
+      },
+      {
+        "heroSynergyName": "e.t.c."
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Braxis Holdout"
+      },
+      {
+        "strongMapName": "Cursed Hollow"
+      },
+      {
+        "strongMapName": "Garden of Terror"
+      },
+      {
+        "strongMapName": "Hanamura Temple"
+      },
+      {
+        "strongMapName": "Infernal Shrines"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Battlefield of Eternity"
+      },
+      {
+        "naturalMapName": "Blackheart's Bay"
+      },
+      {
+        "naturalMapName": "Dragon Shire"
+      },
+      {
+        "naturalMapName": "Sky Temple"
+      },
+      {
+        "naturalMapName": "Towers of Doom"
+      },
+      {
+        "naturalMapName": "Volskaya Foundry"
+      },
+      {
+        "naturalMapName": "Warhead Junction"
+      },
+      {
+        "naturalMapName": "Alterac Pass"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "Tomb of the Spider Queen"
+      }
+    ]
+  },
+  {
+    "heroName": "Greymane",
+    "heroCounter": [
+      {
+        "heroCounterName": "arthas"
+      },
+      {
+        "heroCounterName": "brightwing"
+      },
+      {
+        "heroCounterName": "johanna"
+      },
+      {
+        "heroCounterName": "muradin"
+      },
+      {
+        "heroCounterName": "the-butcher"
+      },
+      {
+        "heroCounterName": "uther"
+      },
+      {
+        "heroCounterName": "xul"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "abathur"
+      },
+      {
+        "heroSynergyName": "e.t.c."
+      },
+      {
+        "heroSynergyName": "tassadar"
+      },
+      {
+        "heroSynergyName": "uther"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Battlefield of Eternity"
+      },
+      {
+        "strongMapName": "Infernal Shrines"
+      },
+      {
+        "strongMapName": "Tomb of the Spider Queen"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Alterac Pass"
+      },
+      {
+        "naturalMapName": "Blackheart's Bay"
+      },
+      {
+        "naturalMapName": "Braxis Holdout"
+      },
+      {
+        "naturalMapName": "Cursed Hollow"
+      },
+      {
+        "naturalMapName": "Dragon Shire"
+      },
+      {
+        "naturalMapName": "Garden of Terror"
+      },
+      {
+        "naturalMapName": "Hanamura Temple"
+      },
+      {
+        "naturalMapName": "Sky Temple"
+      },
+      {
+        "naturalMapName": "Towers of Doom"
+      },
+      {
+        "naturalMapName": "Volskaya Foundry"
+      },
+      {
+        "naturalMapName": "Warhead Junction"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "None"
+      }
+    ]
+  },
+  {
+    "heroName": "Gul'dan",
+    "heroCounter": [
+      {
+        "heroCounterName": "illidan"
+      },
+      {
+        "heroCounterName": "greymane"
+      },
+      {
+        "heroCounterName": "kerrigan"
+      },
+      {
+        "heroCounterName": "tracer"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "e.t.c."
+      },
+      {
+        "heroSynergyName": "malfurion"
+      },
+      {
+        "heroSynergyName": "auriel"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Braxis Holdout"
+      },
+      {
+        "strongMapName": "Dragon Shire"
+      },
+      {
+        "strongMapName": "Infernal Shrines"
+      },
+      {
+        "strongMapName": "Sky Temple"
+      },
+      {
+        "strongMapName": "Tomb of the Spider Queen"
+      },
+      {
+        "strongMapName": "Volskaya Foundry"
+      },
+      {
+        "strongMapName": "Alterac Pass"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Battlefield of Eternity"
+      },
+      {
+        "naturalMapName": "Blackheart's Bay"
+      },
+      {
+        "naturalMapName": "Cursed Hollow"
+      },
+      {
+        "naturalMapName": "Garden of Terror"
+      },
+      {
+        "naturalMapName": "Towers of Doom"
+      },
+      {
+        "naturalMapName": "Warhead Junction"
+      },
+      {
+        "naturalMapName": "Hanamura Temple"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "None"
+      }
+    ]
+  },
+  {
+    "heroName": "Hanzo",
+    "heroCounter": [
+      {
+        "heroCounterName": "genji"
+      },
+      {
+        "heroCounterName": "illidan"
+      },
+      {
+        "heroCounterName": "zeratul"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "zeratul"
+      },
+      {
+        "heroSynergyName": "e.t.c."
+      },
+      {
+        "heroSynergyName": "diablo"
+      },
+      {
+        "heroSynergyName": "blaze"
+      },
+      {
+        "heroSynergyName": "johanna"
+      },
+      {
+        "heroSynergyName": "malganis"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Battlefield of Eternity"
+      },
+      {
+        "strongMapName": "Cursed Hollow"
+      },
+      {
+        "strongMapName": "Dragon Shire"
+      },
+      {
+        "strongMapName": "Infernal Shrines"
+      },
+      {
+        "strongMapName": "Towers of Doom"
+      },
+      {
+        "strongMapName": "Volskaya Foundry"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Alterac Pass"
+      },
+      {
+        "naturalMapName": "Blackheart's Bay"
+      },
+      {
+        "naturalMapName": "Braxis Holdout"
+      },
+      {
+        "naturalMapName": "Garden of Terror"
+      },
+      {
+        "naturalMapName": "Hanamura Temple"
+      },
+      {
+        "naturalMapName": "Sky Temple"
+      },
+      {
+        "naturalMapName": "Tomb of the Spider Queen"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "Warhead Junction"
+      }
+    ]
+  },
+  {
+    "heroName": "Illidan",
+    "heroCounter": [
+      {
+        "heroCounterName": "arthas"
+      },
+      {
+        "heroCounterName": "brightwing"
+      },
+      {
+        "heroCounterName": "e.t.c."
+      },
+      {
+        "heroCounterName": "li-li"
+      },
+      {
+        "heroCounterName": "johanna"
+      },
+      {
+        "heroCounterName": "muradin"
+      },
+      {
+        "heroCounterName": "sonya"
+      },
+      {
+        "heroCounterName": "uther"
+      },
+      {
+        "heroCounterName": "varian"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "abathur"
+      },
+      {
+        "heroSynergyName": "medivh"
+      },
+      {
+        "heroSynergyName": "rehgar"
+      },
+      {
+        "heroSynergyName": "tassadar"
+      },
+      {
+        "heroSynergyName": "tyrael"
+      },
+      {
+        "heroSynergyName": "uther"
+      },
+      {
+        "heroSynergyName": "zarya"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Blackheart's Bay"
+      },
+      {
+        "strongMapName": "Cursed Hollow"
+      },
+      {
+        "strongMapName": "Garden of Terror"
+      },
+      {
+        "strongMapName": "Warhead Junction"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Alterac Pass"
+      },
+      {
+        "naturalMapName": "Dragon Shire"
+      },
+      {
+        "naturalMapName": "Infernal Shrines"
+      },
+      {
+        "naturalMapName": "Sky Temple"
+      },
+      {
+        "naturalMapName": "Tomb of the Spider Queen"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "Battlefield of Eternity"
+      },
+      {
+        "weakMapName": "Braxis Holdout"
+      },
+      {
+        "weakMapName": "Hanamura Temple"
+      },
+      {
+        "weakMapName": "Towers of Doom"
+      },
+      {
+        "weakMapName": "Volskaya Foundry"
+      }
+    ]
+  },
+  {
+    "heroName": "Imperius",
+    "heroCounter": [
+      {
+        "heroCounterName": "jaina"
+      },
+      {
+        "heroCounterName": "raynor"
+      },
+      {
+        "heroCounterName": "sgt-hammer"
+      },
+      {
+        "heroCounterName": "zuljin"
+      },
+      {
+        "heroCounterName": "e.t.c."
+      },
+      {
+        "heroCounterName": "lucio"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "jaina"
+      },
+      {
+        "heroSynergyName": "fenix"
+      },
+      {
+        "heroSynergyName": "rehgar"
+      },
+      {
+        "heroSynergyName": "malganis"
+      },
+      {
+        "heroSynergyName": "e.t.c."
+      },
+      {
+        "heroSynergyName": "yrel"
+      },
+      {
+        "heroSynergyName": "blaze"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Alterac Pass"
+      },
+      {
+        "strongMapName": "Battlefield of Eternity"
+      },
+      {
+        "strongMapName": "Infernal Shrines"
+      },
+      {
+        "strongMapName": "Towers of Doom"
+      },
+      {
+        "strongMapName": "Volskaya Foundry"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Braxis Holdout"
+      },
+      {
+        "naturalMapName": "Cursed Hollow"
+      },
+      {
+        "naturalMapName": "Dragon Shire"
+      },
+      {
+        "naturalMapName": "Garden of Terror"
+      },
+      {
+        "naturalMapName": "Sky Temple"
+      },
+      {
+        "naturalMapName": "Tomb of the Spider Queen"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "Blackheart's Bay"
+      },
+      {
+        "weakMapName": "Hanamura Temple"
+      },
+      {
+        "weakMapName": "Warhead Junction"
+      }
+    ]
+  },
+  {
+    "heroName": "Jaina",
+    "heroCounter": [
+      {
+        "heroCounterName": "alarak"
+      },
+      {
+        "heroCounterName": "anubarak"
+      },
+      {
+        "heroCounterName": "chen"
+      },
+      {
+        "heroCounterName": "genji"
+      },
+      {
+        "heroCounterName": "nova"
+      },
+      {
+        "heroCounterName": "tracer"
+      },
+      {
+        "heroCounterName": "valeera"
+      },
+      {
+        "heroCounterName": "zeratul"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "arthas"
+      },
+      {
+        "heroSynergyName": "e.t.c."
+      },
+      {
+        "heroSynergyName": "johanna"
+      },
+      {
+        "heroSynergyName": "malfurion"
+      },
+      {
+        "heroSynergyName": "muradin"
+      },
+      {
+        "heroSynergyName": "the-butcher"
+      },
+      {
+        "heroSynergyName": "valeera"
+      },
+      {
+        "heroSynergyName": "varian"
+      },
+      {
+        "heroSynergyName": "xul"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Battlefield of Eternity"
+      },
+      {
+        "strongMapName": "Braxis Holdout"
+      },
+      {
+        "strongMapName": "Cursed Hollow"
+      },
+      {
+        "strongMapName": "Infernal Shrines"
+      },
+      {
+        "strongMapName": "Tomb of the Spider Queen"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Alterac Pass"
+      },
+      {
+        "naturalMapName": "Blackheart's Bay"
+      },
+      {
+        "naturalMapName": "Dragon Shire"
+      },
+      {
+        "naturalMapName": "Garden of Terror"
+      },
+      {
+        "naturalMapName": "Sky Temple"
+      },
+      {
+        "naturalMapName": "Towers of Doom"
+      },
+      {
+        "naturalMapName": "Volskaya Foundry"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "Hanamura Temple"
+      },
+      {
+        "weakMapName": "Warhead Junction"
+      }
+    ]
+  },
+  {
+    "heroName": "Johanna",
+    "heroCounter": [
+      {
+        "heroCounterName": "varian"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "guldan"
+      },
+      {
+        "heroSynergyName": "kaelthas"
+      },
+      {
+        "heroSynergyName": "jaina"
+      },
+      {
+        "heroSynergyName": "rehgar"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Braxis Holdout"
+      },
+      {
+        "strongMapName": "Dragon Shire"
+      },
+      {
+        "strongMapName": "Infernal Shrines"
+      },
+      {
+        "strongMapName": "Tomb of the Spider Queen"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Alterac Pass"
+      },
+      {
+        "naturalMapName": "Battlefield of Eternity"
+      },
+      {
+        "naturalMapName": "Blackheart's Bay"
+      },
+      {
+        "naturalMapName": "Cursed Hollow"
+      },
+      {
+        "naturalMapName": "Garden of Terror"
+      },
+      {
+        "naturalMapName": "Hanamura Temple"
+      },
+      {
+        "naturalMapName": "Sky Temple"
+      },
+      {
+        "naturalMapName": "Towers of Doom"
+      },
+      {
+        "naturalMapName": "Volskaya Foundry"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "Warhead Junction"
+      }
+    ]
+  },
+  {
+    "heroName": "Junkrat",
+    "heroCounter": [
+      {
+        "heroCounterName": "illidan"
+      },
+      {
+        "heroCounterName": "tracer"
+      },
+      {
+        "heroCounterName": "zeratul"
+      },
+      {
+        "heroCounterName": "tyrael"
+      },
+      {
+        "heroCounterName": "genji"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "e.t.c."
+      },
+      {
+        "heroSynergyName": "garrosh"
+      },
+      {
+        "heroSynergyName": "uther"
+      },
+      {
+        "heroSynergyName": "malfurion"
+      },
+      {
+        "heroSynergyName": "zeratul"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Alterac Pass"
+      },
+      {
+        "strongMapName": "Braxis Holdout"
+      },
+      {
+        "strongMapName": "Cursed Hollow"
+      },
+      {
+        "strongMapName": "Dragon Shire"
+      },
+      {
+        "strongMapName": "Garden of Terror"
+      },
+      {
+        "strongMapName": "Infernal Shrines"
+      },
+      {
+        "strongMapName": "Sky Temple"
+      },
+      {
+        "strongMapName": "Tomb of the Spider Queen"
+      },
+      {
+        "strongMapName": "Towers of Doom"
+      },
+      {
+        "strongMapName": "Volskaya Foundry"
+      },
+      {
+        "strongMapName": "Warhead Junction"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Battlefield of Eternity"
+      },
+      {
+        "naturalMapName": "Blackheart's Bay"
+      },
+      {
+        "naturalMapName": "Hanamura Temple"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "None"
+      }
+    ]
+  },
+  {
+    "heroName": "Kael'thas",
+    "heroCounter": [
+      {
+        "heroCounterName": "illidan"
+      },
+      {
+        "heroCounterName": "zeratul"
+      },
+      {
+        "heroCounterName": "kerrigan"
+      },
+      {
+        "heroCounterName": "tracer"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "e.t.c."
+      },
+      {
+        "heroSynergyName": "arthas"
+      },
+      {
+        "heroSynergyName": "malfurion"
+      },
+      {
+        "heroSynergyName": "uther"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Alterac Pass"
+      },
+      {
+        "strongMapName": "Braxis Holdout"
+      },
+      {
+        "strongMapName": "Dragon Shire"
+      },
+      {
+        "strongMapName": "Infernal Shrines"
+      },
+      {
+        "strongMapName": "Tomb of the Spider Queen"
+      },
+      {
+        "strongMapName": "Towers of Doom"
+      },
+      {
+        "strongMapName": "Volskaya Foundry"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Battlefield of Eternity"
+      },
+      {
+        "naturalMapName": "Cursed Hollow"
+      },
+      {
+        "naturalMapName": "Garden of Terror"
+      },
+      {
+        "naturalMapName": "Sky Temple"
+      },
+      {
+        "naturalMapName": "Hanamura Temple"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "Blackheart's Bay"
+      },
+      {
+        "weakMapName": "Warhead Junction"
+      }
+    ]
+  },
+  {
+    "heroName": "Kel'Thuzad",
+    "heroCounter": [
+      {
+        "heroCounterName": "anubarak"
+      },
+      {
+        "heroCounterName": "chen"
+      },
+      {
+        "heroCounterName": "genji"
+      },
+      {
+        "heroCounterName": "nova"
+      },
+      {
+        "heroCounterName": "samuro"
+      },
+      {
+        "heroCounterName": "tracer"
+      },
+      {
+        "heroCounterName": "valeera"
+      },
+      {
+        "heroCounterName": "zeratul"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "anduin"
+      },
+      {
+        "heroSynergyName": "arthas"
+      },
+      {
+        "heroSynergyName": "johanna"
+      },
+      {
+        "heroSynergyName": "malfurion"
+      },
+      {
+        "heroSynergyName": "the-butcher"
+      },
+      {
+        "heroSynergyName": "valeera"
+      },
+      {
+        "heroSynergyName": "varian"
+      },
+      {
+        "heroSynergyName": "xul"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Braxis Holdout"
+      },
+      {
+        "strongMapName": "Towers of Doom"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Battlefield of Eternity"
+      },
+      {
+        "naturalMapName": "Blackheart's Bay"
+      },
+      {
+        "naturalMapName": "Cursed Hollow"
+      },
+      {
+        "naturalMapName": "Dragon Shire"
+      },
+      {
+        "naturalMapName": "Garden of Terror"
+      },
+      {
+        "naturalMapName": "Hanamura Temple"
+      },
+      {
+        "naturalMapName": "Infernal Shrines"
+      },
+      {
+        "naturalMapName": "Sky Temple"
+      },
+      {
+        "naturalMapName": "Tomb of the Spider Queen"
+      },
+      {
+        "naturalMapName": "Volskaya Foundry"
+      },
+      {
+        "naturalMapName": "Warhead Junction"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "Alterac Pass"
+      }
+    ]
+  },
+  {
+    "heroName": "Kerrigan",
+    "heroCounter": [
+      {
+        "heroCounterName": "tyrael"
+      },
+      {
+        "heroCounterName": "e.t.c."
+      },
+      {
+        "heroCounterName": "garrosh"
+      },
+      {
+        "heroCounterName": "uther"
+      },
+      {
+        "heroCounterName": "medivh"
+      },
+      {
+        "heroCounterName": "auriel"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "tyrael"
+      },
+      {
+        "heroSynergyName": "uther"
+      },
+      {
+        "heroSynergyName": "medivh"
+      },
+      {
+        "heroSynergyName": "tyrande"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Alterac Pass"
+      },
+      {
+        "strongMapName": "Braxis Holdout"
+      },
+      {
+        "strongMapName": "Dragon Shire"
+      },
+      {
+        "strongMapName": "Infernal Shrines"
+      },
+      {
+        "strongMapName": "Tomb of the Spider Queen"
+      },
+      {
+        "strongMapName": "Volskaya Foundry"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Battlefield of Eternity"
+      },
+      {
+        "naturalMapName": "Cursed Hollow"
+      },
+      {
+        "naturalMapName": "Garden of Terror"
+      },
+      {
+        "naturalMapName": "Sky Temple"
+      },
+      {
+        "naturalMapName": "Towers of Doom"
+      },
+      {
+        "naturalMapName": "Hanamura Temple"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "Blackheart's Bay"
+      },
+      {
+        "weakMapName": "Warhead Junction"
+      }
+    ]
+  },
+  {
+    "heroName": "Kharazim",
+    "heroCounter": [
+      {
+        "heroCounterName": "johanna"
+      },
+      {
+        "heroCounterName": "auriel"
+      },
+      {
+        "heroCounterName": "medivh"
+      },
+      {
+        "heroCounterName": "uther"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "garrosh"
+      },
+      {
+        "heroSynergyName": "e.t.c."
+      },
+      {
+        "heroSynergyName": "anubarak"
+      },
+      {
+        "heroSynergyName": "genji"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Battlefield of Eternity"
+      },
+      {
+        "strongMapName": "Dragon Shire"
+      },
+      {
+        "strongMapName": "Hanamura Temple"
+      },
+      {
+        "strongMapName": "Sky Temple"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Alterac Pass"
+      },
+      {
+        "naturalMapName": "Blackheart's Bay"
+      },
+      {
+        "naturalMapName": "Cursed Hollow"
+      },
+      {
+        "naturalMapName": "Garden of Terror"
+      },
+      {
+        "naturalMapName": "Infernal Shrines"
+      },
+      {
+        "naturalMapName": "Towers of Doom"
+      },
+      {
+        "naturalMapName": "Volskaya Foundry"
+      },
+      {
+        "naturalMapName": "Warhead Junction"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "Braxis Holdout"
+      },
+      {
+        "weakMapName": "Tomb of the Spider Queen"
+      }
+    ]
+  },
+  {
+    "heroName": "Leoric",
+    "heroCounter": [
+      {
+        "heroCounterName": "illidan"
+      },
+      {
+        "heroCounterName": "tracer"
+      },
+      {
+        "heroCounterName": "valla"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "jaina"
+      },
+      {
+        "heroSynergyName": "kaelthas"
+      },
+      {
+        "heroSynergyName": "tychus"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Braxis Holdout"
+      },
+      {
+        "strongMapName": "Garden of Terror"
+      },
+      {
+        "strongMapName": "Tomb of the Spider Queen"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Alterac Pass"
+      },
+      {
+        "naturalMapName": "Blackheart's Bay"
+      },
+      {
+        "naturalMapName": "Cursed Hollow"
+      },
+      {
+        "naturalMapName": "Dragon Shire"
+      },
+      {
+        "naturalMapName": "Hanamura Temple"
+      },
+      {
+        "naturalMapName": "Infernal Shrines"
+      },
+      {
+        "naturalMapName": "Sky Temple"
+      },
+      {
+        "naturalMapName": "Towers of Doom"
+      },
+      {
+        "naturalMapName": "Volskaya Foundry"
+      },
+      {
+        "naturalMapName": "Warhead Junction"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "Battlefield of Eternity"
+      }
+    ]
+  },
+  {
+    "heroName": "Li Li",
+    "heroCounter": [
+      {
+        "heroCounterName": "alarak"
+      },
+      {
+        "heroCounterName": "anubarak"
+      },
+      {
+        "heroCounterName": "e.t.c."
+      },
+      {
+        "heroCounterName": "jaina"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "artanis"
+      },
+      {
+        "heroSynergyName": "anubarak"
+      },
+      {
+        "heroSynergyName": "azmodan"
+      },
+      {
+        "heroSynergyName": "varian"
+      },
+      {
+        "heroSynergyName": "falstad"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "None"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Alterac Pass"
+      },
+      {
+        "naturalMapName": "Battlefield of Eternity"
+      },
+      {
+        "naturalMapName": "Blackheart's Bay"
+      },
+      {
+        "naturalMapName": "Braxis Holdout"
+      },
+      {
+        "naturalMapName": "Cursed Hollow"
+      },
+      {
+        "naturalMapName": "Dragon Shire"
+      },
+      {
+        "naturalMapName": "Garden of Terror"
+      },
+      {
+        "naturalMapName": "Hanamura Temple"
+      },
+      {
+        "naturalMapName": "Infernal Shrines"
+      },
+      {
+        "naturalMapName": "Sky Temple"
+      },
+      {
+        "naturalMapName": "Tomb of the Spider Queen"
+      },
+      {
+        "naturalMapName": "Towers of Doom"
+      },
+      {
+        "naturalMapName": "Volskaya Foundry"
+      },
+      {
+        "naturalMapName": "Warhead Junction"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "None"
+      }
+    ]
+  },
+  {
+    "heroName": "Li-Ming",
+    "heroCounter": [
+      {
+        "heroCounterName": "anubarak"
+      },
+      {
+        "heroCounterName": "chen"
+      },
+      {
+        "heroCounterName": "genji"
+      },
+      {
+        "heroCounterName": "samuro"
+      },
+      {
+        "heroCounterName": "tracer"
+      },
+      {
+        "heroCounterName": "valeera"
+      },
+      {
+        "heroCounterName": "zeratul"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "arthas"
+      },
+      {
+        "heroSynergyName": "e.t.c."
+      },
+      {
+        "heroSynergyName": "johanna"
+      },
+      {
+        "heroSynergyName": "malfurion"
+      },
+      {
+        "heroSynergyName": "valeera"
+      },
+      {
+        "heroSynergyName": "varian"
+      },
+      {
+        "heroSynergyName": "xul"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Alterac Pass"
+      },
+      {
+        "strongMapName": "Battlefield of Eternity"
+      },
+      {
+        "strongMapName": "Cursed Hollow"
+      },
+      {
+        "strongMapName": "Infernal Shrines"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Braxis Holdout"
+      },
+      {
+        "naturalMapName": "Dragon Shire"
+      },
+      {
+        "naturalMapName": "Garden of Terror"
+      },
+      {
+        "naturalMapName": "Hanamura Temple"
+      },
+      {
+        "naturalMapName": "Sky Temple"
+      },
+      {
+        "naturalMapName": "Tomb of the Spider Queen"
+      },
+      {
+        "naturalMapName": "Towers of Doom"
+      },
+      {
+        "naturalMapName": "Volskaya Foundry"
+      },
+      {
+        "naturalMapName": "Warhead Junction"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "Blackheart's Bay"
+      }
+    ]
+  },
+  {
+    "heroName": "Lt. Morales",
+    "heroCounter": [
+      {
+        "heroCounterName": "garrosh"
+      },
+      {
+        "heroCounterName": "chen"
+      },
+      {
+        "heroCounterName": "chromie"
+      },
+      {
+        "heroCounterName": "lunara"
+      },
+      {
+        "heroCounterName": "auriel"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "johanna"
+      },
+      {
+        "heroSynergyName": "raynor"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Hanamura Temple"
+      },
+      {
+        "strongMapName": "Tomb of the Spider Queen"
+      },
+      {
+        "strongMapName": "Towers of Doom"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Alterac Pass"
+      },
+      {
+        "naturalMapName": "Battlefield of Eternity"
+      },
+      {
+        "naturalMapName": "Braxis Holdout"
+      },
+      {
+        "naturalMapName": "Dragon Shire"
+      },
+      {
+        "naturalMapName": "Infernal Shrines"
+      },
+      {
+        "naturalMapName": "Volskaya Foundry"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "Blackheart's Bay"
+      },
+      {
+        "weakMapName": "Cursed Hollow"
+      },
+      {
+        "weakMapName": "Garden of Terror"
+      },
+      {
+        "weakMapName": "Sky Temple"
+      },
+      {
+        "weakMapName": "Warhead Junction"
+      }
+    ]
+  },
+  {
+    "heroName": "Lúcio",
+    "heroCounter": [
+      {
+        "heroCounterName": "varian"
+      },
+      {
+        "heroCounterName": "valeera"
+      },
+      {
+        "heroCounterName": "zeratul"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "arthas"
+      },
+      {
+        "heroSynergyName": "diablo"
+      },
+      {
+        "heroSynergyName": "greymane"
+      },
+      {
+        "heroSynergyName": "valla"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Alterac Pass"
+      },
+      {
+        "strongMapName": "Blackheart's Bay"
+      },
+      {
+        "strongMapName": "Dragon Shire"
+      },
+      {
+        "strongMapName": "Hanamura Temple"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Battlefield of Eternity"
+      },
+      {
+        "naturalMapName": "Cursed Hollow"
+      },
+      {
+        "naturalMapName": "Garden of Terror"
+      },
+      {
+        "naturalMapName": "Infernal Shrines"
+      },
+      {
+        "naturalMapName": "Sky Temple"
+      },
+      {
+        "naturalMapName": "Tomb of the Spider Queen"
+      },
+      {
+        "naturalMapName": "Towers of Doom"
+      },
+      {
+        "naturalMapName": "Volskaya Foundry"
+      },
+      {
+        "naturalMapName": "Warhead Junction"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "Braxis Holdout"
+      }
+    ]
+  },
+  {
+    "heroName": "Lunara",
+    "heroCounter": [
+      {
+        "heroCounterName": "illidan"
+      },
+      {
+        "heroCounterName": "genji"
+      },
+      {
+        "heroCounterName": "malfurion"
+      },
+      {
+        "heroCounterName": "stukov"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "arthas"
+      },
+      {
+        "heroSynergyName": "muradin"
+      },
+      {
+        "heroSynergyName": "jaina"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Battlefield of Eternity"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Blackheart's Bay"
+      },
+      {
+        "naturalMapName": "Braxis Holdout"
+      },
+      {
+        "naturalMapName": "Cursed Hollow"
+      },
+      {
+        "naturalMapName": "Dragon Shire"
+      },
+      {
+        "naturalMapName": "Garden of Terror"
+      },
+      {
+        "naturalMapName": "Hanamura Temple"
+      },
+      {
+        "naturalMapName": "Infernal Shrines"
+      },
+      {
+        "naturalMapName": "Sky Temple"
+      },
+      {
+        "naturalMapName": "Tomb of the Spider Queen"
+      },
+      {
+        "naturalMapName": "Towers of Doom"
+      },
+      {
+        "naturalMapName": "Volskaya Foundry"
+      },
+      {
+        "naturalMapName": "Alterac Pass"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "Warhead Junction"
+      }
+    ]
+  },
+  {
+    "heroName": "Maiev",
+    "heroCounter": [
+      {
+        "heroCounterName": "arthas"
+      },
+      {
+        "heroCounterName": "diablo"
+      },
+      {
+        "heroCounterName": "e.t.c."
+      },
+      {
+        "heroCounterName": "lucio"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "arthas"
+      },
+      {
+        "heroSynergyName": "dehaka"
+      },
+      {
+        "heroSynergyName": "diablo"
+      },
+      {
+        "heroSynergyName": "e.t.c."
+      },
+      {
+        "heroSynergyName": "guldan"
+      },
+      {
+        "heroSynergyName": "jaina"
+      },
+      {
+        "heroSynergyName": "johanna"
+      },
+      {
+        "heroSynergyName": "kaelthas"
+      },
+      {
+        "heroSynergyName": "lucio"
+      },
+      {
+        "heroSynergyName": "stukov"
+      },
+      {
+        "heroSynergyName": "tyrael"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "None"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Alterac Pass"
+      },
+      {
+        "naturalMapName": "Battlefield of Eternity"
+      },
+      {
+        "naturalMapName": "Blackheart's Bay"
+      },
+      {
+        "naturalMapName": "Braxis Holdout"
+      },
+      {
+        "naturalMapName": "Cursed Hollow"
+      },
+      {
+        "naturalMapName": "Dragon Shire"
+      },
+      {
+        "naturalMapName": "Garden of Terror"
+      },
+      {
+        "naturalMapName": "Hanamura Temple"
+      },
+      {
+        "naturalMapName": "Infernal Shrines"
+      },
+      {
+        "naturalMapName": "Sky Temple"
+      },
+      {
+        "naturalMapName": "Tomb of the Spider Queen"
+      },
+      {
+        "naturalMapName": "Towers of Doom"
+      },
+      {
+        "naturalMapName": "Volskaya Foundry"
+      },
+      {
+        "naturalMapName": "Warhead Junction"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "None"
+      }
+    ]
+  },
+  {
+    "heroName": "Mal'Ganis",
+    "heroCounter": [
+      {
+        "heroCounterName": "garrosh"
+      },
+      {
+        "heroCounterName": "hanzo"
+      },
+      {
+        "heroCounterName": "zeratul"
+      },
+      {
+        "heroCounterName": "malfurion"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "jaina"
+      },
+      {
+        "heroSynergyName": "zeratul"
+      },
+      {
+        "heroSynergyName": "malfurion"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Alterac Pass"
+      },
+      {
+        "strongMapName": "Battlefield of Eternity"
+      },
+      {
+        "strongMapName": "Braxis Holdout"
+      },
+      {
+        "strongMapName": "Hanamura Temple"
+      },
+      {
+        "strongMapName": "Infernal Shrines"
+      },
+      {
+        "strongMapName": "Sky Temple"
+      },
+      {
+        "strongMapName": "Towers of Doom"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Cursed Hollow"
+      },
+      {
+        "naturalMapName": "Dragon Shire"
+      },
+      {
+        "naturalMapName": "Garden of Terror"
+      },
+      {
+        "naturalMapName": "Volskaya Foundry"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "Blackheart's Bay"
+      },
+      {
+        "weakMapName": "Tomb of the Spider Queen"
+      },
+      {
+        "weakMapName": "Warhead Junction"
+      }
+    ]
+  },
+  {
+    "heroName": "Malfurion",
+    "heroCounter": [
+      {
+        "heroCounterName": "alarak"
+      },
+      {
+        "heroCounterName": "anubarak"
+      },
+      {
+        "heroCounterName": "artanis"
+      },
+      {
+        "heroCounterName": "jaina"
+      },
+      {
+        "heroCounterName": "kerrigan"
+      },
+      {
+        "heroCounterName": "li-ming"
+      },
+      {
+        "heroCounterName": "tracer"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "blaze"
+      },
+      {
+        "heroSynergyName": "chromie"
+      },
+      {
+        "heroSynergyName": "guldan"
+      },
+      {
+        "heroSynergyName": "jaina"
+      },
+      {
+        "heroSynergyName": "kaelthas"
+      },
+      {
+        "heroSynergyName": "kelthuzad"
+      },
+      {
+        "heroSynergyName": "li-ming"
+      },
+      {
+        "heroSynergyName": "nazeebo"
+      },
+      {
+        "heroSynergyName": "ragnaros"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Alterac Pass"
+      },
+      {
+        "strongMapName": "Battlefield of Eternity"
+      },
+      {
+        "strongMapName": "Braxis Holdout"
+      },
+      {
+        "strongMapName": "Garden of Terror"
+      },
+      {
+        "strongMapName": "Infernal Shrines"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Blackheart's Bay"
+      },
+      {
+        "naturalMapName": "Cursed Hollow"
+      },
+      {
+        "naturalMapName": "Dragon Shire"
+      },
+      {
+        "naturalMapName": "Hanamura Temple"
+      },
+      {
+        "naturalMapName": "Sky Temple"
+      },
+      {
+        "naturalMapName": "Tomb of the Spider Queen"
+      },
+      {
+        "naturalMapName": "Towers of Doom"
+      },
+      {
+        "naturalMapName": "Volskaya Foundry"
+      },
+      {
+        "naturalMapName": "Warhead Junction"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "None"
+      }
+    ]
+  },
+  {
+    "heroName": "Malthael",
+    "heroCounter": [
+      {
+        "heroCounterName": "falstad"
+      },
+      {
+        "heroCounterName": "li-ming"
+      },
+      {
+        "heroCounterName": "lunara"
+      },
+      {
+        "heroCounterName": "tracer"
+      },
+      {
+        "heroCounterName": "valla"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "e.t.c."
+      },
+      {
+        "heroSynergyName": "johanna"
+      },
+      {
+        "heroSynergyName": "tassadar"
+      },
+      {
+        "heroSynergyName": "uther"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Battlefield of Eternity"
+      },
+      {
+        "strongMapName": "Garden of Terror"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Alterac Pass"
+      },
+      {
+        "naturalMapName": "Blackheart's Bay"
+      },
+      {
+        "naturalMapName": "Cursed Hollow"
+      },
+      {
+        "naturalMapName": "Dragon Shire"
+      },
+      {
+        "naturalMapName": "Hanamura Temple"
+      },
+      {
+        "naturalMapName": "Infernal Shrines"
+      },
+      {
+        "naturalMapName": "Sky Temple"
+      },
+      {
+        "naturalMapName": "Tomb of the Spider Queen"
+      },
+      {
+        "naturalMapName": "Towers of Doom"
+      },
+      {
+        "naturalMapName": "Volskaya Foundry"
+      },
+      {
+        "naturalMapName": "Warhead Junction"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "Braxis Holdout"
+      }
+    ]
+  },
+  {
+    "heroName": "Medivh",
+    "heroCounter": [
+      {
+        "heroCounterName": "guldan"
+      },
+      {
+        "heroCounterName": "lunara"
+      },
+      {
+        "heroCounterName": "garrosh"
+      },
+      {
+        "heroCounterName": "malfurion"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "illidan"
+      },
+      {
+        "heroSynergyName": "greymane"
+      },
+      {
+        "heroSynergyName": "genji"
+      },
+      {
+        "heroSynergyName": "tracer"
+      },
+      {
+        "heroSynergyName": "diablo"
+      },
+      {
+        "heroSynergyName": "stitches"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Cursed Hollow"
+      },
+      {
+        "strongMapName": "Sky Temple"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Alterac Pass"
+      },
+      {
+        "naturalMapName": "Blackheart's Bay"
+      },
+      {
+        "naturalMapName": "Dragon Shire"
+      },
+      {
+        "naturalMapName": "Garden of Terror"
+      },
+      {
+        "naturalMapName": "Hanamura Temple"
+      },
+      {
+        "naturalMapName": "Infernal Shrines"
+      },
+      {
+        "naturalMapName": "Tomb of the Spider Queen"
+      },
+      {
+        "naturalMapName": "Towers of Doom"
+      },
+      {
+        "naturalMapName": "Volskaya Foundry"
+      },
+      {
+        "naturalMapName": "Warhead Junction"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "Battlefield of Eternity"
+      },
+      {
+        "weakMapName": "Braxis Holdout"
+      }
+    ]
+  },
+  {
+    "heroName": "Mei",
+    "heroCounter": [
+      {
+        "heroCounterName": "e.t.c."
+      },
+      {
+        "heroCounterName": "yrel"
+      },
+      {
+        "heroCounterName": "hanzo"
+      },
+      {
+        "heroCounterName": "junkrat"
+      },
+      {
+        "heroCounterName": "zeratul"
+      },
+      {
+        "heroCounterName": "ana"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "xul"
+      },
+      {
+        "heroSynergyName": "lunara"
+      },
+      {
+        "heroSynergyName": "jaina"
+      },
+      {
+        "heroSynergyName": "deckard"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Alterac Pass"
+      },
+      {
+        "strongMapName": "Battlefield of Eternity"
+      },
+      {
+        "strongMapName": "Braxis Holdout"
+      },
+      {
+        "strongMapName": "Cursed Hollow"
+      },
+      {
+        "strongMapName": "Infernal Shrines"
+      },
+      {
+        "strongMapName": "Dragon Shire"
+      },
+      {
+        "strongMapName": "Garden of Terror"
+      },
+      {
+        "strongMapName": "Towers of Doom"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Hanamura Temple"
+      },
+      {
+        "naturalMapName": "Sky Temple"
+      },
+      {
+        "naturalMapName": "Tomb of the Spider Queen"
+      },
+      {
+        "naturalMapName": "Volskaya Foundry"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "Blackheart's Bay"
+      },
+      {
+        "weakMapName": "Warhead Junction"
+      }
+    ]
+  },
+  {
+    "heroName": "Mephisto",
+    "heroCounter": [
+      {
+        "heroCounterName": "illidan"
+      },
+      {
+        "heroCounterName": "artanis"
+      },
+      {
+        "heroCounterName": "varian"
+      },
+      {
+        "heroCounterName": "sonya"
+      },
+      {
+        "heroCounterName": "kaelthas"
+      },
+      {
+        "heroCounterName": "kelthuzad"
+      },
+      {
+        "heroCounterName": "junkrat"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "deckard"
+      },
+      {
+        "heroSynergyName": "e.t.c."
+      },
+      {
+        "heroSynergyName": "zarya"
+      },
+      {
+        "heroSynergyName": "diablo"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Alterac Pass"
+      },
+      {
+        "strongMapName": "Battlefield of Eternity"
+      },
+      {
+        "strongMapName": "Braxis Holdout"
+      },
+      {
+        "strongMapName": "Infernal Shrines"
+      },
+      {
+        "strongMapName": "Volskaya Foundry"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Blackheart's Bay"
+      },
+      {
+        "naturalMapName": "Cursed Hollow"
+      },
+      {
+        "naturalMapName": "Dragon Shire"
+      },
+      {
+        "naturalMapName": "Garden of Terror"
+      },
+      {
+        "naturalMapName": "Hanamura Temple"
+      },
+      {
+        "naturalMapName": "Sky Temple"
+      },
+      {
+        "naturalMapName": "Tomb of the Spider Queen"
+      },
+      {
+        "naturalMapName": "Towers of Doom"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "Warhead Junction"
+      }
+    ]
+  },
+  {
+    "heroName": "Muradin",
+    "heroCounter": [
+      {
+        "heroCounterName": "e.t.c."
+      },
+      {
+        "heroCounterName": "thrall"
+      },
+      {
+        "heroCounterName": "raynor"
+      },
+      {
+        "heroCounterName": "jaina"
+      },
+      {
+        "heroCounterName": "malfurion"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "blaze"
+      },
+      {
+        "heroSynergyName": "kerrigan"
+      },
+      {
+        "heroSynergyName": "kaelthas"
+      },
+      {
+        "heroSynergyName": "hanzo"
+      },
+      {
+        "heroSynergyName": "malfurion"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Battlefield of Eternity"
+      },
+      {
+        "strongMapName": "Hanamura Temple"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Alterac Pass"
+      },
+      {
+        "naturalMapName": "Blackheart's Bay"
+      },
+      {
+        "naturalMapName": "Cursed Hollow"
+      },
+      {
+        "naturalMapName": "Dragon Shire"
+      },
+      {
+        "naturalMapName": "Garden of Terror"
+      },
+      {
+        "naturalMapName": "Sky Temple"
+      },
+      {
+        "naturalMapName": "Towers of Doom"
+      },
+      {
+        "naturalMapName": "Volskaya Foundry"
+      },
+      {
+        "naturalMapName": "Warhead Junction"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "Braxis Holdout"
+      },
+      {
+        "weakMapName": "Infernal Shrines"
+      },
+      {
+        "weakMapName": "Tomb of the Spider Queen"
+      }
+    ]
+  },
+  {
+    "heroName": "Murky",
+    "heroCounter": [
+      {
+        "heroCounterName": "genji"
+      },
+      {
+        "heroCounterName": "li-ming"
+      },
+      {
+        "heroCounterName": "nova"
+      },
+      {
+        "heroCounterName": "tychus"
+      },
+      {
+        "heroCounterName": "tracer"
+      },
+      {
+        "heroCounterName": "zarya"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "abathur"
+      },
+      {
+        "heroSynergyName": "deckard"
+      },
+      {
+        "heroSynergyName": "tassadar"
+      },
+      {
+        "heroSynergyName": "zarya"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Garden of Terror"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Alterac Pass"
+      },
+      {
+        "naturalMapName": "Battlefield of Eternity"
+      },
+      {
+        "naturalMapName": "Cursed Hollow"
+      },
+      {
+        "naturalMapName": "Dragon Shire"
+      },
+      {
+        "naturalMapName": "Hanamura Temple"
+      },
+      {
+        "naturalMapName": "Infernal Shrines"
+      },
+      {
+        "naturalMapName": "Sky Temple"
+      },
+      {
+        "naturalMapName": "Towers of Doom"
+      },
+      {
+        "naturalMapName": "Warhead Junction"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "Blackheart's Bay"
+      },
+      {
+        "weakMapName": "Braxis Holdout"
+      },
+      {
+        "weakMapName": "Tomb of the Spider Queen"
+      },
+      {
+        "weakMapName": "Volskaya Foundry"
+      }
+    ]
+  },
+  {
+    "heroName": "Nazeebo",
+    "heroCounter": [
+      {
+        "heroCounterName": "e.t.c."
+      },
+      {
+        "heroCounterName": "sylvanas"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "johanna"
+      },
+      {
+        "heroSynergyName": "raynor"
+      },
+      {
+        "heroSynergyName": "stukov"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Dragon Shire"
+      },
+      {
+        "strongMapName": "Tomb of the Spider Queen"
+      },
+      {
+        "strongMapName": "Volskaya Foundry"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Alterac Pass"
+      },
+      {
+        "naturalMapName": "Cursed Hollow"
+      },
+      {
+        "naturalMapName": "Garden of Terror"
+      },
+      {
+        "naturalMapName": "Hanamura Temple"
+      },
+      {
+        "naturalMapName": "Infernal Shrines"
+      },
+      {
+        "naturalMapName": "Towers of Doom"
+      },
+      {
+        "naturalMapName": "Warhead Junction"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "Battlefield of Eternity"
+      },
+      {
+        "weakMapName": "Blackheart's Bay"
+      },
+      {
+        "weakMapName": "Braxis Holdout"
+      },
+      {
+        "weakMapName": "Sky Temple"
+      }
+    ]
+  },
+  {
+    "heroName": "Nova",
+    "heroCounter": [
+      {
+        "heroCounterName": "chen"
+      },
+      {
+        "heroCounterName": "illidan"
+      },
+      {
+        "heroCounterName": "johanna"
+      },
+      {
+        "heroCounterName": "muradin"
+      },
+      {
+        "heroCounterName": "tassadar"
+      },
+      {
+        "heroCounterName": "tyrael"
+      },
+      {
+        "heroCounterName": "zarya"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "e.t.c."
+      },
+      {
+        "heroSynergyName": "tyrael"
+      },
+      {
+        "heroSynergyName": "tyrande"
+      },
+      {
+        "heroSynergyName": "xul"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Warhead Junction"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Alterac Pass"
+      },
+      {
+        "naturalMapName": "Battlefield of Eternity"
+      },
+      {
+        "naturalMapName": "Blackheart's Bay"
+      },
+      {
+        "naturalMapName": "Cursed Hollow"
+      },
+      {
+        "naturalMapName": "Dragon Shire"
+      },
+      {
+        "naturalMapName": "Garden of Terror"
+      },
+      {
+        "naturalMapName": "Hanamura Temple"
+      },
+      {
+        "naturalMapName": "Sky Temple"
+      },
+      {
+        "naturalMapName": "Tomb of the Spider Queen"
+      },
+      {
+        "naturalMapName": "Towers of Doom"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "Braxis Holdout"
+      },
+      {
+        "weakMapName": "Infernal Shrines"
+      },
+      {
+        "weakMapName": "Volskaya Foundry"
+      }
+    ]
+  },
+  {
+    "heroName": "Orphea",
+    "heroCounter": [
+      {
+        "heroCounterName": "anubarak"
+      },
+      {
+        "heroCounterName": "chen"
+      },
+      {
+        "heroCounterName": "genji"
+      },
+      {
+        "heroCounterName": "lunara"
+      },
+      {
+        "heroCounterName": "muradin"
+      },
+      {
+        "heroCounterName": "nova"
+      },
+      {
+        "heroCounterName": "tracer"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "arthas"
+      },
+      {
+        "heroSynergyName": "diablo"
+      },
+      {
+        "heroSynergyName": "johanna"
+      },
+      {
+        "heroSynergyName": "malganis"
+      },
+      {
+        "heroSynergyName": "varian"
+      },
+      {
+        "heroSynergyName": "xul"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Alterac Pass"
+      },
+      {
+        "strongMapName": "Cursed Hollow"
+      },
+      {
+        "strongMapName": "Garden of Terror"
+      },
+      {
+        "strongMapName": "Sky Temple"
+      },
+      {
+        "strongMapName": "Towers of Doom"
+      },
+      {
+        "strongMapName": "Volskaya Foundry"
+      },
+      {
+        "strongMapName": "Warhead Junction"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Braxis Holdout"
+      },
+      {
+        "naturalMapName": "Dragon Shire"
+      },
+      {
+        "naturalMapName": "Hanamura Temple"
+      },
+      {
+        "naturalMapName": "Infernal Shrines"
+      },
+      {
+        "naturalMapName": "Tomb of the Spider Queen"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "Battlefield of Eternity"
+      },
+      {
+        "weakMapName": "Blackheart's Bay"
+      }
+    ]
+  },
+  {
+    "heroName": "Probius",
+    "heroCounter": [
+      {
+        "heroCounterName": "kerrigan"
+      },
+      {
+        "heroCounterName": "alarak"
+      },
+      {
+        "heroCounterName": "zeratul"
+      },
+      {
+        "heroCounterName": "tracer"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "e.t.c."
+      },
+      {
+        "heroSynergyName": "diablo"
+      },
+      {
+        "heroSynergyName": "anubarak"
+      },
+      {
+        "heroSynergyName": "arthas"
+      },
+      {
+        "heroSynergyName": "malfurion"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Alterac Pass"
+      },
+      {
+        "strongMapName": "Braxis Holdout"
+      },
+      {
+        "strongMapName": "Infernal Shrines"
+      },
+      {
+        "strongMapName": "Tomb of the Spider Queen"
+      },
+      {
+        "strongMapName": "Towers of Doom"
+      },
+      {
+        "strongMapName": "Volskaya Foundry"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Cursed Hollow"
+      },
+      {
+        "naturalMapName": "Dragon Shire"
+      },
+      {
+        "naturalMapName": "Garden of Terror"
+      },
+      {
+        "naturalMapName": "Sky Temple"
+      },
+      {
+        "naturalMapName": "Warhead Junction"
+      },
+      {
+        "naturalMapName": "Hanamura Temple"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "Battlefield of Eternity"
+      },
+      {
+        "weakMapName": "Blackheart's Bay"
+      }
+    ]
+  },
+  {
+    "heroName": "Qhira",
+    "heroCounter": [
+      {
+        "heroCounterName": "lucio"
+      },
+      {
+        "heroCounterName": "muradin"
+      },
+      {
+        "heroCounterName": "e.t.c."
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "uther"
+      },
+      {
+        "heroSynergyName": "rehgar"
+      },
+      {
+        "heroSynergyName": "arthas"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Dragon Shire"
+      },
+      {
+        "strongMapName": "Hanamura Temple"
+      },
+      {
+        "strongMapName": "Tomb of the Spider Queen"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Alterac Pass"
+      },
+      {
+        "naturalMapName": "Battlefield of Eternity"
+      },
+      {
+        "naturalMapName": "Blackheart's Bay"
+      },
+      {
+        "naturalMapName": "Braxis Holdout"
+      },
+      {
+        "naturalMapName": "Cursed Hollow"
+      },
+      {
+        "naturalMapName": "Garden of Terror"
+      },
+      {
+        "naturalMapName": "Infernal Shrines"
+      },
+      {
+        "naturalMapName": "Sky Temple"
+      },
+      {
+        "naturalMapName": "Towers of Doom"
+      },
+      {
+        "naturalMapName": "Volskaya Foundry"
+      },
+      {
+        "naturalMapName": "Warhead Junction"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "None"
+      }
+    ]
+  },
+  {
+    "heroName": "Ragnaros",
+    "heroCounter": [
+      {
+        "heroCounterName": "chen"
+      },
+      {
+        "heroCounterName": "lunara"
+      },
+      {
+        "heroCounterName": "nova"
+      },
+      {
+        "heroCounterName": "tracer"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "arthas"
+      },
+      {
+        "heroSynergyName": "johanna"
+      },
+      {
+        "heroSynergyName": "malfurion"
+      },
+      {
+        "heroSynergyName": "muradin"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Braxis Holdout"
+      },
+      {
+        "strongMapName": "Infernal Shrines"
+      },
+      {
+        "strongMapName": "Tomb of the Spider Queen"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Alterac Pass"
+      },
+      {
+        "naturalMapName": "Battlefield of Eternity"
+      },
+      {
+        "naturalMapName": "Blackheart's Bay"
+      },
+      {
+        "naturalMapName": "Cursed Hollow"
+      },
+      {
+        "naturalMapName": "Dragon Shire"
+      },
+      {
+        "naturalMapName": "Garden of Terror"
+      },
+      {
+        "naturalMapName": "Hanamura Temple"
+      },
+      {
+        "naturalMapName": "Sky Temple"
+      },
+      {
+        "naturalMapName": "Towers of Doom"
+      },
+      {
+        "naturalMapName": "Volskaya Foundry"
+      },
+      {
+        "naturalMapName": "Warhead Junction"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "None"
+      }
+    ]
+  },
+  {
+    "heroName": "Raynor",
+    "heroCounter": [
+      {
+        "heroCounterName": "johanna"
+      },
+      {
+        "heroCounterName": "artanis"
+      },
+      {
+        "heroCounterName": "cassia"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "e.t.c."
+      },
+      {
+        "heroSynergyName": "garrosh"
+      },
+      {
+        "heroSynergyName": "thrall"
+      },
+      {
+        "heroSynergyName": "lt-morales"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Battlefield of Eternity"
+      },
+      {
+        "strongMapName": "Dragon Shire"
+      },
+      {
+        "strongMapName": "Infernal Shrines"
+      },
+      {
+        "strongMapName": "Tomb of the Spider Queen"
+      },
+      {
+        "strongMapName": "Towers of Doom"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Alterac Pass"
+      },
+      {
+        "naturalMapName": "Blackheart's Bay"
+      },
+      {
+        "naturalMapName": "Braxis Holdout"
+      },
+      {
+        "naturalMapName": "Cursed Hollow"
+      },
+      {
+        "naturalMapName": "Garden of Terror"
+      },
+      {
+        "naturalMapName": "Hanamura Temple"
+      },
+      {
+        "naturalMapName": "Sky Temple"
+      },
+      {
+        "naturalMapName": "Volskaya Foundry"
+      },
+      {
+        "naturalMapName": "Warhead Junction"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "None"
+      }
+    ]
+  },
+  {
+    "heroName": "Rehgar",
+    "heroCounter": [
+      {
+        "heroCounterName": "muradin"
+      },
+      {
+        "heroCounterName": "varian"
+      },
+      {
+        "heroCounterName": "ana"
+      },
+      {
+        "heroCounterName": "tracer"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "illidan"
+      },
+      {
+        "heroSynergyName": "e.t.c."
+      },
+      {
+        "heroSynergyName": "kerrigan"
+      },
+      {
+        "heroSynergyName": "thrall"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Battlefield of Eternity"
+      },
+      {
+        "strongMapName": "Dragon Shire"
+      },
+      {
+        "strongMapName": "Tomb of the Spider Queen"
+      },
+      {
+        "strongMapName": "Volskaya Foundry"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Alterac Pass"
+      },
+      {
+        "naturalMapName": "Blackheart's Bay"
+      },
+      {
+        "naturalMapName": "Braxis Holdout"
+      },
+      {
+        "naturalMapName": "Cursed Hollow"
+      },
+      {
+        "naturalMapName": "Garden of Terror"
+      },
+      {
+        "naturalMapName": "Hanamura Temple"
+      },
+      {
+        "naturalMapName": "Infernal Shrines"
+      },
+      {
+        "naturalMapName": "Sky Temple"
+      },
+      {
+        "naturalMapName": "Towers of Doom"
+      },
+      {
+        "naturalMapName": "Warhead Junction"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "None"
+      }
+    ]
+  },
+  {
+    "heroName": "Rexxar",
+    "heroCounter": [
+      {
+        "heroCounterName": "qhira"
+      },
+      {
+        "heroCounterName": "zeratul"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "johanna"
+      },
+      {
+        "heroSynergyName": "jaina"
+      },
+      {
+        "heroSynergyName": "malfurion"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Braxis Holdout"
+      },
+      {
+        "strongMapName": "Dragon Shire"
+      },
+      {
+        "strongMapName": "Tomb of the Spider Queen"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Alterac Pass"
+      },
+      {
+        "naturalMapName": "Battlefield of Eternity"
+      },
+      {
+        "naturalMapName": "Blackheart's Bay"
+      },
+      {
+        "naturalMapName": "Cursed Hollow"
+      },
+      {
+        "naturalMapName": "Garden of Terror"
+      },
+      {
+        "naturalMapName": "Hanamura Temple"
+      },
+      {
+        "naturalMapName": "Infernal Shrines"
+      },
+      {
+        "naturalMapName": "Sky Temple"
+      },
+      {
+        "naturalMapName": "Towers of Doom"
+      },
+      {
+        "naturalMapName": "Volskaya Foundry"
+      },
+      {
+        "naturalMapName": "Warhead Junction"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "None"
+      }
+    ]
+  },
+  {
+    "heroName": "Samuro",
+    "heroCounter": [
+      {
+        "heroCounterName": "alarak"
+      },
+      {
+        "heroCounterName": "junkrat"
+      },
+      {
+        "heroCounterName": "kaelthas"
+      },
+      {
+        "heroCounterName": "zarya"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "abathur"
+      },
+      {
+        "heroSynergyName": "deckard"
+      },
+      {
+        "heroSynergyName": "e.t.c."
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Alterac Pass"
+      },
+      {
+        "strongMapName": "Battlefield of Eternity"
+      },
+      {
+        "strongMapName": "Blackheart's Bay"
+      },
+      {
+        "strongMapName": "Cursed Hollow"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Braxis Holdout"
+      },
+      {
+        "naturalMapName": "Dragon Shire"
+      },
+      {
+        "naturalMapName": "Garden of Terror"
+      },
+      {
+        "naturalMapName": "Hanamura Temple"
+      },
+      {
+        "naturalMapName": "Infernal Shrines"
+      },
+      {
+        "naturalMapName": "Sky Temple"
+      },
+      {
+        "naturalMapName": "Tomb of the Spider Queen"
+      },
+      {
+        "naturalMapName": "Towers of Doom"
+      },
+      {
+        "naturalMapName": "Volskaya Foundry"
+      },
+      {
+        "naturalMapName": "Warhead Junction"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "None"
+      }
+    ]
+  },
+  {
+    "heroName": "Sgt. Hammer",
+    "heroCounter": [
+      {
+        "heroCounterName": "artanis"
+      },
+      {
+        "heroCounterName": "chromie"
+      },
+      {
+        "heroCounterName": "kelthuzad"
+      },
+      {
+        "heroCounterName": "li-ming"
+      },
+      {
+        "heroCounterName": "stitches"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "e.t.c."
+      },
+      {
+        "heroSynergyName": "johanna"
+      },
+      {
+        "heroSynergyName": "lt-morales"
+      },
+      {
+        "heroSynergyName": "tassadar"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Battlefield of Eternity"
+      },
+      {
+        "strongMapName": "Braxis Holdout"
+      },
+      {
+        "strongMapName": "Infernal Shrines"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Alterac Pass"
+      },
+      {
+        "naturalMapName": "Cursed Hollow"
+      },
+      {
+        "naturalMapName": "Dragon Shire"
+      },
+      {
+        "naturalMapName": "Sky Temple"
+      },
+      {
+        "naturalMapName": "Towers of Doom"
+      },
+      {
+        "naturalMapName": "Volskaya Foundry"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "Blackheart's Bay"
+      },
+      {
+        "weakMapName": "Garden of Terror"
+      },
+      {
+        "weakMapName": "Hanamura Temple"
+      },
+      {
+        "weakMapName": "Tomb of the Spider Queen"
+      },
+      {
+        "weakMapName": "Warhead Junction"
+      }
+    ]
+  },
+  {
+    "heroName": "Sonya",
+    "heroCounter": [
+      {
+        "heroCounterName": "brightwing"
+      },
+      {
+        "heroCounterName": "e.t.c."
+      },
+      {
+        "heroCounterName": "lunara"
+      },
+      {
+        "heroCounterName": "malthael"
+      },
+      {
+        "heroCounterName": "muradin"
+      },
+      {
+        "heroCounterName": "uther"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "jaina"
+      },
+      {
+        "heroSynergyName": "medivh"
+      },
+      {
+        "heroSynergyName": "rehgar"
+      },
+      {
+        "heroSynergyName": "tassadar"
+      },
+      {
+        "heroSynergyName": "zarya"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Battlefield of Eternity"
+      },
+      {
+        "strongMapName": "Blackheart's Bay"
+      },
+      {
+        "strongMapName": "Cursed Hollow"
+      },
+      {
+        "strongMapName": "Garden of Terror"
+      },
+      {
+        "strongMapName": "Infernal Shrines"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Alterac Pass"
+      },
+      {
+        "naturalMapName": "Braxis Holdout"
+      },
+      {
+        "naturalMapName": "Dragon Shire"
+      },
+      {
+        "naturalMapName": "Hanamura Temple"
+      },
+      {
+        "naturalMapName": "Sky Temple"
+      },
+      {
+        "naturalMapName": "Tomb of the Spider Queen"
+      },
+      {
+        "naturalMapName": "Towers of Doom"
+      },
+      {
+        "naturalMapName": "Volskaya Foundry"
+      },
+      {
+        "naturalMapName": "Warhead Junction"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "None"
+      }
+    ]
+  },
+  {
+    "heroName": "Stitches",
+    "heroCounter": [
+      {
+        "heroCounterName": "leoric"
+      },
+      {
+        "heroCounterName": "anubarak"
+      },
+      {
+        "heroCounterName": "tychus"
+      },
+      {
+        "heroCounterName": "murky"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "uther"
+      },
+      {
+        "heroSynergyName": "jaina"
+      },
+      {
+        "heroSynergyName": "malfurion"
+      },
+      {
+        "heroSynergyName": "tyrande"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Cursed Hollow"
+      },
+      {
+        "strongMapName": "Dragon Shire"
+      },
+      {
+        "strongMapName": "Infernal Shrines"
+      },
+      {
+        "strongMapName": "Tomb of the Spider Queen"
+      },
+      {
+        "strongMapName": "Towers of Doom"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Alterac Pass"
+      },
+      {
+        "naturalMapName": "Blackheart's Bay"
+      },
+      {
+        "naturalMapName": "Braxis Holdout"
+      },
+      {
+        "naturalMapName": "Garden of Terror"
+      },
+      {
+        "naturalMapName": "Hanamura Temple"
+      },
+      {
+        "naturalMapName": "Sky Temple"
+      },
+      {
+        "naturalMapName": "Volskaya Foundry"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "Battlefield of Eternity"
+      },
+      {
+        "weakMapName": "Warhead Junction"
+      }
+    ]
+  },
+  {
+    "heroName": "Stukov",
+    "heroCounter": [
+      {
+        "heroCounterName": "anubarak"
+      },
+      {
+        "heroCounterName": "genji"
+      },
+      {
+        "heroCounterName": "uther"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "raynor"
+      },
+      {
+        "heroSynergyName": "e.t.c."
+      },
+      {
+        "heroSynergyName": "sgt-hammer"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Braxis Holdout"
+      },
+      {
+        "strongMapName": "Cursed Hollow"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Alterac Pass"
+      },
+      {
+        "naturalMapName": "Blackheart's Bay"
+      },
+      {
+        "naturalMapName": "Dragon Shire"
+      },
+      {
+        "naturalMapName": "Garden of Terror"
+      },
+      {
+        "naturalMapName": "Hanamura Temple"
+      },
+      {
+        "naturalMapName": "Infernal Shrines"
+      },
+      {
+        "naturalMapName": "Sky Temple"
+      },
+      {
+        "naturalMapName": "Tomb of the Spider Queen"
+      },
+      {
+        "naturalMapName": "Towers of Doom"
+      },
+      {
+        "naturalMapName": "Volskaya Foundry"
+      },
+      {
+        "naturalMapName": "Warhead Junction"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "Battlefield of Eternity"
+      }
+    ]
+  },
+  {
+    "heroName": "Sylvanas",
+    "heroCounter": [
+      {
+        "heroCounterName": "chen"
+      },
+      {
+        "heroCounterName": "diablo"
+      },
+      {
+        "heroCounterName": "genji"
+      },
+      {
+        "heroCounterName": "nova"
+      },
+      {
+        "heroCounterName": "the-butcher"
+      },
+      {
+        "heroCounterName": "valeera"
+      },
+      {
+        "heroCounterName": "zeratul"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "diablo"
+      },
+      {
+        "heroSynergyName": "e.t.c."
+      },
+      {
+        "heroSynergyName": "jaina"
+      },
+      {
+        "heroSynergyName": "tassadar"
+      },
+      {
+        "heroSynergyName": "tyrande"
+      },
+      {
+        "heroSynergyName": "valla"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Alterac Pass"
+      },
+      {
+        "strongMapName": "Braxis Holdout"
+      },
+      {
+        "strongMapName": "Tomb of the Spider Queen"
+      },
+      {
+        "strongMapName": "Volskaya Foundry"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Battlefield of Eternity"
+      },
+      {
+        "naturalMapName": "Blackheart's Bay"
+      },
+      {
+        "naturalMapName": "Cursed Hollow"
+      },
+      {
+        "naturalMapName": "Dragon Shire"
+      },
+      {
+        "naturalMapName": "Garden of Terror"
+      },
+      {
+        "naturalMapName": "Hanamura Temple"
+      },
+      {
+        "naturalMapName": "Infernal Shrines"
+      },
+      {
+        "naturalMapName": "Sky Temple"
+      },
+      {
+        "naturalMapName": "Towers of Doom"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "Warhead Junction"
+      }
+    ]
+  },
+  {
+    "heroName": "Tassadar",
+    "heroCounter": [
+      {
+        "heroCounterName": "tracer"
+      },
+      {
+        "heroCounterName": "greymane"
+      },
+      {
+        "heroCounterName": "zeratul"
+      },
+      {
+        "heroCounterName": "anubarak"
+      },
+      {
+        "heroCounterName": "kerrigan"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "maiev"
+      },
+      {
+        "heroSynergyName": "johanna"
+      },
+      {
+        "heroSynergyName": "e.t.c."
+      },
+      {
+        "heroSynergyName": "genji"
+      },
+      {
+        "heroSynergyName": "zeratul"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Braxis Holdout"
+      },
+      {
+        "strongMapName": "Garden of Terror"
+      },
+      {
+        "strongMapName": "Infernal Shrines"
+      },
+      {
+        "strongMapName": "Tomb of the Spider Queen"
+      },
+      {
+        "strongMapName": "Volskaya Foundry"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Alterac Pass"
+      },
+      {
+        "naturalMapName": "Blackheart's Bay"
+      },
+      {
+        "naturalMapName": "Dragon Shire"
+      },
+      {
+        "naturalMapName": "Sky Temple"
+      },
+      {
+        "naturalMapName": "Towers of Doom"
+      },
+      {
+        "naturalMapName": "Warhead Junction"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "Battlefield of Eternity"
+      },
+      {
+        "weakMapName": "Cursed Hollow"
+      },
+      {
+        "weakMapName": "Hanamura Temple"
+      }
+    ]
+  },
+  {
+    "heroName": "The Butcher",
+    "heroCounter": [
+      {
+        "heroCounterName": "johanna"
+      },
+      {
+        "heroCounterName": "e.t.c."
+      },
+      {
+        "heroCounterName": "brightwing"
+      },
+      {
+        "heroCounterName": "uther"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "abathur"
+      },
+      {
+        "heroSynergyName": "tyrande"
+      },
+      {
+        "heroSynergyName": "uther"
+      },
+      {
+        "heroSynergyName": "tyrael"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Dragon Shire"
+      },
+      {
+        "strongMapName": "Garden of Terror"
+      },
+      {
+        "strongMapName": "Sky Temple"
+      },
+      {
+        "strongMapName": "Tomb of the Spider Queen"
+      },
+      {
+        "strongMapName": "Towers of Doom"
+      },
+      {
+        "strongMapName": "Warhead Junction"
+      },
+      {
+        "strongMapName": "Volskaya Foundry"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Alterac Pass"
+      },
+      {
+        "naturalMapName": "Cursed Hollow"
+      },
+      {
+        "naturalMapName": "Infernal Shrines"
+      },
+      {
+        "naturalMapName": "Hanamura Temple"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "Battlefield of Eternity"
+      },
+      {
+        "weakMapName": "Blackheart's Bay"
+      },
+      {
+        "weakMapName": "Braxis Holdout"
+      }
+    ]
+  },
+  {
+    "heroName": "The Lost Vikings",
+    "heroCounter": [
+      {
+        "heroCounterName": "zagara"
+      },
+      {
+        "heroCounterName": "sonya"
+      },
+      {
+        "heroCounterName": "zeratul"
+      },
+      {
+        "heroCounterName": "nova"
+      },
+      {
+        "heroCounterName": "falstad"
+      },
+      {
+        "heroCounterName": "dehaka"
+      },
+      {
+        "heroCounterName": "li-ming"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "zarya"
+      },
+      {
+        "heroSynergyName": "garrosh"
+      },
+      {
+        "heroSynergyName": "sylvanas"
+      },
+      {
+        "heroSynergyName": "raynor"
+      },
+      {
+        "heroSynergyName": "sgt-hammer"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Alterac Pass"
+      },
+      {
+        "strongMapName": "Cursed Hollow"
+      },
+      {
+        "strongMapName": "Garden of Terror"
+      },
+      {
+        "strongMapName": "Sky Temple"
+      },
+      {
+        "strongMapName": "Towers of Doom"
+      },
+      {
+        "strongMapName": "Warhead Junction"
+      },
+      {
+        "strongMapName": "Volskaya Foundry"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Blackheart's Bay"
+      },
+      {
+        "naturalMapName": "Dragon Shire"
+      },
+      {
+        "naturalMapName": "Infernal Shrines"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "Battlefield of Eternity"
+      },
+      {
+        "weakMapName": "Braxis Holdout"
+      },
+      {
+        "weakMapName": "Tomb of the Spider Queen"
+      },
+      {
+        "weakMapName": "Hanamura Temple"
+      }
+    ]
+  },
+  {
+    "heroName": "Thrall",
+    "heroCounter": [
+      {
+        "heroCounterName": "johanna"
+      },
+      {
+        "heroCounterName": "arthas"
+      },
+      {
+        "heroCounterName": "kaelthas"
+      },
+      {
+        "heroCounterName": "lunara"
+      },
+      {
+        "heroCounterName": "malfurion"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "diablo"
+      },
+      {
+        "heroSynergyName": "fenix"
+      },
+      {
+        "heroSynergyName": "chromie"
+      },
+      {
+        "heroSynergyName": "rehgar"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Battlefield of Eternity"
+      },
+      {
+        "strongMapName": "Blackheart's Bay"
+      },
+      {
+        "strongMapName": "Braxis Holdout"
+      },
+      {
+        "strongMapName": "Dragon Shire"
+      },
+      {
+        "strongMapName": "Hanamura Temple"
+      },
+      {
+        "strongMapName": "Sky Temple"
+      },
+      {
+        "strongMapName": "Volskaya Foundry"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Alterac Pass"
+      },
+      {
+        "naturalMapName": "Cursed Hollow"
+      },
+      {
+        "naturalMapName": "Garden of Terror"
+      },
+      {
+        "naturalMapName": "Infernal Shrines"
+      },
+      {
+        "naturalMapName": "Towers of Doom"
+      },
+      {
+        "naturalMapName": "Warhead Junction"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "Tomb of the Spider Queen"
+      }
+    ]
+  },
+  {
+    "heroName": "Tracer",
+    "heroCounter": [
+      {
+        "heroCounterName": "varian"
+      },
+      {
+        "heroCounterName": "diablo"
+      },
+      {
+        "heroCounterName": "medivh"
+      },
+      {
+        "heroCounterName": "raynor"
+      },
+      {
+        "heroCounterName": "sgt-hammer"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "tassadar"
+      },
+      {
+        "heroSynergyName": "jaina"
+      },
+      {
+        "heroSynergyName": "guldan"
+      },
+      {
+        "heroSynergyName": "kaelthas"
+      },
+      {
+        "heroSynergyName": "malfurion"
+      },
+      {
+        "heroSynergyName": "anduin"
+      },
+      {
+        "heroSynergyName": "abathur"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Cursed Hollow"
+      },
+      {
+        "strongMapName": "Dragon Shire"
+      },
+      {
+        "strongMapName": "Sky Temple"
+      },
+      {
+        "strongMapName": "Towers of Doom"
+      },
+      {
+        "strongMapName": "Volskaya Foundry"
+      },
+      {
+        "strongMapName": "Warhead Junction"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Alterac Pass"
+      },
+      {
+        "naturalMapName": "Battlefield of Eternity"
+      },
+      {
+        "naturalMapName": "Blackheart's Bay"
+      },
+      {
+        "naturalMapName": "Braxis Holdout"
+      },
+      {
+        "naturalMapName": "Garden of Terror"
+      },
+      {
+        "naturalMapName": "Hanamura Temple"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "Infernal Shrines"
+      },
+      {
+        "weakMapName": "Tomb of the Spider Queen"
+      }
+    ]
+  },
+  {
+    "heroName": "Tychus",
+    "heroCounter": [
+      {
+        "heroCounterName": "anubarak"
+      },
+      {
+        "heroCounterName": "johanna"
+      },
+      {
+        "heroCounterName": "lucio"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "garrosh"
+      },
+      {
+        "heroSynergyName": "e.t.c."
+      },
+      {
+        "heroSynergyName": "dehaka"
+      },
+      {
+        "heroSynergyName": "uther"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Cursed Hollow"
+      },
+      {
+        "strongMapName": "Infernal Shrines"
+      },
+      {
+        "strongMapName": "Towers of Doom"
+      },
+      {
+        "strongMapName": "Volskaya Foundry"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Alterac Pass"
+      },
+      {
+        "naturalMapName": "Battlefield of Eternity"
+      },
+      {
+        "naturalMapName": "Braxis Holdout"
+      },
+      {
+        "naturalMapName": "Dragon Shire"
+      },
+      {
+        "naturalMapName": "Garden of Terror"
+      },
+      {
+        "naturalMapName": "Hanamura Temple"
+      },
+      {
+        "naturalMapName": "Tomb of the Spider Queen"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "Blackheart's Bay"
+      },
+      {
+        "weakMapName": "Sky Temple"
+      },
+      {
+        "weakMapName": "Warhead Junction"
+      }
+    ]
+  },
+  {
+    "heroName": "Tyrael",
+    "heroCounter": [
+      {
+        "heroCounterName": "garrosh"
+      },
+      {
+        "heroCounterName": "e.t.c."
+      },
+      {
+        "heroCounterName": "zeratul"
+      },
+      {
+        "heroCounterName": "greymane"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "blaze"
+      },
+      {
+        "heroSynergyName": "illidan"
+      },
+      {
+        "heroSynergyName": "malfurion"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Cursed Hollow"
+      },
+      {
+        "strongMapName": "Sky Temple"
+      },
+      {
+        "strongMapName": "Towers of Doom"
+      },
+      {
+        "strongMapName": "Warhead Junction"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Alterac Pass"
+      },
+      {
+        "naturalMapName": "Battlefield of Eternity"
+      },
+      {
+        "naturalMapName": "Blackheart's Bay"
+      },
+      {
+        "naturalMapName": "Dragon Shire"
+      },
+      {
+        "naturalMapName": "Garden of Terror"
+      },
+      {
+        "naturalMapName": "Hanamura Temple"
+      },
+      {
+        "naturalMapName": "Infernal Shrines"
+      },
+      {
+        "naturalMapName": "Tomb of the Spider Queen"
+      },
+      {
+        "naturalMapName": "Volskaya Foundry"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "Braxis Holdout"
+      }
+    ]
+  },
+  {
+    "heroName": "Tyrande",
+    "heroCounter": [
+      {
+        "heroCounterName": "anubarak"
+      },
+      {
+        "heroCounterName": "muradin"
+      },
+      {
+        "heroCounterName": "zeratul"
+      },
+      {
+        "heroCounterName": "maiev"
+      },
+      {
+        "heroCounterName": "fenix"
+      },
+      {
+        "heroCounterName": "lunara"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "diablo"
+      },
+      {
+        "heroSynergyName": "e.t.c."
+      },
+      {
+        "heroSynergyName": "varian"
+      },
+      {
+        "heroSynergyName": "anubarak"
+      },
+      {
+        "heroSynergyName": "li-ming"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Battlefield of Eternity"
+      },
+      {
+        "strongMapName": "Dragon Shire"
+      },
+      {
+        "strongMapName": "Infernal Shrines"
+      },
+      {
+        "strongMapName": "Tomb of the Spider Queen"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Alterac Pass"
+      },
+      {
+        "naturalMapName": "Blackheart's Bay"
+      },
+      {
+        "naturalMapName": "Braxis Holdout"
+      },
+      {
+        "naturalMapName": "Cursed Hollow"
+      },
+      {
+        "naturalMapName": "Garden of Terror"
+      },
+      {
+        "naturalMapName": "Hanamura Temple"
+      },
+      {
+        "naturalMapName": "Sky Temple"
+      },
+      {
+        "naturalMapName": "Towers of Doom"
+      },
+      {
+        "naturalMapName": "Volskaya Foundry"
+      },
+      {
+        "naturalMapName": "Warhead Junction"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "None"
+      }
+    ]
+  },
+  {
+    "heroName": "Uther",
+    "heroCounter": [
+      {
+        "heroCounterName": "guldan"
+      },
+      {
+        "heroCounterName": "lunara"
+      },
+      {
+        "heroCounterName": "malthael"
+      },
+      {
+        "heroCounterName": "nazeebo"
+      },
+      {
+        "heroCounterName": "sylvanas"
+      },
+      {
+        "heroCounterName": "zagara"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "kerrigan"
+      },
+      {
+        "heroSynergyName": "illidan"
+      },
+      {
+        "heroSynergyName": "the-butcher"
+      },
+      {
+        "heroSynergyName": "zuljin"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "None"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Battlefield of Eternity"
+      },
+      {
+        "naturalMapName": "Blackheart's Bay"
+      },
+      {
+        "naturalMapName": "Cursed Hollow"
+      },
+      {
+        "naturalMapName": "Dragon Shire"
+      },
+      {
+        "naturalMapName": "Garden of Terror"
+      },
+      {
+        "naturalMapName": "Hanamura Temple"
+      },
+      {
+        "naturalMapName": "Sky Temple"
+      },
+      {
+        "naturalMapName": "Tomb of the Spider Queen"
+      },
+      {
+        "naturalMapName": "Towers of Doom"
+      },
+      {
+        "naturalMapName": "Volskaya Foundry"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "Alterac Pass"
+      },
+      {
+        "weakMapName": "Braxis Holdout"
+      },
+      {
+        "weakMapName": "Infernal Shrines"
+      },
+      {
+        "weakMapName": "Warhead Junction"
+      }
+    ]
+  },
+  {
+    "heroName": "Valeera",
+    "heroCounter": [
+      {
+        "heroCounterName": "e.t.c."
+      },
+      {
+        "heroCounterName": "arthas"
+      },
+      {
+        "heroCounterName": "medivh"
+      },
+      {
+        "heroCounterName": "lucio"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "garrosh"
+      },
+      {
+        "heroSynergyName": "e.t.c."
+      },
+      {
+        "heroSynergyName": "thrall"
+      },
+      {
+        "heroSynergyName": "jaina"
+      },
+      {
+        "heroSynergyName": "abathur"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Blackheart's Bay"
+      },
+      {
+        "strongMapName": "Cursed Hollow"
+      },
+      {
+        "strongMapName": "Dragon Shire"
+      },
+      {
+        "strongMapName": "Sky Temple"
+      },
+      {
+        "strongMapName": "Warhead Junction"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Alterac Pass"
+      },
+      {
+        "naturalMapName": "Battlefield of Eternity"
+      },
+      {
+        "naturalMapName": "Braxis Holdout"
+      },
+      {
+        "naturalMapName": "Garden of Terror"
+      },
+      {
+        "naturalMapName": "Infernal Shrines"
+      },
+      {
+        "naturalMapName": "Towers of Doom"
+      },
+      {
+        "naturalMapName": "Hanamura Temple"
+      },
+      {
+        "naturalMapName": "Volskaya Foundry"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "Tomb of the Spider Queen"
+      }
+    ]
+  },
+  {
+    "heroName": "Valla",
+    "heroCounter": [
+      {
+        "heroCounterName": "greymane"
+      },
+      {
+        "heroCounterName": "illidan"
+      },
+      {
+        "heroCounterName": "nova"
+      },
+      {
+        "heroCounterName": "the-butcher"
+      },
+      {
+        "heroCounterName": "valeera"
+      },
+      {
+        "heroCounterName": "zeratul"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "arthas"
+      },
+      {
+        "heroSynergyName": "e.t.c."
+      },
+      {
+        "heroSynergyName": "tassadar"
+      },
+      {
+        "heroSynergyName": "uther"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Battlefield of Eternity"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Alterac Pass"
+      },
+      {
+        "naturalMapName": "Blackheart's Bay"
+      },
+      {
+        "naturalMapName": "Braxis Holdout"
+      },
+      {
+        "naturalMapName": "Cursed Hollow"
+      },
+      {
+        "naturalMapName": "Dragon Shire"
+      },
+      {
+        "naturalMapName": "Garden of Terror"
+      },
+      {
+        "naturalMapName": "Hanamura Temple"
+      },
+      {
+        "naturalMapName": "Infernal Shrines"
+      },
+      {
+        "naturalMapName": "Sky Temple"
+      },
+      {
+        "naturalMapName": "Tomb of the Spider Queen"
+      },
+      {
+        "naturalMapName": "Towers of Doom"
+      },
+      {
+        "naturalMapName": "Volskaya Foundry"
+      },
+      {
+        "naturalMapName": "Warhead Junction"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "None"
+      }
+    ]
+  },
+  {
+    "heroName": "Varian",
+    "heroCounter": [
+      {
+        "heroCounterName": "e.t.c."
+      },
+      {
+        "heroCounterName": "arthas"
+      },
+      {
+        "heroCounterName": "lunara"
+      },
+      {
+        "heroCounterName": "medivh"
+      },
+      {
+        "heroCounterName": "rehgar"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "e.t.c."
+      },
+      {
+        "heroSynergyName": "blaze"
+      },
+      {
+        "heroSynergyName": "li-ming"
+      },
+      {
+        "heroSynergyName": "tyrande"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Blackheart's Bay"
+      },
+      {
+        "strongMapName": "Braxis Holdout"
+      },
+      {
+        "strongMapName": "Dragon Shire"
+      },
+      {
+        "strongMapName": "Garden of Terror"
+      },
+      {
+        "strongMapName": "Hanamura Temple"
+      },
+      {
+        "strongMapName": "Towers of Doom"
+      },
+      {
+        "strongMapName": "Volskaya Foundry"
+      },
+      {
+        "strongMapName": "Warhead Junction"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Alterac Pass"
+      },
+      {
+        "naturalMapName": "Cursed Hollow"
+      },
+      {
+        "naturalMapName": "Tomb of the Spider Queen"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "Battlefield of Eternity"
+      },
+      {
+        "weakMapName": "Infernal Shrines"
+      },
+      {
+        "weakMapName": "Sky Temple"
+      }
+    ]
+  },
+  {
+    "heroName": "Whitemane",
+    "heroCounter": [
+      {
+        "heroCounterName": "alarak"
+      },
+      {
+        "heroCounterName": "li-ming"
+      },
+      {
+        "heroCounterName": "raynor"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "johanna"
+      },
+      {
+        "heroSynergyName": "sonya"
+      },
+      {
+        "heroSynergyName": "blaze"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "None"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Alterac Pass"
+      },
+      {
+        "naturalMapName": "Blackheart's Bay"
+      },
+      {
+        "naturalMapName": "Cursed Hollow"
+      },
+      {
+        "naturalMapName": "Dragon Shire"
+      },
+      {
+        "naturalMapName": "Garden of Terror"
+      },
+      {
+        "naturalMapName": "Hanamura Temple"
+      },
+      {
+        "naturalMapName": "Sky Temple"
+      },
+      {
+        "naturalMapName": "Towers of Doom"
+      },
+      {
+        "naturalMapName": "Volskaya Foundry"
+      },
+      {
+        "naturalMapName": "Warhead Junction"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "Battlefield of Eternity"
+      },
+      {
+        "weakMapName": "Braxis Holdout"
+      },
+      {
+        "weakMapName": "Infernal Shrines"
+      },
+      {
+        "weakMapName": "Tomb of the Spider Queen"
+      }
+    ]
+  },
+  {
+    "heroName": "Xul",
+    "heroCounter": [
+      {
+        "heroCounterName": "e.t.c."
+      },
+      {
+        "heroCounterName": "johanna"
+      },
+      {
+        "heroCounterName": "jaina"
+      },
+      {
+        "heroCounterName": "sgt-hammer"
+      },
+      {
+        "heroCounterName": "auriel"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "tyrande"
+      },
+      {
+        "heroSynergyName": "medivh"
+      },
+      {
+        "heroSynergyName": "li-ming"
+      },
+      {
+        "heroSynergyName": "falstad"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Blackheart's Bay"
+      },
+      {
+        "strongMapName": "Cursed Hollow"
+      },
+      {
+        "strongMapName": "Garden of Terror"
+      },
+      {
+        "strongMapName": "Infernal Shrines"
+      },
+      {
+        "strongMapName": "Sky Temple"
+      },
+      {
+        "strongMapName": "Tomb of the Spider Queen"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Alterac Pass"
+      },
+      {
+        "naturalMapName": "Dragon Shire"
+      },
+      {
+        "naturalMapName": "Towers of Doom"
+      },
+      {
+        "naturalMapName": "Warhead Junction"
+      },
+      {
+        "naturalMapName": "Volskaya Foundry"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "Battlefield of Eternity"
+      },
+      {
+        "weakMapName": "Braxis Holdout"
+      },
+      {
+        "weakMapName": "Hanamura Temple"
+      }
+    ]
+  },
+  {
+    "heroName": "Yrel",
+    "heroCounter": [
+      {
+        "heroCounterName": "e.t.c."
+      },
+      {
+        "heroCounterName": "lucio"
+      },
+      {
+        "heroCounterName": "raynor"
+      },
+      {
+        "heroCounterName": "johanna"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "garrosh"
+      },
+      {
+        "heroSynergyName": "johanna"
+      },
+      {
+        "heroSynergyName": "maiev"
+      },
+      {
+        "heroSynergyName": "abathur"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Braxis Holdout"
+      },
+      {
+        "strongMapName": "Dragon Shire"
+      },
+      {
+        "strongMapName": "Infernal Shrines"
+      },
+      {
+        "strongMapName": "Sky Temple"
+      },
+      {
+        "strongMapName": "Volskaya Foundry"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Alterac Pass"
+      },
+      {
+        "naturalMapName": "Battlefield of Eternity"
+      },
+      {
+        "naturalMapName": "Blackheart's Bay"
+      },
+      {
+        "naturalMapName": "Cursed Hollow"
+      },
+      {
+        "naturalMapName": "Garden of Terror"
+      },
+      {
+        "naturalMapName": "Tomb of the Spider Queen"
+      },
+      {
+        "naturalMapName": "Towers of Doom"
+      },
+      {
+        "naturalMapName": "Warhead Junction"
+      },
+      {
+        "naturalMapName": "Hanamura Temple"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "None"
+      }
+    ]
+  },
+  {
+    "heroName": "Zagara",
+    "heroCounter": [
+      {
+        "heroCounterName": "illidan"
+      },
+      {
+        "heroCounterName": "falstad"
+      },
+      {
+        "heroCounterName": "chen"
+      },
+      {
+        "heroCounterName": "zeratul"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "e.t.c."
+      },
+      {
+        "heroSynergyName": "diablo"
+      },
+      {
+        "heroSynergyName": "jaina"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Alterac Pass"
+      },
+      {
+        "strongMapName": "Braxis Holdout"
+      },
+      {
+        "strongMapName": "Cursed Hollow"
+      },
+      {
+        "strongMapName": "Garden of Terror"
+      },
+      {
+        "strongMapName": "Sky Temple"
+      },
+      {
+        "strongMapName": "Towers of Doom"
+      },
+      {
+        "strongMapName": "Warhead Junction"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Battlefield of Eternity"
+      },
+      {
+        "naturalMapName": "Blackheart's Bay"
+      },
+      {
+        "naturalMapName": "Dragon Shire"
+      },
+      {
+        "naturalMapName": "Infernal Shrines"
+      },
+      {
+        "naturalMapName": "Tomb of the Spider Queen"
+      },
+      {
+        "naturalMapName": "Volskaya Foundry"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "Hanamura Temple"
+      }
+    ]
+  },
+  {
+    "heroName": "Zarya",
+    "heroCounter": [
+      {
+        "heroCounterName": "alarak"
+      },
+      {
+        "heroCounterName": "illidan"
+      },
+      {
+        "heroCounterName": "sylvanas"
+      },
+      {
+        "heroCounterName": "jaina"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "e.t.c."
+      },
+      {
+        "heroSynergyName": "muradin"
+      },
+      {
+        "heroSynergyName": "johanna"
+      },
+      {
+        "heroSynergyName": "chen"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Braxis Holdout"
+      },
+      {
+        "strongMapName": "Cursed Hollow"
+      },
+      {
+        "strongMapName": "Hanamura Temple"
+      },
+      {
+        "strongMapName": "Infernal Shrines"
+      },
+      {
+        "strongMapName": "Towers of Doom"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Alterac Pass"
+      },
+      {
+        "naturalMapName": "Battlefield of Eternity"
+      },
+      {
+        "naturalMapName": "Blackheart's Bay"
+      },
+      {
+        "naturalMapName": "Dragon Shire"
+      },
+      {
+        "naturalMapName": "Garden of Terror"
+      },
+      {
+        "naturalMapName": "Sky Temple"
+      },
+      {
+        "naturalMapName": "Tomb of the Spider Queen"
+      },
+      {
+        "naturalMapName": "Volskaya Foundry"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "Warhead Junction"
+      }
+    ]
+  },
+  {
+    "heroName": "Zeratul",
+    "heroCounter": [
+      {
+        "heroCounterName": "artanis"
+      },
+      {
+        "heroCounterName": "arthas"
+      },
+      {
+        "heroCounterName": "brightwing"
+      },
+      {
+        "heroCounterName": "cho"
+      },
+      {
+        "heroCounterName": "johanna"
+      },
+      {
+        "heroCounterName": "sonya"
+      },
+      {
+        "heroCounterName": "uther"
+      },
+      {
+        "heroCounterName": "varian"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "abathur"
+      },
+      {
+        "heroSynergyName": "diablo"
+      },
+      {
+        "heroSynergyName": "jaina"
+      },
+      {
+        "heroSynergyName": "uther"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "Blackheart's Bay"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Alterac Pass"
+      },
+      {
+        "naturalMapName": "Battlefield of Eternity"
+      },
+      {
+        "naturalMapName": "Cursed Hollow"
+      },
+      {
+        "naturalMapName": "Dragon Shire"
+      },
+      {
+        "naturalMapName": "Garden of Terror"
+      },
+      {
+        "naturalMapName": "Sky Temple"
+      },
+      {
+        "naturalMapName": "Tomb of the Spider Queen"
+      },
+      {
+        "naturalMapName": "Towers of Doom"
+      },
+      {
+        "naturalMapName": "Volskaya Foundry"
+      },
+      {
+        "naturalMapName": "Warhead Junction"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "Braxis Holdout"
+      },
+      {
+        "weakMapName": "Hanamura Temple"
+      },
+      {
+        "weakMapName": "Infernal Shrines"
+      }
+    ]
+  },
+  {
+    "heroName": "Zul'jin",
+    "heroCounter": [
+      {
+        "heroCounterName": "e.t.c."
+      },
+      {
+        "heroCounterName": "dehaka"
+      },
+      {
+        "heroCounterName": "diablo"
+      },
+      {
+        "heroCounterName": "the-butcher"
+      },
+      {
+        "heroCounterName": "zeratul"
+      }
+    ],
+    "heroSynergy": [
+      {
+        "heroSynergyName": "tyrael"
+      },
+      {
+        "heroSynergyName": "e.t.c."
+      },
+      {
+        "heroSynergyName": "tassadar"
+      },
+      {
+        "heroSynergyName": "uther"
+      },
+      {
+        "heroSynergyName": "medivh"
+      },
+      {
+        "heroSynergyName": "arthas"
+      }
+    ],
+    "strongMap": [
+      {
+        "strongMapName": "None"
+      }
+    ],
+    "naturalMap": [
+      {
+        "naturalMapName": "Battlefield of Eternity"
+      },
+      {
+        "naturalMapName": "Blackheart's Bay"
+      },
+      {
+        "naturalMapName": "Braxis Holdout"
+      },
+      {
+        "naturalMapName": "Cursed Hollow"
+      },
+      {
+        "naturalMapName": "Dragon Shire"
+      },
+      {
+        "naturalMapName": "Garden of Terror"
+      },
+      {
+        "naturalMapName": "Infernal Shrines"
+      },
+      {
+        "naturalMapName": "Sky Temple"
+      },
+      {
+        "naturalMapName": "Tomb of the Spider Queen"
+      },
+      {
+        "naturalMapName": "Towers of Doom"
+      },
+      {
+        "naturalMapName": "Warhead Junction"
+      },
+      {
+        "naturalMapName": "Hanamura Temple"
+      },
+      {
+        "naturalMapName": "Volskaya Foundry"
+      },
+      {
+        "naturalMapName": "Alterac Pass"
+      }
+    ],
+    "weakMap": [
+      {
+        "weakMapName": "None"
+      }
+    ]
+  }
+]
