@@ -599,16 +599,48 @@ nav h2 a {
 .mapHexUnit {
   display: flex;
   flex-direction: row;
-  /* width: 800px; */
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 2%;
 }
-.mapHexagonBG {
+
+.mapHexIcon {
+  width: 111px;
+  height: 111px;
+  position: relative;
+}
+
+.mapHexaBG {
   background-image: url("/images/general/mapHexagon.png");
-  /* width: 8%;
-  height: 8%; */
+  content: "";
+  width: 111px;
+  height: 111px;
+  position: relative;
 }
-.mapWiderImg img {
-  width: 25%;
-  height: 25%;
+
+.bottomMapInfo {
+  text-align: center;
+  padding: 8px 8px 8px 8px;
+  margin-top: 5%;
+  font-size: 14px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.mapObjMain {
+  /* margin-left: 5%;
+  margin-right: 5%; */
+}
+
+.mapWider img {
+  width: 20%;
+  height: 20%;
+}
+.mapWider img:hover {
+  width: 66%;
+  height: 66%;
 }
 
 /* -- Map page --*/
