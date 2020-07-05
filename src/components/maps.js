@@ -7,64 +7,100 @@ class Maps extends PureComponent {
   state = {
     mapJson: JSON.parse(JSON.stringify(mapData)).default,
     mapHexId: "",
+    bottomDisplayUnit: "",
   };
 
   mapInfoGenerator = () => {
-    return (
-      <div>
-        {this.state.mapHexId === "" ? null : (
-          <div>
-            <div>{this.state.mapJson[this.state.mapHexId].mName}</div>
-            <div className={styles.mapObjMain}>
-              Objective Name:
-              {
-                this.state.mapJson[this.state.mapHexId].mapObj.objectiveA
-                  .objName
-              }
-              Objective Description:
-              {
-                this.state.mapJson[this.state.mapHexId].mapObj.objectiveA
-                  .objDescription
-              }
-              Objective Image:
-              {this.state.mapJson[this.state.mapHexId].mapObj.objectiveA.objImg}
-            </div>
-            <div className={styles.mapObjMain}>
-              Objective Name:
-              {
-                this.state.mapJson[this.state.mapHexId].mapObj.objectiveB
-                  .objName
-              }
-              Objective Description:
-              {
-                this.state.mapJson[this.state.mapHexId].mapObj.objectiveB
-                  .objDescription
-              }
-              Objective Image:
-              {this.state.mapJson[this.state.mapHexId].mapObj.objectiveB.objImg}
-            </div>{" "}
-            <div className={styles.mapObjMain}>
-              Objective Name:
-              {
-                this.state.mapJson[this.state.mapHexId].mapObj.objectiveC
-                  .objName
-              }
-              Objective Description:
-              {
-                this.state.mapJson[this.state.mapHexId].mapObj.objectiveC
-                  .objDescription
-              }
-              Objective Image:
-              {this.state.mapJson[this.state.mapHexId].mapObj.objectiveC.objImg}
-            </div>
-            <div className={styles.mapWider}>
+    return this.state.mapHexId === "" ? null : (
+      <div className={styles.mapBottomContainer}>
+        <div className={styles.mapInfo}>
+          <h1>{this.state.mapJson[this.state.mapHexId].mName}</h1>
+          <div className={styles.mapWider}>
+            <a
+              rel="prefetch"
+              href={this.state.mapJson[this.state.mapHexId].mapWider}
+            >
               <img
                 alt={`mini ${this.state.mapJson[this.state.mapHexId].mName}`}
                 src={this.state.mapJson[this.state.mapHexId].mapWider}
               />
-            </div>
+            </a>
           </div>
-        )}
+        </div>
+        <div className={styles.objTitle}>
+          <h2>Map Objectives</h2>
+        </div>
+        <div className={styles.mapObj}>
+          <div className={styles.mapObjMain}>
+            <h5>
+              {
+                this.state.mapJson[this.state.mapHexId].mapObj.objectiveA
+                  .objName
+              }
+            </h5>
+            <p>
+              {
+                this.state.mapJson[this.state.mapHexId].mapObj.objectiveA
+                  .objDescription
+              }
+            </p>
+            <img
+              alt={
+                this.state.mapJson[this.state.mapHexId].mapObj.objectiveA
+                  .objName
+              }
+              src={
+                this.state.mapJson[this.state.mapHexId].mapObj.objectiveA.objImg
+              }
+            />
+          </div>
+          <div className={styles.mapObjMain}>
+            <h5>
+              {
+                this.state.mapJson[this.state.mapHexId].mapObj.objectiveB
+                  .objName
+              }
+            </h5>
+            <p>
+              {
+                this.state.mapJson[this.state.mapHexId].mapObj.objectiveB
+                  .objDescription
+              }
+            </p>
+            <img
+              alt={
+                this.state.mapJson[this.state.mapHexId].mapObj.objectiveB
+                  .objName
+              }
+              src={
+                this.state.mapJson[this.state.mapHexId].mapObj.objectiveB.objImg
+              }
+            />
+          </div>
+          <div className={styles.mapObjMain}>
+            <h5>
+              {
+                this.state.mapJson[this.state.mapHexId].mapObj.objectiveC
+                  .objName
+              }
+            </h5>
+            <p>
+              {
+                this.state.mapJson[this.state.mapHexId].mapObj.objectiveC
+                  .objDescription
+              }
+            </p>
+            <img
+              alt={
+                this.state.mapJson[this.state.mapHexId].mapObj.objectiveC
+                  .objName
+              }
+              src={
+                this.state.mapJson[this.state.mapHexId].mapObj.objectiveC.objImg
+              }
+            />
+          </div>
+        </div>
       </div>
     );
   };
@@ -73,29 +109,50 @@ class Maps extends PureComponent {
     return (
       <div className={styles.mainContent}>
         <div className={styles.container}>
-          <h2>{this.props.title}</h2>
-          <div className={styles.mapHexUnit}>
-            {this.state.mapJson.map((compact, id) =>
-              this.state.mapHexId === undefined ? null : (
-                <div
-                  key={id}
-                  onClick={() => {
-                    this.setState({
-                      mapHexId: id,
-                    });
-                  }}
-                >
-                  <img
-                    className={styles.mapHexIcon}
-                    alt={compact.mName}
-                    src={`../../images/maps/${compact.mName}.jpg`}
-                  />
-                  <div className={styles.mapHexaBG}></div>
-                </div>
-              )
-            )}
+          <div className={styles.mapContainer}>
+            <h2>{this.props.title}</h2>
+            <div className={styles.mapHexCollage}>
+              {this.state.mapJson.map((compact, id) =>
+                this.state.mapHexId === undefined ? null : (
+                  <div
+                    key={id}
+                    onClick={() => {
+                      this.setState({
+                        mapHexId: id,
+                        bottomDisplayUnit: "block",
+                      });
+                    }}
+                  >
+                    <div
+                      className={
+                        id !== this.state.mapHexId && this.state.mapHexId !== ""
+                          ? styles.mapHexUnitUnActive
+                          : null
+                      }
+                    >
+                      <div className={styles.mapHexIcon}>
+                        <img
+                          alt={compact.mName}
+                          src={`../../images/maps/${compact.mName}.jpg`}
+                        />
+                      </div>
+                      <div className={styles.mapHexaBG}>
+                        <span className={styles.mapHexaBGName}>
+                          {compact.mName}
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                )
+              )}
+            </div>
+            <div
+              className={styles.bottomMapInfo}
+              style={{ display: this.state.bottomDisplayUnit }}
+            >
+              {this.mapInfoGenerator()}
+            </div>
           </div>
-          <div className={styles.bottomMapInfo}>{this.mapInfoGenerator()}</div>
         </div>
       </div>
     );
