@@ -1,110 +1,108 @@
-import React, { PureComponent } from "react";
-// import axios from "axios";
+import React, { Component, useState, useEffect } from "react";
+import axios from "axios";
+
 import styles from "../app.module.css";
 
-class Home extends PureComponent {
-  state = {
-    homeTitle: this.props.title,
-    weeklyData: [],
-  };
+class Home extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      error: null,
+      isLoaded: false,
+      items: [],
+    };
+  }
 
-  // componentDidMount() {
-  //   axios
-  //     .get("https://heroesofthestorm.com/en-us/", {
-  //       headers: {
-  //         withCredentials: true,
-  //         // "Access-Control-Allow-Origin": false,
-  //         // "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,PATCH,OPTIONS",
-  //       },
-  //       responseType: "json",
-  //     })
-  //     .then((res) => {
-  //       console.log(res.data);
-  //       // let getData = res.data
-  //       //   .split("Intro")[1]
-  //       //   .split("...")[0]
-  //       //   .split("<p>")[1];
-  //       // console.log(getData);
-  //       // let axioJson = document.querySelector(".jsonAxios");
-  //       // let axiosP = document.createElement("p");
-  //       // axiosP.textContent = getData;
-  //       // return axioJson === null ? null : axioJson.appendChild(axiosP);
-  //       // let intro = res.data.querySelector(
-  //       //   ".body > div > div.container > main > p:nth-child(2)"
-  //       // );
-  //       // console.log(intro);
-  //     });
-  //   // let url = "https://heroesofthestorm.com/en-us/";
-  //   // let xhr = new XMLHttpRequest();
-  //   // xhr.open("GET", url, true);
-  //   // xhr.onreadystatechange = function (event) {
-  //   //   console.log(xhr.readyState);
-  //   //   if (xhr.readyState === 4) {
-  //   //     switch (xhr.status) {
-  //   //       case 200:
-  //   //       case 304:
-  //   //         console.log("OK or Not Modified (cached)", xhr.status);
-  //   //         break;
-  //   //       case 201:
-  //   //         console.log("Created", xhr.status);
-  //   //         break;
-  //   //       case 403:
-  //   //       case 401:
-  //   //         console.log("Not Authorized or Forbidden", xhr.status);
-  //   //         break;
-  //   //       case 404:
-  //   //         console.log("Not Found", xhr.status);
-  //   //         break;
-  //   //       case 500:
-  //   //         console.log("Server Side Error", xhr.status);
-  //   //         break;
-  //   //       default:
-  //   //         console.log("Some other code: ", xhr.status, xhr.status);
-  //   //     }
-  //   //   }
-  //   // };
-  //   // xhr.onerror = function (err) {
-  //   //   console.warn(err);
-  //   // };
-  //   // xhr.send(null);
-  //   // function myHTTPRequest() {
-  //   //   http.createServer(function (request, response) {
-  //   //     let querystring = url.parse(request.url, true).query;
-  //   //     console.log(querystring);
-  //   //   });
-  //   // }
-  //   // myHTTPRequest.listen(3000);
-  //   // return myHTTPRequest;
-  //   // axios.get("https://heroesofthestorm.com/en-us/").then((res) => {
-  //   //   const weeklyData = res.data;
-  //   //   this.setState({ weeklyData });
-  //   // });
-  //   // console.log(this.state.weeklyData);
-  // }
+  componentDidMount() {
+    fetch("https://dog.ceo")
+      .then((res) => res.json())
+      .then(
+        (result) => {
+          this.setState({
+            isLoaded: true,
+            items: result.items,
+          });
+        },
+        // Note: it's important to handle errors here
+        // instead of a catch() block so that we don't swallow
+        // exceptions from actual bugs in components.
+        (error) => {
+          this.setState({
+            isLoaded: true,
+            error,
+          });
+        }
+      );
+  }
 
   render() {
-    return (
-      <div className={styles.mainContent}>
-        <div className={styles.container}>
-          <div>future brawl random weekly</div>
-          <h2>{this.state.homeTitle}</h2>
-          <div className={styles.homeImg}></div>
-          <div className={styles.thumbnailContainer}>
-            <div className={styles.thumbnail1}></div>
-            <div className={styles.thumbnail2}></div>
-            <div className={styles.thumbnail3}></div>
-          </div>
-          <div className="jsonAxios">
-            test:
-            {this.state.weeklyData.map((weeklyHero) => {
-              console.log(weeklyHero);
-            })}
-          </div>
-        </div>
-      </div>
-    );
+    const { error, isLoaded, items } = this.state;
+    if (error) {
+      return <div>Error: {error.message}</div>;
+    } else if (!isLoaded) {
+      return <div>Loading...</div>;
+    } else {
+      return (
+        <ul>
+          {items.map((item) => (
+            <li key={item.name}>
+              {item.name} {item.price}
+            </li>
+          ))}
+        </ul>
+      );
+    }
   }
 }
+
+// const Home = (props) => {
+//   // const [heroes, setHeroes] = useState([]);
+
+//   // const [dogs, setDogs] = useState([]);
+//   // useEffect(() => {
+//   //   axios.all([axios.get(`/api/breeds/image/random`)]).then(
+//   //     axios.spread((hero) => {
+//   //       const heroes = hero.data;
+//   //       setHeroes(heroes);
+//   //     })
+//   //   );
+//   // }, []);
+
+//     );
+
+//   // useEffect(() => {
+//   //   axios.all([axios.get(`/api/breeds/image/random`)]).then(
+//   //     axios.spread((dog) => {
+//   //       const dogs = dog.data;
+//   //       setDogs(dogs);
+//   //     })
+//   //   );
+//   // }, []);
+
+//   return (
+//     <div>
+//       <div className={styles.mainContent}>
+//         <div className={styles.container}>
+//           <div>
+//             future brawl random weekly
+//             <div className="jsonAxios">
+//               test:
+//               {/* {dogs.message} <br />
+//               {<img src={dogs.message} alt={dogs.message} />} */}
+//             </div>
+//           </div>
+//           <h2>{props.title}</h2>
+//           <div className={styles.homeImg}></div>
+//           <div className={styles.thumbnailContainer}>
+//             <div className={styles.thumbnail1}></div>
+//             <div className={styles.thumbnail2}></div>
+//             <div className={styles.thumbnail3}></div>
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
 
 export default Home;
 

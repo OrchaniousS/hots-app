@@ -38,7 +38,7 @@ class App extends Component {
               render={() => <Maps title={this.state.mapsTitle} />}
             />
             <Route
-              exact
+              // exact
               path="/"
               render={() => <Home title={this.state.homeTitle} />}
             />
