@@ -1,4 +1,5 @@
 import React, { PureComponent } from "react";
+import { Link } from "react-router-dom";
 
 import styles from "../app.module.css";
 import * as data from "../data/jsonData/heroStats.json";
@@ -23,6 +24,9 @@ class Heroes extends PureComponent {
               heroIdTagger={this.state.heroIdInfo}
             />
             <Herobasicinfo heroIdTagger={this.state.heroIdInfo}></Herobasicinfo>
+            <div className={styles.backHero}>
+              <Link to="/heroes">Go Back</Link>
+            </div>
           </div>
           <div className={styles.heroMainInfo}>
             <HeroCouSyn heroIdTagger={this.state.heroIdInfo} />

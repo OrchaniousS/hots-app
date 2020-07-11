@@ -1,0 +1,358 @@
+[
+  {
+    "name": "Mei",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/mei-948726a5cc.jpg"
+  },
+  {
+    "name": "Deathwing",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/deathwing-b007b23426.jpg"
+  },
+  {
+    "name": "Qhira",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/qhira-626a5d3b1f.jpg"
+  },
+  {
+    "name": "Anduin",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/anduin-ea001794c6.jpg"
+  },
+  {
+    "name": "Imperius",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/imperius-4f2753bb56.jpg"
+  },
+  {
+    "name": "Orphea",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/orphea-72dc6033c1.jpg"
+  },
+  {
+    "name": "Mal'Ganis",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/malganis-a1ac224160.jpg"
+  },
+  {
+    "name": "Mephisto",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/mephisto-158e980962.jpg"
+  },
+  {
+    "name": "Whitemane",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/whitemane-b7bcb3abe1.jpg"
+  },
+  {
+    "name": "Yrel",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/yrel-70eefe5af8.jpg"
+  },
+  {
+    "name": "Deckard",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/deckard-d538088dae.jpg"
+  },
+  {
+    "name": "Fenix",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/fenix-1d9f70b7bc.jpg"
+  },
+  {
+    "name": "Maiev",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/maiev-0003d0d5e9.jpg"
+  },
+  {
+    "name": "Blaze",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/blaze-eb95f9f40a.jpg"
+  },
+  {
+    "name": "Hanzo",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/hanzo-49aba4dac5.jpg"
+  },
+  {
+    "name": "Alexstrasza",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/alexstrasza-727f5dc5c7.jpg"
+  },
+  {
+    "name": "Junkrat",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/junkrat-3506935224.jpg"
+  },
+  {
+    "name": "Ana",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/ana-a6ab96c996.jpg"
+  },
+  {
+    "name": "Kelthuzad",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/kelthuzad-e536b7c968.jpg"
+  },
+  {
+    "name": "Garrosh",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/garrosh-32151ef6d8.jpg"
+  },
+  {
+    "name": "Stukov",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/stukov-bc1e5bb57e.jpg"
+  },
+  {
+    "name": "Malthael",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/malthael-024c03fa4f.jpg"
+  },
+  {
+    "name": "D.Va",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/dva-6a8b119c88.jpg"
+  },
+  {
+    "name": "Genji",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/genji-4853f3df7d.jpg"
+  },
+  {
+    "name": "Cassia",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/cassia-938ed4d346.jpg"
+  },
+  {
+    "name": "Probius",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/probius-259ad8b059.jpg"
+  },
+  {
+    "name": "Lúcio",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/lucio-7a47cc9abb.jpg"
+  },
+  {
+    "name": "Valeera",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/valeera-5eb1dd7aee.jpg"
+  },
+  {
+    "name": "Zul'jin",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/zuljin-6c7eec9c67.jpg"
+  },
+  {
+    "name": "Ragnaros",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/ragnaros-6c0e9c188d.jpg"
+  },
+  {
+    "name": "Varian",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/varian-cd9ae04382.jpg"
+  },
+  {
+    "name": "Samuro",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/samuro-2c7535badb.jpg"
+  },
+  {
+    "name": "Zarya",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/zarya-e8b915f0ff.jpg"
+  },
+  {
+    "name": "Alarak",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/alarak-6fb1c7b426.jpg"
+  },
+  {
+    "name": "Auriel",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/auriel-5faf424108.jpg"
+  },
+  {
+    "name": "Gul'dan",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/guldan-07fc0ababf.jpg"
+  },
+  {
+    "name": "Medivh",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/medivh-9833fe06f2.jpg"
+  },
+  {
+    "name": "Chromie",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/chromie-b7015a805b.jpg"
+  },
+  {
+    "name": "Tracer",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/tracer-912d842029.jpg"
+  },
+  {
+    "name": "Dehaka",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/dehaka-fbd5db499f.jpg"
+  },
+  {
+    "name": "Xul",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/xul-770942d87d.jpg"
+  },
+  {
+    "name": "Li-Ming",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/li-ming-b201a30db4.jpg"
+  },
+  {
+    "name": "Greymane",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/greymane-6a60860d1b.jpg"
+  },
+  {
+    "name": "Lunara",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/lunara-27ada58fa6.jpg"
+  },
+  {
+    "name": "Cho",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/cho-149c8bca12.jpg"
+  },
+  {
+    "name": "Gall",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/gall-149c8bca12.jpg"
+  },
+  {
+    "name": "Artanis",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/artanis-8eadd2012d.jpg"
+  },
+  {
+    "name": "Lt. Morales",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/lt-morales-9e661f1cb4.jpg"
+  },
+  {
+    "name": "Rexxar",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/rexxar-179d4bd71e.jpg"
+  },
+  {
+    "name": "Kharazim",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/kharazim-5093da80ab.jpg"
+  },
+  {
+    "name": "Leoric",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/leoric-03bacce460.jpg"
+  },
+  {
+    "name": "The Butcher",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/the-butcher-8871174db0.jpg"
+  },
+  {
+    "name": "Johanna",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/johanna-17b7092e6a.jpg"
+  },
+  {
+    "name": "Kael'thas",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/kaelthas-b9d9a52bb8.jpg"
+  },
+  {
+    "name": "Sylvanas",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/sylvanas-9a0cf3b84f.jpg"
+  },
+  {
+    "name": "The Lost Vikings",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/the-lost-vikings-0d5640dfde.jpg"
+  },
+  {
+    "name": "Thrall",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/thrall-00c3d15512.jpg"
+  },
+  {
+    "name": "Jaina",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/jaina-7bc66f174a.jpg"
+  },
+  {
+    "name": "Azmodan",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/azmodan-7cb228362a.jpg"
+  },
+  {
+    "name": "Anub'arak",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/anubarak-76023af959.jpg"
+  },
+  {
+    "name": "Chen",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/chen-2d16ccc6d4.jpg"
+  },
+  {
+    "name": "Rehgar",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/rehgar-b00d8aa125.jpg"
+  },
+  {
+    "name": "Zagara",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/zagara-f7c99db679.jpg"
+  },
+  {
+    "name": "Murky",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/murky-91faede47b.jpg"
+  },
+  {
+    "name": "Brightwing",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/brightwing-b6b65da4f8.jpg"
+  },
+  {
+    "name": "Li Li",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/li-li-bd1dd74d93.jpg"
+  },
+  {
+    "name": "Tychus",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/tychus-c21cafbe45.jpg"
+  },
+  {
+    "name": "Abathur",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/abathur-d1205378ac.jpg"
+  },
+  {
+    "name": "Arthas",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/arthas-8664159a5e.jpg"
+  },
+  {
+    "name": "Diablo",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/diablo-e4f962fbd5.jpg"
+  },
+  {
+    "name": "Illidan",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/illidan-44e4e09a1c.jpg"
+  },
+  {
+    "name": "Kerrigan",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/kerrigan-210d55d431.jpg"
+  },
+  {
+    "name": "Malfurion",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/malfurion-67364cde03.jpg"
+  },
+  {
+    "name": "Muradin",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/muradin-d1003a8b30.jpg"
+  },
+  {
+    "name": "Nazeebo",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/nazeebo-075bcb780b.jpg"
+  },
+  {
+    "name": "Nova",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/nova-c13237db26.jpg"
+  },
+  {
+    "name": "Raynor",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/raynor-55d8b2981e.jpg"
+  },
+  {
+    "name": "Sgt. Hammer",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/sgt-hammer-ad3562faf6.jpg"
+  },
+  {
+    "name": "Sonya",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/sonya-b926d6b869.jpg"
+  },
+  {
+    "name": "Tyrael",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/tyrael-7a403ebc84.jpg"
+  },
+  {
+    "name": "Tyrande",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/tyrande-6aaebe58de.jpg"
+  },
+  {
+    "name": "Uther",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/uther-7a696bccc7.jpg"
+  },
+  {
+    "name": "Valla",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/valla-1f7aba3e76.jpg"
+  },
+  {
+    "name": "Zeratul",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/zeratul-2bd326e313.jpg"
+  },
+  {
+    "name": "E.T.C.",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/etc-8dda57bbf5.jpg"
+  },
+  {
+    "name": "Falstad",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/falstad-82ad6da7f7.jpg"
+  },
+  {
+    "name": "Gazlowe",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/gazlowe-de07e3f5cd.jpg"
+  },
+  {
+    "name": "Stitches",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/stitches-6ed3ea85db.jpg"
+  },
+  {
+    "name": "Tassadar",
+    "img": "https://static.heroesofthestorm.com/images/hero-select/card-portraits/tassadar-5c1079ec67.jpg"
+  }
+]

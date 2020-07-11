@@ -1,71 +1,48 @@
-import React from "react";
+import React, { PureComponent } from "react";
 
 import styles from "../app.module.css";
+import * as weeklyData from "../data/jsonData/weeklyR.json";
 
-const Home = (props) => {
-  return (
-    <div>
-      <div className={styles.mainContent}>
-        <div className={styles.container}>
-          <div>
-            future brawl random weekly
-            <div className="jsonAxios">
-              test:
-              {/* {dogs.message} <br />
-              {<img src={dogs.message} alt={dogs.message} />} */}
-            </div>
-          </div>
-          <h2>{props.title}</h2>
-          <div>
-            <div className={styles.mapHexCollage}>
-              {this.state.mapJson.map((compact, id) =>
-                this.state.mapHexId === undefined ? null : (
-                  <div
-                    key={id}
-                    onClick={() => {
-                      {
-                        console.log(id);
-                      }
-                      this.setState({
-                        mapHexId: id,
-                        bottomDisplayUnit: "block",
-                      });
-                    }}
-                  >
-                    <div
-                      className={
-                        id !== this.state.mapHexId && this.state.mapHexId !== ""
-                          ? styles.mapHexUnitUnActive
-                          : null
-                      }
-                    >
+class Home extends PureComponent {
+  state = {
+    weekHero: weeklyData.default,
+  };
+
+  render() {
+    return (
+      <div>
+        <div className={styles.mainContent}>
+          <div className={styles.container}>
+            <div>
+              <h2>{this.props.title} - [July 7th]</h2>
+              <div className={styles.mapContainer}>
+                <div className={styles.mapHexCollage}>
+                  {this.state.weekHero.map((compact, id) => (
+                    <div key={id}>
                       <div className={styles.mapHexIcon}>
                         <img
-                          alt={compact.mName}
-                          src={`../../images/maps/${compact.mName}.jpg`}
+                          className={styles.mapHexIconimg}
+                          alt={compact.heroName}
+                          src={compact.heroIcon}
                         />
                       </div>
-                      <div className={styles.mapHexaBG}>
-                        <span className={styles.mapHexaBGName}>
-                          {compact.mName}
-                        </span>
-                      </div>
+                      <a href={`/heroes/${compact.heroName}`}>
+                        <div className={styles.mapHexaBG}>
+                          <span className={styles.mapHexaBGName}>
+                            {compact.heroName}
+                          </span>
+                        </div>
+                      </a>
                     </div>
-                  </div>
-                )
-              )}
-            </div>{" "}
+                  ))}
+                </div>
+              </div>
+            </div>
           </div>
-          {/* <div className={styles.homeImg}></div>
-          <div className={styles.thumbnailContainer}>
-            <div className={styles.thumbnail1}></div>
-            <div className={styles.thumbnail2}></div>
-            <div className={styles.thumbnail3}></div>
-          </div> */}
         </div>
       </div>
-    </div>
-  );
-};
+    );
+  }
+}
 
 export default Home;

@@ -3,13 +3,16 @@ import { Link } from "react-router-dom";
 
 import styles from "../../app.module.css";
 import * as data from "../jsonData/heroData.json";
+import * as dataPanel from "../jsonData/heroPanel.json";
 
 class HeroesData extends PureComponent {
   constructor() {
     super();
     this.state = {
       heroInfoJson: JSON.parse(JSON.stringify(data)).default,
+      panelInfo: JSON.parse(JSON.stringify(dataPanel)).default,
       indexNum: "",
+      indexName: "",
       displayPanelMode: "",
     };
   }
@@ -35,10 +38,11 @@ class HeroesData extends PureComponent {
           <div className={styles.heroPanelCard}>
             <div className={styles.heroPanelInfo}>
               <div className={styles.heroPanelImage}>
-                <img
-                  alt="dw"
-                  src="https://static.heroesofthestorm.com/images/hero-select/card-portraits/deathwing-b007b23426.jpg"
-                />
+                {this.state.panelInfo.map((compact) =>
+                  this.state.indexName === compact.name ? (
+                    <img alt={compact.name} src={compact.img} />
+                  ) : null
+                )}
               </div>
               <div className={styles.heroPanelBottom}>
                 <div className={styles.heroPanelMainInfo}>
@@ -114,6 +118,7 @@ class HeroesData extends PureComponent {
                       onClick={() => {
                         this.setState({
                           indexNum: compact.id,
+                          indexName: compact.name,
                         });
                       }}
                     >

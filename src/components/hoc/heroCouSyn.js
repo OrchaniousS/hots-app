@@ -24,6 +24,9 @@ class HeroCouSyn extends PureComponent {
                     to={
                       el.heroSynergyName === "sgt-hammer"
                         ? "sgt. hammer"
+                        : el.heroSynergyName ||
+                          el.heroSynergyName === "kaelthas"
+                        ? "kael'thas"
                         : el.heroSynergyName
                     }
                   >

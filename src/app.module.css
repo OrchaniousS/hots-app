@@ -19,16 +19,12 @@ code {
     monospace;
 }
 
-/* .progress{
---scroll:
-} */
-
 .container {
   margin: 15px 15px 15px 15px;
   border: solid 3px #191919;
   color: #fff;
-  background: rgba(35, 35, 35, 0.223);
-  box-shadow: 0 0 35px rgba(0, 0, 0, 0.35);
+  background: rgba(60, 27, 150, 0.223);
+  box-shadow: 0 0 35px rgba(19, 49, 180, 0.205);
   width: auto;
 }
 
@@ -44,7 +40,11 @@ code {
 }
 
 .container h2 {
-  padding-top: 25px;
+  padding-top: 1%;
+  font-weight: 600;
+  margin: 6px 6px 6px 6px;
+  padding-left: 35px;
+  /* text-align: left; */
 }
 
 ::-webkit-scrollbar {
@@ -73,7 +73,7 @@ nav {
   display: flex;
   justify-content: space-between;
   vertical-align: top;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #3479d9;
   background-color: rgb(7, 45, 92);
   padding: 10px 15px;
   background: rgb(29, 29, 29);
@@ -153,56 +153,11 @@ nav h2 a {
 
 /*-- Home page----*/
 
-.homeImg {
-  background-image: url("./images/general/hots_logo.png");
-  width: 100%;
-  height: 350px;
-  background-size: cover;
-  margin-bottom: 50px;
+.mapHexIconimg {
+  width: 115px;
+  height: 115px;
 }
 
-.homeImg:hover {
-  background-image: url("https://assets1.ignimgs.com/2018/03/19/heroesofthestorm-blogroll-1521503788593.jpg");
-  transition: all 0.7s ease-in-out;
-  cursor: pointer;
-  transform: scale(1.08);
-}
-
-.thumbnailContainer {
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 50px;
-  padding-bottom: 50px;
-  width: 100%;
-}
-
-.thumbnail1 {
-  background-image: url("./images/ingame/thumb1.jpg");
-}
-
-.thumbnail2 {
-  background-image: url("./images/ingame/thumb2.jpg");
-}
-
-.thumbnail3 {
-  background-image: url("./images/ingame/thumb3.jpg");
-}
-
-.thumbnail1,
-.thumbnail2,
-.thumbnail3 {
-  background-size: cover;
-  width: 200px;
-  height: 100px;
-  transition: all 0.3 ease-in-out;
-}
-.thumbnail1:hover,
-.thumbnail2:hover,
-.thumbnail3:hover {
-  transition: all 0.3s ease-in-out;
-  cursor: pointer;
-  transform: scale(1.05);
-}
 /*-- Home page----*/
 
 /*-- Heroes page ----*/
@@ -210,12 +165,6 @@ nav h2 a {
 .heroContainer {
   display: flex;
   justify-content: space-between;
-}
-
-.container h2 {
-  margin: 6px 6px 6px 6px;
-  padding-left: 35px;
-  text-align: left;
 }
 
 .heroGrid {
@@ -243,6 +192,7 @@ nav h2 a {
   .heroGridRowColumon {
     width: 75%;
   }
+
   #heroPanelC {
     display: blcok;
   }
@@ -486,17 +436,35 @@ nav h2 a {
 
 /*-- Single Hero Info page----*/
 
+.backHero {
+  position: relative;
+  padding: 8px 8px 8px 8px;
+  font-size: 25px;
+  width: 560px;
+  height: 20%;
+  text-align: center;
+  margin: 10% 2% 10% 2%;
+  border: 1px solid #3479d9;
+  box-shadow: 0 0 35px rgba(19, 49, 180, 0.35);
+}
+
+.backHero a {
+  text-decoration: none;
+  color: #3479d9;
+}
+
 .heroMainInfo {
   display: flex;
   padding: 8px 8px 8px 8px;
   font-size: 14px;
   text-align: center;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin: 3% 4% 3% 4%;
+  border: 1px solid #3479d93a;
+  background: rgba(60, 27, 150, 0.223);
+  box-shadow: 0 0 35px rgba(19, 49, 180, 0.205);
 }
 
 .heroRightInfo {
-  border: 1px outset lightslategray;
   transform: scale(0.9);
   width: 150px;
   background: rgba(35, 35, 35, 0.223);
@@ -511,8 +479,8 @@ nav h2 a {
 .heroName {
   padding: 5px 5px 5px 5px;
   font-size: 26px;
-  width: 140px;
-  height: 180px;
+  /* width: 140px;
+  height: 180px; */
 }
 
 .heroTitleImg {
@@ -522,15 +490,65 @@ nav h2 a {
 
 .heroBaseStats {
   padding: 5px 5px 5px 5px;
+  margin: 1% 1% 1% 1%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
   background: rgba(35, 35, 35, 0.223);
   box-shadow: 0 0 35px rgba(0, 0, 0, 0.35);
 }
 
+.heroTableSingle {
+  /* position: absolute; */
+}
+
+.heroTableSingle {
+  /* width: 100%;
+  bottom: 100%; */
+  border: 1px solid #3479d9;
+  text-align: left;
+  width: 50%;
+  height: 50%;
+  opacity: 0.8;
+  border-collapse: collapse;
+  background: linear-gradient(
+    0deg,
+    rgba(24, 117, 211, 0.2) 0,
+    rgba(0, 77, 153, 0) 50%,
+    rgba(2, 56, 110, 0)
+  );
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(rgba(0, 77, 153, 0.2)),
+    color-stop(50%, rgba(0, 77, 153, 0)),
+    to(rgba(0, 77, 153, 0))
+  );
+  background-color: rgba(15, 17, 51, 0.9);
+}
+
+.heroTableSingle th {
+  /* width: 35%; */
+  border-right: 1px solid #3479d9;
+  background-color: rgba(24, 44, 145, 0.486);
+  padding-left: 4px;
+  border-bottom: 1px solid #3479d9;
+}
+
+.heroTableSingle td {
+  height: 30px;
+  width: 70%;
+  opacity: 0.8;
+  border-bottom: 1px solid #3479d9;
+  padding-left: 10px;
+}
+
+.heroBaseStats table {
+  margin: 1% 1% 1% 1%;
+}
+
 .heroLeftInfo {
-  border: 1px outset lightslategray;
   transform: scale(0.9);
   background: rgba(35, 35, 35, 0.223);
   box-shadow: 0 0 35px rgba(0, 0, 0, 0.35);
@@ -544,12 +562,11 @@ nav h2 a {
 }
 .heroSynCou {
   font-size: large;
-  transform: scale(0.92);
+  transform: scale(0.98);
 }
 
 .heroSynCouTitle {
-  margin-top: 4px;
-  margin-bottom: -25px;
+  margin: 1% 1% 1% 1%;
 }
 
 .heroSynergyCounter {
@@ -558,6 +575,7 @@ nav h2 a {
   padding: 3px 3px 3px 3px;
   margin: 2px 2px 2px 2px;
 }
+
 .heroSynergyCounter img {
   width: 110px;
   height: 110px;
@@ -574,26 +592,32 @@ nav h2 a {
 .heroCSingle:hover {
   transform: scale(1);
 }
+
 .mapSynCou {
   font-size: large;
 }
 
 .heroQoute {
-  text-align: center;
-  padding: 5px 5px 5px 5px;
-  margin-top: 55px;
-  margin-left: 10%;
-  margin-right: 10%;
-  background: rgba(35, 35, 35, 0.223);
+  text-align: left;
+  padding: 12px 12px 12px 12px;
+  margin: 10% 10% 2% 10%;
   box-shadow: 0 0 35px rgba(0, 0, 0, 0.35);
 }
 
-.basicInfo {
-  border: 1px outset lightslategray;
-  width: 50%;
-  height: 100%;
-  transform: scale(0.9);
+@media (max-width: 1080px) {
+  .basicInfo {
+    transform: scale(0.7);
+  }
+}
+@media (min-width: 1080px) {
+  .basicInfo {
+    transform: scale(0.9);
+  }
+}
 
+.basicInfo {
+  width: 70%;
+  height: 100%;
   /* width: 150px; */
   background: rgba(35, 35, 35, 0.223);
   box-shadow: 0 0 35px rgba(0, 0, 0, 0.35);
@@ -677,7 +701,7 @@ nav h2 a {
 }
 
 .mapHexaBG:hover,
-mapHexaBGActive {
+.mapHexaBGActive {
   background-image: url("/images/general/mapHexagonActive.png");
 }
 
@@ -753,18 +777,47 @@ mapHexaBGActive {
 
 .mapObjMain img {
   width: 100%;
-  /* height: 100%; */
-  border-top: 2px solid #222;
+  height: 100%;
+  border-top: 1px dashed #225999;
   margin-bottom: -5%;
+}
+
+@media (min-width: 1020px) {
+  .mapObjMainInfo {
+    height: 140px;
+    margin-bottom: -2%;
+  }
+  .mapObjMainImg {
+    height: 84px;
+  }
+}
+
+@media (max-width: 1020px) {
+  .mapObjMain {
+    transform: scale(0.8);
+  }
+
+  .mapObjMainInfo {
+    transform: scale(0.8);
+    height: 180px;
+    margin: 0% 4% 5% 4%;
+    font-size: 16px;
+  }
+
+  .mapObjMainImg {
+    height: 60px;
+    margin-top: 10%;
+  }
 }
 
 .mapWider img {
   width: 80%;
   height: 80%;
-  border: 3px solid #222;
+  border: 3px solid #225999;
   background: #141414;
   box-shadow: 0 0 35px rgba(0, 0, 0, 0.35);
 }
+
 .mapWider img:hover {
   width: 100%;
   height: 100%;

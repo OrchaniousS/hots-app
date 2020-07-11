@@ -1,5 +1,4 @@
 import React, { PureComponent } from "react";
-import { Link } from "react-router-dom";
 
 import styles from "../../app.module.css";
 import * as data from "../../data/jsonData/heroStats.json";
@@ -280,7 +279,6 @@ class Herotype extends PureComponent {
       .name;
     return (
       <div>
-        <Link to="/heroes">Go Back</Link>
         {typeof heroType === "string"
           ? this.renderHeroType("singleHero")
           : heroType.length < 3

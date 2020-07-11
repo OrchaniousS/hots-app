@@ -11,33 +11,46 @@ class Herobasic extends Component {
   render() {
     return (
       <div>
-        <div className={styles.basicInfo}>
+        <div className={styles.heroLeftInfo}>
           <div className={styles.heroBaseStats}>
-            Role:{" "}
-            {this.state.heroStatsJson[this.props.heroIdTagger].basicInfo.role}
-          </div>
-          <div className={styles.heroBaseStats}>
-            Difficulty:{" "}
-            {
-              this.state.heroStatsJson[this.props.heroIdTagger].basicInfo
-                .difficulty
-            }
-          </div>
-          <div className={styles.heroBaseStats}>
-            Price:{" "}
-            {this.state.heroStatsJson[this.props.heroIdTagger].basicInfo.price +
-              " Gold"}
-          </div>
-          <div className={styles.heroQoute}>
-            {this.state.heroStatsJson[this.props.heroIdTagger].basicInfo.qoute}
+            <table className={styles.heroTableSingle}>
+              <tr>
+                <th>Role:</th>
+                <td>
+                  {
+                    this.state.heroStatsJson[this.props.heroIdTagger].basicInfo
+                      .role
+                  }
+                </td>
+              </tr>
+              <tr>
+                <th>Difficulty:</th>
+                <td>
+                  {" "}
+                  {
+                    this.state.heroStatsJson[this.props.heroIdTagger].basicInfo
+                      .difficulty
+                  }
+                </td>
+              </tr>
+              <tr>
+                <th> Price:</th>
+                <td>
+                  {this.state.heroStatsJson[this.props.heroIdTagger].basicInfo
+                    .price + " Gold"}
+                </td>
+              </tr>
+            </table>
+            <tr>
+              <div className={styles.heroQoute}>
+                {
+                  this.state.heroStatsJson[this.props.heroIdTagger].basicInfo
+                    .qoute
+                }
+              </div>
+            </tr>
           </div>
         </div>
-
-        {/* <div className={styles.heroRightInfo}>
-          <div>heroname</div>
-          <div>heroFullPicture</div>
-          <div>little franchise + role icon</div>
-        </div> */}
       </div>
     );
   }
