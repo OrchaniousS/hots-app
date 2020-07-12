@@ -881,26 +881,6 @@
   },
   {
     "basicInfo": {
-      "name": "Lunara",
-      "title": "First Daughter of Cenarius",
-      "role": "Ranged Assassin",
-      "difficulty": "Medium",
-      "price": "7000",
-      "qoute": "While her younger sisters frolicked in idyllic forests, Lunara watched as mortals exploited nature’s splendor. On Azeroth, her father Cenarius forbade her from retaliating. But this is the Nexus, and it’s time for nature to take its revenge."
-    },
-    "baseStats": {
-      "attackType": "Ranged",
-      "health": "1430",
-      "healthRegen": "2.9804",
-      "resourceAmount": "500",
-      "resourceType": "Mana",
-      "attackDamage": "90",
-      "attackSpeed": "1.11",
-      "attackRange": "5.5"
-    }
-  },
-  {
-    "basicInfo": {
       "name": "Lúcio",
       "title": "Freedom Fighting DJ",
       "role": "Healer",
@@ -919,6 +899,27 @@
       "attackRange": "5.5"
     }
   },
+  {
+    "basicInfo": {
+      "name": "Lunara",
+      "title": "First Daughter of Cenarius",
+      "role": "Ranged Assassin",
+      "difficulty": "Medium",
+      "price": "7000",
+      "qoute": "While her younger sisters frolicked in idyllic forests, Lunara watched as mortals exploited nature’s splendor. On Azeroth, her father Cenarius forbade her from retaliating. But this is the Nexus, and it’s time for nature to take its revenge."
+    },
+    "baseStats": {
+      "attackType": "Ranged",
+      "health": "1430",
+      "healthRegen": "2.9804",
+      "resourceAmount": "500",
+      "resourceType": "Mana",
+      "attackDamage": "90",
+      "attackSpeed": "1.11",
+      "attackRange": "5.5"
+    }
+  },
+
   {
     "basicInfo": {
       "name": "Maiev",

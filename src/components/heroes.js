@@ -18,15 +18,15 @@ class Heroes extends PureComponent {
     return (
       <div className={styles.mainContent}>
         <div className={styles.container}>
+          <div className={styles.backHero}>
+            <Link to="/heroes">Go Back To Heroes</Link>
+          </div>
           <div className={styles.heroMainInfo}>
             <Herotype
               heroImage={this.state.heroImageInfo}
               heroIdTagger={this.state.heroIdInfo}
             />
             <Herobasicinfo heroIdTagger={this.state.heroIdInfo}></Herobasicinfo>
-            <div className={styles.backHero}>
-              <Link to="/heroes">Go Back</Link>
-            </div>
           </div>
           <div className={styles.heroMainInfo}>
             <HeroCouSyn heroIdTagger={this.state.heroIdInfo} />

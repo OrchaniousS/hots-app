@@ -10,45 +10,48 @@ class Herobasic extends Component {
 
   render() {
     return (
-      <div>
+      <div key={this.props.heroIdTagger}>
         <div className={styles.heroLeftInfo}>
           <div className={styles.heroBaseStats}>
             <table className={styles.heroTableSingle}>
-              <tr>
-                <th>Role:</th>
-                <td>
-                  {
-                    this.state.heroStatsJson[this.props.heroIdTagger].basicInfo
-                      .role
-                  }
-                </td>
-              </tr>
-              <tr>
-                <th>Difficulty:</th>
-                <td>
-                  {" "}
-                  {
-                    this.state.heroStatsJson[this.props.heroIdTagger].basicInfo
-                      .difficulty
-                  }
-                </td>
-              </tr>
-              <tr>
-                <th> Price:</th>
-                <td>
-                  {this.state.heroStatsJson[this.props.heroIdTagger].basicInfo
-                    .price + " Gold"}
-                </td>
-              </tr>
+              <tbody>
+                <tr>
+                  <th>Role:</th>
+                  <td>
+                    {
+                      this.state.heroStatsJson[this.props.heroIdTagger]
+                        .basicInfo.role
+                    }
+                  </td>
+                </tr>
+                <tr>
+                  <th>Difficulty:</th>
+                  <td>
+                    {" "}
+                    {
+                      this.state.heroStatsJson[this.props.heroIdTagger]
+                        .basicInfo.difficulty
+                    }
+                  </td>
+                </tr>
+                <tr>
+                  <th> Price:</th>
+                  <td>
+                    {this.state.heroStatsJson[this.props.heroIdTagger].basicInfo
+                      .price + " Gold"}
+                  </td>
+                </tr>
+                <tr>
+                  <th> Lore:</th>
+                  <td>
+                    {
+                      this.state.heroStatsJson[this.props.heroIdTagger]
+                        .basicInfo.qoute
+                    }
+                  </td>
+                </tr>
+              </tbody>
             </table>
-            <tr>
-              <div className={styles.heroQoute}>
-                {
-                  this.state.heroStatsJson[this.props.heroIdTagger].basicInfo
-                    .qoute
-                }
-              </div>
-            </tr>
           </div>
         </div>
       </div>

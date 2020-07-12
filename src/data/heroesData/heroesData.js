@@ -40,7 +40,11 @@ class HeroesData extends PureComponent {
               <div className={styles.heroPanelImage}>
                 {this.state.panelInfo.map((compact) =>
                   this.state.indexName === compact.name ? (
-                    <img alt={compact.name} src={compact.img} />
+                    <img
+                      key={compact.name}
+                      alt={compact.name}
+                      src={compact.img}
+                    />
                   ) : null
                 )}
               </div>
@@ -120,6 +124,9 @@ class HeroesData extends PureComponent {
                           indexNum: compact.id,
                           indexName: compact.name,
                         });
+                        return window.innerWidth < 960
+                          ? (window.location.href = `/heroes/${compact.name}`)
+                          : null;
                       }}
                     >
                       {}

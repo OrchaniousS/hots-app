@@ -43,7 +43,7 @@ code {
   padding-top: 1%;
   font-weight: 600;
   margin: 6px 6px 6px 6px;
-  padding-left: 35px;
+  /* padding-left: 35px; */
   /* text-align: left; */
 }
 
@@ -186,11 +186,26 @@ nav h2 a {
 @media (max-width: 960px) {
   .heroGridRowColumon {
     width: 100%;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  .heroGridRowColumon div {
+    /* width: 100%; */
   }
 }
+
+@media (max-width: 530px) {
+  .heroGridRowColumon {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
 @media (min-width: 960px) {
   .heroGridRowColumon {
     width: 75%;
+    margin: 5px 5px 5px 5px;
   }
 
   #heroPanelC {
@@ -200,7 +215,7 @@ nav h2 a {
 
 .heroGridRowColumon {
   padding: 2px 2px 2px 2px;
-  margin: 5px 5px 5px 5px;
+
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -436,32 +451,52 @@ nav h2 a {
 
 /*-- Single Hero Info page----*/
 
-.backHero {
-  position: relative;
-  padding: 8px 8px 8px 8px;
-  font-size: 25px;
-  width: 560px;
-  height: 20%;
-  text-align: center;
-  margin: 10% 2% 10% 2%;
-  border: 1px solid #3479d9;
-  box-shadow: 0 0 35px rgba(19, 49, 180, 0.35);
+@media (min-width: 960px) {
+  .backHero {
+    position: relative;
+    padding: 8px 8px 8px 8px;
+    font-size: 25px;
+    height: 20%;
+    text-align: center;
+    margin-top: 1%;
+    margin-left: 4%;
+    margin-right: 4%;
+    border: 1px solid #3479d9;
+    box-shadow: 0 0 35px rgba(19, 49, 180, 0.35);
+  }
 }
+
+@media (max-width: 960px) {
+  .backHero {
+    position: fixed;
+    z-index: 1;
+    background-color: rgba(13, 96, 99, 0.925);
+    padding: 8px 8px 8px 8px;
+    font-size: 25px;
+    bottom: 0;
+    width: 160%;
+    text-align: center;
+    margin-left: -35%;
+  }
+}
+/* 
+@media (max-width: 550px) {
+  .backHero {
+    background-color: rgba(47, 61, 194, 0.753);
+    position: fixed;
+    padding: 8px 8px 8px 8px;
+    font-size: 25px;
+    width: 100%;
+    text-align: center;
+    margin: -130% 0% 20% 42%;
+    border: 1px solid #3479d9;
+    box-shadow: 0 0 35px rgba(19, 49, 180, 0.35);
+  }
+} */
 
 .backHero a {
   text-decoration: none;
   color: #3479d9;
-}
-
-.heroMainInfo {
-  display: flex;
-  padding: 8px 8px 8px 8px;
-  font-size: 14px;
-  text-align: center;
-  margin: 3% 4% 3% 4%;
-  border: 1px solid #3479d93a;
-  background: rgba(60, 27, 150, 0.223);
-  box-shadow: 0 0 35px rgba(19, 49, 180, 0.205);
 }
 
 .heroRightInfo {
@@ -499,16 +534,9 @@ nav h2 a {
 }
 
 .heroTableSingle {
-  /* position: absolute; */
-}
-
-.heroTableSingle {
-  /* width: 100%;
-  bottom: 100%; */
   border: 1px solid #3479d9;
   text-align: left;
-  width: 50%;
-  height: 50%;
+  height: 70%;
   opacity: 0.8;
   border-collapse: collapse;
   background: linear-gradient(
@@ -545,31 +573,103 @@ nav h2 a {
 }
 
 .heroBaseStats table {
-  margin: 1% 1% 1% 1%;
-}
-
-.heroLeftInfo {
-  transform: scale(0.9);
-  background: rgba(35, 35, 35, 0.223);
-  box-shadow: 0 0 35px rgba(0, 0, 0, 0.35);
-  font-size: 16px;
+  margin: 8% 8% 8% 8%;
 }
 
 @media (min-width: 960px) {
+  .heroMainInfo {
+    display: flex;
+    padding: 8px 8px 8px 8px;
+    font-size: 14px;
+    text-align: center;
+    margin: 3% 4% 3% 4%;
+    border: 1px solid #3479d93a;
+    background: rgba(60, 27, 150, 0.223);
+    box-shadow: 0 0 35px rgba(19, 49, 180, 0.205);
+  }
+
+  .heroLeftInfo {
+    transform: scale(0.9);
+    background: rgba(35, 35, 35, 0.223);
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.35);
+    font-size: 16px;
+  }
+
   .heroSynCou {
-    /* width: 850px; */
+    font-size: large;
+    transform: scale(0.98);
   }
 }
-.heroSynCou {
-  font-size: large;
-  transform: scale(0.98);
+
+@media (max-width: 960px) {
+  .heroMainInfo {
+    display: block;
+    padding: 8px 8px 8px 8px;
+    font-size: 14px;
+    text-align: center;
+    margin: 3% 4% 3% 4%;
+    border: 1px solid #3479d93a;
+    background: rgba(60, 27, 150, 0.223);
+    box-shadow: 0 0 35px rgba(19, 49, 180, 0.205);
+  }
+  .heroSynCou {
+    /* width: 10%; */
+  }
+}
+
+.heroSynCou table {
+  width: 100%;
 }
 
 .heroSynCouTitle {
   margin: 1% 1% 1% 1%;
 }
 
+.heroSyn {
+  width: 50%;
+  height: 50%;
+  background-color: rgba(10, 175, 59, 0.596);
+}
+
+.heroCou {
+  width: 50%;
+  height: 50%;
+  background-color: rgba(173, 24, 24, 0.596);
+}
+
+.heroTableCouSyn {
+  border: 1px solid #3479d9;
+  border-collapse: collapse;
+  background: linear-gradient(
+    0deg,
+    rgba(24, 117, 211, 0.2) 0,
+    rgba(0, 77, 153, 0) 50%,
+    rgba(2, 56, 110, 0)
+  );
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(rgba(0, 77, 153, 0.2)),
+    color-stop(50%, rgba(0, 77, 153, 0)),
+    to(rgba(0, 77, 153, 0))
+  );
+}
+
+.heroTableCouSyn th {
+  width: 40%;
+  border-right: 1px solid #3479d9;
+  border-bottom: 1px solid #3479d9;
+  border-top: 1px solid #3479d9;
+}
+
+.heroTableCouSyn td {
+  border-right: 1px solid #3479d9;
+  border-bottom: 1px solid #3479d9;
+}
+
 .heroSynergyCounter {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   padding: 3px 3px 3px 3px;
@@ -577,6 +677,8 @@ nav h2 a {
 }
 
 .heroSynergyCounter img {
+  margin-right: 5%;
+  margin-left: 5%;
   width: 110px;
   height: 110px;
   transform: scale(0.85);
@@ -597,12 +699,12 @@ nav h2 a {
   font-size: large;
 }
 
-.heroQoute {
+/* .heroQoute {
   text-align: left;
   padding: 12px 12px 12px 12px;
   margin: 10% 10% 2% 10%;
   box-shadow: 0 0 35px rgba(0, 0, 0, 0.35);
-}
+} */
 
 @media (max-width: 1080px) {
   .basicInfo {
@@ -635,12 +737,25 @@ nav h2 a {
   padding-bottom: 4%;
 }
 
+@media (max-width: 960px) {
+  .mapHexCollage {
+    /* margin: 12% 15% 10% 15%; */
+    transform: scale(0.9);
+  }
+}
+
+@media (min-width: 960px) {
+  .mapHexCollage {
+    margin: 2% 5% 0% 5%;
+  }
+}
+
 .mapHexCollage {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
+  flex-direction: row;
   justify-content: center;
-  margin: 2% 5% 0% 5%;
+
   padding-bottom: 4%;
   padding-top: 4%;
   border: 3px solid #222;
@@ -742,7 +857,6 @@ nav h2 a {
 .mapObj {
   display: flex;
   flex-direction: row;
-  /* flex-wrap: wrap; */
   justify-content: center;
   padding-top: 2%;
   /* width: 35%; */
@@ -793,20 +907,40 @@ nav h2 a {
 }
 
 @media (max-width: 1020px) {
+  .mapInfo h1 {
+    width: 80%;
+    margin: 2% 0% 2% 10%;
+    font-size: 28px;
+  }
+
+  .objTitle h2 {
+    width: 140px;
+    margin: 2% 0% 2% 10%;
+    font-size: 14px;
+  }
+
+  .objTitle {
+    margin-right: 50%;
+  }
+
+  .mapObj {
+    flex-wrap: wrap;
+  }
+
   .mapObjMain {
-    transform: scale(0.8);
+    /* transform: scale(0.8); */
   }
 
   .mapObjMainInfo {
     transform: scale(0.8);
-    height: 180px;
+    /* height: 300px; */
     margin: 0% 4% 5% 4%;
     font-size: 16px;
   }
 
   .mapObjMainImg {
-    height: 60px;
-    margin-top: 10%;
+    /* height: 60px; */
+    /* margin-top: 10%; */
   }
 }
 

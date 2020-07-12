@@ -34,6 +34,7 @@ class HeroStats extends PureComponent {
         <Switch>
           <BrowserRouter>
             <Route
+              key={this.props.title}
               exact
               path="/heroes"
               render={() => <HeroesData title={this.props.title} />}
