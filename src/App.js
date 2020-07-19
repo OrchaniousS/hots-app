@@ -10,7 +10,7 @@ import HeroStats from "./components/heroesInfo";
 class App extends Component {
   state = {
     homeTitle: "Weekly Rotation",
-    navTitle: "Herores of the Storm",
+    navTitle: "Heroes of the Storm",
     heroesTitle: "Heroes",
     mapsTitle: "Maps quick info",
     links: ["Home", "Heroes", "Maps"],

@@ -15,74 +15,79 @@ class Herotype extends PureComponent {
     switch (type) {
       case "singleHero":
         template = (
-          <div className={styles.heroRightInfo}>
-            <div className={styles.heroName}>
-              {this.state.heroStatsJson[this.props.heroIdTagger].basicInfo.name}
-              <div className={styles.heroTitle}>
+          <div className={styles.singleHero}>
+            <div className={styles.heroRightInfo}>
+              <div className={styles.heroName}>
                 {
                   this.state.heroStatsJson[this.props.heroIdTagger].basicInfo
-                    .title
+                    .name
                 }
+                <div className={styles.heroTitle}>
+                  {
+                    this.state.heroStatsJson[this.props.heroIdTagger].basicInfo
+                      .title
+                  }
+                </div>
+                <div className={styles.heroTitleImg}>
+                  <img alt="miniIconhero" src={this.props.heroImage} />
+                </div>
               </div>
-              <div className={styles.heroTitleImg}>
-                <img alt="miniIconhero" src={this.props.heroImage} />
-              </div>
-            </div>
-            <div className={styles.heroBaseStats}>
-              <div>
-                Attack Type:{" "}
-                {
-                  this.state.heroStatsJson[this.props.heroIdTagger].baseStats
-                    .attackType
-                }
-              </div>
-              <div>
-                Health:{" "}
-                {
-                  this.state.heroStatsJson[this.props.heroIdTagger].baseStats
-                    .health
-                }
-              </div>
-              <div>
-                Regen:{" "}
-                {
-                  this.state.heroStatsJson[this.props.heroIdTagger].baseStats
-                    .healthRegen
-                }
-              </div>
-              <div>
-                {this.state.heroStatsJson[this.props.heroIdTagger].baseStats
-                  .resourceAmount === "0"
-                  ? ""
-                  : "Resource: " +
+              <div className={styles.heroBaseStats}>
+                <div>
+                  Attack Type:{" "}
+                  {
                     this.state.heroStatsJson[this.props.heroIdTagger].baseStats
-                      .resourceAmount}{" "}
-                {this.state.heroStatsJson[this.props.heroIdTagger].baseStats
-                  .resourceType === "None"
-                  ? ""
-                  : this.state.heroStatsJson[this.props.heroIdTagger].baseStats
-                      .resourceType}
-              </div>
-              <div>
-                Attack Damge:{" "}
-                {
-                  this.state.heroStatsJson[this.props.heroIdTagger].baseStats
-                    .attackDamage
-                }
-              </div>
-              <div>
-                Attack Speed:{" "}
-                {
-                  this.state.heroStatsJson[this.props.heroIdTagger].baseStats
-                    .attackSpeed
-                }
-              </div>
-              <div>
-                Attack Range:{" "}
-                {
-                  this.state.heroStatsJson[this.props.heroIdTagger].baseStats
-                    .attackRange
-                }
+                      .attackType
+                  }
+                </div>
+                <div>
+                  Health:{" "}
+                  {
+                    this.state.heroStatsJson[this.props.heroIdTagger].baseStats
+                      .health
+                  }
+                </div>
+                <div>
+                  Regen:{" "}
+                  {
+                    this.state.heroStatsJson[this.props.heroIdTagger].baseStats
+                      .healthRegen
+                  }
+                </div>
+                <div>
+                  {this.state.heroStatsJson[this.props.heroIdTagger].baseStats
+                    .resourceAmount === "0"
+                    ? ""
+                    : "Resource: " +
+                      this.state.heroStatsJson[this.props.heroIdTagger]
+                        .baseStats.resourceAmount}{" "}
+                  {this.state.heroStatsJson[this.props.heroIdTagger].baseStats
+                    .resourceType === "None"
+                    ? ""
+                    : this.state.heroStatsJson[this.props.heroIdTagger]
+                        .baseStats.resourceType}
+                </div>
+                <div>
+                  Attack Damge:{" "}
+                  {
+                    this.state.heroStatsJson[this.props.heroIdTagger].baseStats
+                      .attackDamage
+                  }
+                </div>
+                <div>
+                  Attack Speed:{" "}
+                  {
+                    this.state.heroStatsJson[this.props.heroIdTagger].baseStats
+                      .attackSpeed
+                  }
+                </div>
+                <div>
+                  Attack Range:{" "}
+                  {
+                    this.state.heroStatsJson[this.props.heroIdTagger].baseStats
+                      .attackRange
+                  }
+                </div>
               </div>
             </div>
           </div>

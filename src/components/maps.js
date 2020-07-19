@@ -8,7 +8,24 @@ class Maps extends PureComponent {
     mapJson: JSON.parse(JSON.stringify(mapData)).default,
     mapHexId: "",
     bottomDisplayUnit: "",
+    mapselectid: "",
   };
+
+  async mapScroll() {
+    await document.querySelector("#mapScroll");
+    return document.querySelector("#mapScroll").scrollIntoView({
+      behavior: "smooth",
+      block: "nearest",
+      inline: "start",
+    });
+  }
+
+  mapselect() {
+    this.setState({
+      mapselectid: this.props.mapselectid,
+    });
+    console.log(this.state.mapselectid);
+  }
 
   mapInfoGenerator = () => {
     return this.state.mapHexId === "" ? null : (
@@ -136,6 +153,7 @@ class Maps extends PureComponent {
                         mapHexId: id,
                         bottomDisplayUnit: "block",
                       });
+                      this.mapScroll();
                     }}
                   >
                     <div
@@ -162,10 +180,12 @@ class Maps extends PureComponent {
               )}
             </div>
             <div
+              id="mapScroll"
               className={styles.bottomMapInfo}
               style={{ display: this.state.bottomDisplayUnit }}
             >
               {this.mapInfoGenerator()}
+              {this.mapselect()}
             </div>
           </div>
         </div>
