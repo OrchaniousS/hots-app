@@ -3,7 +3,7 @@ import { Route, BrowserRouter, Switch } from "react-router-dom";
 
 // import styles from "../app.module.css";
 import * as data from "../data/jsonData/heroData.json";
-import Heroes from "../components/heroes";
+import Heroes from "./heroes";
 import HeroesData from "../data/heroesData/heroesData";
 
 class HeroStats extends PureComponent {

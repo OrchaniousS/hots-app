@@ -67,6 +67,37 @@ code {
   /* border-radius: 10px; */
 }
 
+.displayInfo {
+  display: flex;
+  flex-direction: column;
+  flex-grow: inherit;
+  border-bottom: 1px solid rgb(42 44 105);
+  background-color: rgb(20 20 25 / 61%);
+  margin: 1% 8% 1% 8%;
+  padding: 1% 1% 1% 1%;
+  border-radius: 8px;
+  line-height: 1.1;
+  /* flex: -1; */
+  /* width: 100%; */
+}
+
+.displayInfo:nth-child(2n) {
+  color: rgba(135, 137, 192, 0.534);
+  padding: 1% 8% 1% 8%;
+  font-size: 21px;
+  flex: 1;
+}
+
+.displayInfo:nth-child(2n + 1) {
+  font-weight: 700;
+  font-size: 25px;
+  flex: 4;
+}
+
+.basicInfo {
+  /* margin: 1% 8% 1% 8%; */
+}
+
 /*-- General --*/
 
 /*-- Navigation part ----*/
@@ -83,10 +114,6 @@ code {
     margin: 0;
     justify-content: center;
     /* width: 100%; */
-  }
-
-  .mainContent {
-    margin-top: 25%;
   }
 }
 
@@ -107,25 +134,31 @@ nav {
   margin-left: 1.1%;
   margin-right: 1.1%;
 }
-.scrollTop img {
-  width: 150px;
-  height: 150px;
+
+@media (max-width: 329px) {
+  .scrollTop {
+    bottom: 70px;
+  }
+}
+@media (min-width: 330px) {
+  .scrollTop {
+    bottom: 60px;
+  }
 }
 
 .scrollTop {
   display: none;
   position: fixed;
-  bottom: 80px;
   right: 40px;
   z-index: 99;
-  font-size: 1.2rem;
+  font-size: 3rem;
   border: none;
   outline: none;
   background-color: #3479d9;
   color: white;
   cursor: pointer;
-  padding: 2%;
-  border-radius: 9px;
+  padding: 12px 15px 12px 15px;
+  border-radius: 50px;
 }
 
 .scrollTop:hover {
@@ -189,22 +222,51 @@ nav h2 a {
   border: 3px solid #222;
   background: #141414;
   box-shadow: 0 0 35px rgba(0, 0, 0, 0.35);
-  padding: 20px;
-  max-width: 1450px;
-  margin: auto;
-  margin-top: 2%;
-  margin-bottom: 2%;
+  margin: 2% 8% 2% 8%;
+}
+
+/*min laptop*/
+@media (min-width: 1024px) {
+  .app {
+    padding: 1%;
+  }
+}
+
+/*min tab*/
+@media (max-width: 550px) {
+  .app {
+    margin-top: 28%;
+  }
+}
+
+/*large phone*/
+@media (max-width: 425px) {
+  .app {
+    margin-top: 35%;
+  }
+}
+
+/*medium phone*/
+@media (max-width: 375px) {
+  .app {
+    padding: 1%;
+    margin-top: 38%;
+  }
+  .displayInfo {
+    padding: 6% 2% 6% 2%;
+  }
+  .displayInfo:nth-child(2n) {
+    padding: 2% 10% 2% 10%;
+  }
+}
+
+/*medium phone*/
+@media (max-width: 320px) {
+  .app {
+    margin-top: 45%;
+  }
 }
 /*-- App page ----*/
-
-/*-- Home page----*/
-
-.mapHexIconimg {
-  width: 115px;
-  height: 115px;
-}
-
-/*-- Home page----*/
 
 /*-- Heroes page ----*/
 
@@ -594,10 +656,14 @@ nav h2 a {
 
 .heroRightInfo {
   display: flex;
-  transform: scale(0.9);
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 1;
+  order: 2;
+  /* transform: scale(0.9); */
   width: auto;
-  background: rgba(35, 35, 35, 0.223);
-  box-shadow: 0 0 35px rgba(0, 0, 0, 0.35);
+  /* background: rgba(35, 35, 35, 0.223);
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.35); */
 }
 
 .heroTitle {
@@ -686,10 +752,11 @@ nav h2 a {
 @media (min-width: 960px) {
   .heroMainInfo {
     display: flex;
-    padding: 8px 8px 8px 8px;
-    font-size: 14px;
+    flex-direction: column;
     text-align: center;
+    font-size: 14px;
     margin: 3% 4% 3% 4%;
+    padding: 8px 8px 8px 8px;
     border: 1px solid #3479d93a;
     background: rgba(60, 27, 150, 0.223);
     box-shadow: 0 0 35px rgba(19, 49, 180, 0.205);
@@ -919,17 +986,6 @@ nav h2 a {
   .multiplyHero {
     margin: 0 -1% 0 -1%;
   }
-}
-
-@media (min-width: 560px) {
-}
-
-.basicInfo {
-  width: 70%;
-  height: 100%;
-  /* width: 150px; */
-  background: rgba(35, 35, 35, 0.223);
-  box-shadow: 0 0 35px rgba(0, 0, 0, 0.35);
 }
 
 /*-- Single Hero Info page----*/

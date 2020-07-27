@@ -2,6 +2,7 @@ import React, { Component } from "react";
 
 import styles from "../../app.module.css";
 import * as data from "../../data/jsonData/heroStats.json";
+import InfoDisplay from "../infoDisplay";
 
 class Herobasic extends Component {
   state = {
@@ -10,47 +11,27 @@ class Herobasic extends Component {
 
   render() {
     return (
-      <div key={this.props.heroIdTagger}>
-        <div className={styles.heroLeftInfo}>
-          <table className={styles.heroTableSingle}>
-            <tbody>
-              <tr>
-                <th>Role:</th>
-                <td>
-                  {
-                    this.state.heroStatsJson[this.props.heroIdTagger].basicInfo
-                      .role
-                  }
-                </td>
-              </tr>
-              <tr>
-                <th>Difficulty:</th>
-                <td>
-                  {
-                    this.state.heroStatsJson[this.props.heroIdTagger].basicInfo
-                      .difficulty
-                  }
-                </td>
-              </tr>
-              <tr>
-                <th> Price:</th>
-                <td>
-                  {this.state.heroStatsJson[this.props.heroIdTagger].basicInfo
-                    .price + " Gold"}
-                </td>
-              </tr>
-              <tr>
-                <th> Lore:</th>
-                <td>
-                  {
-                    this.state.heroStatsJson[this.props.heroIdTagger].basicInfo
-                      .qoute
-                  }
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+      <div className={styles.basicInfo} key={this.props.heroIdTagger}>
+        <InfoDisplay>Role</InfoDisplay>
+        <InfoDisplay>
+          {this.state.heroStatsJson[this.props.heroIdTagger].basicInfo.role}
+        </InfoDisplay>
+        <InfoDisplay>Difficulty</InfoDisplay>
+        <InfoDisplay>
+          {
+            this.state.heroStatsJson[this.props.heroIdTagger].basicInfo
+              .difficulty
+          }
+        </InfoDisplay>
+        <InfoDisplay>Price</InfoDisplay>
+        <InfoDisplay>
+          {this.state.heroStatsJson[this.props.heroIdTagger].basicInfo.price +
+            " Gold"}
+        </InfoDisplay>
+        <InfoDisplay>Lore</InfoDisplay>
+        <InfoDisplay>
+          {this.state.heroStatsJson[this.props.heroIdTagger].basicInfo.qoute}
+        </InfoDisplay>
       </div>
     );
   }

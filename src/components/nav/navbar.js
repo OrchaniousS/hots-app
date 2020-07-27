@@ -1,6 +1,7 @@
 import React from "react";
-import styles from "../app.module.css";
 import { NavLink } from "react-router-dom";
+
+import styles from "../../app.module.css";
 
 window.onscroll = () => {
   scrollFunction();
@@ -43,8 +44,9 @@ const Navbar = (props) => (
         </li>
       </ul>
     </nav>
+
     <button id="backTop" className={styles.scrollTop} onClick={topFunction}>
-      Back To Top
+      &#8593;
     </button>
   </div>
 );

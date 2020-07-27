@@ -2,6 +2,7 @@ import React, { PureComponent } from "react";
 
 import styles from "../app.module.css";
 import * as mapData from "../data/jsonData/hotsMaps.json";
+import MainContainer from "../components/mainContainer";
 
 class Maps extends PureComponent {
   state = {
@@ -139,57 +140,55 @@ class Maps extends PureComponent {
 
   render() {
     return (
-      <div className={styles.mainContent}>
-        <div className={styles.container}>
-          <div className={styles.mapContainer}>
-            <h2>{this.props.title}</h2>
-            <div className={styles.mapHexCollage}>
-              {this.state.mapJson.map((compact, id) =>
-                this.state.mapHexId === undefined ? null : (
+      <MainContainer>
+        <div className={styles.mapContainer}>
+          <h2>{this.props.title}</h2>
+          <div className={styles.mapHexCollage}>
+            {this.state.mapJson.map((compact, id) =>
+              this.state.mapHexId === undefined ? null : (
+                <div
+                  key={id}
+                  onClick={() => {
+                    this.setState({
+                      mapHexId: id,
+                      bottomDisplayUnit: "block",
+                    });
+                    this.mapScroll();
+                  }}
+                >
                   <div
-                    key={id}
-                    onClick={() => {
-                      this.setState({
-                        mapHexId: id,
-                        bottomDisplayUnit: "block",
-                      });
-                      this.mapScroll();
-                    }}
+                    className={
+                      id !== this.state.mapHexId && this.state.mapHexId !== ""
+                        ? styles.mapHexUnitUnActive
+                        : null
+                    }
                   >
-                    <div
-                      className={
-                        id !== this.state.mapHexId && this.state.mapHexId !== ""
-                          ? styles.mapHexUnitUnActive
-                          : null
-                      }
-                    >
-                      <div className={styles.mapHexIcon}>
-                        <img
-                          alt={compact.mName}
-                          src={`../../images/maps/${compact.mName}.jpg`}
-                        />
-                      </div>
-                      <div className={styles.mapHexaBG}>
-                        <span className={styles.mapHexaBGName}>
-                          {compact.mName}
-                        </span>
-                      </div>
+                    <div className={styles.mapHexIcon}>
+                      <img
+                        alt={compact.mName}
+                        src={`../../images/maps/${compact.mName}.jpg`}
+                      />
+                    </div>
+                    <div className={styles.mapHexaBG}>
+                      <span className={styles.mapHexaBGName}>
+                        {compact.mName}
+                      </span>
                     </div>
                   </div>
-                )
-              )}
-            </div>
-            <div
-              id="mapScroll"
-              className={styles.bottomMapInfo}
-              style={{ display: this.state.bottomDisplayUnit }}
-            >
-              {this.mapInfoGenerator()}
-              {this.mapselect()}
-            </div>
+                </div>
+              )
+            )}
+          </div>
+          <div
+            id="mapScroll"
+            className={styles.bottomMapInfo}
+            style={{ display: this.state.bottomDisplayUnit }}
+          >
+            {this.mapInfoGenerator()}
+            {this.mapselect()}
           </div>
         </div>
-      </div>
+      </MainContainer>
     );
   }
 }

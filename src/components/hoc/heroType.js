@@ -3,6 +3,9 @@ import React, { PureComponent } from "react";
 import styles from "../../app.module.css";
 import * as data from "../../data/jsonData/heroStats.json";
 import * as imgData from "../../data/jsonData/heroData.json";
+import Card from "../card";
+import RowCard from "../rowCard";
+import InfoDisplay from "../infoDisplay";
 
 class Herotype extends PureComponent {
   state = {
@@ -15,82 +18,91 @@ class Herotype extends PureComponent {
     switch (type) {
       case "singleHero":
         template = (
-          <div className={styles.singleHero}>
-            <div className={styles.heroRightInfo}>
-              <div className={styles.heroName}>
+          <div>
+            {/* // <div className={styles.singleHero}> */}
+            {/* <div className={styles.heroRightInfo}> */}
+            {/* <div className={styles.heroName}> */}
+            <InfoDisplay>
+              {this.state.heroStatsJson[this.props.heroIdTagger].basicInfo.name}
+            </InfoDisplay>
+            <InfoDisplay>
+              <div className={styles.heroTitle}>
                 {
                   this.state.heroStatsJson[this.props.heroIdTagger].basicInfo
-                    .name
+                    .title
                 }
-                <div className={styles.heroTitle}>
-                  {
-                    this.state.heroStatsJson[this.props.heroIdTagger].basicInfo
-                      .title
-                  }
-                </div>
-                <div className={styles.heroTitleImg}>
-                  <img alt="miniIconhero" src={this.props.heroImage} />
-                </div>
               </div>
-              <div className={styles.heroBaseStats}>
-                <div>
-                  Attack Type:{" "}
-                  {
-                    this.state.heroStatsJson[this.props.heroIdTagger].baseStats
-                      .attackType
-                  }
-                </div>
-                <div>
-                  Health:{" "}
-                  {
-                    this.state.heroStatsJson[this.props.heroIdTagger].baseStats
-                      .health
-                  }
-                </div>
-                <div>
-                  Regen:{" "}
-                  {
-                    this.state.heroStatsJson[this.props.heroIdTagger].baseStats
-                      .healthRegen
-                  }
-                </div>
-                <div>
-                  {this.state.heroStatsJson[this.props.heroIdTagger].baseStats
-                    .resourceAmount === "0"
-                    ? ""
-                    : "Resource: " +
-                      this.state.heroStatsJson[this.props.heroIdTagger]
-                        .baseStats.resourceAmount}{" "}
-                  {this.state.heroStatsJson[this.props.heroIdTagger].baseStats
-                    .resourceType === "None"
-                    ? ""
-                    : this.state.heroStatsJson[this.props.heroIdTagger]
-                        .baseStats.resourceType}
-                </div>
-                <div>
-                  Attack Damge:{" "}
-                  {
-                    this.state.heroStatsJson[this.props.heroIdTagger].baseStats
-                      .attackDamage
-                  }
-                </div>
-                <div>
-                  Attack Speed:{" "}
-                  {
-                    this.state.heroStatsJson[this.props.heroIdTagger].baseStats
-                      .attackSpeed
-                  }
-                </div>
-                <div>
-                  Attack Range:{" "}
-                  {
-                    this.state.heroStatsJson[this.props.heroIdTagger].baseStats
-                      .attackRange
-                  }
-                </div>
+              <div className={styles.heroTitleImg}>
+                <img alt="miniIconhero" src={this.props.heroImage} />
               </div>
-            </div>
+            </InfoDisplay>
+            {/* </div> */}
+            {/* <div className={styles.heroBaseStats}> */}
+            <RowCard>
+              <InfoDisplay>Attack Type</InfoDisplay>
+              <InfoDisplay>
+                {
+                  this.state.heroStatsJson[this.props.heroIdTagger].baseStats
+                    .attackType
+                }
+              </InfoDisplay>
+              <InfoDisplay>Health</InfoDisplay>
+              <InfoDisplay>
+                {
+                  this.state.heroStatsJson[this.props.heroIdTagger].baseStats
+                    .health
+                }
+              </InfoDisplay>
+              <InfoDisplay>Regen</InfoDisplay>
+              <InfoDisplay>
+                {
+                  this.state.heroStatsJson[this.props.heroIdTagger].baseStats
+                    .healthRegen
+                }
+              </InfoDisplay>
+
+              <InfoDisplay>
+                {this.state.heroStatsJson[this.props.heroIdTagger].baseStats
+                  .resourceAmount === "0"
+                  ? ""
+                  : "Resource"}
+              </InfoDisplay>
+              <InfoDisplay>
+                {this.state.heroStatsJson[this.props.heroIdTagger].baseStats
+                  .resourceAmount + " "}
+                {this.state.heroStatsJson[this.props.heroIdTagger].baseStats
+                  .resourceType === "None"
+                  ? ""
+                  : this.state.heroStatsJson[this.props.heroIdTagger].baseStats
+                      .resourceType}
+              </InfoDisplay>
+              <InfoDisplay>Attack Damge</InfoDisplay>
+              <InfoDisplay>
+                {
+                  this.state.heroStatsJson[this.props.heroIdTagger].baseStats
+                    .attackDamage
+                }
+              </InfoDisplay>
+              <InfoDisplay>Attack Speed</InfoDisplay>
+              <InfoDisplay>
+                {
+                  this.state.heroStatsJson[this.props.heroIdTagger].baseStats
+                    .attackSpeed
+                }
+              </InfoDisplay>
+              <InfoDisplay>Attack Range</InfoDisplay>
+              <InfoDisplay>
+                {
+                  this.state.heroStatsJson[this.props.heroIdTagger].baseStats
+                    .attackRange
+                }
+              </InfoDisplay>
+            </RowCard>
+
+            {/* </div> */}
           </div>
+          //   {/* </div> */}
+          // {/* </div> */}
         );
         break;
       case "doubleHero":
@@ -283,13 +295,13 @@ class Herotype extends PureComponent {
     let heroType = this.state.heroStatsJson[this.props.heroIdTagger].basicInfo
       .name;
     return (
-      <div>
+      <Card>
         {typeof heroType === "string"
           ? this.renderHeroType("singleHero")
           : heroType.length < 3
           ? this.renderHeroType("doubleHero")
           : this.renderHeroType("threeHero")}
-      </div>
+      </Card>
     );
   }
 }
