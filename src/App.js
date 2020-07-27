@@ -2,9 +2,8 @@ import React, { Component } from "react";
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 import HttpsRedirect from "react-https-redirect";
 
-import Navbar from "./components/nav/navbar";
-// import Home from "./pages/home";
-import Home from "./home/pages/home";
+import Navbar from "./Shared/nav/navbar";
+import Home from "./Home/pages/home";
 import Maps from "./pages/maps";
 import styles from "./app.module.css";
 import HeroStats from "./pages/heroesInfo";

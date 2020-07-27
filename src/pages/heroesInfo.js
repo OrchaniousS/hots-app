@@ -13,7 +13,8 @@ class HeroStats extends PureComponent {
   };
   heroURL = () =>
     this.state.heroStatsJson.map((link, index) => (
-      <div key={index}>
+      <React.Fragment key={index}>
+        {/* <div key={index}> */}
         <Route
           exact
           path={`/heroes/${link.name.toLowerCase()}`}
@@ -25,7 +26,8 @@ class HeroStats extends PureComponent {
             />
           )}
         />
-      </div>
+        {/* </div> */}
+      </React.Fragment>
     ));
 
   render() {
