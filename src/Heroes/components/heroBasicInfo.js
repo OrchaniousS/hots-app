@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 
 import styles from "../../app.module.css";
-import RowCard from "../rowCard";
+import RowCard from "../../Shared/components/rowCard";
 import * as data from "../../data/jsonData/heroStats.json";
-import InfoDisplay from "../infoDisplay";
+import InfoDisplay from "../../Shared/components/infoDisplay";
 
 class Herobasic extends Component {
   state = {

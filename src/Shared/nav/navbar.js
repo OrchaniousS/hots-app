@@ -21,7 +21,7 @@ async function scrollFunction() {
   }
 }
 const Navbar = (props) => (
-  <div>
+  <header>
     <nav className={styles.navBarResponsive}>
       <h2>
         <NavLink to={props.paths[0]}>{props.title}</NavLink>
@@ -48,7 +48,7 @@ const Navbar = (props) => (
     <button id="backTop" className={styles.scrollTop} onClick={topFunction}>
       &#8593;
     </button>
-  </div>
+  </header>
 );
 
 export default Navbar;

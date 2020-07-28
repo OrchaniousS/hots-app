@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
-import MainContainer from "../../components/mainContainer";
-import * as weeklyData from "../data/weeklyR.json";
+import MainContainer from "../../Shared/components/mainContainer";
+import weeklyRotation from "../data/weeklyR.json";
 import styles from "./home.module.css";
 // import getWeeklyHeroes from "../../services/weeklyR";
 
@@ -30,7 +30,7 @@ const Home = (props) => {
   //     });
   //   });
 
-  const [weekly, setWeekly] = useState(weeklyData.default);
+  const [weekly, setWeekly] = useState(weeklyRotation);
   // console.log(weekly);
   //     const [date, setDate] = useState("Joke is loading");
   // const [joke, setJoke] = useState("Joke is loading...");

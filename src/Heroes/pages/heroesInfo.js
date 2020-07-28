@@ -1,10 +1,9 @@
 import React, { PureComponent } from "react";
 import { Route, BrowserRouter, Switch } from "react-router-dom";
 
-// import styles from "../app.module.css";
-import * as data from "../data/jsonData/heroData.json";
+import * as data from "../../data/jsonData/heroData.json";
 import Heroes from "./heroes";
-import HeroesData from "../data/heroesData/heroesData";
+import HeroesData from "../data/heroesData";
 
 class HeroStats extends PureComponent {
   state = {
@@ -14,7 +13,6 @@ class HeroStats extends PureComponent {
   heroURL = () =>
     this.state.heroStatsJson.map((link, index) => (
       <React.Fragment key={index}>
-        {/* <div key={index}> */}
         <Route
           exact
           path={`/heroes/${link.name.toLowerCase()}`}
@@ -26,7 +24,6 @@ class HeroStats extends PureComponent {
             />
           )}
         />
-        {/* </div> */}
       </React.Fragment>
     ));
 

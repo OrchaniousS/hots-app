@@ -1,12 +1,14 @@
 import React, { PureComponent } from "react";
 
-import styles from "../app.module.css";
-import * as mapData from "../data/jsonData/hotsMaps.json";
-import MainContainer from "../components/mainContainer";
+import mapData from "../../data/jsonData/hotsMaps.json";
+import MainContainer from "../../Shared/components/mainContainer";
+
+// import styles from "../app.module.css";
+import styles from "./maps.module.css";
 
 class Maps extends PureComponent {
   state = {
-    mapJson: JSON.parse(JSON.stringify(mapData)).default,
+    mapJson: JSON.parse(JSON.stringify(mapData)),
     mapHexId: "",
     bottomDisplayUnit: "",
     mapselectid: "",

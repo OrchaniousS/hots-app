@@ -4,9 +4,9 @@ import HttpsRedirect from "react-https-redirect";
 
 import Navbar from "./Shared/nav/navbar";
 import Home from "./Home/pages/home";
-import Maps from "./pages/maps";
+import Maps from "./Maps//pages/maps";
+import HeroStats from "./Heroes/pages/heroesInfo";
 import styles from "./app.module.css";
-import HeroStats from "./pages/heroesInfo";
 
 class App extends Component {
   state = {
@@ -22,13 +22,11 @@ class App extends Component {
       <HttpsRedirect>
         <BrowserRouter>
           <div className={styles.app}>
-            <header>
-              <Navbar
-                paths={this.state.paths}
-                links={this.state.links}
-                title={this.state.navTitle}
-              ></Navbar>
-            </header>
+            <Navbar
+              paths={this.state.paths}
+              links={this.state.links}
+              title={this.state.navTitle}
+            ></Navbar>
             <Switch>
               <Route
                 path="/heroes"

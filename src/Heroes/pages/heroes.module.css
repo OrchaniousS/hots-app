@@ -1,0 +1,70 @@
+@media (min-width: 960px) {
+  .backHero {
+    position: relative;
+    padding: 8px 8px 8px 8px;
+    height: 20%;
+    text-align: center;
+    margin-top: 1%;
+    margin-left: 4%;
+    margin-right: 4%;
+    border: 1px solid #3479d9;
+    border-radius: 15px;
+    box-shadow: 0 0 35px rgba(19, 49, 180, 0.35);
+    font-size: 1.8rem;
+  }
+
+  .backHero a {
+    color: #3479d9;
+  }
+}
+
+@media (max-width: 960px) {
+  .backHero {
+    position: fixed;
+    z-index: 1;
+    background-color: rgb(12, 100, 201);
+    padding: 8% 8% 8% 8%;
+    font-size: 25px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+  }
+
+  .backHero a {
+    color: #fff;
+    font-weight: 700;
+    font-size: 2rem;
+    padding: 8% 8% 8% 8%;
+  }
+}
+
+@media (max-width: 960px) {
+  .backHero {
+    padding: 2% 2% 2% 2%;
+    /* padding-bottom: 5%;
+      padding-top: 5%; */
+    /* height: 5%; */
+  }
+  .backHero a {
+    /* font-weight: 500; */
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .backHero {
+    padding: 0 0 0 0;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    /* height: 5%; */
+  }
+  .backHero a {
+    /* font-weight: 500; */
+    font-size: 1.5rem;
+  }
+}
+
+.backHero a {
+  text-decoration: none;
+}

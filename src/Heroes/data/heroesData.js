@@ -1,9 +1,11 @@
 import React, { PureComponent } from "react";
 import { Link } from "react-router-dom";
 
+import MainContainer from "../../Shared/components/mainContainer";
+
 import styles from "../../app.module.css";
-import * as data from "../jsonData/heroData.json";
-import * as dataPanel from "../jsonData/heroPanel.json";
+import * as data from "../../data/jsonData/heroData.json";
+import * as dataPanel from "../../data/jsonData/heroPanel.json";
 
 class HeroesData extends PureComponent {
   constructor() {
@@ -107,48 +109,46 @@ class HeroesData extends PureComponent {
 
   render() {
     return (
-      <div className={styles.mainContent}>
-        <div className={styles.container}>
-          <div>
-            <h2>{this.props.title}</h2>
-          </div>
-          <div className={styles.heroContainer}>
-            <div className={styles.heroGridRowColumon}>
-              {this.state.heroInfoJson.map((compact) => {
-                return (
-                  <div key={compact.id}>
-                    <div
-                      className={styles.heroGrid}
-                      onClick={() => {
-                        this.setState({
-                          indexNum: compact.id,
-                          indexName: compact.name,
-                        });
-                        return window.innerWidth < 960
-                          ? (window.location.href = `/heroes/${compact.name}`)
-                          : null;
-                      }}
-                    >
-                      {}
-                      <div className={styles.heroPersonal}>
-                        <div className={styles.heroPersonalImg}>
-                          <div>{compact.name}</div>
-                          <img alt="heroIcon" src={compact.logo}></img>
-                        </div>
+      <MainContainer>
+        <div>
+          <h2>{this.props.title}</h2>
+        </div>
+        <div className={styles.heroContainer}>
+          <div className={styles.heroGridRowColumon}>
+            {this.state.heroInfoJson.map((compact) => {
+              return (
+                <div key={compact.id}>
+                  <div
+                    className={styles.heroGrid}
+                    onClick={() => {
+                      this.setState({
+                        indexNum: compact.id,
+                        indexName: compact.name,
+                      });
+                      return window.innerWidth < 960
+                        ? (window.location.href = `/heroes/${compact.name}`)
+                        : null;
+                    }}
+                  >
+                    {}
+                    <div className={styles.heroPersonal}>
+                      <div className={styles.heroPersonalImg}>
+                        <div>{compact.name}</div>
+                        <img alt="heroIcon" src={compact.logo}></img>
                       </div>
                     </div>
                   </div>
-                );
-              })}
-            </div>
-            <div id="heroPanelC" className={styles.heroPanelContainer}>
-              <div className={styles.heroPanelMoveable}>
-                {this.heroSidePanelGenerator()}
-              </div>
+                </div>
+              );
+            })}
+          </div>
+          <div id="heroPanelC" className={styles.heroPanelContainer}>
+            <div className={styles.heroPanelMoveable}>
+              {this.heroSidePanelGenerator()}
             </div>
           </div>
         </div>
-      </div>
+      </MainContainer>
     );
   }
 }

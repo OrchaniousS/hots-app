@@ -1,6 +1,6 @@
 import React from "react";
 
-import styles from "../app.module.css";
+import styles from "./infoDisplay.module.css";
 
 const InfoDisplay = (props) => {
   // const hasClassNameHandler = (props.children[0].props.className && "hero" )||(props.children[1].props.className && "it has classname) ;

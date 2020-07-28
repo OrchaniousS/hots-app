@@ -1,11 +1,12 @@
 import React, { PureComponent } from "react";
 
-import styles from "../../app.module.css";
+import Card from "../../Shared/components/card";
+import RowCard from "../../Shared/components/rowCard";
+import InfoDisplay from "../../Shared/components/infoDisplay";
+
 import * as data from "../../data/jsonData/heroStats.json";
 import * as imgData from "../../data/jsonData/heroData.json";
-import Card from "../card";
-import RowCard from "../rowCard";
-import InfoDisplay from "../infoDisplay";
+import styles from "../../app.module.css";
 
 class Herotype extends PureComponent {
   state = {
@@ -19,10 +20,6 @@ class Herotype extends PureComponent {
       case "singleHero":
         template = (
           <React.Fragment>
-            {/* <div> */}
-            {/* // <div className={styles.singleHero}> */}
-            {/* <div className={styles.heroRightInfo}> */}
-            {/* <div className={styles.heroName}> */}
             <RowCard>
               <div className={styles.singleHero}>
                 <InfoDisplay>
@@ -44,8 +41,6 @@ class Herotype extends PureComponent {
                 </InfoDisplay>
               </div>
             </RowCard>
-            {/* </div> */}
-            {/* <div className={styles.heroBaseStats}> */}
             <RowCard>
               <InfoDisplay>
                 <div>Attack Type</div>
@@ -59,31 +54,36 @@ class Herotype extends PureComponent {
               <InfoDisplay>
                 <div>Health</div>
                 <div>
-                  {
-                    this.state.heroStatsJson[this.props.heroIdTagger].baseStats
-                      .health
-                  }
+                  {this.state.heroStatsJson[this.props.heroIdTagger].baseStats
+                    .health !== ""
+                    ? this.state.heroStatsJson[this.props.heroIdTagger]
+                        .baseStats.health
+                    : "None"}
                 </div>
               </InfoDisplay>
               <InfoDisplay>
                 <div>Regen</div>
                 <div>
-                  {
-                    this.state.heroStatsJson[this.props.heroIdTagger].baseStats
-                      .healthRegen
-                  }
+                  {this.state.heroStatsJson[this.props.heroIdTagger].baseStats
+                    .healthRegen !== ""
+                    ? this.state.heroStatsJson[this.props.heroIdTagger]
+                        .baseStats.healthRegen
+                    : "None"}
                 </div>
               </InfoDisplay>
               <InfoDisplay>
                 <div>
                   {this.state.heroStatsJson[this.props.heroIdTagger].baseStats
                     .resourceAmount === "0"
-                    ? ""
-                    : "Resource"}
+                    ? "Resources"
+                    : "Resources"}
                 </div>
                 <div>
                   {this.state.heroStatsJson[this.props.heroIdTagger].baseStats
-                    .resourceAmount + " "}
+                    .resourceAmount === "0" || "undefined"
+                    ? "None"
+                    : this.state.heroStatsJson[this.props.heroIdTagger]
+                        .baseStats.resourceAmoun + " "}
                   {this.state.heroStatsJson[this.props.heroIdTagger].baseStats
                     .resourceType === "None"
                     ? ""
@@ -94,35 +94,34 @@ class Herotype extends PureComponent {
               <InfoDisplay>
                 <div>Attack Damge</div>
                 <div>
-                  {
-                    this.state.heroStatsJson[this.props.heroIdTagger].baseStats
-                      .attackDamage
-                  }
+                  {this.state.heroStatsJson[this.props.heroIdTagger].baseStats
+                    .attackDamage !== ""
+                    ? this.state.heroStatsJson[this.props.heroIdTagger]
+                        .baseStats.attackDamage
+                    : "None"}
                 </div>
               </InfoDisplay>
               <InfoDisplay>
                 <div>Attack Speed</div>
                 <div>
-                  {
-                    this.state.heroStatsJson[this.props.heroIdTagger].baseStats
-                      .attackSpeed
-                  }
+                  {this.state.heroStatsJson[this.props.heroIdTagger].baseStats
+                    .attackSpeed !== ""
+                    ? this.state.heroStatsJson[this.props.heroIdTagger]
+                        .baseStats.attackSpeed
+                    : "None"}
                 </div>
               </InfoDisplay>
               <InfoDisplay>
                 <div>Attack Range</div>
                 <div>
-                  {
-                    this.state.heroStatsJson[this.props.heroIdTagger].baseStats
-                      .attackRange
-                  }
+                  {this.state.heroStatsJson[this.props.heroIdTagger].baseStats
+                    .attackRange !== ""
+                    ? this.state.heroStatsJson[this.props.heroIdTagger]
+                        .baseStats.attackRange
+                    : "None"}
                 </div>
               </InfoDisplay>
             </RowCard>
-            {/* </div> */}
-            {/* </div> */}
-            {/* </div> */}
-            {/* </div> */}
           </React.Fragment>
         );
         break;
