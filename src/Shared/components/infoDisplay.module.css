@@ -2,14 +2,27 @@
   display: flex;
   flex-direction: column;
   flex-grow: inherit;
-  border: 1px solid rgb(42 44 105);
+  /* border: 1px solid rgba(135, 137, 192, 0.4534); */
   background-color: rgb(20 20 25 / 61%);
   margin: 1% 2% 1% 2%;
   padding: 1% 1% 1% 1%;
   border-radius: 25px;
   line-height: 1.1;
   width: 190px;
+  box-shadow: 0px 1px 4px 2px rgba(30, 143, 255, 0.1555);
 }
+
+.displayInfoHero img,
+.displayInfo img,
+.displayInfoCouSyn img {
+  border-radius: 25px;
+  box-shadow: 0px 1px 18px 7px rgba(30, 143, 255, 0.548);
+}
+
+/* .displayInfo img {
+  border-radius: 10px;
+} */
+
 .displayInfoTitle {
   font-size: 1.5rem;
 }
@@ -28,7 +41,7 @@
 }
 
 .displayInfoChild:nth-child(2n) {
-  color: rgba(135, 137, 192, 0.534);
+  color: rgba(135, 137, 192, 0.8534);
   padding: 1% 8% 1% 8%;
   font-size: 1.2rem;
   flex: 1;
@@ -43,4 +56,27 @@
   .displayInfo:nth-child(2n) {
     padding: 2% 10% 2% 10%;
   }
+}
+
+.displayInfoHero {
+  display: flex;
+  flex-direction: column;
+  flex-grow: inherit;
+  border: 1px solid rgba(135, 137, 192, 0.4534);
+  background-color: rgb(20 20 25 / 61%);
+  margin: 1% 2% 1% 2%;
+  padding: 1% 1% 1% 1%;
+  border-radius: 25px;
+  line-height: 1.1;
+}
+
+.displayInfoCouSyn {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(10, 175, 59, 0.596);
+  border-radius: 25px;
+  border: 1px solid rgba(135, 137, 192, 0.4534);
+  width: 100%;
+  align-items: center;
+  margin: 0 2% 0 2%;
 }

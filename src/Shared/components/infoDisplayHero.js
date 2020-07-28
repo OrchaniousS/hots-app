@@ -2,8 +2,8 @@ import React from "react";
 
 import styles from "./infoDisplay.module.css";
 
-const InfoDisplay = (props) => {
-  const infoDiv = () => {
+const InfoDisplayHero = (props) => {
+  const infoHandler = () => {
     return [
       typeof props.children === "object" ? (
         <React.Fragment key={props.children}>
@@ -17,8 +17,7 @@ const InfoDisplay = (props) => {
       ),
     ];
   };
-
-  return <div className={styles.displayInfo}>{infoDiv()}</div>;
+  return <div className={styles.displayInfoHero}>{infoHandler()}</div>;
 };
 
-export default InfoDisplay;
+export default InfoDisplayHero;
