@@ -1,0 +1,90 @@
+/*-- Home page----*/
+
+.mapHexIconimg {
+  width: 115px;
+  height: 115px;
+}
+
+.mapContainer {
+  text-align: center;
+  padding-bottom: 4%;
+}
+
+.mapHexCollage {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+
+  padding-bottom: 4%;
+  padding-top: 4%;
+  border: 3px solid #222;
+  background: #141414;
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.35);
+}
+
+@media (max-width: 960px) {
+  .mapHexCollage {
+    /* margin: 12% 15% 10% 15%; */
+    transform: scale(0.9);
+  }
+}
+
+@media (min-width: 960px) {
+  .mapHexCollage {
+    margin: 2% 5% 0% 5%;
+  }
+}
+
+.mapHexIcon {
+  width: 115px;
+  height: 115px;
+  position: relative;
+  margin-bottom: -105%;
+  overflow: hidden;
+  transform: scale(0.92) rotate(-30deg) skewX(30deg) scaleY(0.866);
+  -webkit-transform: scale(0.92) rotate(-30deg) skewX(30deg) scaleY(0.866);
+  -moz-transform: scale(0.92) rotate(-30deg) skewX(30deg) scaleY(0.866);
+}
+
+.mapHexIcon img {
+  transform: scale(0.92) scaleY(1.155) skewX(-30deg) rotate(30deg);
+  -webkit-transform: scale(0.92) scaleY(1.155) skewX(-30deg) rotate(30deg);
+  -moz-transform: scale(0.92) scaleY(1.155) skewX(-30deg) rotate(30deg);
+}
+
+.mapHexaBG {
+  background-image: url("/images/general/mapHexagon.png");
+  height: 119px;
+  transform: scale(1.04);
+  position: relative;
+}
+
+.mapHexaBG .mapHexaBGName {
+  visibility: hidden;
+  width: 100%;
+  background-color: #3479d9;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.8s;
+}
+
+.mapHexaBG:hover .mapHexaBGName {
+  visibility: visible;
+  opacity: 1;
+}
+
+.mapHexaBG:hover,
+.mapHexaBGActive {
+  background-image: url("/images/general/mapHexagonActive.png");
+}
+
+/*-- Home page----*/
