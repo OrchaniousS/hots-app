@@ -2,10 +2,11 @@ import React, { PureComponent } from "react";
 import { Link } from "react-router-dom";
 
 import RowCard from "../../Shared/components/rowCard";
-import mcsData from "../../data/jsonData/hotsCouSyn.json";
-import styles from "../../app.module.css";
 // import InfoDisplayMulti from "../../Shared/components/infoDisplayMulti";
 import InfoDisplayCouSyn from "../../Shared/components/infoDisplayCouSyn";
+
+import mcsData from "../data/hotsCouSyn.json";
+import styles from "../../app.module.css";
 
 class HeroCouSyn extends PureComponent {
   state = {

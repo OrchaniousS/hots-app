@@ -4,15 +4,15 @@ import { Link } from "react-router-dom";
 import MainContainer from "../../Shared/components/mainContainer";
 
 import styles from "../../app.module.css";
-import * as data from "../../data/jsonData/heroData.json";
-import * as dataPanel from "../../data/jsonData/heroPanel.json";
+import data from "./heroData.json";
+import dataPanel from "./heroPanel.json";
 
 class HeroesData extends PureComponent {
   constructor() {
     super();
     this.state = {
-      heroInfoJson: JSON.parse(JSON.stringify(data)).default,
-      panelInfo: JSON.parse(JSON.stringify(dataPanel)).default,
+      heroInfoJson: JSON.parse(JSON.stringify(data)),
+      panelInfo: JSON.parse(JSON.stringify(dataPanel)),
       indexNum: "",
       indexName: "",
       displayPanelMode: "",

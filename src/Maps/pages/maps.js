@@ -1,9 +1,8 @@
 import React, { PureComponent } from "react";
 
-import mapData from "../../data/jsonData/hotsMaps.json";
 import MainContainer from "../../Shared/components/mainContainer";
 
-// import styles from "../app.module.css";
+import mapData from "../data/hotsMaps.json";
 import styles from "./maps.module.css";
 
 class Maps extends PureComponent {

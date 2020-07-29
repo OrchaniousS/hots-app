@@ -6,8 +6,8 @@ import InfoDisplay from "../../Shared/components/infoDisplay";
 import InfoDisplayHero from "../../Shared/components/infoDisplayHero";
 import InfoDisplayMulti from "../../Shared/components/infoDisplayMulti";
 
-import data from "../../data/jsonData/heroStats.json";
-import imgData from "../../data/jsonData/heroData.json";
+import data from "../data/heroStats.json";
+import imgData from "../data/heroData.json";
 import styles from "../../app.module.css";
 
 class Herotype extends PureComponent {

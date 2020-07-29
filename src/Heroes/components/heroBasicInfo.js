@@ -1,13 +1,14 @@
 import React, { Component } from "react";
 
-import styles from "../../app.module.css";
-import RowCard from "../../Shared/components/rowCard";
-import * as data from "../../data/jsonData/heroStats.json";
 import InfoDisplay from "../../Shared/components/infoDisplay";
+import RowCard from "../../Shared/components/rowCard";
+
+import data from "../data/heroStats.json";
+import styles from "../../app.module.css";
 
 class Herobasic extends Component {
   state = {
-    heroStatsJson: JSON.parse(JSON.stringify(data)).default,
+    heroStatsJson: JSON.parse(JSON.stringify(data)),
   };
 
   render() {

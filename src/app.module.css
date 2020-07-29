@@ -26,17 +26,14 @@ code {
 ::-webkit-scrollbar-track {
   background-image: linear-gradient(to bottom, #ffffff 0%, #5f5b5b 78%);
   box-shadow: inset 0 0 5px grey;
-  /* border-radius: 10px; */
 }
 
 ::-webkit-scrollbar-thumb {
   background-image: linear-gradient(to bottom, #3479d9 0%, #10448f 78%);
-  /* border-radius: 10px; */
 }
 
 ::-webkit-scrollbar-thumb:hover {
   background-image: linear-gradient(to bottom, #15e7ba 0%, #15e7ba 78%);
-  /* border-radius: 10px; */
 }
 
 /*-- General --*/
@@ -54,7 +51,6 @@ code {
     display: grid;
     margin: 0;
     justify-content: center;
-    /* width: 100%; */
   }
 }
 
@@ -214,10 +210,9 @@ nav h2 a {
   text-align: center;
   background: #161616;
   box-shadow: 0 0 15px rgba(75, 72, 72, 0.288);
-  /* display: flex;
-  flex-direction: row; */
+
   padding: 12px 12px 12px 12px;
-  /* width: 150px; */
+
   transform: scale(0.9);
 }
 
@@ -229,8 +224,6 @@ nav h2 a {
 @media (max-width: 960px) {
   .heroGridRowColumon {
     width: 100%;
-    /* margin-left: 15%;
-    margin-right: 15%; */
   }
 }
 
@@ -306,8 +299,6 @@ nav h2 a {
   justify-content: space-around;
 }
 .heroPersonalImg {
-  /* display: flex;
-  flex-direction: column; */
   justify-content: center;
   padding-bottom: 12px;
 }
@@ -335,8 +326,6 @@ nav h2 a {
   width: 450px;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
-  /* margin-right: 5%;
-  margin-left: 5%; */
 }
 
 .heroPanelContainer {
@@ -345,9 +334,6 @@ nav h2 a {
   height: 500px;
   width: 800px;
   margin-right: -10%;
-  /* box-shadow: 0 0 35px rgba(0, 0, 0, 0.35); */
-  /* transform: scale(0.9); */
-  /* margin-left: 10px; */
 }
 
 .heroPanelMoveable {
@@ -527,8 +513,6 @@ nav h2 a {
 .heroName {
   padding: 5px 5px 5px 5px;
   font-size: 26px;
-  /* width: 140px;
-  height: 180px; */
 }
 
 .heroTitleImg {
@@ -583,7 +567,6 @@ nav h2 a {
 }
 
 .heroTableSingle th {
-  /* width: 35%; */
   border-right: 1px solid #3479d9;
   background-color: rgba(24, 44, 145, 0.486);
   padding-left: 4px;
@@ -642,11 +625,6 @@ nav h2 a {
   .heroTableCouSyn td,
   .heroTableCouSyn th {
     display: block;
-  }
-
-  .heroTableCouSyn {
-    /* width: 50%;
-    height: 50%; */
   }
 }
 
@@ -720,27 +698,10 @@ nav h2 a {
   padding: 3px 3px 3px 3px;
   margin: 2px 2px 2px 2px;
 }
-/* 
-.CouSynTitle {
-  text-decoration: none;
-} */
-
-.heroSynergyCounter img {
-  /* margin-right: 5%;
-  margin-left: 5%;
-  width: 110px;
-  height: 110px;
-  transform: scale(0.85);
-  */
-}
 
 .heroCSingle {
   padding: 3px 3px 3px 3px;
   width: 120px;
-  /* height: 120px; */
-  /* transform: scale(0.75);
-  font-size: medium;
-  align-items: center; */
 }
 
 .heroCSingle a {
@@ -752,7 +713,6 @@ nav h2 a {
 .heroCSingle h4 {
   font-size: 16px;
   text-align: center;
-  /* width: fit-content; */
   height: 30%;
 }
 
@@ -795,7 +755,6 @@ nav h2 a {
 
 .singleHero {
   width: 100%;
-  /* margin: 0 25% 0 25%; */
 }
 
 @media (max-width: 450px) {
