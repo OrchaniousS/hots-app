@@ -19,25 +19,32 @@
   box-shadow: 0px 1px 18px 7px rgba(30, 143, 255, 0.548);
 }
 
-/* .displayInfo img {
-  border-radius: 10px;
-} */
-
 .displayInfoTitle {
   font-size: 1.5rem;
 }
 
 .displayInfoChild {
-  padding: 1% 1% 2% 1%;
-  margin: 0% 4% 4% 4%;
+  /* flex: unset; */
+  /* padding: 1% 1% 2% 1%;
+  margin: 0% 4% 4% 4%; */
 }
 
 .displayInfoChild:nth-child(2n + 1) {
-  border-bottom: 1px dotted dodgerblue;
+  border-bottom: 1px solid dodgerblue;
+  /* background-color: rgba(48, 104, 160, 0.342); */
+  /* border-radius: 25px; */
   font-weight: 500;
   font-size: 1.4rem;
-  flex: 4;
+  /* flex: 4; */
   opacity: 0.9;
+}
+
+@media (max-width: 1024px) {
+  .displayInfoChild:nth-child(2n) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .displayInfoChild:nth-child(2n) {
@@ -70,7 +77,7 @@
   line-height: 1.1;
 }
 
-.displayInfoCouSyn {
+.displayInfoSyn {
   display: flex;
   flex-direction: column;
   background-color: rgba(10, 175, 59, 0.596);
@@ -78,5 +85,71 @@
   border: 1px solid rgba(135, 137, 192, 0.4534);
   width: 100%;
   align-items: center;
+  margin: 0 2% 0 2%;
+}
+
+.displayInfoCou {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(173, 24, 24, 0.596);
+  border-radius: 25px;
+  border: 1px solid rgba(135, 137, 192, 0.4534);
+  width: 100%;
+  align-items: center;
+  margin: 0 2% 0 2%;
+}
+
+.displayInfoSynCouMap {
+  display: flex;
+  flex-direction: column;
+  border-radius: 25px;
+  border: 1px solid rgba(135, 137, 192, 0.4534);
+  width: 100%;
+  align-items: center;
+  margin: 0 2% 0 2%;
+}
+
+.displayInfoChildSkill {
+  /* border: 1px solid rgba(135, 137, 192, 0.4534); */
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  /* margin: 0 10% 0 10%; */
+  width: 100%;
+}
+
+.displayInfoChildSkill div:nth-child(2n) {
+  border-radius: 25px;
+  border: 1px solid rgba(135, 137, 192, 0.4534);
+  background-color: rgba(49, 129, 209, 0.205);
+  width: 80%;
+  align-self: center;
+}
+
+.displayInfoChildSkillTitle {
+  font-size: 1.5rem;
+}
+
+.displayInfoChildSkillImg {
+  position: relative;
+  width: 115px;
+  height: 125px;
+  background-image: url("/images/general/mapHexagon.png");
+}
+
+.displayInfoChildSkillVal {
+  margin: 5% 5% 5% 5%;
+  height: 100%;
+  width: 100%;
+  padding: 5% 5% 5% 5%;
+}
+
+.displayInfoHeroSkill {
+  display: flex;
+  flex-grow: inherit;
+  width: 250px;
+  height: 350px;
+  border-radius: 25px;
+  border: 1px solid rgba(135, 137, 192, 0.4534);
   margin: 0 2% 0 2%;
 }

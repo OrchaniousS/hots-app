@@ -6,6 +6,7 @@ import MainContainer from "../../Shared/components/mainContainer";
 import HeroCouSyn from "../components/heroCouSyn";
 import Herotype from "../components/heroType";
 import Herobasicinfo from "../components/heroBasicInfo";
+import HeroSkills from "../components/heroSkills";
 
 import styles from "./heroes.module.css";
 
@@ -26,7 +27,10 @@ class Heroes extends PureComponent {
           heroIdTagger={this.state.heroIdInfo}
         />
         <Card>
-          <Herobasicinfo heroIdTagger={this.state.heroIdInfo}></Herobasicinfo>
+          <HeroSkills heroImage={this.state.heroImageInfo} />
+        </Card>
+        <Card>
+          <Herobasicinfo heroIdTagger={this.state.heroIdInfo} />
         </Card>
         <Card>
           <HeroCouSyn heroIdTagger={this.state.heroIdInfo} />

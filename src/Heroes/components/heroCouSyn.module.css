@@ -1,0 +1,29 @@
+.heroCSingle {
+  padding: 3px 3px 3px 3px;
+  width: 120px;
+}
+
+.heroCSingle img {
+  transform: scale(0.9);
+  width: 100px;
+  height: 100px;
+  border-radius: 25px;
+  box-shadow: 0px 1px 18px 7px rgba(30, 143, 255, 0.548);
+}
+
+.heroCSingle a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.heroCSingle h4 {
+  font-size: 16px;
+  text-align: center;
+  height: 30%;
+}
+
+.heroCSingle:hover,
+.heroCSingle img:hover {
+  transform: scale(1);
+}

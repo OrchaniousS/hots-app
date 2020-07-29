@@ -11,7 +11,28 @@ const InfoDisplayCouSyn = (props) => {
       </React.Fragment>,
     ];
   };
-  return <div className={styles.displayInfoCouSyn}> {infoMultiHandler()}</div>;
+
+  const styleHandler = () => {
+    if (props.type === "counter") {
+      return styles.displayInfoCou;
+    }
+    if (props.type === "synergy") {
+      return styles.displayInfoSyn;
+    }
+    if (
+      props.type === "stronger" ||
+      props.type === "average" ||
+      props.type === "weaker"
+    ) {
+      return styles.displayInfoSynCouMap;
+    }
+  };
+
+  return (
+    <div id="tableCouSyn" className={styleHandler()}>
+      {infoMultiHandler()}
+    </div>
+  );
 };
 
 export default InfoDisplayCouSyn;
