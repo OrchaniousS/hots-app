@@ -12,9 +12,15 @@ const InfoDisplaySkill = (props) => {
           <div className={styles.displayInfoChildSkill}>
             <div>
               <div className={styles.displayInfoChildSkillTitle}>{headVal}</div>
-              <img className={styles.displayInfoChildSkillImg} src={img} />
+              <div className={styles.displayInfoChildSkillImgContainer}>
+                <img
+                  className={styles.displayInfoChildSkillImg}
+                  src={img}
+                  alt={img}
+                />
+                <div className={styles.displayInfoChildSkillVal}>{value}</div>
+              </div>
             </div>
-            <div className={styles.displayInfoChildSkillVal}>{value}</div>
           </div>
         </React.Fragment>
       );
@@ -32,7 +38,7 @@ const InfoDisplaySkill = (props) => {
   //     }
   //   };
 
-  console.log(typeof headVal === "string" ? "its a string" : "nope");
+  // console.log(typeof headVal === "string" ? "its a string" : "nope");
 
   return (
     <div className={styles.displayInfoHeroSkill}>

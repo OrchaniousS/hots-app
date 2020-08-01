@@ -1,4 +1,7 @@
-import React, { PureComponent, useState } from "react";
+import React, {
+  PureComponent,
+  // , useState
+} from "react";
 
 import Card from "../../Shared/components/card";
 import RowCard from "../../Shared/components/rowCard";
@@ -17,7 +20,7 @@ class Herotype extends PureComponent {
   };
 
   expandClassHandler = (option) => {
-    const [stateExpanded, setstateExpanded] = useState(option);
+    // const [stateExpanded, setstateExpanded] = useState(option);
   };
 
   renderHeroType = (type) => {

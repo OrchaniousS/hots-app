@@ -36,10 +36,27 @@ class HeroCouSyn extends PureComponent {
                         ? "kael'thas"
                         : el.heroSynergyName && el.heroSynergyName === "lucio"
                         ? "Lúcio"
+                        : el.heroSynergyName &&
+                          el.heroSynergyName === "the-butcher"
+                        ? "the butcher"
                         : el.heroSynergyName
                     }
                   >
-                    <h4>{el.heroSynergyName.toUpperCase()}</h4>
+                    <h4>
+                      {el.heroSynergyName === "the-butcher"
+                        ? "The Butcher"
+                        : el.heroSynergyName.charAt(0).toUpperCase() +
+                            el.heroSynergyName.slice(1) &&
+                          el.heroSynergyName === "e.t.c."
+                        ? "E.T.C."
+                        : el.heroSynergyName.charAt(0).toUpperCase() +
+                            el.heroSynergyName.slice(1) &&
+                          el.heroSynergyName === "sgt-hammer"
+                        ? "Sgt. Hammer"
+                        : el.heroSynergyName.charAt(0).toUpperCase() +
+                          el.heroSynergyName.slice(1)}
+                    </h4>
+
                     <img
                       alt={this.src}
                       src={`https://www.heroesfire.com/images/wikibase/icon/heroes/${
@@ -73,10 +90,22 @@ class HeroCouSyn extends PureComponent {
                         ? "kael'thas"
                         : el.heroCounterName && el.heroCounterName === "lucio"
                         ? "lúcio"
-                        : el.heroCounterName
+                        : el.heroCounterName &&
+                          el.heroCounterName === "the-butcher"
+                        ? "the butcher"
+                        : el.heroCounterName &&
+                          el.heroCounterName === "sgt-hammer"
+                        ? "Sgt. Hammer"
+                        : el.heroCounterName.charAt(0).toUpperCase() +
+                          el.heroCounterName.slice(1)
                     }
                   >
-                    <h4>{el.heroCounterName.toUpperCase()}</h4>
+                    <h4>
+                      {el.heroCounterName === "the-butcher"
+                        ? "The Butcher"
+                        : el.heroCounterName.charAt(0).toUpperCase() +
+                          el.heroCounterName.slice(1)}
+                    </h4>
                     <img
                       alt={this.src}
                       src={`https://www.heroesfire.com/images/wikibase/icon/heroes/${
@@ -105,7 +134,10 @@ class HeroCouSyn extends PureComponent {
                     <div>None</div>
                   ) : (
                     <Link to={`/maps/${el.strongMapName}`}>
-                      <h4>{el.strongMapName.toUpperCase()}</h4>
+                      <h4>
+                        {el.strongMapName.charAt(0).toUpperCase() +
+                          el.strongMapName.slice(1)}
+                      </h4>
                       <img
                         alt={this.src}
                         src={`../images/maps/${el.strongMapName}.jpg`}
@@ -131,7 +163,11 @@ class HeroCouSyn extends PureComponent {
                     <div>None</div>
                   ) : (
                     <Link to={`/maps/${el.naturalMapName}`}>
-                      <h4>{el.naturalMapName.toUpperCase()}</h4>
+                      <h4>
+                        {el.naturalMapName.charAt(0).toUpperCase() +
+                          el.naturalMapName.slice(1)}
+                      </h4>
+
                       <img
                         alt={this.src}
                         src={`../images/maps/${el.naturalMapName}.jpg`}
@@ -157,7 +193,10 @@ class HeroCouSyn extends PureComponent {
                     <div>None</div>
                   ) : (
                     <Link to={`/maps/${el.weakMapName}`}>
-                      <h4>{el.weakMapName.toUpperCase()}</h4>
+                      <h4>
+                        {el.weakMapName.charAt(0).toUpperCase() +
+                          el.weakMapName.slice(1)}
+                      </h4>
                       <img
                         alt={this.src}
                         src={`../images/maps/${el.weakMapName}.jpg`}

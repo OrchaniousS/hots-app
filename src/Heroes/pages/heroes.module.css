@@ -1,3 +1,9 @@
+.heroSections {
+  font-size: 32px;
+  border-radius: 25px;
+  /* background-color: rgba(45, 66, 160, 0.637); */
+}
+
 @media (min-width: 960px) {
   .backHero {
     position: relative;

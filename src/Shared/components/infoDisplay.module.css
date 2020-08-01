@@ -2,14 +2,15 @@
   display: flex;
   flex-direction: column;
   flex-grow: inherit;
-  /* border: 1px solid rgba(135, 137, 192, 0.4534); */
+
+  border-radius: 25px;
   background-color: rgb(20 20 25 / 61%);
+  box-shadow: 0px 1px 4px 2px rgba(30, 143, 255, 0.1555);
   margin: 1% 2% 1% 2%;
   padding: 1% 1% 1% 1%;
-  border-radius: 25px;
   line-height: 1.1;
-  width: 190px;
-  box-shadow: 0px 1px 4px 2px rgba(30, 143, 255, 0.1555);
+  width: fit-content;
+  height: fit-content;
 }
 
 .displayInfoHero img,
@@ -24,18 +25,15 @@
 }
 
 .displayInfoChild {
-  /* flex: unset; */
-  /* padding: 1% 1% 2% 1%;
-  margin: 0% 4% 4% 4%; */
+  justify-content: space-evenly;
 }
 
 .displayInfoChild:nth-child(2n + 1) {
   border-bottom: 1px solid dodgerblue;
-  /* background-color: rgba(48, 104, 160, 0.342); */
-  /* border-radius: 25px; */
+
   font-weight: 500;
   font-size: 1.4rem;
-  /* flex: 4; */
+
   opacity: 0.9;
 }
 
@@ -43,7 +41,6 @@
   .displayInfoChild:nth-child(2n) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
   }
 }
 
@@ -52,7 +49,7 @@
   padding: 1% 8% 1% 8%;
   font-size: 1.2rem;
   flex: 1;
-  /* border-bottom: 1px solid white; */
+  justify-content: space-evenly;
 }
 
 /*medium phone*/
@@ -110,24 +107,24 @@
 }
 
 .displayInfoChildSkill {
-  /* border: 1px solid rgba(135, 137, 192, 0.4534); */
-  display: flex;
-  flex-direction: column;
   align-content: center;
-  /* margin: 0 10% 0 10%; */
+  text-align: center;
   width: 100%;
-}
-
-.displayInfoChildSkill div:nth-child(2n) {
-  border-radius: 25px;
-  border: 1px solid rgba(135, 137, 192, 0.4534);
-  background-color: rgba(49, 129, 209, 0.205);
-  width: 80%;
-  align-self: center;
+  height: 100%;
 }
 
 .displayInfoChildSkillTitle {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  border-bottom: 1px solid dodgerblue;
+  margin: 1% 0 1% 0;
+
+  line-height: 1.4;
+  border-radius: 25px;
+}
+
+.displayInfoChildSkillImgContainer {
+  /* height: 110px; */
+  /* margin: 5% 5% 5% 5%; */
 }
 
 .displayInfoChildSkillImg {
@@ -138,17 +135,20 @@
 }
 
 .displayInfoChildSkillVal {
-  margin: 5% 5% 5% 5%;
-  height: 100%;
-  width: 100%;
+  margin: 0;
   padding: 5% 5% 5% 5%;
+  border-radius: 25px;
+  border: 1px solid rgba(135, 137, 192, 0.4534);
+  background-color: rgba(51, 131, 211, 0.288);
+  align-self: center;
 }
 
 .displayInfoHeroSkill {
   display: flex;
+  flex-direction: column;
   flex-grow: inherit;
-  width: 250px;
-  height: 350px;
+  width: 100%;
+  height: 100%;
   border-radius: 25px;
   border: 1px solid rgba(135, 137, 192, 0.4534);
   margin: 0 2% 0 2%;

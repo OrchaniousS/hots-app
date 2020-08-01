@@ -1,6 +1,8 @@
 .heroCSingle {
   padding: 3px 3px 3px 3px;
   width: 120px;
+  height: 180px;
+  /* border: 1px solid rgba(30, 143, 255, 0.548); */
 }
 
 .heroCSingle img {
@@ -20,7 +22,9 @@
 .heroCSingle h4 {
   font-size: 16px;
   text-align: center;
-  height: 30%;
+  height: 28%;
+  margin: 2% 2% 0 2%;
+  /* border: 1px solid rgba(30, 143, 255, 0.548); */
 }
 
 .heroCSingle:hover,
