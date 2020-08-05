@@ -39,6 +39,9 @@ class HeroCouSyn extends PureComponent {
                         : el.heroSynergyName &&
                           el.heroSynergyName === "the-butcher"
                         ? "the butcher"
+                        : el.heroSynergyName &&
+                          el.heroSynergyName === "anubarak"
+                        ? "Anub'arak"
                         : el.heroSynergyName
                     }
                   >
@@ -54,9 +57,12 @@ class HeroCouSyn extends PureComponent {
                           el.heroSynergyName === "sgt-hammer"
                         ? "Sgt. Hammer"
                         : el.heroSynergyName.charAt(0).toUpperCase() +
+                            el.heroSynergyName.slice(1) &&
+                          el.heroSynergyName === "anubarak"
+                        ? "Anub'arak"
+                        : el.heroSynergyName.charAt(0).toUpperCase() +
                           el.heroSynergyName.slice(1)}
                     </h4>
-
                     <img
                       alt={this.src}
                       src={`https://www.heroesfire.com/images/wikibase/icon/heroes/${
@@ -86,6 +92,9 @@ class HeroCouSyn extends PureComponent {
                       el.heroCounterName === "sgt-hammer"
                         ? "sgt. hammer"
                         : el.heroCounterName &&
+                          el.heroCounterName === "anubarak"
+                        ? "Anub'arak"
+                        : el.heroCounterName &&
                           el.heroCounterName === "kaelthas"
                         ? "kael'thas"
                         : el.heroCounterName && el.heroCounterName === "lucio"
@@ -103,6 +112,10 @@ class HeroCouSyn extends PureComponent {
                     <h4>
                       {el.heroCounterName === "the-butcher"
                         ? "The Butcher"
+                        : el.heroCounterName.charAt(0).toUpperCase() +
+                            el.heroCounterName.slice(1) &&
+                          el.heroCounterName === "anubarak"
+                        ? "Anub'arak"
                         : el.heroCounterName.charAt(0).toUpperCase() +
                           el.heroCounterName.slice(1)}
                     </h4>

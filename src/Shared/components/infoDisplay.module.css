@@ -140,7 +140,19 @@
   border-radius: 25px;
   border: 1px solid rgba(135, 137, 192, 0.4534);
   background-color: rgba(51, 131, 211, 0.288);
-  align-self: center;
+
+  text-align: left;
+}
+
+@media (min-width: 1024px) {
+  .displayInfoChildSkillVal {
+    height: 180px;
+  }
+}
+@media (max-width: 1024px) {
+  .displayInfoChildSkillVal {
+    height: 100%;
+  }
 }
 
 .displayInfoHeroSkill {

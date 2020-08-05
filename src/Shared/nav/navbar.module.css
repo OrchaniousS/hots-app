@@ -1,0 +1,111 @@
+@media (max-width: 550px) {
+  .navBarResponsive {
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: 0;
+    position: fixed;
+    height: 15%;
+    display: grid;
+    margin: 0;
+    justify-content: center;
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  vertical-align: top;
+  border-bottom: 1px solid #3479d9;
+  background-color: rgb(7, 45, 92);
+  padding: 10px 15px;
+  background: rgb(29, 29, 29);
+  background-image: linear-gradient(
+    180deg,
+    rgba(29, 29, 29, 0.165703781512605) 36%,
+    rgba(0, 0, 0, 1) 100%,
+    rgba(9, 21, 121, 0.8491771708683473) 100%
+  );
+  margin-left: 1.1%;
+  margin-right: 1.1%;
+}
+
+@media (max-width: 329px) {
+  .scrollTop {
+    bottom: 70px;
+  }
+}
+@media (min-width: 330px) {
+  .scrollTop {
+    bottom: 60px;
+  }
+}
+
+.scrollTop {
+  display: none;
+  position: fixed;
+  right: 40px;
+  z-index: 99;
+  font-size: 3rem;
+  border: none;
+  outline: none;
+  background-color: #3479d9;
+  color: white;
+  cursor: pointer;
+  padding: 12px 15px 12px 15px;
+  border-radius: 50px;
+}
+
+.scrollTop:hover {
+  background-color: #555;
+}
+
+@media (max-width: 350px) {
+  nav {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+
+@media (max-width: 950px) {
+  nav {
+    margin-left: 1.6%;
+    margin-right: 1.6%;
+  }
+}
+
+nav h2 a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navMenu li {
+  display: inline-block;
+  list-style: none;
+  line-height: 1.8;
+}
+
+.navMenu a {
+  display: inline-block;
+  margin: 5px;
+  border: 1px solid black;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 5px;
+  padding: 3px 8px;
+  background-color: black;
+  color: #fff;
+  width: 64px;
+}
+
+.navMenu a:hover {
+  border: 1px solid black;
+  background-image: linear-gradient(to bottom, #3479d9 0%, #10448f 78%);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.activate {
+  background: #3479d9;
+  background-image: linear-gradient(to bottom, #3479d9 0%, #10448f 78%);
+}
