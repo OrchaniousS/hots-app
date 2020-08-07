@@ -1,4 +1,4 @@
-import React, { PureComponent } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 import Card from "../../Shared/components/card";
@@ -10,59 +10,93 @@ import HeroSkills from "../components/heroSkills";
 
 import styles from "./heroes.module.css";
 
-class Heroes extends PureComponent {
-  state = {
-    heroIdInfo: this.props.heroId,
-    heroImageInfo: this.props.heroImage,
-    skillHeroName:
-      this.props.heroImage
-        .split("https://www.heroesfire.com/images/wikibase/icon/heroes/")[1]
-        .split(".png")[0]
-        .replace("-", " ")
-        .replace("-", " ")
-        .charAt(0)
-        .toUpperCase() +
-      this.props.heroImage
-        .split("https://www.heroesfire.com/images/wikibase/icon/heroes/")[1]
-        .split(".png")[0]
-        .replace("-", " ")
-        .replace("-", " ")
-        .slice(1),
+const Heroes = (props) => {
+  const { heroId, heroImage } = props;
+  const [displaySkill, setDisplaySkill] = useState(false);
+  const [displayInfo, setDisplayInfo] = useState(false);
+  const [displayCouSyn, setDisplayCouSyn] = useState(false);
+
+  const displaySkillsHandler = () => {
+    displaySkill === true ? setDisplaySkill(false) : setDisplaySkill(true);
+  };
+  const displayInfoHandler = () => {
+    displayInfo === true ? setDisplayInfo(false) : setDisplayInfo(true);
+  };
+  const displayCouSynHandler = () => {
+    displayCouSyn === true ? setDisplayCouSyn(false) : setDisplayCouSyn(true);
   };
 
-  render() {
-    return (
-      <MainContainer>
-        <div className={styles.backHero}>
-          <Link to="/heroes">Go Back To Heroes</Link>
+  // const skillHeroName =
+  //   heroImage
+  //     .split("https://www.heroesfire.com/images/wikibase/icon/heroes/")[1]
+  //     .split(".png")[0]
+  //     .replace("-", " ")
+  //     .replace("-", " ")
+  //     .charAt(0)
+  //     .toUpperCase() +
+  //   heroImage
+  //     .split("https://www.heroesfire.com/images/wikibase/icon/heroes/")[1]
+  //     .split(".png")[0]
+  //     .replace("-", " ")
+  //     .replace("-", " ")
+  //     .slice(1);
+
+  return (
+    <MainContainer>
+      <div className={styles.backHero}>
+        <Link to="/heroes">Go Back To Heroes</Link>
+      </div>
+      <Card>
+        <div className={styles.heroSections}>1. Main info</div>
+      </Card>
+      <Herotype heroImage={heroImage} heroIdTagger={heroId} />
+      <Card>
+        <div
+          onClick={() => displaySkillsHandler()}
+          className={styles.heroSections}
+        >
+          2. Skills
         </div>
-        <Card>
-          <div className={styles.heroSections}>1. Main info</div>
-        </Card>
-        <Herotype
-          heroImage={this.state.heroImageInfo}
-          heroIdTagger={this.state.heroIdInfo}
-        />
-        <Card>
-          <div className={styles.heroSections}>2. Skills</div>
-        </Card>
-        <Card>
-          <HeroSkills heroImage={this.state.heroImageInfo} />
-        </Card>
-        <Card>
-          <div className={styles.heroSections}>3. Basic info</div>
-        </Card>
-        <Card>
-          <Herobasicinfo heroIdTagger={this.state.heroIdInfo} />
-        </Card>
-        <Card>
-          <div className={styles.heroSections}>4. Synergies and Counters</div>
-        </Card>
-        <Card>
-          <HeroCouSyn heroIdTagger={this.state.heroIdInfo} />
-        </Card>
-      </MainContainer>
-    );
-  }
-}
+      </Card>
+      <Card>
+        {displaySkill === true ? (
+          <HeroSkills heroImage={heroImage} />
+        ) : (
+          "Click on Skills to expand"
+        )}
+      </Card>
+      <Card>
+        <div
+          onClick={() => displayInfoHandler()}
+          className={styles.heroSections}
+        >
+          3. Basic info
+        </div>
+      </Card>
+      <Card>
+        {displayInfo === true ? (
+          <Herobasicinfo heroIdTagger={heroId} />
+        ) : (
+          "Click on Basic Info to expand"
+        )}
+      </Card>
+      <Card>
+        <div
+          onClick={() => displayCouSynHandler()}
+          className={styles.heroSections}
+        >
+          4. Synergies and Counters
+        </div>
+      </Card>
+      <Card>
+        {displayCouSyn === true ? (
+          <HeroCouSyn heroIdTagger={heroId} />
+        ) : (
+          "Click on Synergies and Counters to expand"
+        )}
+      </Card>
+    </MainContainer>
+  );
+};
+
 export default Heroes;

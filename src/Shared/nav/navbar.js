@@ -14,15 +14,21 @@ const Navbar = (props) => {
   }
 
   async function scrollFunction() {
-    const backButton = document.querySelector("#backTop");
-    if (
-      document.body.scrollTop > 20 ||
-      document.documentElement.scrollTop > 20
-    ) {
-      backButton.style.display = "block";
-    } else {
-      backButton.style.display = "none";
-    }
+    const backButton = await document.querySelector("#backTop");
+    return backButton.style === null
+      ? ""
+      : document.body.scrollTop > 20 || document.documentElement.scrollTop > 20
+      ? (backButton.style.display = "block")
+      : (backButton.style.display = "none");
+
+    // if (
+    //   document.body.scrollTop > 20 ||
+    //   document.documentElement.scrollTop > 20
+    // ) {
+    //   backButton.style.display = "block";
+    // } else {
+    //   backButton.style.display = "none";
+    // }
   }
   return (
     <header>

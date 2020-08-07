@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import RowCard from "../../Shared/components/rowCard";
 import InfoDisplayCouSyn from "../../Shared/components/infoDisplayCouSyn";
 
+// import { MapSelector } from "../../Maps/pages/maps";
 import mcsData from "../data/hotsCouSyn.json";
 import styles from "./heroCouSyn.module.css";
 
@@ -206,6 +207,7 @@ class HeroCouSyn extends PureComponent {
                     <div>None</div>
                   ) : (
                     <Link to={`/maps/${el.weakMapName}`}>
+                      {/* <MapSelector mapName={el.weakMapName} /> */}
                       <h4>
                         {el.weakMapName.charAt(0).toUpperCase() +
                           el.weakMapName.slice(1)}

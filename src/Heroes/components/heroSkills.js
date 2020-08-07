@@ -7,7 +7,10 @@ import skillsData from "../data/heroSkills.json";
 
 const HeroSkills = (props) => {
   // const testSkills = console.log(skillsData);
-  const skillHeroName = props.heroImage
+
+  const { heroImage } = props;
+
+  const skillHeroName = heroImage
     .split("https://www.heroesfire.com/images/wikibase/icon/heroes/")[1]
     .split(".png")[0]
     .replace("-", " ")
@@ -23,9 +26,11 @@ const HeroSkills = (props) => {
       ? "LT. MORALES"
       : skillHeroName && skillHeroName === "ZULJIN"
       ? "ZUL'JIN"
+      : skillHeroName && skillHeroName === "LI MING"
+      ? "LI-MING"
       : skillHeroName;
 
-  console.log(skillHeroName);
+  // console.log(skillHeroName);
 
   const skillsMap = skillsData.map((skill) => {
     return (
@@ -54,7 +59,6 @@ const HeroSkills = (props) => {
           <RowCard>
             <InfoDisplayHero>Heroic</InfoDisplayHero>
           </RowCard>
-
           <RowCard>
             <InfoDisplaySkill
               headVal={skill.heroic.skills.skillA.skillName}

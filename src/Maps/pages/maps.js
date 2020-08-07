@@ -5,6 +5,11 @@ import MainContainer from "../../Shared/components/mainContainer";
 import mapData from "../data/hotsMaps.json";
 import styles from "./maps.module.css";
 
+// export const MapSelector = (props) => {
+//   const { mapName } = props;
+//   console.log({ mapName });
+// };
+
 class Maps extends PureComponent {
   state = {
     mapJson: JSON.parse(JSON.stringify(mapData)),

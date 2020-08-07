@@ -4,7 +4,11 @@ import React from "react";
 import styles from "./rowcard.module.css";
 
 const RowCard = (props) => {
-  return <div className={styles.heroRightInfo}>{props.children}</div>;
+  return (
+    <div style={props.style} className={styles.heroRightInfo}>
+      {props.children}
+    </div>
+  );
 };
 
 export default RowCard;

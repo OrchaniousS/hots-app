@@ -1,7 +1,4 @@
-import React, {
-  PureComponent,
-  // , useState
-} from "react";
+import React from "react";
 
 import Card from "../../Shared/components/card";
 import RowCard from "../../Shared/components/rowCard";
@@ -13,17 +10,16 @@ import data from "../data/heroStats.json";
 import imgData from "../data/heroData.json";
 import styles from "../../app.module.css";
 
-class Herotype extends PureComponent {
-  state = {
-    heroStatsJson: JSON.parse(JSON.stringify(data)),
-    heroImage: JSON.parse(JSON.stringify(imgData)),
-  };
+const Herotype = (props) => {
+  const { heroIdTagger } = props;
+  const heroStatsJson = JSON.parse(JSON.stringify(data));
+  const heroImage = JSON.parse(JSON.stringify(imgData));
 
-  expandClassHandler = (option) => {
-    // const [stateExpanded, setstateExpanded] = useState(option);
-  };
+  // const wrapStyle = { "flex-wrap": "wrap" };
 
-  renderHeroType = (type) => {
+  const heroType = heroStatsJson[heroIdTagger].basicInfo.name;
+
+  function renderHeroType(type) {
     let template = null;
     switch (type) {
       case "singleHero":
@@ -32,98 +28,78 @@ class Herotype extends PureComponent {
             <RowCard>
               <div className={styles.singleHero}>
                 <InfoDisplayHero>
-                  {
-                    this.state.heroStatsJson[this.props.heroIdTagger].basicInfo
-                      .name
-                  }
+                  {heroStatsJson[heroIdTagger].basicInfo.name}
                 </InfoDisplayHero>
                 <InfoDisplayHero>
                   <div className={styles.heroTitle}>
-                    {
-                      this.state.heroStatsJson[this.props.heroIdTagger]
-                        .basicInfo.title
-                    }
+                    {heroStatsJson[heroIdTagger].basicInfo.title}
                   </div>
                   <div className={styles.heroTitleImg}>
-                    <img alt="miniIconhero" src={this.props.heroImage} />
+                    <img
+                      alt="miniIconhero"
+                      src={heroImage[heroIdTagger].logo}
+                    />
                   </div>
                 </InfoDisplayHero>
               </div>
             </RowCard>
-            <RowCard>
+            <RowCard style={{ wrap: 1 }}>
               <InfoDisplay>
                 <div>Attack Type</div>
-                <div>
-                  {
-                    this.state.heroStatsJson[this.props.heroIdTagger].baseStats
-                      .attackType
-                  }
-                </div>
+                <div>{heroStatsJson[heroIdTagger].baseStats.attackType}</div>
               </InfoDisplay>
               <InfoDisplay>
                 <div>Health</div>
                 <div>
-                  {this.state.heroStatsJson[this.props.heroIdTagger].baseStats
-                    .health !== ""
-                    ? this.state.heroStatsJson[this.props.heroIdTagger]
-                        .baseStats.health
+                  {heroStatsJson[heroIdTagger].baseStats.health !== ""
+                    ? heroStatsJson[heroIdTagger].baseStats.health
                     : "None"}
                 </div>
               </InfoDisplay>
               <InfoDisplay>
                 <div>Regen</div>
                 <div>
-                  {this.state.heroStatsJson[this.props.heroIdTagger].baseStats
-                    .healthRegen !== ""
-                    ? this.state.heroStatsJson[this.props.heroIdTagger]
-                        .baseStats.healthRegen
+                  {heroStatsJson[heroIdTagger].baseStats.healthRegen !== ""
+                    ? heroStatsJson[heroIdTagger].baseStats.healthRegen
                     : "None"}
                 </div>
               </InfoDisplay>
               <InfoDisplay>
                 <div>Resources</div>
                 <div>
-                  {this.state.heroStatsJson[this.props.heroIdTagger].baseStats
-                    .resourceAmount !== " " &&
-                  this.state.heroStatsJson[this.props.heroIdTagger].baseStats
-                    .resourceAmount.length < 1
+                  {heroStatsJson[heroIdTagger].baseStats.resourceAmount !==
+                    " " &&
+                  heroStatsJson[heroIdTagger].baseStats.resourceAmount.length <
+                    1
                     ? "None"
-                    : this.state.heroStatsJson[this.props.heroIdTagger]
-                        .baseStats.resourceAmount + " "}
-                  {this.state.heroStatsJson[this.props.heroIdTagger].baseStats
-                    .resourceType === "None"
+                    : heroStatsJson[heroIdTagger].baseStats.resourceAmount +
+                      " "}
+                  {heroStatsJson[heroIdTagger].baseStats.resourceType === "None"
                     ? ""
-                    : this.state.heroStatsJson[this.props.heroIdTagger]
-                        .baseStats.resourceType}
+                    : heroStatsJson[heroIdTagger].baseStats.resourceType}
                 </div>
               </InfoDisplay>
               <InfoDisplay>
                 <div>Attack Damge</div>
                 <div>
-                  {this.state.heroStatsJson[this.props.heroIdTagger].baseStats
-                    .attackDamage !== ""
-                    ? this.state.heroStatsJson[this.props.heroIdTagger]
-                        .baseStats.attackDamage
+                  {heroStatsJson[heroIdTagger].baseStats.attackDamage !== ""
+                    ? heroStatsJson[heroIdTagger].baseStats.attackDamage
                     : "None"}
                 </div>
               </InfoDisplay>
               <InfoDisplay>
                 <div>Attack Speed</div>
                 <div>
-                  {this.state.heroStatsJson[this.props.heroIdTagger].baseStats
-                    .attackSpeed !== ""
-                    ? this.state.heroStatsJson[this.props.heroIdTagger]
-                        .baseStats.attackSpeed
+                  {heroStatsJson[heroIdTagger].baseStats.attackSpeed !== ""
+                    ? heroStatsJson[heroIdTagger].baseStats.attackSpeed
                     : "None"}
                 </div>
               </InfoDisplay>
               <InfoDisplay>
                 <div>Attack Range</div>
                 <div>
-                  {this.state.heroStatsJson[this.props.heroIdTagger].baseStats
-                    .attackRange !== ""
-                    ? this.state.heroStatsJson[this.props.heroIdTagger]
-                        .baseStats.attackRange
+                  {heroStatsJson[heroIdTagger].baseStats.attackRange !== ""
+                    ? heroStatsJson[heroIdTagger].baseStats.attackRange
                     : "None"}
                 </div>
               </InfoDisplay>
@@ -134,9 +110,7 @@ class Herotype extends PureComponent {
       case "doubleHero":
         template = (
           <React.Fragment>
-            {this.state.heroStatsJson[
-              this.props.heroIdTagger
-            ].basicInfo.name.map((compact, i) => {
+            {heroStatsJson[heroIdTagger].basicInfo.name.map((compact, i) => {
               return (
                 <React.Fragment key={i}>
                   <RowCard>
@@ -144,13 +118,13 @@ class Herotype extends PureComponent {
                       <InfoDisplayHero>{compact}</InfoDisplayHero>
                       <InfoDisplayHero>
                         <div className={styles.heroTitle}>
-                          {
-                            this.state.heroStatsJson[this.props.heroIdTagger]
-                              .basicInfo.title
-                          }
+                          {heroStatsJson[heroIdTagger].basicInfo.title}
                         </div>
                         <div className={styles.heroTitleImg}>
-                          <img alt="miniIconhero" src={this.props.heroImage} />
+                          <img
+                            alt="miniIconhero"
+                            src={heroImage[heroIdTagger].logo}
+                          />
                         </div>
                       </InfoDisplayHero>
                     </div>
@@ -159,80 +133,68 @@ class Herotype extends PureComponent {
                     <InfoDisplayMulti
                       headVal="Attack Type"
                       value={
-                        typeof this.state.heroStatsJson[this.props.heroIdTagger]
-                          .baseStats.attackType === "string"
-                          ? this.state.heroStatsJson[this.props.heroIdTagger]
-                              .baseStats.attackType
-                          : this.state.heroStatsJson[this.props.heroIdTagger]
-                              .baseStats.attackType[i]
+                        typeof heroStatsJson[heroIdTagger].baseStats
+                          .attackType === "string"
+                          ? heroStatsJson[heroIdTagger].baseStats.attackType
+                          : heroStatsJson[heroIdTagger].baseStats.attackType[i]
                       }
                     />
                     <InfoDisplayMulti
                       headVal="Health"
                       value={
-                        typeof this.state.heroStatsJson[this.props.heroIdTagger]
-                          .baseStats.health === "string"
-                          ? this.state.heroStatsJson[this.props.heroIdTagger]
-                              .baseStats.health
-                          : this.state.heroStatsJson[this.props.heroIdTagger]
-                              .baseStats.health[i]
+                        typeof heroStatsJson[heroIdTagger].baseStats.health ===
+                        "string"
+                          ? heroStatsJson[heroIdTagger].baseStats.health
+                          : heroStatsJson[heroIdTagger].baseStats.health[i]
                       }
                     />
                     <InfoDisplayMulti
                       headVal="Regen"
                       value={
-                        typeof this.state.heroStatsJson[this.props.heroIdTagger]
-                          .baseStats.healthRegen === "string"
-                          ? this.state.heroStatsJson[this.props.heroIdTagger]
-                              .baseStats.healthRegen
-                          : this.state.heroStatsJson[this.props.heroIdTagger]
-                              .baseStats.healthRegen[i]
+                        typeof heroStatsJson[heroIdTagger].baseStats
+                          .healthRegen === "string"
+                          ? heroStatsJson[heroIdTagger].baseStats.healthRegen
+                          : heroStatsJson[heroIdTagger].baseStats.healthRegen[i]
                       }
                     />
 
                     <InfoDisplayMulti
                       headVal="Resources"
                       value={
-                        this.state.heroStatsJson[this.props.heroIdTagger]
-                          .baseStats.resourceAmount +
-                          this.state.heroStatsJson[this.props.heroIdTagger]
-                            .baseStats.resourceType ===
+                        heroStatsJson[heroIdTagger].baseStats.resourceAmount +
+                          heroStatsJson[heroIdTagger].baseStats.resourceType ===
                         "None"
                           ? ""
-                          : this.state.heroStatsJson[this.props.heroIdTagger]
-                              .baseStats.resourceAmount +
+                          : heroStatsJson[heroIdTagger].baseStats
+                              .resourceAmount +
                             " " +
-                            this.state.heroStatsJson[this.props.heroIdTagger]
-                              .baseStats.resourceType
+                            heroStatsJson[heroIdTagger].baseStats.resourceType
                       }
                     />
                     <InfoDisplayMulti
                       headVal="Attack Damge"
                       value={
-                        typeof this.state.heroStatsJson[this.props.heroIdTagger]
-                          .baseStats.attackDamage === "string"
-                          ? this.state.heroStatsJson[this.props.heroIdTagger]
-                              .baseStats.attackDamage
-                          : this.state.heroStatsJson[this.props.heroIdTagger]
-                              .baseStats.attackDamage[i]
+                        typeof heroStatsJson[heroIdTagger].baseStats
+                          .attackDamage === "string"
+                          ? heroStatsJson[heroIdTagger].baseStats.attackDamage
+                          : heroStatsJson[heroIdTagger].baseStats.attackDamage[
+                              i
+                            ]
                       }
                     />
                     <InfoDisplayMulti
                       headVal="Attack Speed"
                       value={
-                        typeof this.state.heroStatsJson[this.props.heroIdTagger]
-                          .baseStats.attackSpeed === "string"
-                          ? this.state.heroStatsJson[this.props.heroIdTagger]
-                              .baseStats.attackSpeed
-                          : this.state.heroStatsJson[this.props.heroIdTagger]
-                              .baseStats.attackSpeed[i]
+                        typeof heroStatsJson[heroIdTagger].baseStats
+                          .attackSpeed === "string"
+                          ? heroStatsJson[heroIdTagger].baseStats.attackSpeed
+                          : heroStatsJson[heroIdTagger].baseStats.attackSpeed[i]
                       }
                     />
                     <InfoDisplayMulti
                       headVal="Attack Range"
                       value={
-                        this.state.heroStatsJson[this.props.heroIdTagger]
-                          .baseStats.attackRange[i]
+                        heroStatsJson[heroIdTagger].baseStats.attackRange[i]
                       }
                     />
                   </RowCard>
@@ -245,21 +207,19 @@ class Herotype extends PureComponent {
       case "threeHero":
         template = (
           <React.Fragment>
-            {this.state.heroStatsJson[
-              this.props.heroIdTagger
-            ].basicInfo.name.map((compact, i) => {
+            {heroStatsJson[heroIdTagger].basicInfo.name.map((compact, i) => {
               return (
                 <React.Fragment key={i}>
                   <RowCard>
                     <div className={styles.singleHero}>
                       <InfoDisplayHero>{compact}</InfoDisplayHero>
                       <InfoDisplayHero>
-                        {
-                          this.state.heroStatsJson[this.props.heroIdTagger]
-                            .basicInfo.title
-                        }
+                        {heroStatsJson[heroIdTagger].basicInfo.title}
                         <div className={styles.heroTitleImg}>
-                          <img alt="miniIconhero" src={this.props.heroImage} />
+                          <img
+                            alt="miniIconhero"
+                            src={heroImage[heroIdTagger].logo}
+                          />
                         </div>
                       </InfoDisplayHero>
                     </div>
@@ -268,68 +228,57 @@ class Herotype extends PureComponent {
                     <InfoDisplayMulti
                       headVal="Attack Type"
                       value={
-                        typeof this.state.heroStatsJson[this.props.heroIdTagger]
-                          .baseStats.attackType === "string"
-                          ? this.state.heroStatsJson[this.props.heroIdTagger]
-                              .baseStats.attackType
-                          : this.state.heroStatsJson[this.props.heroIdTagger]
-                              .baseStats.attackType[i]
+                        typeof heroStatsJson[heroIdTagger].baseStats
+                          .attackType === "string"
+                          ? heroStatsJson[heroIdTagger].baseStats.attackType
+                          : heroStatsJson[heroIdTagger].baseStats.attackType[i]
                       }
                     />
                     <InfoDisplayMulti
                       headVal="Health"
-                      value={
-                        this.state.heroStatsJson[this.props.heroIdTagger]
-                          .baseStats.health[i]
-                      }
+                      value={heroStatsJson[heroIdTagger].baseStats.health[i]}
                     />
                     <InfoDisplayMulti
                       headVal="Regen"
                       value={
-                        this.state.heroStatsJson[this.props.heroIdTagger]
-                          .baseStats.healthRegen[i]
+                        heroStatsJson[heroIdTagger].baseStats.healthRegen[i]
                       }
                     />
                     <InfoDisplayMulti
                       headVal="Reources"
                       value={
-                        this.state.heroStatsJson[this.props.heroIdTagger]
-                          .baseStats.resourceAmount === "None"
+                        heroStatsJson[heroIdTagger].baseStats.resourceAmount ===
+                        "None"
                           ? "None"
-                          : this.state.heroStatsJson[this.props.heroIdTagger]
-                              .baseStats.resourceAmount +
+                          : heroStatsJson[heroIdTagger].baseStats
+                              .resourceAmount +
                               " " +
-                              this.state.heroStatsJson[this.props.heroIdTagger]
-                                .baseStats.resourceType ===
+                              heroStatsJson[heroIdTagger].baseStats
+                                .resourceType ===
                             "None"
                           ? "None"
-                          : this.state.heroStatsJson[this.props.heroIdTagger]
-                              .baseStats.resourceType
+                          : heroStatsJson[heroIdTagger].baseStats.resourceType
                       }
                     />
                     <InfoDisplayMulti
                       headVal="Attack Damge"
                       value={
-                        this.state.heroStatsJson[this.props.heroIdTagger]
-                          .baseStats.attackDamage[i]
+                        heroStatsJson[heroIdTagger].baseStats.attackDamage[i]
                       }
                     />
                     <InfoDisplayMulti
                       headVal="Attack Speed"
                       value={
-                        typeof this.state.heroStatsJson[this.props.heroIdTagger]
-                          .baseStats.attackSpeed === "string"
-                          ? this.state.heroStatsJson[this.props.heroIdTagger]
-                              .baseStats.attackSpeed
-                          : this.state.heroStatsJson[this.props.heroIdTagger]
-                              .baseStats.attackSpeed[i]
+                        typeof heroStatsJson[heroIdTagger].baseStats
+                          .attackSpeed === "string"
+                          ? heroStatsJson[heroIdTagger].baseStats.attackSpeed
+                          : heroStatsJson[heroIdTagger].baseStats.attackSpeed[i]
                       }
                     />
                     <InfoDisplayMulti
                       headVal="Attack Range"
                       value={
-                        this.state.heroStatsJson[this.props.heroIdTagger]
-                          .baseStats.attackRange[i]
+                        heroStatsJson[heroIdTagger].baseStats.attackRange[i]
                       }
                     />
                   </RowCard>
@@ -343,22 +292,17 @@ class Herotype extends PureComponent {
         template = null;
     }
     return template;
-  };
-
-  render() {
-    let heroType = this.state.heroStatsJson[this.props.heroIdTagger].basicInfo
-      .name;
-
-    return (
-      <Card>
-        {typeof heroType === "string"
-          ? this.renderHeroType("singleHero")
-          : heroType.length < 3
-          ? this.renderHeroType("doubleHero")
-          : this.renderHeroType("threeHero")}
-      </Card>
-    );
   }
-}
+
+  return (
+    <Card>
+      {typeof heroType === "string"
+        ? renderHeroType("singleHero")
+        : heroType.length < 3
+        ? renderHeroType("doubleHero")
+        : renderHeroType("threeHero")}
+    </Card>
+  );
+};
 
 export default Herotype;

@@ -7,6 +7,8 @@ import styles from "../../app.module.css";
 import data from "./heroData.json";
 import dataPanel from "./heroPanel.json";
 
+// const HeroesData = (props) => {};
+
 class HeroesData extends PureComponent {
   constructor() {
     super();
