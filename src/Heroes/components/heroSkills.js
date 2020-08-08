@@ -28,6 +28,8 @@ const HeroSkills = (props) => {
       ? "ZUL'JIN"
       : skillHeroName && skillHeroName === "LI MING"
       ? "LI-MING"
+      : skillHeroName && skillHeroName === "ANUBARAK"
+      ? "ANUB'ARAK"
       : skillHeroName;
 
   // console.log(skillHeroName);

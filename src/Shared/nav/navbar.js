@@ -4,6 +4,10 @@ import { NavLink } from "react-router-dom";
 import styles from "./navbar.module.css";
 
 const Navbar = (props) => {
+  const links = ["Home", "Heroes", "Maps"];
+  const paths = ["/", "/heroes", "/maps"];
+  const title = "Heroes of the Storm";
+
   window.onscroll = () => {
     scrollFunction();
   };
@@ -33,15 +37,17 @@ const Navbar = (props) => {
   return (
     <header>
       <nav className={styles.navBarResponsive}>
-        <h2>
-          <NavLink to={props.paths[0]}>{props.title}</NavLink>
-        </h2>
+        <div className={styles.titleLogo}>
+          <h2>
+            <NavLink to={paths[0]}>{title}</NavLink>
+          </h2>
+        </div>
         <ul className={styles.navMenu}>
-          {props.paths.map((path, i) => {
+          {paths.map((path, i) => {
             return (
               <li key={i}>
                 <NavLink activeClassName={styles.activate} exact to={path}>
-                  {props.links[i]}
+                  {links[i]}
                 </NavLink>
               </li>
             );

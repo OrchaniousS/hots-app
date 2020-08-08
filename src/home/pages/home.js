@@ -16,8 +16,6 @@ const Home = (props) => {
   return (
     <MainContainer>
       <h2>{text}</h2>
-      {/* <div>{joke}</div>
-      <div>{rotation}</div> */}
       <div className={styles.mapContainer}>
         <div className={styles.mapHexCollage}>
           {weekly.map(({ heroName, heroIcon }) => (

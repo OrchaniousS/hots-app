@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import Card from "../../Shared/components/card";
 import RowCard from "../../Shared/components/rowCard";
@@ -14,6 +14,12 @@ const Herotype = (props) => {
   const { heroIdTagger } = props;
   const heroStatsJson = JSON.parse(JSON.stringify(data));
   const heroImage = JSON.parse(JSON.stringify(imgData));
+
+  const [displayStats, setDisplayStats] = useState(false);
+
+  const displayStatsHandler = () => {
+    displayStats === true ? setDisplayStats(false) : setDisplayStats(true);
+  };
 
   // const wrapStyle = { "flex-wrap": "wrap" };
 
@@ -43,67 +49,78 @@ const Herotype = (props) => {
                 </InfoDisplayHero>
               </div>
             </RowCard>
-            <RowCard style={{ wrap: 1 }}>
-              <InfoDisplay>
-                <div>Attack Type</div>
-                <div>{heroStatsJson[heroIdTagger].baseStats.attackType}</div>
-              </InfoDisplay>
-              <InfoDisplay>
-                <div>Health</div>
-                <div>
-                  {heroStatsJson[heroIdTagger].baseStats.health !== ""
-                    ? heroStatsJson[heroIdTagger].baseStats.health
-                    : "None"}
+            <RowCard>
+              <InfoDisplayHero>
+                <div onClick={() => displayStatsHandler()}>
+                  Click to expand{" "}
                 </div>
-              </InfoDisplay>
-              <InfoDisplay>
-                <div>Regen</div>
-                <div>
-                  {heroStatsJson[heroIdTagger].baseStats.healthRegen !== ""
-                    ? heroStatsJson[heroIdTagger].baseStats.healthRegen
-                    : "None"}
-                </div>
-              </InfoDisplay>
-              <InfoDisplay>
-                <div>Resources</div>
-                <div>
-                  {heroStatsJson[heroIdTagger].baseStats.resourceAmount !==
-                    " " &&
-                  heroStatsJson[heroIdTagger].baseStats.resourceAmount.length <
-                    1
-                    ? "None"
-                    : heroStatsJson[heroIdTagger].baseStats.resourceAmount +
-                      " "}
-                  {heroStatsJson[heroIdTagger].baseStats.resourceType === "None"
-                    ? ""
-                    : heroStatsJson[heroIdTagger].baseStats.resourceType}
-                </div>
-              </InfoDisplay>
-              <InfoDisplay>
-                <div>Attack Damge</div>
-                <div>
-                  {heroStatsJson[heroIdTagger].baseStats.attackDamage !== ""
-                    ? heroStatsJson[heroIdTagger].baseStats.attackDamage
-                    : "None"}
-                </div>
-              </InfoDisplay>
-              <InfoDisplay>
-                <div>Attack Speed</div>
-                <div>
-                  {heroStatsJson[heroIdTagger].baseStats.attackSpeed !== ""
-                    ? heroStatsJson[heroIdTagger].baseStats.attackSpeed
-                    : "None"}
-                </div>
-              </InfoDisplay>
-              <InfoDisplay>
-                <div>Attack Range</div>
-                <div>
-                  {heroStatsJson[heroIdTagger].baseStats.attackRange !== ""
-                    ? heroStatsJson[heroIdTagger].baseStats.attackRange
-                    : "None"}
-                </div>
-              </InfoDisplay>
+                <div>Hero stats</div>
+              </InfoDisplayHero>
             </RowCard>
+            {displayStats === true ? (
+              <RowCard>
+                <InfoDisplay>
+                  <div>Attack Type</div>
+                  <div>{heroStatsJson[heroIdTagger].baseStats.attackType}</div>
+                </InfoDisplay>
+                <InfoDisplay>
+                  <div>Health</div>
+                  <div>
+                    {heroStatsJson[heroIdTagger].baseStats.health !== ""
+                      ? heroStatsJson[heroIdTagger].baseStats.health
+                      : "None"}
+                  </div>
+                </InfoDisplay>
+                <InfoDisplay>
+                  <div>Regen</div>
+                  <div>
+                    {heroStatsJson[heroIdTagger].baseStats.healthRegen !== ""
+                      ? heroStatsJson[heroIdTagger].baseStats.healthRegen
+                      : "None"}
+                  </div>
+                </InfoDisplay>
+                <InfoDisplay>
+                  <div>Resources</div>
+                  <div>
+                    {heroStatsJson[heroIdTagger].baseStats.resourceAmount !==
+                      " " &&
+                    heroStatsJson[heroIdTagger].baseStats.resourceAmount
+                      .length < 1
+                      ? "None"
+                      : heroStatsJson[heroIdTagger].baseStats.resourceAmount +
+                        " "}
+                    {heroStatsJson[heroIdTagger].baseStats.resourceType ===
+                    "None"
+                      ? ""
+                      : heroStatsJson[heroIdTagger].baseStats.resourceType}
+                  </div>
+                </InfoDisplay>
+                <InfoDisplay>
+                  <div>Attack Damge</div>
+                  <div>
+                    {heroStatsJson[heroIdTagger].baseStats.attackDamage !== ""
+                      ? heroStatsJson[heroIdTagger].baseStats.attackDamage
+                      : "None"}
+                  </div>
+                </InfoDisplay>
+                <InfoDisplay>
+                  <div>Attack Speed</div>
+                  <div>
+                    {heroStatsJson[heroIdTagger].baseStats.attackSpeed !== ""
+                      ? heroStatsJson[heroIdTagger].baseStats.attackSpeed
+                      : "None"}
+                  </div>
+                </InfoDisplay>
+                <InfoDisplay>
+                  <div>Attack Range</div>
+                  <div>
+                    {heroStatsJson[heroIdTagger].baseStats.attackRange !== ""
+                      ? heroStatsJson[heroIdTagger].baseStats.attackRange
+                      : "None"}
+                  </div>
+                </InfoDisplay>
+              </RowCard>
+            ) : null}
           </React.Fragment>
         );
         break;
