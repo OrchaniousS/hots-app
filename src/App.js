@@ -9,20 +9,14 @@ import HeroStats from "./Heroes/pages/heroesInfo";
 import styles from "./app.module.css";
 
 const App = (props) => {
-  const heroesTitle = "Heroes";
-  const mapsTitle = "Maps quick info";
-
   return (
     <HttpsRedirect>
       <BrowserRouter>
         <div className={styles.app}>
           <Navbar />
           <Switch>
-            <Route
-              path="/heroes"
-              render={() => <HeroStats title={heroesTitle} />}
-            />
-            <Route path="/maps" render={() => <Maps title={mapsTitle} />} />
+            <Route path="/heroes" render={() => <HeroStats />} />
+            <Route path="/maps" render={() => <Maps />} />
             <Route path="/" render={() => <Home />} />
             <Route render={() => <Redirect to="/" />} />
           </Switch>

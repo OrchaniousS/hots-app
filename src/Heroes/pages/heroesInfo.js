@@ -6,7 +6,7 @@ import Heroes from "./heroes";
 import HeroesData from "../data/heroesData";
 
 const HeroStats = (props) => {
-  const { title } = props;
+  const heroesTitle = "Heroes";
 
   const heroStatsJson = JSON.parse(JSON.stringify(data));
 
@@ -32,10 +32,10 @@ const HeroStats = (props) => {
       <Switch>
         <BrowserRouter>
           <Route
-            key={title}
+            key={heroesTitle}
             exact
             path="/heroes"
-            render={() => <HeroesData title={title} />}
+            render={() => <HeroesData title={heroesTitle} />}
           />
           {heroURL()}
         </BrowserRouter>

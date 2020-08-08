@@ -16,6 +16,7 @@ class Maps extends PureComponent {
     mapHexId: "",
     bottomDisplayUnit: "",
     mapselectid: "",
+    title: "Maps quick info",
   };
 
   async mapScroll() {
@@ -31,7 +32,7 @@ class Maps extends PureComponent {
     this.setState({
       mapselectid: this.props.mapselectid,
     });
-    console.log(this.state.mapselectid);
+    // console.log(this.state.mapselectid);
   }
 
   mapInfoGenerator = () => {
@@ -148,7 +149,7 @@ class Maps extends PureComponent {
     return (
       <MainContainer>
         <div className={styles.mapContainer}>
-          <h2>{this.props.title}</h2>
+          <h2>{this.state.title}</h2>
           <div className={styles.mapHexCollage}>
             {this.state.mapJson.map((compact, id) =>
               this.state.mapHexId === undefined ? null : (
