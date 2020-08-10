@@ -58,7 +58,7 @@ const Herotype = (props) => {
               </InfoDisplayHero>
             </RowCard>
             {displayStats === true ? (
-              <RowCard>
+              <RowCard type="wrapper">
                 <InfoDisplay>
                   <div>Attack Type</div>
                   <div>{heroStatsJson[heroIdTagger].baseStats.attackType}</div>
