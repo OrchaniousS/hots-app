@@ -7,7 +7,10 @@ const Home = (props) => {
   const [weeklyAPI, setWeeklyAPI] = useState([]);
   const [textDate, setTextDate] = useState();
   const [monthDate, setMonthDate] = useState();
-  const request = require("request");
+
+  // const { express } = require("express");
+  // const request = require("request");
+  // const app = express();
 
   useEffect(() => {
     const d = new Date();
@@ -35,26 +38,33 @@ const Home = (props) => {
     weekday[5] = "Friday";
     weekday[6] = "Saturday";
     const monthDate = month[dateToMonth];
+    console.log(dateToDay);
     const dateHandler =
       dateToDay === 2
-        ? setMonthDate(monthDate)
+        ? setMonthDate(monthDate) || monthDate + ", " + d.getUTCDate() + " "
         : monthDate + ", " + d.getUTCDate() + " ";
     setTextDate(dateHandler);
+    console.log(dateHandler);
 
     const options = {
       url: "https://hots-web-api.web.app/weekly",
       headers: {
         "User-Agent": "request",
+        "Access-Control-Allow-Headers":
+          "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+        "Access-Control-Allow-Methods": "PUT, POST, GET, DELETE, OPTIONS",
       },
     };
 
-    request(options, (error, response, body) => {
-      // console.error("error:", error);
-      // console.log("statusCode:", response && response.statusCode);
-      // console.log(body);
+    // app.get(options.url, (req, res) => {
+    fetch(options, (error, response, body) => {
+      console.error("error:", error);
+      console.log("statusCode:", response && response.statusCode);
+      console.log(body);
       setWeeklyAPI(JSON.parse(body));
     });
-  }, [request]);
+    // });
+  }, []);
 
   const weeklyHandler = weeklyAPI.map(({ heroName }) => {
     const nameFixer = heroName === "Kel'Thuzad" ? "kelthuzad" : heroName;
@@ -76,19 +86,27 @@ const Home = (props) => {
     );
   });
 
+  const weeklyDivHandler = () => {
+    if (!weeklyAPI) {
+      console.log("api is on");
+      console.log(typeof weeklyAPI);
+      return <>{weeklyHandler}</>;
+    } else {
+      console.log("api is off");
+      return (
+        <div className={styles.centered}>
+          <div className={styles.spinnerLoading}></div>
+          <div className={styles.loadingText}>Loading...</div>
+        </div>
+      );
+    }
+  };
+
   return (
     <MainContainer>
       <h2>{`Weekly Rotation - [${textDate}]`}</h2>
       <div className={styles.mapContainer}>
-        <div className={styles.mapHexCollage}>
-          {() => {
-            if (weeklyHandler) {
-              return weeklyHandler;
-            } else {
-              return <div>"Loading..."</div>;
-            }
-          }}
-        </div>
+        <div className={styles.mapHexCollage}>{weeklyDivHandler()}</div>
       </div>
     </MainContainer>
   );
