@@ -7,6 +7,7 @@ const Home = (props) => {
   const [weeklyAPI, setWeeklyAPI] = useState([]);
   const [textDate, setTextDate] = useState();
   const [monthDate, setMonthDate] = useState();
+  const [dayDate, setDayDate] = useState();
 
   // const { express } = require("express");
   // const request = require("request");
@@ -37,14 +38,18 @@ const Home = (props) => {
     weekday[4] = "Thursday";
     weekday[5] = "Friday";
     weekday[6] = "Saturday";
+
     const monthDate = month[dateToMonth];
-    console.log(dateToDay);
+
+    // console.log(dateToDay);
     const dateHandler =
       dateToDay === 2
-        ? setMonthDate(monthDate) || monthDate + ", " + d.getUTCDate() + " "
-        : monthDate + ", " + d.getUTCDate() + " ";
+        ? setMonthDate(monthDate) &&
+          setDayDate(d.getUTCDate()) &&
+          monthDate + ", " + dayDate + " "
+        : monthDate + ", " + dayDate + " ";
     setTextDate(dateHandler);
-    console.log(dateHandler);
+    // console.log(dateHandler);
 
     const options = {
       url: "https://hots-web-api.web.app/weekly",
@@ -113,26 +118,3 @@ const Home = (props) => {
 };
 
 export default Home;
-
-/* {weekly.map(({ heroName, heroIcon }) => (
-            <div key={heroName}>
-              <div className={styles.mapHexIcon}>
-                <img
-                  className={styles.mapHexIconimg}
-                  alt={heroName}
-                  src={heroIcon}
-                />
-              </div>
-              <a href={`/heroes/${heroName}`}>
-                <div className={styles.mapHexaBG}>
-                  <span className={styles.mapHexaBGName}>{heroName}</span>
-                </div>
-              </a>
-            </div>
-          ))} */
-
-// import weeklyRotation from "../data/weeklyR.json";
-// import Weekly from "../../server/weekly";
-
-// const [weekly, setWeekly] = useState(weeklyRotation);
-// setWeekly((weekly) => weekly);

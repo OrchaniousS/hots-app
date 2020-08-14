@@ -4,8 +4,8 @@ import { NavLink } from "react-router-dom";
 import styles from "./navbar.module.css";
 
 const Navbar = (props) => {
-  const links = ["Home", "Heroes", "Maps"];
-  const paths = ["/", "/heroes", "/maps"];
+  const links = ["Home", "Heroes", "Maps", "Install"];
+  const paths = ["/", "/heroes", "/maps", "/install"];
   const title = "Heroes of the Storm";
 
   window.onscroll = () => {
@@ -35,13 +35,20 @@ const Navbar = (props) => {
     // }
   }
   return (
-    <header>
-      <nav className={styles.navBarResponsive}>
-        <div className={styles.titleLogo}>
-          <h2>
-            <NavLink to={paths[0]}>{title}</NavLink>
-          </h2>
-        </div>
+    <>
+      <header>
+        <nav className={styles.navBarResponsive}>
+          <div className={styles.titleLogo}>
+            <h2>
+              <NavLink to={paths[0]}>{title}</NavLink>
+            </h2>
+          </div>
+        </nav>
+        <button id="backTop" className={styles.scrollTop} onClick={topFunction}>
+          &#8593;
+        </button>
+      </header>
+      <footer className={styles.footerResponsive}>
         <ul className={styles.navMenu}>
           {paths.map((path, i) => {
             return (
@@ -53,11 +60,8 @@ const Navbar = (props) => {
             );
           })}
         </ul>
-      </nav>
-      <button id="backTop" className={styles.scrollTop} onClick={topFunction}>
-        &#8593;
-      </button>
-    </header>
+      </footer>
+    </>
   );
 };
 
