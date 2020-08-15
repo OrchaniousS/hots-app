@@ -161,3 +161,9 @@ nav h2 a {
     rgba(9, 21, 121, 0.8491771708683473) 100%
   );
 }
+
+.addButton {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+}
