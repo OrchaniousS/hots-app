@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 import styles from "./navbar.module.css";
 
-const Navbar = (props) => {
+const Navbar = () => {
   const links = ["Home", "Heroes", "Maps"];
   const paths = ["/", "/heroes", "/maps"];
   const title = "Heroes of the Storm";
@@ -12,7 +12,7 @@ const Navbar = (props) => {
     let deferredPrompt;
     const addBtn = document.querySelector("#addButton");
     addBtn.style.display = "none";
-    console.log(addBtn6ccc);
+    console.log(addBtn);
     e.preventDefault();
 
     deferredPrompt = e;
@@ -80,7 +80,7 @@ const Navbar = (props) => {
           {paths.map((path, i) => {
             return (
               <li key={i}>
-                <NavLink activeClassName={styles.activate} exact to={path}>
+                <NavLink activeClassName={styles.activate} exact to={`${path}`}>
                   {links[i]}
                 </NavLink>
               </li>

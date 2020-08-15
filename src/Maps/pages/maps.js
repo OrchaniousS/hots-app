@@ -1,53 +1,36 @@
-import React, { PureComponent } from "react";
+import React, { useState } from "react";
 
 import MainContainer from "../../Shared/components/mainContainer";
-
 import mapData from "../data/hotsMaps.json";
 import styles from "./maps.module.css";
 
-// export const MapSelector = (props) => {
-//   const { mapName } = props;
-//   console.log({ mapName });
-// };
+const Maps = () => {
+  const mapJson = JSON.parse(JSON.stringify(mapData));
+  const title = "Maps quick info";
 
-class Maps extends PureComponent {
-  state = {
-    mapJson: JSON.parse(JSON.stringify(mapData)),
-    mapHexId: "",
-    bottomDisplayUnit: "",
-    mapselectid: "",
-    title: "Maps quick info",
-  };
+  const [mapHexId, setmapHexId] = useState("");
 
-  async mapScroll() {
+  const [bottomDisplayUnit, setbottomDisplayUnit] = useState("none");
+
+  const mapScroll = async () => {
     await document.querySelector("#mapScroll");
     return document.querySelector("#mapScroll").scrollIntoView({
       behavior: "smooth",
       block: "nearest",
       inline: "start",
     });
-  }
+  };
 
-  mapselect() {
-    this.setState({
-      mapselectid: this.props.mapselectid,
-    });
-    // console.log(this.state.mapselectid);
-  }
-
-  mapInfoGenerator = () => {
-    return this.state.mapHexId === "" ? null : (
+  const mapInfoGenerator = () =>
+    mapHexId === "" ? null : (
       <div className={styles.mapBottomContainer}>
         <div className={styles.mapInfo}>
-          <h1>{this.state.mapJson[this.state.mapHexId].mName}</h1>
+          <h1>{mapJson[mapHexId].mName}</h1>
           <div className={styles.mapWider}>
-            <a
-              rel="prefetch"
-              href={this.state.mapJson[this.state.mapHexId].mapWider}
-            >
+            <a rel="prefetch" href={mapJson[mapHexId].mapWider}>
               <img
-                alt={`mini ${this.state.mapJson[this.state.mapHexId].mName}`}
-                src={this.state.mapJson[this.state.mapHexId].mapWider}
+                alt={`mini ${mapJson[mapHexId].mName}`}
+                src={mapJson[mapHexId].mapWider}
               />
             </a>
           </div>
@@ -58,146 +41,92 @@ class Maps extends PureComponent {
         <div className={styles.mapObj}>
           <div className={styles.mapObjMain}>
             <div className={styles.mapObjMainInfo}>
-              <h5>
-                {
-                  this.state.mapJson[this.state.mapHexId].mapObj.objectiveA
-                    .objName
-                }
-              </h5>
-              <p>
-                {
-                  this.state.mapJson[this.state.mapHexId].mapObj.objectiveA
-                    .objDescription
-                }
-              </p>
+              <h5>{mapJson[mapHexId].mapObj.objectiveA.objName}</h5>
+              <p>{mapJson[mapHexId].mapObj.objectiveA.objDescription}</p>
             </div>
             <div className={styles.mapObjMainImg}>
               <img
-                alt={
-                  this.state.mapJson[this.state.mapHexId].mapObj.objectiveA
-                    .objName
-                }
-                src={
-                  this.state.mapJson[this.state.mapHexId].mapObj.objectiveA
-                    .objImg
-                }
+                alt={mapJson[mapHexId].mapObj.objectiveA.objName}
+                src={mapJson[mapHexId].mapObj.objectiveA.objImg}
               />
             </div>
           </div>
           <div className={styles.mapObjMain}>
             <div className={styles.mapObjMainInfo}>
-              <h5>
-                {
-                  this.state.mapJson[this.state.mapHexId].mapObj.objectiveB
-                    .objName
-                }
-              </h5>
-              <p>
-                {
-                  this.state.mapJson[this.state.mapHexId].mapObj.objectiveB
-                    .objDescription
-                }
-              </p>
+              <h5>{mapJson[mapHexId].mapObj.objectiveB.objName}</h5>
+              <p>{mapJson[mapHexId].mapObj.objectiveB.objDescription}</p>
             </div>
             <div className={styles.mapObjMainImg}>
               <img
-                alt={
-                  this.state.mapJson[this.state.mapHexId].mapObj.objectiveB
-                    .objName
-                }
-                src={
-                  this.state.mapJson[this.state.mapHexId].mapObj.objectiveB
-                    .objImg
-                }
+                alt={mapJson[mapHexId].mapObj.objectiveB.objName}
+                src={mapJson[mapHexId].mapObj.objectiveB.objImg}
               />
             </div>
           </div>
           <div className={styles.mapObjMain}>
             <div className={styles.mapObjMainInfo}>
-              <h5>
-                {
-                  this.state.mapJson[this.state.mapHexId].mapObj.objectiveC
-                    .objName
-                }
-              </h5>
-              <p>
-                {
-                  this.state.mapJson[this.state.mapHexId].mapObj.objectiveC
-                    .objDescription
-                }
-              </p>
+              <h5>{mapJson[mapHexId].mapObj.objectiveC.objName}</h5>
+              <p>{mapJson[mapHexId].mapObj.objectiveC.objDescription}</p>
             </div>
             <div className={styles.mapObjMainImg}>
               <img
-                alt={
-                  this.state.mapJson[this.state.mapHexId].mapObj.objectiveC
-                    .objName
-                }
-                src={
-                  this.state.mapJson[this.state.mapHexId].mapObj.objectiveC
-                    .objImg
-                }
+                alt={mapJson[mapHexId].mapObj.objectiveC.objName}
+                src={mapJson[mapHexId].mapObj.objectiveC.objImg}
               />
             </div>
           </div>
         </div>
       </div>
     );
-  };
 
-  render() {
-    return (
-      <MainContainer>
-        <div className={styles.mapContainer}>
-          <h2>{this.state.title}</h2>
-          <div className={styles.mapHexCollage}>
-            {this.state.mapJson.map((compact, id) =>
-              this.state.mapHexId === undefined ? null : (
+  return (
+    <MainContainer>
+      <div className={styles.mapContainer}>
+        <h2>{title}</h2>
+        <div className={styles.mapHexCollage}>
+          {mapJson.map((compact, id) =>
+            mapHexId === undefined ? null : (
+              <div
+                key={id}
+                onClick={() => {
+                  setmapHexId(id);
+                  setbottomDisplayUnit("block");
+                  mapScroll();
+                }}
+              >
                 <div
-                  key={id}
-                  onClick={() => {
-                    this.setState({
-                      mapHexId: id,
-                      bottomDisplayUnit: "block",
-                    });
-                    this.mapScroll();
-                  }}
+                  className={
+                    id !== mapHexId && mapHexId !== ""
+                      ? styles.mapHexUnitUnActive
+                      : null
+                  }
                 >
-                  <div
-                    className={
-                      id !== this.state.mapHexId && this.state.mapHexId !== ""
-                        ? styles.mapHexUnitUnActive
-                        : null
-                    }
-                  >
-                    <div className={styles.mapHexIcon}>
-                      <img
-                        alt={compact.mName}
-                        src={`../../images/maps/${compact.mName}.jpg`}
-                      />
-                    </div>
-                    <div className={styles.mapHexaBG}>
-                      <span className={styles.mapHexaBGName}>
-                        {compact.mName}
-                      </span>
-                    </div>
+                  <div className={styles.mapHexIcon}>
+                    <img
+                      alt={compact.mName}
+                      src={`../../images/maps/${compact.mName}.jpg`}
+                    />
+                  </div>
+                  <div className={styles.mapHexaBG}>
+                    <span className={styles.mapHexaBGName}>
+                      {compact.mName}
+                    </span>
                   </div>
                 </div>
-              )
-            )}
-          </div>
-          <div
-            id="mapScroll"
-            className={styles.bottomMapInfo}
-            style={{ display: this.state.bottomDisplayUnit }}
-          >
-            {this.mapInfoGenerator()}
-            {this.mapselect()}
-          </div>
+              </div>
+            )
+          )}
         </div>
-      </MainContainer>
-    );
-  }
-}
+        <div
+          id="mapScroll"
+          className={styles.bottomMapInfo}
+          style={{ display: bottomDisplayUnit }}
+        >
+          {mapInfoGenerator()}
+        </div>
+      </div>
+    </MainContainer>
+  );
+};
 
 export default Maps;

@@ -40,6 +40,7 @@ const Home = (props) => {
     weekday[6] = "Saturday";
 
     const monthDate = month[dateToMonth];
+    const dayDate = d.getUTCDate();
 
     // console.log(dateToDay);
     const dateHandler =

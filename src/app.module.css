@@ -45,26 +45,8 @@ code {
   background: #141414;
   box-shadow: 0 0 35px rgba(0, 0, 0, 0.35);
   margin: 2% 8% 2% 8%;
-}
-
-/*min laptop*/
-@media (min-width: 1024px) {
-  .app {
-    padding: 1%;
-    margin-top: 120px;
-  }
-}
-
-/*min tab*/
-@media (max-width: 1024px) {
-  .app {
-    margin-top: 130px;
-  }
-}
-@media (max-width: 550px) {
-  .app {
-    margin-top: 200px;
-  }
+  margin-top: 100px;
+  margin-bottom: 80px;
 }
 
 .heroContainer {
@@ -73,13 +55,11 @@ code {
 }
 
 .heroGrid {
+  transform: scale(0.9);
+  padding: 12px 12px 12px 12px;
   text-align: center;
   background: #161616;
   box-shadow: 0 0 15px rgba(75, 72, 72, 0.288);
-
-  padding: 12px 12px 12px 12px;
-
-  transform: scale(0.9);
 }
 
 .heroGrid:hover {
@@ -87,52 +67,9 @@ code {
   transform: scale(1.1);
 }
 
-@media (max-width: 960px) {
-  .heroGridRowColumon {
-    width: 100%;
-  }
-}
-
-/* @media (max-width: 680px) {
-  .heroGridRowColumon {
-    margin: 5% -10% 15% 1%;
-  }
-}
-
-@media (max-width: 580px) {
-  .heroGridRowColumon {
-    margin: 5% 10% 15% 7%;
-  }
-}
-
-@media (max-width: 500px) {
-  .heroGridRowColumon {
-    margin: 5% 4% 15% 7%;
-  }
-}
-
-@media (max-width: 390px) {
-  .heroGridRowColumon {
-    margin: 5% 2% 15% 4%;
-  }
-} */
-
-@media (max-width: 335px) {
-  .heroGridRowColumon {
-    margin: 5% 2% 15% 3%;
-  }
-}
-
-@media (max-width: 330px) {
-  .heroGridRowColumon {
-    margin: 5% 1% 15% 0%;
-  }
-}
-
 @media (min-width: 960px) {
   .heroGridRowColumon {
-    width: 75%;
-    margin: 5px 5px 5px 5px;
+    width: 90%;
   }
 
   #heroPanelC {
@@ -141,21 +78,14 @@ code {
 }
 
 .heroGridRowColumon {
-  padding: 2px 2px 2px 2px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  vertical-align: top;
   place-content: center;
-  line-height: 1;
+  line-height: 1.2;
 }
 
-.heroPersonal {
-  font-size: 14px;
-  text-align: center;
-}
-
-.heroPersonalText {
+/* .heroPersonalText {
   padding: 5px 5px 5px 5px;
   margin: 5px 5px 5px 5px;
   width: 147px;
@@ -163,17 +93,16 @@ code {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-}
+} */
+
 .heroPersonalImg {
-  justify-content: center;
-  padding-bottom: 12px;
+  padding-bottom: 6px;
 }
 
 .heroPersonalImg div {
-  font-size: 11px;
-  margin: 5px 5px 5px 5px;
-  text-align: center;
-  padding-bottom: 15px;
+  font-size: 1rem;
+  margin: 5px 0;
+  padding-bottom: 8px;
 }
 
 .filterHero select {
