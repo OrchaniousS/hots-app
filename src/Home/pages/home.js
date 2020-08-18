@@ -3,17 +3,19 @@ import React, { useState, useEffect } from "react";
 import MainContainer from "../../Shared/components/mainContainer";
 import styles from "./home.module.css";
 
+const scraperapiClient = require("scraperapi-sdk")(
+  "0cee0c963a5f7029df77efe22f18c3f6"
+);
+
 const Home = (props) => {
-  const [weeklyAPI, setWeeklyAPI] = useState([]);
   const [textDate, setTextDate] = useState();
   const [monthDate, setMonthDate] = useState();
   const [dayDate, setDayDate] = useState();
-
-  // const { express } = require("express");
-  // const request = require("request");
-  // const app = express();
+  const [responseAPI, setResponseAPI] = useState();
+  const bHTMLSPLIT = [];
 
   useEffect(() => {
+    // need better month detector
     const d = new Date();
     const dateToDay = d.getDay();
     const dateToMonth = d.getMonth();
@@ -42,7 +44,6 @@ const Home = (props) => {
     const monthDate = month[dateToMonth];
     const dayDate = d.getUTCDate();
 
-    // console.log(dateToDay);
     const dateHandler =
       dateToDay === 2
         ? setMonthDate(monthDate) &&
@@ -50,69 +51,85 @@ const Home = (props) => {
           monthDate + ", " + dayDate + " "
         : monthDate + ", " + dayDate + " ";
     setTextDate(dateHandler);
-    // console.log(dateHandler);
-
-    const options = {
-      url: "https://hots-web-api.web.app/weekly",
-      headers: {
-        "User-Agent": "request",
-        "Access-Control-Allow-Headers":
-          "Origin, X-Requested-With, Content-Type, Accept, Authorization",
-        "Access-Control-Allow-Methods": "PUT, POST, GET, DELETE, OPTIONS",
-      },
-    };
-
-    // app.get(options.url, (req, res) => {
-    fetch(options, (error, response, body) => {
-      console.error("error:", error);
-      console.log("statusCode:", response && response.statusCode);
-      console.log(body);
-      setWeeklyAPI(JSON.parse(body));
-    });
-    // });
   }, []);
 
-  const weeklyHandler = weeklyAPI.map(({ heroName }) => {
-    const nameFixer = heroName === "Kel'Thuzad" ? "kelthuzad" : heroName;
-    return (
-      <div key={heroName}>
-        <div className={styles.mapHexIcon}>
-          <img
-            className={styles.mapHexIconimg}
-            alt={heroName}
-            src={`https://static.heroesofthestorm.com/gd/dfe093731311b059970f9ce266743072/heroes/${nameFixer.toLowerCase()}/circleIcon.png`}
-          />
-        </div>
-        <a href={`/heroes/${nameFixer}`}>
-          <div className={styles.mapHexaBG}>
-            <span className={styles.mapHexaBGName}>{heroName}</span>
-          </div>
-        </a>
-      </div>
-    );
-  });
+  // const fs = require("fs");
 
-  const weeklyDivHandler = () => {
-    if (!weeklyAPI) {
-      console.log("api is on");
-      console.log(typeof weeklyAPI);
-      return <>{weeklyHandler}</>;
-    } else {
-      console.log("api is off");
-      return (
-        <div className={styles.centered}>
-          <div className={styles.spinnerLoading}></div>
-          <div className={styles.loadingText}>Loading...</div>
-        </div>
-      );
+  const jsonResponse = async () => {
+    const responseJson = await scraperapiClient.get(
+      "https://heroesofthestorm.com/en-us/",
+      {
+        render: true,
+      }
+    );
+    const bodyHTML = JSON.stringify(responseJson).toString();
+    const bodyHTMLSplit = bodyHTML
+      .split("<section")[6]
+      .split(`<h2 class=\\"hero__title\\">`);
+    for (let i = 1, j = 0; i < bodyHTMLSplit.length; i++, j++) {
+      const splittedHero =
+        bodyHTMLSplit[i].split("</h2>", 1)[0].length > 20
+          ? ""
+          : bodyHTMLSplit[i].split("</h2>", 1)[0];
+
+      const splittedHeroLink =
+        bodyHTMLSplit[j].split("src=\\", 2)[1] === undefined
+          ? ""
+          : bodyHTMLSplit[j]
+              .split("src=\\", 2)[1]
+              .split("alt=\\", 1)[0]
+              .split('"')[1]
+              .split("\\")[0];
+
+      bHTMLSPLIT.push({
+        heroName: splittedHero,
+        heroLink: splittedHeroLink,
+      });
+      // fs.writeFile("rotation.json", JSON.stringify(bHTMLSPLIT), (err) => {
+      //   if (err) throw err;
+      // });
     }
+    setResponseAPI(bHTMLSPLIT);
   };
+  
+  if (bHTMLSPLIT.length < 1) {
+    jsonResponse();
+  }
 
   return (
     <MainContainer>
       <h2>{`Weekly Rotation - [${textDate}]`}</h2>
       <div className={styles.mapContainer}>
-        <div className={styles.mapHexCollage}>{weeklyDivHandler()}</div>
+        <div className={styles.mapHexCollage}>
+          {responseAPI === undefined ? (
+            <div className={styles.centered}>
+              <div className={styles.spinnerLoading}></div>
+              <div className={styles.loadingText}>Loading...</div>
+            </div>
+          ) : (
+            responseAPI.slice(1).map((compact) => {
+              return (
+                <div key={compact.heroName}>
+                  <div className={styles.mapHexIcon}>
+                    <img
+                      className={styles.mapHexIconimg}
+                      alt={compact.heroName}
+                      src={compact.heroLink}
+                    />
+                    {console.log(compact.heroLink)}
+                  </div>
+                  <a href={`/heroes/${compact.heroName}`}>
+                    <div className={styles.mapHexaBG}>
+                      <span className={styles.mapHexaBGName}>
+                        {compact.heroName}
+                      </span>
+                    </div>
+                  </a>
+                </div>
+              );
+            })
+          )}
+        </div>
       </div>
     </MainContainer>
   );

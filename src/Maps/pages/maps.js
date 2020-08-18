@@ -1,16 +1,15 @@
 import React, { useState } from "react";
 
 import MainContainer from "../../Shared/components/mainContainer";
+import { Clickedmap } from "../components/Clickedmap";
 import mapData from "../data/hotsMaps.json";
 import styles from "./maps.module.css";
 
 const Maps = () => {
   const mapJson = JSON.parse(JSON.stringify(mapData));
-  const title = "Maps quick info";
-
   const [mapHexId, setmapHexId] = useState("");
-
   const [bottomDisplayUnit, setbottomDisplayUnit] = useState("none");
+  console.log(<Clickedmap />);
 
   const mapScroll = async () => {
     await document.querySelector("#mapScroll");
@@ -82,7 +81,7 @@ const Maps = () => {
   return (
     <MainContainer>
       <div className={styles.mapContainer}>
-        <h2>{title}</h2>
+        <h2>Maps quick info</h2>
         <div className={styles.mapHexCollage}>
           {mapJson.map((compact, id) =>
             mapHexId === undefined ? null : (
