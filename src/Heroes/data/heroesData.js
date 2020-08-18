@@ -10,6 +10,7 @@ import styles from "../../app.module.css";
 const HeroesData = () => {
   const [indexNum, setIndexNum] = useState("");
   const [indexName, setIndexName] = useState("");
+  const [roleId, setRoleId] = useState("");
 
   const heroInfoJson = JSON.parse(JSON.stringify(data));
   const panelInfo = JSON.parse(JSON.stringify(dataPanel));
@@ -83,25 +84,28 @@ const HeroesData = () => {
   return (
     <MainContainer>
       <h2>Heroes</h2>
+      <div>filterContainer</div>
       <div className={styles.heroContainer}>
         <div className={styles.heroGridRowColumon}>
-          {heroInfoJson.map((compact) => {
+          {heroInfoJson.map(({ id, logo, name, role }) => {
             return (
-              <div key={compact.id}>
+              <div key={id}>
+                {console.log(roleId)}
                 <div
                   className={styles.heroGrid}
                   onClick={() => {
-                    setIndexNum(compact.id);
-                    setIndexName(compact.name);
+                    setRoleId(role);
+                    setIndexNum(id);
+                    setIndexName(name);
                     return window.innerWidth < 960
-                      ? (window.location.href = `/heroes/${compact.name}`)
+                      ? (window.location.href = `/heroes/${name}`)
                       : null;
                   }}
                 >
                   <div className={styles.heroPersonal}>
                     <div className={styles.heroPersonalImg}>
-                      <div>{compact.name}</div>
-                      <img alt="heroIcon" src={compact.logo}></img>
+                      <div>{name}</div>
+                      <img alt="heroIcon" src={logo}></img>
                     </div>
                   </div>
                 </div>

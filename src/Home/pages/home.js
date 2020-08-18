@@ -46,8 +46,8 @@ const Home = (props) => {
 
     const dateHandler =
       dateToDay === 2
-        ? setMonthDate(monthDate) &&
-          setDayDate(d.getUTCDate()) &&
+        ? setMonthDate(monthDate) ||
+          setDayDate(d.getUTCDate()) ||
           monthDate + ", " + dayDate + " "
         : monthDate + ", " + dayDate + " ";
     setTextDate(dateHandler);
@@ -62,8 +62,8 @@ const Home = (props) => {
         render: true,
       }
     );
-    const bodyHTML = JSON.stringify(responseJson).toString();
-    const bodyHTMLSplit = bodyHTML
+    const bodyHTML = await JSON.stringify(responseJson).toString();
+    const bodyHTMLSplit = await bodyHTML
       .split("<section")[6]
       .split(`<h2 class=\\"hero__title\\">`);
     for (let i = 1, j = 0; i < bodyHTMLSplit.length; i++, j++) {
@@ -91,7 +91,7 @@ const Home = (props) => {
     }
     setResponseAPI(bHTMLSPLIT);
   };
-  
+
   if (bHTMLSPLIT.length < 1) {
     jsonResponse();
   }
@@ -116,7 +116,7 @@ const Home = (props) => {
                       alt={compact.heroName}
                       src={compact.heroLink}
                     />
-                    {console.log(compact.heroLink)}
+                    {/* {console.log(compact.heroLink)} */}
                   </div>
                   <a href={`/heroes/${compact.heroName}`}>
                     <div className={styles.mapHexaBG}>
