@@ -41,17 +41,14 @@ const Home = (props) => {
     weekday[5] = "Friday";
     weekday[6] = "Saturday";
 
-    const monthDate = month[dateToMonth];
-    const dayDate = d.getUTCDate();
-
     const dateHandler =
       dateToDay === 2
-        ? setMonthDate(monthDate) ||
+        ? setMonthDate(month[dateToMonth]) ||
           setDayDate(d.getUTCDate()) ||
           monthDate + ", " + dayDate + " "
         : monthDate + ", " + dayDate + " ";
     setTextDate(dateHandler);
-  }, []);
+  }, [monthDate]);
 
   // const fs = require("fs");
 

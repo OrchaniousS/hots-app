@@ -346,3 +346,73 @@ code {
 }
 
 /*-- Single Hero Info page----*/
+
+/* Filter */
+.filterView {
+  display: none;
+}
+
+.roleFilter {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: auto;
+  place-content: center;
+  justify-content: space-around;
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s;
+  height: 60px;
+}
+
+.roleFilter img {
+  align-content: center;
+  display: none;
+}
+
+.roleFilter button:hover {
+  background-color: rgba(30, 143, 255, 0.911);
+}
+.roleFilter button {
+  color: #fff;
+  align-content: center;
+  margin: 5% 0;
+  padding: 15px 10px;
+  border: 0 solid dodgerblue;
+  background-color: rgba(30, 143, 255, 0.582);
+}
+
+@media (min-width: 880px) {
+  .roleFilter button {
+    width: 120px;
+  }
+}
+@media (max-width: 325px) {
+  .roleFilter div {
+    display: none;
+  }
+}
+@media (max-width: 375px) {
+  .roleFilter img {
+    display: flex;
+    width: 30px;
+    height: 30px;
+  }
+}
+@media (max-width: 880px) {
+  .roleFilter {
+    height: unset;
+  }
+  .roleFilter div {
+    display: none;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 880px) {
+  .roleFilter img {
+    display: flex;
+    align-content: center;
+    width: 60px;
+    height: 60px;
+  }
+}
+
+/* Filter */

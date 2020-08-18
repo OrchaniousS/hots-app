@@ -132,7 +132,7 @@ nav h2 a {
   left: 0;
   right: 0;
   margin: 0;
-  padding: 10px 15px;
+  /* padding: 0 10px; */
   display: flex;
   justify-content: space-evenly;
   border-top: 1px solid #3479d9;
