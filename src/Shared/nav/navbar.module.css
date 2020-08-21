@@ -44,30 +44,33 @@ nav h2 a {
 
 /* SCROLL BUTTON */
 
-@media (max-width: 329px) {
+@media (min-width: 375px) {
   .scrollTop {
-    bottom: 70px;
+    font-size: 3rem;
+    /* bottom: 70px; */
   }
 }
-@media (min-width: 330px) {
+
+@media (max-width: 375px) {
   .scrollTop {
-    bottom: 60px;
+    font-size: 1.5rem;
+    /* bottom: 70px; */
   }
 }
 
 .scrollTop {
   display: none;
   position: fixed;
-  right: 40px;
+  right: 10px;
+  bottom: 0;
   z-index: 99;
-  font-size: 3rem;
   border: none;
   outline: none;
   background-color: #3479d9;
   color: white;
   cursor: pointer;
   padding: 12px 15px 12px 15px;
-  border-radius: 50px;
+  /* border-radius: 50px; */
 }
 
 .scrollTop:hover {

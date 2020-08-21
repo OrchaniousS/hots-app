@@ -352,10 +352,18 @@ code {
   display: none;
 }
 
+.activeRole {
+  background-color: rgba(85, 107, 47, 0.774);
+}
+
+.unActiveRole {
+  background-color: rgba(30, 143, 255, 0.582);
+}
+
 .roleFilter {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  /* flex-wrap: wrap; */
+  flex-direction: column;
   width: auto;
   place-content: center;
   justify-content: space-around;
@@ -376,14 +384,13 @@ code {
   color: #fff;
   align-content: center;
   margin: 5% 0;
-  padding: 15px 10px;
+  padding: 10px 8px;
   border: 0 solid dodgerblue;
-  background-color: rgba(30, 143, 255, 0.582);
 }
 
 @media (min-width: 880px) {
   .roleFilter button {
-    width: 120px;
+    width: 116px;
   }
 }
 @media (max-width: 325px) {
@@ -391,11 +398,11 @@ code {
     display: none;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 378px) {
   .roleFilter img {
     display: flex;
-    width: 30px;
-    height: 30px;
+    width: 45px;
+    height: 45px;
   }
 }
 @media (max-width: 880px) {
@@ -412,6 +419,26 @@ code {
     align-content: center;
     width: 60px;
     height: 60px;
+  }
+}
+
+.filterTitle {
+  height: 80%;
+  background-color: rgba(30, 143, 255, 0.301);
+  filter: drop-shadow(0 0 0.75rem crimson);
+}
+
+.filterWrapper {
+  position: fixed;
+  z-index: 4;
+  left: 0;
+  top: 50%;
+  text-align-last: center;
+}
+
+@media (max-width: 880px) {
+  .filterWrapper {
+    top: 18%;
   }
 }
 

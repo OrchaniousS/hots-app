@@ -30,8 +30,7 @@
     z-index: 1;
     background-color: rgb(12, 100, 201);
     padding: 8% 8% 8% 8%;
-    font-size: 25px;
-    bottom: 0;
+    bottom: 5%;
     right: 0;
     left: 0;
     text-align: center;
@@ -41,32 +40,25 @@
     color: #fff;
     font-weight: 700;
     font-size: 2rem;
-    padding: 8% 8% 8% 8%;
   }
 }
 
 @media (max-width: 960px) {
   .backHero {
     padding: 2% 2% 2% 2%;
-    /* padding-bottom: 5%;
-      padding-top: 5%; */
-    /* height: 5%; */
   }
   .backHero a {
-    /* font-weight: 500; */
-    font-size: 1.5rem;
+    font-size: 1.1rem;
   }
 }
 
 @media (max-width: 360px) {
   .backHero {
-    padding: 0 0 0 0;
+    /* padding: 0 0 0 0; */
     padding-bottom: 5%;
     padding-top: 5%;
-    /* height: 5%; */
   }
   .backHero a {
-    /* font-weight: 500; */
     font-size: 1.5rem;
   }
 }

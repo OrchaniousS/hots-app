@@ -125,19 +125,31 @@ const HeroesData = () => {
         "https://images.blz-contentstack.com/v3/assets/blta565ae3223b62a29/bltfb68c2acf0fe59ee/5e4dcaae0cabeb72b7783d67/role-bruiser.png",
     },
   ];
+  const roleStyleHandler = (roleV) =>
+    buttonRole === roleV
+      ? `${styles.heroGrid}`
+      : `${styles.heroGrid + "" + styles.filterView}` && buttonRole === null
+      ? `${styles.heroGrid}`
+      : null;
 
   return (
     <MainContainer>
       <h2>Heroes</h2>
-      <div>
-        Roles:
+      <div className={styles.filterWrapper}>
         <div className={styles.roleFilter}>
+          <p className={styles.filterTitle}>Roles</p>
           {roles.map(({ rolesType, rolesImg }) => (
             <button
+              id="roles"
               key={rolesType}
               onClick={() => {
                 roleHandler(rolesType);
               }}
+              className={
+                rolesType === buttonRole
+                  ? `${styles.activeRole}`
+                  : `${styles.unActiveRole}`
+              }
             >
               <img alt={rolesImg} src={rolesImg} />
               <div>{rolesType}</div>
@@ -152,14 +164,7 @@ const HeroesData = () => {
               <React.Fragment key={id}>
                 <div
                   id="filter"
-                  className={
-                    buttonRole === role
-                      ? `${styles.heroGrid}`
-                      : `${styles.heroGrid + "" + styles.filterView}` &&
-                        buttonRole === null
-                      ? `${styles.heroGrid}`
-                      : null
-                  }
+                  className={roleStyleHandler(role)}
                   onClick={() => {
                     setIndexNum(id);
                     setIndexName(name);
@@ -169,7 +174,6 @@ const HeroesData = () => {
                   }}
                 >
                   <div className={styles.heroPersonal}>
-                    {/* {console.log(buttonRole)} */}
                     {buttonRole === role ? (
                       <div id={role} className={styles.heroPersonalImg}>
                         <div>{name}</div>

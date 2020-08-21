@@ -18,37 +18,42 @@ const Home = (props) => {
     // need better month detector
     const d = new Date();
     const dateToDay = d.getDay();
+    console.log(dateToDay);
     const dateToMonth = d.getMonth();
-    const month = [];
-    month[0] = "January";
-    month[1] = "February";
-    month[2] = "March";
-    month[3] = "April";
-    month[4] = "May";
-    month[5] = "June";
-    month[6] = "July";
-    month[7] = "August";
-    month[8] = "September";
-    month[9] = "October";
-    month[10] = "November";
-    month[11] = "December";
-    const weekday = [];
-    weekday[0] = "Sunday";
-    weekday[1] = "Monday";
-    weekday[2] = "Tuesday";
-    weekday[3] = "Wednesday";
-    weekday[4] = "Thursday";
-    weekday[5] = "Friday";
-    weekday[6] = "Saturday";
+    const month = [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December",
+    ];
+    const weekday = [
+      "Sunday",
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+    ];
+
+    setMonthDate(month[dateToMonth]) && setDayDate(weekday[dateToDay]);
 
     const dateHandler =
       dateToDay === 2
-        ? setMonthDate(month[dateToMonth]) ||
-          setDayDate(d.getUTCDate()) ||
+        ? setMonthDate(month[dateToMonth]) &&
+          setDayDate(d.getUTCDate()) &&
           monthDate + ", " + dayDate + " "
         : monthDate + ", " + dayDate + " ";
     setTextDate(dateHandler);
-  }, [monthDate]);
+  }, [monthDate, dayDate]);
 
   // const fs = require("fs");
 
