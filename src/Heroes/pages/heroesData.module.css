@@ -1,0 +1,332 @@
+.heroContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.heroGrid {
+  transform: scale(0.9);
+  padding: 12px 12px 12px 12px;
+  text-align: center;
+  background: #161616;
+  box-shadow: 0 0 15px rgba(75, 72, 72, 0.288);
+  cursor: pointer;
+}
+
+.heroGrid:hover {
+  background-color: rgba(22, 4, 4, 0.164);
+  transform: scale(1.1);
+}
+
+@media (min-width: 960px) {
+  .heroGridRowColumon {
+    width: 90%;
+  }
+
+  #heroPanelC {
+    display: block;
+  }
+}
+
+.heroGridRowColumon {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  place-content: center;
+  line-height: 1.2;
+}
+
+.heroPersonalImg {
+  padding-bottom: 6px;
+}
+
+.heroPersonalImg div {
+  font-size: 1rem;
+  margin: 5px 0;
+  padding-bottom: 8px;
+}
+/*SIDEHERO*/
+
+.heroPanelFixed {
+  position: absolute;
+  width: 450px;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.heroPanelContainer {
+  display: none;
+  position: relative;
+  height: 500px;
+  width: 800px;
+  margin-right: -10%;
+}
+
+.heroPanelMoveable {
+  overflow: visible;
+  position: absolute;
+}
+
+.heroPanelImage {
+  overflow: hidden;
+  height: 320px;
+  width: 100%;
+  position: relative;
+  background: transparent top no-repeat;
+}
+
+.heroPanelImage::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: linear-gradient(
+    0deg,
+    rgba(30, 92, 153, 0.6) 25%,
+    rgba(30, 92, 153, 0.4) 35%,
+    rgba(30, 92, 153, 0.2) 50%,
+    rgba(41, 102, 163, 0)
+  );
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(25%, rgba(30, 92, 153, 0.6)),
+    color-stop(35%, rgba(30, 92, 153, 0.4)),
+    color-stop(50%, rgba(30, 92, 153, 0.2)),
+    to(rgba(41, 102, 163, 0))
+  );
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.heroPanelImage img {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+}
+
+.heroPanelCard {
+  width: 450px;
+  border: 1px solid rgba(153, 204, 255, 0.2);
+  display: block;
+  position: relative;
+  text-align: center;
+  background-color: #0a1133;
+}
+
+.heroPanelInfo {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.35);
+}
+
+.heroPanelInfo h1 {
+  width: 100%;
+  margin: 12px 12px 12px 12px;
+  text-shadow: 0 0 12px #011933;
+  font-weight: 650;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.heroPanelBottom {
+  width: 100%;
+  margin-top: 35px;
+  display: block;
+  position: relative;
+  text-align: center;
+}
+
+.heroTable {
+  position: absolute;
+  width: 100%;
+  bottom: 100%;
+}
+
+.heroTable table {
+  border: 1px solid #3479d9;
+  text-align: left;
+  width: 80%;
+  height: 90%;
+  margin: 0 10%;
+  border-collapse: collapse;
+  font-size: 16px;
+  background: linear-gradient(
+    0deg,
+    rgba(24, 117, 211, 0.2) 0,
+    rgba(0, 77, 153, 0) 50%,
+    rgba(2, 56, 110, 0)
+  );
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(rgba(0, 77, 153, 0.2)),
+    color-stop(50%, rgba(0, 77, 153, 0)),
+    to(rgba(0, 77, 153, 0))
+  );
+  background-color: rgba(15, 17, 51, 0.9);
+}
+
+.heroTable th {
+  width: 35%;
+  border-right: 1px solid #3479d9;
+  background-color: rgba(24, 44, 145, 0.486);
+  padding-left: 4px;
+  border-bottom: 1px solid #3479d9;
+}
+.heroTable td {
+  height: 40px;
+  width: 70%;
+  opacity: 0.8;
+  border-bottom: 1px solid #3479d9;
+  padding-left: 10px;
+}
+
+.heroLink {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.heroLink a:hover {
+  color: white;
+  background-color: #427fbb60;
+}
+
+.heroLink a {
+  padding: 4px 4px 4px 4px;
+  font-size: x-large;
+  color: #3479d9;
+  font-weight: 350;
+  text-decoration: none;
+  border: 0.11px solid #3479d9;
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+@media (min-width: 960px) {
+  .heroPanelContainer {
+    display: block;
+    height: auto;
+  }
+}
+
+@media (max-width: 960px) {
+  .heroPanelContainer {
+    display: none;
+  }
+}
+
+/*SIDEHERO*/
+
+/* Filter */
+
+.filterWrapper {
+  position: fixed;
+  z-index: 4;
+  left: 0;
+  top: 50%;
+  text-align-last: center;
+}
+
+@media (max-width: 880px) {
+  .filterWrapper {
+    top: 18%;
+  }
+}
+
+.filterView {
+  display: none;
+}
+
+.filterTitle {
+  margin: 5% 0;
+  padding: 5%;
+  background-color: rgba(30, 143, 255, 0.301);
+  filter: drop-shadow(0 0 0.75rem crimson);
+  border-radius: 15px;
+}
+
+.activeRole {
+  background-color: crimson;
+}
+
+.unActiveRole {
+  background-color: rgba(30, 143, 255, 0.582);
+}
+
+.roleFilter {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  cursor: pointer;
+  place-content: center;
+  justify-content: space-around;
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s;
+  height: 60px;
+}
+
+.roleFilter img {
+  align-content: center;
+  display: none;
+}
+
+.roleFilter > div:hover,
+.filterTitle:hover {
+  filter: drop-shadow(0 0 0.2rem crimson);
+  box-shadow: 0px 0px 6px 0px crimson;
+  /* background-color: rgba(30, 143, 255, 0.212); */
+}
+
+.roleFilter div {
+  color: #fff;
+  align-content: center;
+  margin: 5% 0;
+  padding: 5px 0px;
+  border: 0 solid dodgerblue;
+  border-radius: 15px;
+}
+
+@media (min-width: 880px) {
+  .roleFilter div,
+  .filterTitle {
+    width: 130px;
+  }
+}
+
+@media (max-width: 378px) {
+  .roleFilter img {
+    display: flex;
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@media (max-width: 880px) {
+  .roleFilter {
+    height: unset;
+  }
+  .roleFilter > div > div {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 880px) {
+  .roleFilter img {
+    display: flex;
+    align-content: center;
+    width: 60px;
+    height: 60px;
+  }
+  .filterTitle {
+    width: 60px;
+  }
+}
+
+/* Filter */

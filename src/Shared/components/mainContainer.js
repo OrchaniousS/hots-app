@@ -3,10 +3,18 @@ import React from "react";
 // import styles from "../app.module.css";
 import styles from "./mainContainer.module.css";
 
-const MainContainer = (props) => {
+const MainContainer = ({ type, children }) => {
+  const containerStyleHandler = () => {
+    if (type === "heroContainer") {
+      return styles.heroContainer;
+    } else {
+      return styles.container;
+    }
+  };
+
   return (
     <div className={styles.mainContent}>
-      <div className={styles.container}>{props.children}</div>
+      <div className={containerStyleHandler()}>{children}</div>
     </div>
   );
 };

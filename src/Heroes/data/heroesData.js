@@ -5,13 +5,15 @@ import MainContainer from "../../Shared/components/mainContainer";
 import data from "./heroData.json";
 import dataPanel from "./heroPanel.json";
 
-import styles from "../../app.module.css";
+// import styles from "../../app.module.css";
+import styles from "../pages/heroesData.module.css";
 
 const HeroesData = () => {
   const [indexNum, setIndexNum] = useState("");
   const [indexName, setIndexName] = useState("");
   // const [roleId, setRoleId] = useState("");
   const [buttonRole, setButtonRole] = useState(null);
+  const [rolesHandler, setrolesHandler] = useState(false);
 
   const heroInfoJson = JSON.parse(JSON.stringify(data));
   const panelInfo = JSON.parse(JSON.stringify(dataPanel));
@@ -81,6 +83,7 @@ const HeroesData = () => {
       </div>
     );
   };
+
   const roleHandler = (roleValue) => {
     if (roleValue) {
       roleValue !== buttonRole
@@ -132,29 +135,52 @@ const HeroesData = () => {
       ? `${styles.heroGrid}`
       : null;
 
+  const rolesDisplayHandler = () =>
+    setrolesHandler((rolesHandler) => !rolesHandler);
+
   return (
-    <MainContainer>
+    <MainContainer type="heroContainer">
       <h2>Heroes</h2>
+      <div>
+        <h2>{buttonRole === null ? null : buttonRole}</h2>
+      </div>
       <div className={styles.filterWrapper}>
         <div className={styles.roleFilter}>
-          <p className={styles.filterTitle}>Roles</p>
-          {roles.map(({ rolesType, rolesImg }) => (
-            <button
-              id="roles"
-              key={rolesType}
-              onClick={() => {
-                roleHandler(rolesType);
-              }}
-              className={
-                rolesType === buttonRole
-                  ? `${styles.activeRole}`
-                  : `${styles.unActiveRole}`
-              }
-            >
-              <img alt={rolesImg} src={rolesImg} />
-              <div>{rolesType}</div>
-            </button>
-          ))}
+          <p
+            onClick={() => {
+              rolesDisplayHandler();
+            }}
+            className={styles.filterTitle}
+          >
+            Roles
+          </p>
+          {rolesHandler && (
+            <>
+              <p
+                onClick={() => setButtonRole(null)}
+                className={styles.filterTitle}
+              >
+                All
+              </p>
+              {roles.map(({ rolesType, rolesImg }) => (
+                <div
+                  id="roles"
+                  key={rolesType}
+                  onClick={() => {
+                    roleHandler(rolesType);
+                  }}
+                  className={
+                    rolesType === buttonRole
+                      ? `${styles.activeRole}`
+                      : `${styles.unActiveRole}`
+                  }
+                >
+                  <img alt={rolesImg} src={rolesImg} />
+                  <div>{rolesType}</div>
+                </div>
+              ))}
+            </>
+          )}
         </div>
       </div>
       <div className={styles.heroContainer}>

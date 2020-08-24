@@ -8,22 +8,19 @@ import InfoDisplayMulti from "../../Shared/components/infoDisplayMulti";
 
 import data from "../data/heroStats.json";
 import imgData from "../data/heroData.json";
-import styles from "../../app.module.css";
+import styles from "./heroType.module.css";
 
 const Herotype = (props) => {
   const { heroIdTagger } = props;
-  const heroStatsJson = JSON.parse(JSON.stringify(data));
-  const heroImage = JSON.parse(JSON.stringify(imgData));
-
   const [displayStats, setDisplayStats] = useState(false);
 
-  const displayStatsHandler = () => {
-    displayStats === true ? setDisplayStats(false) : setDisplayStats(true);
-  };
-
-  // const wrapStyle = { "flex-wrap": "wrap" };
-
+  const heroStatsJson = JSON.parse(JSON.stringify(data));
+  const heroImage = JSON.parse(JSON.stringify(imgData));
   const heroType = heroStatsJson[heroIdTagger].basicInfo.name;
+
+  const displayStatsHandler = () => {
+    setDisplayStats((displayStats) => !displayStats);
+  };
 
   function renderHeroType(type) {
     let template = null;
@@ -51,9 +48,7 @@ const Herotype = (props) => {
             </RowCard>
             <RowCard>
               <InfoDisplayHero>
-                <div onClick={() => displayStatsHandler()}>
-                  Click to expand{" "}
-                </div>
+                <div onClick={() => displayStatsHandler()}>Click to expand</div>
                 <div>Hero stats</div>
               </InfoDisplayHero>
             </RowCard>
@@ -147,74 +142,89 @@ const Herotype = (props) => {
                     </div>
                   </RowCard>
                   <RowCard>
-                    <InfoDisplayMulti
-                      headVal="Attack Type"
-                      value={
-                        typeof heroStatsJson[heroIdTagger].baseStats
-                          .attackType === "string"
-                          ? heroStatsJson[heroIdTagger].baseStats.attackType
-                          : heroStatsJson[heroIdTagger].baseStats.attackType[i]
-                      }
-                    />
-                    <InfoDisplayMulti
-                      headVal="Health"
-                      value={
-                        typeof heroStatsJson[heroIdTagger].baseStats.health ===
-                        "string"
-                          ? heroStatsJson[heroIdTagger].baseStats.health
-                          : heroStatsJson[heroIdTagger].baseStats.health[i]
-                      }
-                    />
-                    <InfoDisplayMulti
-                      headVal="Regen"
-                      value={
-                        typeof heroStatsJson[heroIdTagger].baseStats
-                          .healthRegen === "string"
-                          ? heroStatsJson[heroIdTagger].baseStats.healthRegen
-                          : heroStatsJson[heroIdTagger].baseStats.healthRegen[i]
-                      }
-                    />
-
-                    <InfoDisplayMulti
-                      headVal="Resources"
-                      value={
-                        heroStatsJson[heroIdTagger].baseStats.resourceAmount +
-                          heroStatsJson[heroIdTagger].baseStats.resourceType ===
-                        "None"
-                          ? ""
-                          : heroStatsJson[heroIdTagger].baseStats
-                              .resourceAmount +
-                            " " +
-                            heroStatsJson[heroIdTagger].baseStats.resourceType
-                      }
-                    />
-                    <InfoDisplayMulti
-                      headVal="Attack Damge"
-                      value={
-                        typeof heroStatsJson[heroIdTagger].baseStats
-                          .attackDamage === "string"
-                          ? heroStatsJson[heroIdTagger].baseStats.attackDamage
-                          : heroStatsJson[heroIdTagger].baseStats.attackDamage[
-                              i
-                            ]
-                      }
-                    />
-                    <InfoDisplayMulti
-                      headVal="Attack Speed"
-                      value={
-                        typeof heroStatsJson[heroIdTagger].baseStats
-                          .attackSpeed === "string"
-                          ? heroStatsJson[heroIdTagger].baseStats.attackSpeed
-                          : heroStatsJson[heroIdTagger].baseStats.attackSpeed[i]
-                      }
-                    />
-                    <InfoDisplayMulti
-                      headVal="Attack Range"
-                      value={
-                        heroStatsJson[heroIdTagger].baseStats.attackRange[i]
-                      }
-                    />
+                    <InfoDisplayHero>
+                      <div onClick={() => displayStatsHandler()}>
+                        Click to expand
+                      </div>
+                      <div>Hero stats</div>
+                    </InfoDisplayHero>
                   </RowCard>
+                  {displayStats === true ? (
+                    <RowCard type="wrapper">
+                      <InfoDisplayMulti
+                        headVal="Attack Type"
+                        value={
+                          typeof heroStatsJson[heroIdTagger].baseStats
+                            .attackType === "string"
+                            ? heroStatsJson[heroIdTagger].baseStats.attackType
+                            : heroStatsJson[heroIdTagger].baseStats.attackType[
+                                i
+                              ]
+                        }
+                      />
+                      <InfoDisplayMulti
+                        headVal="Health"
+                        value={
+                          typeof heroStatsJson[heroIdTagger].baseStats
+                            .health === "string"
+                            ? heroStatsJson[heroIdTagger].baseStats.health
+                            : heroStatsJson[heroIdTagger].baseStats.health[i]
+                        }
+                      />
+                      <InfoDisplayMulti
+                        headVal="Regen"
+                        value={
+                          typeof heroStatsJson[heroIdTagger].baseStats
+                            .healthRegen === "string"
+                            ? heroStatsJson[heroIdTagger].baseStats.healthRegen
+                            : heroStatsJson[heroIdTagger].baseStats.healthRegen[
+                                i
+                              ]
+                        }
+                      />
+                      <InfoDisplayMulti
+                        headVal="Resources"
+                        value={
+                          heroStatsJson[heroIdTagger].baseStats.resourceAmount +
+                            heroStatsJson[heroIdTagger].baseStats
+                              .resourceType ===
+                          "None"
+                            ? ""
+                            : heroStatsJson[heroIdTagger].baseStats
+                                .resourceAmount +
+                              " " +
+                              heroStatsJson[heroIdTagger].baseStats.resourceType
+                        }
+                      />
+                      <InfoDisplayMulti
+                        headVal="Attack Damge"
+                        value={
+                          typeof heroStatsJson[heroIdTagger].baseStats
+                            .attackDamage === "string"
+                            ? heroStatsJson[heroIdTagger].baseStats.attackDamage
+                            : heroStatsJson[heroIdTagger].baseStats
+                                .attackDamage[i]
+                        }
+                      />
+                      <InfoDisplayMulti
+                        headVal="Attack Speed"
+                        value={
+                          typeof heroStatsJson[heroIdTagger].baseStats
+                            .attackSpeed === "string"
+                            ? heroStatsJson[heroIdTagger].baseStats.attackSpeed
+                            : heroStatsJson[heroIdTagger].baseStats.attackSpeed[
+                                i
+                              ]
+                        }
+                      />
+                      <InfoDisplayMulti
+                        headVal="Attack Range"
+                        value={
+                          heroStatsJson[heroIdTagger].baseStats.attackRange[i]
+                        }
+                      />
+                    </RowCard>
+                  ) : null}
                 </React.Fragment>
               );
             })}

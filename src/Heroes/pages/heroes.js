@@ -44,7 +44,12 @@ const Heroes = (props) => {
   return (
     <MainContainer>
       <div className={styles.backHero}>
-        <Link to="/heroes">Go Back To Heroes</Link>
+        <Link
+          // onClick={() => heroClicker(null)}
+          to="/heroes"
+        >
+          Go Back To Heroes
+        </Link>
       </div>
       <Card>
         <div className={styles.heroSections}>1. Main info</div>

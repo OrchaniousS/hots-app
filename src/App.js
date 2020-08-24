@@ -6,9 +6,10 @@ import Navbar from "./Shared/nav/navbar";
 import Home from "./Home/pages/home";
 import Maps from "./Maps//pages/maps";
 import HeroStats from "./Heroes/pages/heroesInfo";
+
 import styles from "./app.module.css";
 
-const App = (props) => {
+const App = () => {
   return (
     <HttpsRedirect>
       <BrowserRouter>

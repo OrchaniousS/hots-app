@@ -30,9 +30,13 @@ const HeroSkills = (props) => {
       ? "LI-MING"
       : skillHeroName && skillHeroName === "ANUBARAK"
       ? "ANUB'ARAK"
+      : (skillHeroName && skillHeroName === "CHO") || skillHeroName === "GALL"
+      ? "CHO'GALL"
+      : skillHeroName && skillHeroName === "DVA"
+      ? "D.VA"
       : skillHeroName;
 
-  // console.log(skillHeroName);
+  console.log(skillHeroName);
 
   const skillsMap = skillsData.map((skill) => {
     return (
