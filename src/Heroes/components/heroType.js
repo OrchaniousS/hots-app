@@ -4,18 +4,19 @@ import Card from "../../Shared/components/card";
 import RowCard from "../../Shared/components/rowCard";
 import InfoDisplay from "../../Shared/components/infoDisplay";
 import InfoDisplayHero from "../../Shared/components/infoDisplayHero";
+import InfoDisplayHeroCard from "../../Shared/components/infoDisplayHeroCard";
 import InfoDisplayMulti from "../../Shared/components/infoDisplayMulti";
 
 import data from "../data/heroStats.json";
 import imgData from "../data/heroData.json";
 import styles from "./heroType.module.css";
 
-const Herotype = (props) => {
-  const { heroIdTagger } = props;
+const Herotype = ({ heroIdTagger }) => {
   const [displayStats, setDisplayStats] = useState(false);
 
   const heroStatsJson = JSON.parse(JSON.stringify(data));
   const heroImage = JSON.parse(JSON.stringify(imgData));
+  const hero = heroStatsJson[heroIdTagger].basicInfo;
   const heroType = heroStatsJson[heroIdTagger].basicInfo.name;
 
   const displayStatsHandler = () => {
@@ -30,13 +31,14 @@ const Herotype = (props) => {
           <React.Fragment>
             <RowCard>
               <div className={styles.singleHero}>
+                <InfoDisplayHeroCard
+                  name={hero.name}
+                  title={hero.title}
+                  logo={heroImage[heroIdTagger].logo}
+                />
+                <InfoDisplayHero>{hero.name}</InfoDisplayHero>
                 <InfoDisplayHero>
-                  {heroStatsJson[heroIdTagger].basicInfo.name}
-                </InfoDisplayHero>
-                <InfoDisplayHero>
-                  <div className={styles.heroTitle}>
-                    {heroStatsJson[heroIdTagger].basicInfo.title}
-                  </div>
+                  <div className={styles.heroTitle}>{hero.title}</div>
                   <div className={styles.heroTitleImg}>
                     <img
                       alt="miniIconhero"
@@ -122,16 +124,15 @@ const Herotype = (props) => {
       case "doubleHero":
         template = (
           <React.Fragment>
-            {heroStatsJson[heroIdTagger].basicInfo.name.map((compact, i) => {
+            {hero.name.map((compact, i) => {
               return (
                 <React.Fragment key={i}>
                   <RowCard>
+                    <InfoDisplayHeroCard name={compact} title={hero.title} />
                     <div className={styles.singleHero}>
                       <InfoDisplayHero>{compact}</InfoDisplayHero>
                       <InfoDisplayHero>
-                        <div className={styles.heroTitle}>
-                          {heroStatsJson[heroIdTagger].basicInfo.title}
-                        </div>
+                        <div className={styles.heroTitle}>{hero.title}</div>
                         <div className={styles.heroTitleImg}>
                           <img
                             alt="miniIconhero"
@@ -234,14 +235,15 @@ const Herotype = (props) => {
       case "threeHero":
         template = (
           <React.Fragment>
-            {heroStatsJson[heroIdTagger].basicInfo.name.map((compact, i) => {
+            {hero.name.map((compact, i) => {
               return (
                 <React.Fragment key={i}>
                   <RowCard>
                     <div className={styles.singleHero}>
+                      <InfoDisplayHeroCard name={compact} title={hero.title} />
                       <InfoDisplayHero>{compact}</InfoDisplayHero>
                       <InfoDisplayHero>
-                        {heroStatsJson[heroIdTagger].basicInfo.title}
+                        {hero.title}
                         <div className={styles.heroTitleImg}>
                           <img
                             alt="miniIconhero"

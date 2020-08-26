@@ -2,17 +2,17 @@ import React from "react";
 
 import styles from "./infoDisplay.module.css";
 
-const InfoDisplayHero = (props) => {
+const InfoDisplayHero = ({ children }) => {
   const infoHandler = () => {
     return [
-      typeof props.children === "object" ? (
-        <React.Fragment key={props.children}>
-          <div className={styles.displayInfoChild}>{props.children[0]}</div>
-          <div className={styles.displayInfoChild}>{props.children[1]}</div>
+      typeof children === "object" ? (
+        <React.Fragment key={children}>
+          <div className={styles.displayInfoChild}>{children[0]}</div>
+          <div className={styles.displayInfoChild}>{children[1]}</div>
         </React.Fragment>
       ) : (
-        <React.Fragment key={props.children}>
-          <div className={styles.displayInfoTitle}>{props.children}</div>
+        <React.Fragment key={children}>
+          <div className={styles.displayInfoTitle}>{children}</div>
         </React.Fragment>
       ),
     ];
