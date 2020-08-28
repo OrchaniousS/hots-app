@@ -1,19 +1,17 @@
 import React from "react";
 
-// import styles from "../app.module.css";
 import styles from "./rowcard.module.css";
 
-const RowCard = (props) => {
-  const { type, children } = props;
-  const wrapStyleHandler = () => {
-    if (type === "wrapper") {
-      return styles.heroRightInfoWrapper;
+const RowCard = ({ children, type, style }) => {
+  const rowCardTypeHandler = () => {
+    if (type === "counter") {
+      return styles.heroInfoCounter;
     } else {
-      return styles.heroRightInfo;
+      return styles.heroInfo;
     }
   };
   return (
-    <div style={props.style} className={wrapStyleHandler()}>
+    <div style={style} className={rowCardTypeHandler()}>
       {children}
     </div>
   );

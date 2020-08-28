@@ -23,7 +23,7 @@ const HeroCouSyn = (props) => {
 
   return (
     <>
-      <RowCard>
+      <RowCard type="counter">
         <InfoDisplayCouSyn
           type="synergy"
           headVal={

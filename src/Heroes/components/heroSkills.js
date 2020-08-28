@@ -1,14 +1,13 @@
 import React from "react";
 
-import RowCard from "../../Shared/components/rowCard";
 import InfoDisplayHero from "../../Shared/components/infoDisplay";
 import InfoDisplaySkill from "../../Shared/components/infoDisplaySkill";
 import skillsData from "../data/heroSkills.json";
 
-const HeroSkills = (props) => {
-  // const testSkills = console.log(skillsData);
+import styles from "../../Shared/components/infoDisplaySkill.module.css";
 
-  const { heroImage } = props;
+const HeroSkills = ({ heroImage }) => {
+  // const testSkills = console.log(skillsData);
 
   const skillHeroName = heroImage
     .split("https://www.heroesfire.com/images/wikibase/icon/heroes/")[1]
@@ -34,6 +33,8 @@ const HeroSkills = (props) => {
       ? "CHO'GALL"
       : skillHeroName && skillHeroName === "DVA"
       ? "D.VA"
+      : skillHeroName && skillHeroName === "KAELTHAS"
+      ? "KAEL'THAS"
       : skillHeroName;
 
   console.log(skillHeroName);
@@ -42,57 +43,57 @@ const HeroSkills = (props) => {
     return (
       skill.heroName === nameFixer && (
         <React.Fragment key={skill.heroName}>
-          <RowCard>
+          <div className={styles.divSkill}>
             <InfoDisplayHero>Primary</InfoDisplayHero>
-          </RowCard>
-          <RowCard>
-            <InfoDisplaySkill
-              headVal={skill.primary.skills.skillA.skillName}
-              value={skill.primary.skills.skillA.skillInfo}
-              img={skill.primary.skills.skillA.skillImage}
-            />
-            <InfoDisplaySkill
-              headVal={skill.primary.skills.skillB.skillName}
-              value={skill.primary.skills.skillB.skillInfo}
-              img={skill.primary.skills.skillB.skillImage}
-            />
-            <InfoDisplaySkill
-              headVal={skill.primary.skills.skillC.skillName}
-              value={skill.primary.skills.skillC.skillInfo}
-              img={skill.primary.skills.skillC.skillImage}
-            />
-          </RowCard>
-          <RowCard>
+            <div className={styles.divSkillContainer}>
+              <InfoDisplaySkill
+                headVal={"[Q] " + skill.primary.skills.skillA.skillName}
+                value={skill.primary.skills.skillA.skillInfo}
+                img={skill.primary.skills.skillA.skillImage}
+              />
+              <InfoDisplaySkill
+                headVal={"[W] " + skill.primary.skills.skillB.skillName}
+                value={skill.primary.skills.skillB.skillInfo}
+                img={skill.primary.skills.skillB.skillImage}
+              />
+              <InfoDisplaySkill
+                headVal={"[E] " + skill.primary.skills.skillC.skillName}
+                value={skill.primary.skills.skillC.skillInfo}
+                img={skill.primary.skills.skillC.skillImage}
+              />
+            </div>
+          </div>
+          <div className={styles.divSkill}>
             <InfoDisplayHero>Heroic</InfoDisplayHero>
-          </RowCard>
-          <RowCard>
-            <InfoDisplaySkill
-              headVal={skill.heroic.skills.skillA.skillName}
-              value={skill.heroic.skills.skillA.skillInfo}
-              img={skill.heroic.skills.skillA.skillImage}
-            />
-            <InfoDisplaySkill
-              headVal={skill.heroic.skills.skillB.skillName}
-              value={skill.heroic.skills.skillB.skillInfo}
-              img={skill.heroic.skills.skillB.skillImage}
-            />
-          </RowCard>
-          <RowCard>
+            <div className={styles.divSkillContainer}>
+              <InfoDisplaySkill
+                headVal={"[R] " + skill.heroic.skills.skillA.skillName}
+                value={skill.heroic.skills.skillA.skillInfo}
+                img={skill.heroic.skills.skillA.skillImage}
+              />
+              <InfoDisplaySkill
+                headVal={"[R] " + skill.heroic.skills.skillB.skillName}
+                value={skill.heroic.skills.skillB.skillInfo}
+                img={skill.heroic.skills.skillB.skillImage}
+              />
+            </div>
+          </div>
+          <div className={styles.divSkill}>
             <InfoDisplayHero>Trait</InfoDisplayHero>
-          </RowCard>
-          <RowCard>
-            <InfoDisplaySkill
-              headVal={skill.trait.skillName}
-              value={skill.trait.skillInfo}
-              img={skill.trait.skillImage}
-            />
-          </RowCard>
+            <div className={styles.divSkillContainer}>
+              <InfoDisplaySkill
+                headVal={"[D] " + skill.trait.skillName}
+                value={skill.trait.skillInfo}
+                img={skill.trait.skillImage}
+              />
+            </div>
+          </div>
         </React.Fragment>
       )
     );
   });
 
-  return <div>{skillsMap}</div>;
+  return <div className={styles.displaySkills}>{skillsMap}</div>;
 };
 
 export default HeroSkills;

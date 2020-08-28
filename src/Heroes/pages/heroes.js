@@ -4,23 +4,17 @@ import { Link } from "react-router-dom";
 import Card from "../../Shared/components/card";
 import MainContainer from "../../Shared/components/mainContainer";
 import HeroCouSyn from "../components/heroCouSyn";
-import Herotype from "../components/heroType";
-import Herobasicinfo from "../components/heroBasicInfo";
+import HeroType from "../components/heroType";
 import HeroSkills from "../components/heroSkills";
 
 import styles from "./heroes.module.css";
 
-const Heroes = (props) => {
-  const { heroId, heroImage } = props;
+const Heroes = ({ heroId, heroImage }) => {
   const [displaySkill, setDisplaySkill] = useState(false);
-  const [displayInfo, setDisplayInfo] = useState(false);
   const [displayCouSyn, setDisplayCouSyn] = useState(false);
 
   const displaySkillsHandler = () => {
     displaySkill === true ? setDisplaySkill(false) : setDisplaySkill(true);
-  };
-  const displayInfoHandler = () => {
-    displayInfo === true ? setDisplayInfo(false) : setDisplayInfo(true);
   };
   const displayCouSynHandler = () => {
     displayCouSyn === true ? setDisplayCouSyn(false) : setDisplayCouSyn(true);
@@ -52,17 +46,13 @@ const Heroes = (props) => {
         </Link>
       </div>
       <Card>
-        <div className={styles.heroSections}>1. Main info</div>
+        <HeroType heroImage={heroImage} heroIdTagger={heroId} />
       </Card>
-      <Herotype heroImage={heroImage} heroIdTagger={heroId} />
-      <Card>
-        <div
-          onClick={() => displaySkillsHandler()}
-          className={styles.heroSections}
-        >
-          2. Skills
-        </div>
-      </Card>
+      <div onClick={() => displaySkillsHandler()}>
+        <Card>
+          <div className={styles.heroSections}>Skills</div>
+        </Card>
+      </div>
       <Card>
         {displaySkill === true ? (
           <HeroSkills heroImage={heroImage} />
@@ -70,30 +60,12 @@ const Heroes = (props) => {
           "Click on Skills to expand"
         )}
       </Card>
-      <Card>
-        <div
-          onClick={() => displayInfoHandler()}
-          className={styles.heroSections}
-        >
-          3. Basic info
-        </div>
-      </Card>
-      <Card>
-        {displayInfo === true ? (
-          <Herobasicinfo heroIdTagger={heroId} />
-        ) : (
-          "Click on Basic Info to expand"
-        )}
-      </Card>
-      <Card>
-        <div
-          onClick={() => displayCouSynHandler()}
-          className={styles.heroSections}
-        >
-          4. Synergies and Counters
-        </div>
-      </Card>
-      <Card>
+      <div onClick={() => displayCouSynHandler()}>
+        <Card>
+          <div className={styles.heroSections}>Synergies and Counters</div>
+        </Card>
+      </div>
+      <Card type="counter">
         {displayCouSyn === true ? (
           <HeroCouSyn heroIdTagger={heroId} />
         ) : (

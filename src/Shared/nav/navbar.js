@@ -80,9 +80,12 @@ const Navbar = () => {
           {paths.map((path, i) => {
             return (
               <li key={i}>
-                <NavLink activeClassName={styles.activate} exact to={`${path}`}>
+                <a
+                  // activeClassName={styles.activate}
+                  href={path}
+                >
                   {links[i]}
-                </NavLink>
+                </a>
               </li>
             );
           })}

@@ -1,0 +1,103 @@
+.displaySkills {
+  display: flex;
+  margin: 0 4%;
+}
+
+.divSkill {
+  width: 100%;
+}
+
+.divSkillContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: -4%;
+}
+
+.displayInfoChildSkill {
+  align-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.displayInfoChildSkillTitle {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom: 1px solid white;
+  background: rgba(30, 143, 255, 0.863);
+}
+
+.displayInfoChildSkillImg {
+  cursor: pointer;
+  position: relative;
+  width: 115px;
+  height: 125px;
+  background-image: url("/images/general/mapHexagon.png");
+  filter: drop-shadow(0 0 0.3rem black);
+}
+
+.displayInfoHeroSkill {
+  display: flex;
+  flex-direction: column;
+  flex-grow: inherit;
+  margin: 5% 1%;
+  border-radius: 25px;
+  border: 1px solid rgba(135, 137, 192, 0.4534);
+  filter: drop-shadow(0 0 0.5rem black);
+}
+
+.displayInfoChildSkillImgContainer {
+  filter: drop-shadow(0 0 0.3rem black);
+  position: relative;
+  display: inline-block;
+}
+
+.displayInfoChildSkillImgContainer .displayInfoChildSkillVal {
+  visibility: hidden;
+  padding: 5% 5%;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border: 1px solid rgba(135, 137, 192, 0.4534);
+  background-color: rgb(51, 131, 211);
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  filter: drop-shadow(0 0 0.3rem black);
+}
+
+.displayInfoChildSkillImgContainer:hover .displayInfoChildSkillVal {
+  visibility: visible;
+}
+
+@media (min-width: 1024px) {
+  .displayInfoHeroSkill {
+    width: 250px;
+  }
+  .displayInfoChildSkillImgContainer .displayInfoChildSkillVal {
+    width: 250px;
+    margin-left: -160%;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .displayInfoHeroSkill {
+    width: 220px;
+  }
+
+  .displaySkills {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: inherit;
+    width: -webkit-fill-available;
+  }
+
+  .displayInfoChildSkillImgContainer .displayInfoChildSkillVal {
+    margin-left: -68%;
+  }
+}

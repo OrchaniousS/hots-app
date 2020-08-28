@@ -1,8 +1,164 @@
-.displayInfoCard {
+@media (min-width: 880px) {
+  .cardInfo {
+    display: grid;
+    grid-template-rows: 60px 20px 80px 110px;
+    grid-template-areas: "top" "text" "title" "qoute" "image" "stats";
+    /* width: 650px; */
+  }
+
+  .cardStatsTop {
+    border-left: 1px solid rgba(13, 186, 255, 0.219);
+    border-right: 1px solid rgba(13, 186, 255, 0.219);
+    padding: 10px;
+  }
+
+  .cardStatsContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .cardStatsTopContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .cardQoute {
+    width: 57%;
+    height: 100%;
+  }
 }
 
-.displayInfoCardChild {
+@media (max-width: 880px) {
+  .cardInfo {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cardStatsTop {
+    border-bottom: 1px solid rgba(130, 217, 252, 0.411);
+    padding: 4px;
+    width: -webkit-fill-available;
+  }
+
+  .cardStatsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex: 1;
+    place-content: center;
+  }
+
+  .cardStatsTopContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex: 1;
+    place-content: center;
+  }
+
+  .cardQoute {
+    width: unset;
+    height: unset;
+  }
 }
 
-.displayInfoCardChildImg {
+.cardStatsContainer {
+  grid-area: stats;
+  background: rgba(7, 185, 255, 0.616);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.cardStatsTopContainer {
+  grid-area: top;
+  background: rgba(7, 185, 255, 0.616);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.displayInfoHeroCard {
+  place-content: center;
+  text-align: center;
+  text-align: -webkit-center;
+}
+
+.cardInfo {
+  border-radius: 18px;
+  background: rgba(51, 155, 240, 0.233);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+  filter: drop-shadow(0px 0px 3px black);
+  font-family: roboto;
+  text-align: center;
+  place-content: center;
+}
+
+.cardName {
+  grid-area: text;
+  margin: 3%;
+  font-size: 2rem;
+}
+
+.cardTitle {
+  grid-area: title;
+  margin: 5%;
+  color: rgb(0, 247, 255);
+  font-size: 1.4rem;
+}
+
+.cardQoute {
+  grid-area: qoute;
+  margin: 2% 5%;
+}
+
+.cardChildImg {
+  place-content: center;
+  grid-area: image;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+
+.cardStatsTop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.829);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.cardStats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  color: rgba(255, 255, 255, 0.829);
+  border-top: 0px solid;
+  border-left: 1px solid rgba(13, 186, 255, 0.219);
+  border-right: 1px solid rgba(13, 186, 255, 0.219);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.cardStatsValue,
+.cardStatsType {
+  width: max-content;
+}
+
+.cardStatsValue {
+  font-size: 11px;
+}
+
+.cardStatsType {
+  font-size: 18px;
+}
+
+.cardQoute {
+  margin: 3% 5%;
+  justify-self: center;
+  width: fit-content;
 }

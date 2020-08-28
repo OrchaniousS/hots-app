@@ -6,8 +6,8 @@ nav {
   vertical-align: top;
   border-bottom: 1px solid #3479d9;
   background-color: rgb(7, 45, 92);
-  padding: 10px 15px;
-  background: rgb(29, 29, 29);
+  /* padding: 10px 15px; */
+  /* background: rgb(29, 29, 29); */
   background-image: linear-gradient(
     360deg,
     rgba(29, 29, 29, 0.165703781512605) 36%,
@@ -22,16 +22,17 @@ nav h2 a {
 }
 
 .titleLogo {
-  font-size: 1.4rem;
-  border: 1px solid rgba(30, 143, 255, 0.575);
-  box-shadow: 0 3px 8px 3px rgba(61, 89, 117, 0.336);
+  font-size: 1.6rem;
   padding: 10px 10px;
   text-align-last: center;
   text-align: -webkit-center;
+  text-shadow: 0 0 22px dodgerblue;
+  filter: drop-shadow(0 0 0.5rem black);
 }
 
 .titleLogo:hover {
-  box-shadow: 0 3px 8px 8px rgb(23, 110, 197);
+  text-shadow: 0 0 42px black;
+  filter: drop-shadow(0 0 0.8rem dodgerblue);
 }
 
 @media (max-width: 550px) {
@@ -69,7 +70,7 @@ nav h2 a {
   background-color: #3479d9;
   color: white;
   cursor: pointer;
-  padding: 12px 15px 12px 15px;
+  padding: 12px 15px;
   /* border-radius: 50px; */
 }
 
@@ -135,12 +136,11 @@ nav h2 a {
   left: 0;
   right: 0;
   margin: 0;
-  /* padding: 0 10px; */
   display: flex;
   justify-content: space-evenly;
   border-top: 1px solid #3479d9;
   background-color: rgb(7, 45, 92);
-  background: rgb(29, 29, 29);
+  /* background: rgb(29, 29, 29); */
   background-image: linear-gradient(
     180deg,
     rgba(29, 29, 29, 0.165703781512605) 36%,

@@ -1,66 +1,64 @@
 .heroSections {
-  font-size: 32px;
+  font-size: 2.2rem;
   border-radius: 25px;
-  /* background-color: rgba(45, 66, 160, 0.637); */
+  filter: drop-shadow(0 0 0.4rem black);
 }
 
 @media (min-width: 960px) {
   .backHero {
+    cursor: pointer;
     position: relative;
-    padding: 8px 8px 8px 8px;
-    height: 20%;
     text-align: center;
-    margin-top: 1%;
-    margin-left: 4%;
-    margin-right: 4%;
-    border: 1px solid #3479d9;
-    border-radius: 15px;
-    box-shadow: 0 0 35px rgba(19, 49, 180, 0.35);
     font-size: 1.8rem;
+    padding: 1% 0;
+    margin: 1% 1%;
+    border: 1px solid rgba(255, 255, 255, 0.842);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background: #3479d9;
+    box-shadow: 0 0 35px rgba(19, 49, 180, 0.35);
   }
 
   .backHero a {
-    color: #3479d9;
+    color: rgba(255, 255, 255, 0.842);
+    filter: drop-shadow(0 0 0.4rem black);
   }
 }
 
 @media (max-width: 960px) {
   .backHero {
-    position: fixed;
+    /* position: fixed;
     z-index: 1;
-    background-color: rgb(12, 100, 201);
-    padding: 8% 8% 8% 8%;
+    padding: 3% 3%;
     bottom: 5%;
     right: 0;
     left: 0;
     text-align: center;
+    background-color: rgb(12, 100, 201);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px; */
+    display: none;
   }
 
   .backHero a {
-    color: #fff;
+    /* color: #fff;
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 1.2rem; */
   }
 }
 
-@media (max-width: 960px) {
+/* @media (max-width: 360px) {
   .backHero {
-    padding: 2% 2% 2% 2%;
-  }
-  .backHero a {
-    font-size: 1.1rem;
-  }
-}
-
-@media (max-width: 360px) {
-  .backHero {
-    /* padding: 0 0 0 0; */
     padding-bottom: 5%;
     padding-top: 5%;
   }
   .backHero a {
     font-size: 1.5rem;
   }
+} */
+
+.backHero:hover {
+  filter: drop-shadow(0 0 0.85rem crimson);
 }
 
 .backHero a {

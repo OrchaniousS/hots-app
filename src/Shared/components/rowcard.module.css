@@ -1,35 +1,22 @@
-@media (max-width: 560px) {
-  .heroRightInfo {
-    width: unset;
+@media (min-width: 860px) {
+  .heroInfo {
+    max-width: 650px;
   }
 }
-
-@media (max-width: 1024px) {
-  .heroRightInfo {
+@media (max-width: 860px) {
+  .heroInfo {
+    width: unset;
+    flex-wrap: wrap;
+  }
+  .heroInfoCounter {
+    width: unset;
     flex-wrap: wrap;
   }
 }
 
-.heroRightInfoWrapper {
+.heroInfo,
+.heroInfoCounter {
+  place-content: center;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  flex: 1 0;
-  margin: 1% 3% 1% 3%;
-  min-width: fit-content;
-  /* max-width: 900px; */
-  /* align-self: center; */
-}
-
-.heroRightInfo {
-  display: flex;
-  flex-direction: row;
-  /* flex-wrap: wrap; */
-  flex: 1 0;
-  margin: 1% 3% 1% 3%;
-  min-width: fit-content;
-  /* order: 4; */
-  /* transform: scale(0.9); */
-  /* background: rgba(35, 35, 35, 0.223);
-    box-shadow: 0 0 35px rgba(0, 0, 0, 0.35); */
+  margin: 1% 3%;
 }

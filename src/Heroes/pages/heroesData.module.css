@@ -4,22 +4,27 @@
 }
 
 .heroGrid {
-  transform: scale(0.9);
-  padding: 12px 12px 12px 12px;
-  text-align: center;
-  background: #161616;
-  box-shadow: 0 0 15px rgba(75, 72, 72, 0.288);
   cursor: pointer;
+  transform: scale(0.89);
+  padding: 12px 12px;
+  text-align: center;
+  background-color: #161616;
+  box-shadow: 0 0 15px rgba(75, 72, 72, 0.288);
+  max-width: 120px;
 }
 
 .heroGrid:hover {
-  background-color: rgba(22, 4, 4, 0.164);
-  transform: scale(1.1);
+  background-color: rgb(10, 118, 241);
+  transform: scale(1.2);
+  border: 1px solid black;
+  /* border-radius: 20px; */
+  z-index: 2;
 }
 
 @media (min-width: 960px) {
   .heroGridRowColumon {
-    width: 90%;
+    width: 85%;
+    max-width: 1200px;
   }
 
   #heroPanelC {
@@ -36,13 +41,15 @@
 }
 
 .heroPersonalImg {
-  padding-bottom: 6px;
+  padding: 1px 1px;
+  filter: drop-shadow(0 0 0.3rem dodgerblue);
 }
 
 .heroPersonalImg div {
   font-size: 1rem;
-  margin: 5px 0;
-  padding-bottom: 8px;
+  padding: 4px 1px;
+  filter: drop-shadow(0 0 0.4rem dodgerblue);
+  text-shadow: 0 0 0.4rem dodgerblue;
 }
 /*SIDEHERO*/
 
@@ -51,6 +58,7 @@
   width: 450px;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
+  filter: drop-shadow(0 0 0.4rem black);
 }
 
 .heroPanelContainer {
@@ -127,11 +135,10 @@
 
 .heroPanelInfo h1 {
   width: 100%;
-  margin: 12px 12px 12px 12px;
-  text-shadow: 0 0 12px #011933;
-  font-weight: 650;
-  margin-bottom: 15px;
-  margin-top: 15px;
+  margin: 15px 15px;
+  text-shadow: 0 0 22px dodgerblue;
+  filter: drop-shadow(0 0 0.3rem black);
+  font-weight: 850;
 }
 
 .heroPanelBottom {

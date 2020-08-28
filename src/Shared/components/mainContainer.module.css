@@ -1,39 +1,26 @@
-.mainContent {
-  width: 100%;
-  margin: auto;
-  /* padding-bottom: 50px; */
-}
-
 .mainContent h2 {
   text-align: center;
   margin-bottom: 20px;
+  padding-top: 5% 5%;
+  font-weight: 600;
+  margin: 6px 6px;
+  font-size: 1.8rem;
 }
 
-.container {
-  margin: 15px 15px 15px 15px;
-  border: 3px solid #191919;
-  border-radius: 15px;
+@media (max-width: 880px) {
+  .mainContent h2 {
+    font-size: 1.5rem;
+  }
+}
+
+.container,
+.heroContainer {
   color: #fff;
-  background: rgba(60, 27, 150, 0.223);
-  box-shadow: 0 0 35px rgba(19, 49, 180, 0.205);
-  width: auto;
+  border: 3px solid #191919;
+  background: rgba(13, 75, 126, 0.658);
+  box-shadow: 0 0 35px rgb(0, 0, 0);
 }
 
 .heroContainer {
-  margin: 15px 15px 15px 15px;
-  border: 3px solid #191919;
-  border-radius: 15px;
-  color: #fff;
-  background: rgba(60, 27, 150, 0.223);
-  box-shadow: 0 0 35px rgba(19, 49, 180, 0.205);
-  width: auto;
   min-height: 590px;
-}
-
-.container h2 {
-  padding-top: 1%;
-  font-weight: 600;
-  margin: 6px 6px 6px 6px;
-  /* padding-left: 35px; */
-  /* text-align: left; */
 }

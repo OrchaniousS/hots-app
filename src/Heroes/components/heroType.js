@@ -1,27 +1,21 @@
-import React, { useState } from "react";
+import React from "react";
 
-import Card from "../../Shared/components/card";
+// import Card from "../../Shared/components/card";
 import RowCard from "../../Shared/components/rowCard";
-import InfoDisplay from "../../Shared/components/infoDisplay";
-import InfoDisplayHero from "../../Shared/components/infoDisplayHero";
-import InfoDisplayHeroCard from "../../Shared/components/infoDisplayHeroCard";
-import InfoDisplayMulti from "../../Shared/components/infoDisplayMulti";
+// import InfoDisplay from "../../Shared/components/infoDisplay";
+// import InfoDisplayHero from "../../Shared/components/infoDisplayHero";
+import InfoDisplayCard from "../../Shared/components/infoDisplayCard";
 
 import data from "../data/heroStats.json";
 import imgData from "../data/heroData.json";
-import styles from "./heroType.module.css";
 
 const Herotype = ({ heroIdTagger }) => {
-  const [displayStats, setDisplayStats] = useState(false);
-
   const heroStatsJson = JSON.parse(JSON.stringify(data));
   const heroImage = JSON.parse(JSON.stringify(imgData));
-  const hero = heroStatsJson[heroIdTagger].basicInfo;
-  const heroType = heroStatsJson[heroIdTagger].basicInfo.name;
 
-  const displayStatsHandler = () => {
-    setDisplayStats((displayStats) => !displayStats);
-  };
+  const hero = heroStatsJson[heroIdTagger].basicInfo;
+  const heroBaseStats = heroStatsJson[heroIdTagger].baseStats;
+  const heroType = heroStatsJson[heroIdTagger].basicInfo.name;
 
   function renderHeroType(type) {
     let template = null;
@@ -30,94 +24,61 @@ const Herotype = ({ heroIdTagger }) => {
         template = (
           <React.Fragment>
             <RowCard>
-              <div className={styles.singleHero}>
-                <InfoDisplayHeroCard
-                  name={hero.name}
-                  title={hero.title}
-                  logo={heroImage[heroIdTagger].logo}
-                />
-                <InfoDisplayHero>{hero.name}</InfoDisplayHero>
-                <InfoDisplayHero>
-                  <div className={styles.heroTitle}>{hero.title}</div>
-                  <div className={styles.heroTitleImg}>
-                    <img
-                      alt="miniIconhero"
-                      src={heroImage[heroIdTagger].logo}
-                    />
-                  </div>
-                </InfoDisplayHero>
-              </div>
+              <InfoDisplayCard
+                name={hero.name}
+                title={hero.title}
+                logo={heroImage[heroIdTagger].logo}
+                atkType={["Attack Type", heroBaseStats.attackType]}
+                health={[
+                  "Health",
+                  heroBaseStats.health !== "" ? heroBaseStats.health : "None",
+                ]}
+                regen={[
+                  "Regen",
+                  heroBaseStats.healthRegen !== ""
+                    ? heroBaseStats.healthRegen
+                    : "None",
+                ]}
+                resources={[
+                  "Resources",
+                  heroBaseStats.resourceAmount + heroBaseStats.resourceType ===
+                  "None"
+                    ? ""
+                    : heroBaseStats.resourceAmount +
+                      " " +
+                      heroBaseStats.resourceType,
+                ]}
+                atkDmg={[
+                  "Attack Damage",
+                  heroBaseStats.attackDamage !== ""
+                    ? heroBaseStats.attackDamage
+                    : "None",
+                ]}
+                atkSpd={[
+                  "Attack Speed",
+                  heroBaseStats.attackSpeed !== ""
+                    ? heroBaseStats.attackSpeed
+                    : "None",
+                ]}
+                atkRng={[
+                  "Attack Range",
+                  heroBaseStats.attackRange !== ""
+                    ? heroBaseStats.attackRange
+                    : "None",
+                ]}
+                role={["Role", heroStatsJson[heroIdTagger].basicInfo.role]}
+                diff={[
+                  "Difficulty",
+                  heroStatsJson[heroIdTagger].basicInfo.difficulty,
+                ]}
+                price={[
+                  "Price",
+                  heroStatsJson[heroIdTagger].basicInfo.price + " Gold",
+                ]}
+                lore={[heroStatsJson[heroIdTagger].basicInfo.qoute]}
+                heroId={heroIdTagger}
+              />
             </RowCard>
-            <RowCard>
-              <InfoDisplayHero>
-                <div onClick={() => displayStatsHandler()}>Click to expand</div>
-                <div>Hero stats</div>
-              </InfoDisplayHero>
-            </RowCard>
-            {displayStats === true ? (
-              <RowCard type="wrapper">
-                <InfoDisplay>
-                  <div>Attack Type</div>
-                  <div>{heroStatsJson[heroIdTagger].baseStats.attackType}</div>
-                </InfoDisplay>
-                <InfoDisplay>
-                  <div>Health</div>
-                  <div>
-                    {heroStatsJson[heroIdTagger].baseStats.health !== ""
-                      ? heroStatsJson[heroIdTagger].baseStats.health
-                      : "None"}
-                  </div>
-                </InfoDisplay>
-                <InfoDisplay>
-                  <div>Regen</div>
-                  <div>
-                    {heroStatsJson[heroIdTagger].baseStats.healthRegen !== ""
-                      ? heroStatsJson[heroIdTagger].baseStats.healthRegen
-                      : "None"}
-                  </div>
-                </InfoDisplay>
-                <InfoDisplay>
-                  <div>Resources</div>
-                  <div>
-                    {heroStatsJson[heroIdTagger].baseStats.resourceAmount !==
-                      " " &&
-                    heroStatsJson[heroIdTagger].baseStats.resourceAmount
-                      .length < 1
-                      ? "None"
-                      : heroStatsJson[heroIdTagger].baseStats.resourceAmount +
-                        " "}
-                    {heroStatsJson[heroIdTagger].baseStats.resourceType ===
-                    "None"
-                      ? ""
-                      : heroStatsJson[heroIdTagger].baseStats.resourceType}
-                  </div>
-                </InfoDisplay>
-                <InfoDisplay>
-                  <div>Attack Damge</div>
-                  <div>
-                    {heroStatsJson[heroIdTagger].baseStats.attackDamage !== ""
-                      ? heroStatsJson[heroIdTagger].baseStats.attackDamage
-                      : "None"}
-                  </div>
-                </InfoDisplay>
-                <InfoDisplay>
-                  <div>Attack Speed</div>
-                  <div>
-                    {heroStatsJson[heroIdTagger].baseStats.attackSpeed !== ""
-                      ? heroStatsJson[heroIdTagger].baseStats.attackSpeed
-                      : "None"}
-                  </div>
-                </InfoDisplay>
-                <InfoDisplay>
-                  <div>Attack Range</div>
-                  <div>
-                    {heroStatsJson[heroIdTagger].baseStats.attackRange !== ""
-                      ? heroStatsJson[heroIdTagger].baseStats.attackRange
-                      : "None"}
-                  </div>
-                </InfoDisplay>
-              </RowCard>
-            ) : null}
           </React.Fragment>
         );
         break;
@@ -126,107 +87,65 @@ const Herotype = ({ heroIdTagger }) => {
           <React.Fragment>
             {hero.name.map((compact, i) => {
               return (
-                <React.Fragment key={i}>
-                  <RowCard>
-                    <InfoDisplayHeroCard name={compact} title={hero.title} />
-                    <div className={styles.singleHero}>
-                      <InfoDisplayHero>{compact}</InfoDisplayHero>
-                      <InfoDisplayHero>
-                        <div className={styles.heroTitle}>{hero.title}</div>
-                        <div className={styles.heroTitleImg}>
-                          <img
-                            alt="miniIconhero"
-                            src={heroImage[heroIdTagger].logo}
-                          />
-                        </div>
-                      </InfoDisplayHero>
-                    </div>
-                  </RowCard>
-                  <RowCard>
-                    <InfoDisplayHero>
-                      <div onClick={() => displayStatsHandler()}>
-                        Click to expand
-                      </div>
-                      <div>Hero stats</div>
-                    </InfoDisplayHero>
-                  </RowCard>
-                  {displayStats === true ? (
-                    <RowCard type="wrapper">
-                      <InfoDisplayMulti
-                        headVal="Attack Type"
-                        value={
-                          typeof heroStatsJson[heroIdTagger].baseStats
-                            .attackType === "string"
-                            ? heroStatsJson[heroIdTagger].baseStats.attackType
-                            : heroStatsJson[heroIdTagger].baseStats.attackType[
-                                i
-                              ]
-                        }
-                      />
-                      <InfoDisplayMulti
-                        headVal="Health"
-                        value={
-                          typeof heroStatsJson[heroIdTagger].baseStats
-                            .health === "string"
-                            ? heroStatsJson[heroIdTagger].baseStats.health
-                            : heroStatsJson[heroIdTagger].baseStats.health[i]
-                        }
-                      />
-                      <InfoDisplayMulti
-                        headVal="Regen"
-                        value={
-                          typeof heroStatsJson[heroIdTagger].baseStats
-                            .healthRegen === "string"
-                            ? heroStatsJson[heroIdTagger].baseStats.healthRegen
-                            : heroStatsJson[heroIdTagger].baseStats.healthRegen[
-                                i
-                              ]
-                        }
-                      />
-                      <InfoDisplayMulti
-                        headVal="Resources"
-                        value={
-                          heroStatsJson[heroIdTagger].baseStats.resourceAmount +
-                            heroStatsJson[heroIdTagger].baseStats
-                              .resourceType ===
-                          "None"
-                            ? ""
-                            : heroStatsJson[heroIdTagger].baseStats
-                                .resourceAmount +
-                              " " +
-                              heroStatsJson[heroIdTagger].baseStats.resourceType
-                        }
-                      />
-                      <InfoDisplayMulti
-                        headVal="Attack Damge"
-                        value={
-                          typeof heroStatsJson[heroIdTagger].baseStats
-                            .attackDamage === "string"
-                            ? heroStatsJson[heroIdTagger].baseStats.attackDamage
-                            : heroStatsJson[heroIdTagger].baseStats
-                                .attackDamage[i]
-                        }
-                      />
-                      <InfoDisplayMulti
-                        headVal="Attack Speed"
-                        value={
-                          typeof heroStatsJson[heroIdTagger].baseStats
-                            .attackSpeed === "string"
-                            ? heroStatsJson[heroIdTagger].baseStats.attackSpeed
-                            : heroStatsJson[heroIdTagger].baseStats.attackSpeed[
-                                i
-                              ]
-                        }
-                      />
-                      <InfoDisplayMulti
-                        headVal="Attack Range"
-                        value={
-                          heroStatsJson[heroIdTagger].baseStats.attackRange[i]
-                        }
-                      />
-                    </RowCard>
-                  ) : null}
-                </React.Fragment>
+                <RowCard key={i}>
+                  <InfoDisplayCard
+                    name={[compact]}
+                    title={hero.title}
+                    logo={heroImage[heroIdTagger].logo}
+                    atkType={[
+                      "Attack Type",
+                      typeof heroBaseStats.attackType === "string"
+                        ? heroBaseStats.attackType
+                        : heroBaseStats.attackType[i],
+                    ]}
+                    health={[
+                      "Health",
+                      typeof heroBaseStats.health === "string"
+                        ? heroBaseStats.health
+                        : heroBaseStats.health[i],
+                    ]}
+                    regen={[
+                      "Regen",
+                      typeof heroBaseStats.healthRegen === "string"
+                        ? heroBaseStats.healthRegen
+                        : heroBaseStats.healthRegen[i],
+                    ]}
+                    resources={[
+                      "Resources",
+                      heroBaseStats.resourceAmount +
+                        heroBaseStats.resourceType ===
+                      "None"
+                        ? ""
+                        : heroBaseStats.resourceAmount +
+                          " " +
+                          heroBaseStats.resourceType,
+                    ]}
+                    atkDmg={[
+                      "Attack Damage",
+                      typeof heroBaseStats.attackDamage === "string"
+                        ? heroBaseStats.attackDamage
+                        : heroBaseStats.attackDamage[i],
+                    ]}
+                    atkSpd={[
+                      "Attack Speed",
+                      typeof heroBaseStats.attackSpeed === "string"
+                        ? heroBaseStats.attackSpeed
+                        : heroBaseStats.attackSpeed[i],
+                    ]}
+                    atkRng={["Attack Range", heroBaseStats.attackRange[i]]}
+                    role={["Role", heroStatsJson[heroIdTagger].basicInfo.role]}
+                    diff={[
+                      "Difficulty",
+                      heroStatsJson[heroIdTagger].basicInfo.difficulty,
+                    ]}
+                    price={[
+                      "Price",
+                      heroStatsJson[heroIdTagger].basicInfo.price + " Gold",
+                    ]}
+                    lore={[heroStatsJson[heroIdTagger].basicInfo.qoute]}
+                    heroId={heroIdTagger}
+                  />
+                </RowCard>
               );
             })}
           </React.Fragment>
@@ -237,81 +156,51 @@ const Herotype = ({ heroIdTagger }) => {
           <React.Fragment>
             {hero.name.map((compact, i) => {
               return (
-                <React.Fragment key={i}>
-                  <RowCard>
-                    <div className={styles.singleHero}>
-                      <InfoDisplayHeroCard name={compact} title={hero.title} />
-                      <InfoDisplayHero>{compact}</InfoDisplayHero>
-                      <InfoDisplayHero>
-                        {hero.title}
-                        <div className={styles.heroTitleImg}>
-                          <img
-                            alt="miniIconhero"
-                            src={heroImage[heroIdTagger].logo}
-                          />
-                        </div>
-                      </InfoDisplayHero>
-                    </div>
-                  </RowCard>
-                  <RowCard>
-                    <InfoDisplayMulti
-                      headVal="Attack Type"
-                      value={
-                        typeof heroStatsJson[heroIdTagger].baseStats
-                          .attackType === "string"
-                          ? heroStatsJson[heroIdTagger].baseStats.attackType
-                          : heroStatsJson[heroIdTagger].baseStats.attackType[i]
-                      }
-                    />
-                    <InfoDisplayMulti
-                      headVal="Health"
-                      value={heroStatsJson[heroIdTagger].baseStats.health[i]}
-                    />
-                    <InfoDisplayMulti
-                      headVal="Regen"
-                      value={
-                        heroStatsJson[heroIdTagger].baseStats.healthRegen[i]
-                      }
-                    />
-                    <InfoDisplayMulti
-                      headVal="Reources"
-                      value={
-                        heroStatsJson[heroIdTagger].baseStats.resourceAmount ===
-                        "None"
-                          ? "None"
-                          : heroStatsJson[heroIdTagger].baseStats
-                              .resourceAmount +
-                              " " +
-                              heroStatsJson[heroIdTagger].baseStats
-                                .resourceType ===
-                            "None"
-                          ? "None"
-                          : heroStatsJson[heroIdTagger].baseStats.resourceType
-                      }
-                    />
-                    <InfoDisplayMulti
-                      headVal="Attack Damge"
-                      value={
-                        heroStatsJson[heroIdTagger].baseStats.attackDamage[i]
-                      }
-                    />
-                    <InfoDisplayMulti
-                      headVal="Attack Speed"
-                      value={
-                        typeof heroStatsJson[heroIdTagger].baseStats
-                          .attackSpeed === "string"
-                          ? heroStatsJson[heroIdTagger].baseStats.attackSpeed
-                          : heroStatsJson[heroIdTagger].baseStats.attackSpeed[i]
-                      }
-                    />
-                    <InfoDisplayMulti
-                      headVal="Attack Range"
-                      value={
-                        heroStatsJson[heroIdTagger].baseStats.attackRange[i]
-                      }
-                    />
-                  </RowCard>
-                </React.Fragment>
+                <RowCard type="wrapper" key={i}>
+                  <InfoDisplayCard
+                    name={[compact]}
+                    title={hero.title}
+                    logo={heroImage[heroIdTagger].logo}
+                    atkType={[
+                      "Attack Type",
+                      typeof heroBaseStats.attackType === "string"
+                        ? heroBaseStats.attackType
+                        : heroBaseStats.attackType[i],
+                    ]}
+                    health={["Health", heroBaseStats.health[i]]}
+                    regen={["Regen", heroBaseStats.healthRegen[i]]}
+                    resources={[
+                      "Resources",
+                      heroBaseStats.resourceAmount === "None"
+                        ? "None"
+                        : heroBaseStats.resourceAmount +
+                            " " +
+                            heroBaseStats.resourceType ===
+                          "None"
+                        ? "None"
+                        : heroBaseStats.resourceType,
+                    ]}
+                    atkDmg={["Attack Damage", heroBaseStats.attackDamage[i]]}
+                    atkSpd={[
+                      "Attack Speed",
+                      typeof heroBaseStats.attackSpeed === "string"
+                        ? heroBaseStats.attackSpeed
+                        : heroBaseStats.attackSpeed[i],
+                    ]}
+                    atkRng={["Attack Range", heroBaseStats.attackRange[i]]}
+                    role={["Role", heroStatsJson[heroIdTagger].basicInfo.role]}
+                    diff={[
+                      "Difficulty",
+                      heroStatsJson[heroIdTagger].basicInfo.difficulty,
+                    ]}
+                    price={[
+                      "Price",
+                      heroStatsJson[heroIdTagger].basicInfo.price + " Gold",
+                    ]}
+                    lore={[heroStatsJson[heroIdTagger].basicInfo.qoute]}
+                    heroId={heroIdTagger}
+                  />
+                </RowCard>
               );
             })}
           </React.Fragment>
@@ -324,13 +213,13 @@ const Herotype = ({ heroIdTagger }) => {
   }
 
   return (
-    <Card>
+    <>
       {typeof heroType === "string"
         ? renderHeroType("singleHero")
         : heroType.length < 3
         ? renderHeroType("doubleHero")
         : renderHeroType("threeHero")}
-    </Card>
+    </>
   );
 };
 

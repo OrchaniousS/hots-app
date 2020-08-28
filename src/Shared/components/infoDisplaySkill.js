@@ -1,6 +1,6 @@
 import React from "react";
 
-import styles from "./infoDisplay.module.css";
+import styles from "./infoDisplaySkill.module.css";
 
 const InfoDisplaySkill = (props) => {
   const { headVal, value, img } = props;
@@ -18,7 +18,7 @@ const InfoDisplaySkill = (props) => {
                   src={img}
                   alt={img}
                 />
-                <div className={styles.displayInfoChildSkillVal}>{value}</div>
+                <span className={styles.displayInfoChildSkillVal}>{value}</span>
               </div>
             </div>
           </div>
