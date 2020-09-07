@@ -3,23 +3,23 @@ import React, { useState, useEffect } from "react";
 import MainContainer from "../../Shared/components/mainContainer";
 import styles from "./home.module.css";
 
-const scraperapiClient = require("scraperapi-sdk")(
-  "0cee0c963a5f7029df77efe22f18c3f6"
-);
+// const scraperapiClient = require("scraperapi-sdk")(
+//   "0cee0c963a5f7029df77efe22f18c3f6"
+// );
 
-const Home = (props) => {
+const Home = () => {
   const [textDate, setTextDate] = useState();
-  const [monthDate, setMonthDate] = useState();
-  const [dayDate, setDayDate] = useState();
+  const [monthDate, setMonthDate] = useState("");
+  const [dayDate, setDayDate] = useState("");
   const [responseAPI, setResponseAPI] = useState();
-  const bHTMLSPLIT = [];
+  // const bHTMLSPLIT = [];
 
   useEffect(() => {
     // need better month detector
     const d = new Date();
     const dateToDay = d.getDay();
-    console.log(dateToDay);
     const dateToMonth = d.getMonth();
+
     const month = [
       "January",
       "February",
@@ -34,6 +34,7 @@ const Home = (props) => {
       "November",
       "December",
     ];
+
     const weekday = [
       "Sunday",
       "Monday",
@@ -44,59 +45,28 @@ const Home = (props) => {
       "Saturday",
     ];
 
-    setMonthDate(month[dateToMonth]) && setDayDate(weekday[dateToDay]);
+    setMonthDate(month[dateToMonth]);
+    setDayDate(d.getDate());
 
-    const dateHandler =
+    setTextDate(
       dateToDay === 2
         ? setMonthDate(month[dateToMonth]) &&
-          setDayDate(d.getUTCDate()) &&
-          monthDate + ", " + dayDate + " "
-        : monthDate + ", " + dayDate + " ";
-    setTextDate(dateHandler);
-  }, [monthDate, dayDate]);
+            setDayDate(d.getUTCDate()) &&
+            monthDate + ", " + dayDate + " "
+        : monthDate + ", " + dayDate + " "
+    );
 
-  // const fs = require("fs");
-
-  const jsonResponse = async () => {
-    const responseJson = await scraperapiClient.get(
-      "https://heroesofthestorm.com/en-us/",
-      {
-        render: true,
+    const request = require("request");
+    request(
+      "https://hots-web-api.herokuapp.com/week",
+      (error, response, body) => {
+        // console.error("error:", error);
+        // console.log("statusCode:", response && response.statusCode);
+        // console.log("body:", body);
+        setResponseAPI(JSON.parse(body));
       }
     );
-    const bodyHTML = await JSON.stringify(responseJson).toString();
-    const bodyHTMLSplit = await bodyHTML
-      .split("<section")[6]
-      .split(`<h2 class=\\"hero__title\\">`);
-    for (let i = 1, j = 0; i < bodyHTMLSplit.length; i++, j++) {
-      const splittedHero =
-        bodyHTMLSplit[i].split("</h2>", 1)[0].length > 20
-          ? ""
-          : bodyHTMLSplit[i].split("</h2>", 1)[0];
-
-      const splittedHeroLink =
-        bodyHTMLSplit[j].split("src=\\", 2)[1] === undefined
-          ? ""
-          : bodyHTMLSplit[j]
-              .split("src=\\", 2)[1]
-              .split("alt=\\", 1)[0]
-              .split('"')[1]
-              .split("\\")[0];
-
-      bHTMLSPLIT.push({
-        heroName: splittedHero,
-        heroLink: splittedHeroLink,
-      });
-      // fs.writeFile("rotation.json", JSON.stringify(bHTMLSPLIT), (err) => {
-      //   if (err) throw err;
-      // });
-    }
-    setResponseAPI(bHTMLSPLIT);
-  };
-
-  if (bHTMLSPLIT.length < 1) {
-    jsonResponse();
-  }
+  }, [monthDate, dayDate]);
 
   return (
     <MainContainer>
@@ -109,27 +79,23 @@ const Home = (props) => {
               <div className={styles.loadingText}>Loading...</div>
             </div>
           ) : (
-            responseAPI.slice(1).map((compact) => {
-              return (
-                <div key={compact.heroName}>
-                  <div className={styles.mapHexIcon}>
-                    <img
-                      className={styles.mapHexIconimg}
-                      alt={compact.heroName}
-                      src={compact.heroLink}
-                    />
-                    {/* {console.log(compact.heroLink)} */}
-                  </div>
-                  <a href={`/heroes/${compact.heroName}`}>
-                    <div className={styles.mapHexaBG}>
-                      <span className={styles.mapHexaBGName}>
-                        {compact.heroName}
-                      </span>
-                    </div>
-                  </a>
+            responseAPI.slice(2).map(({ heroLink, heroName }) => (
+              <div key={heroName}>
+                <div className={styles.mapHexIcon}>
+                  <img
+                    className={styles.mapHexIconimg}
+                    alt={heroName}
+                    src={heroLink}
+                  />
                 </div>
-              );
-            })
+                <a href={`/heroes/${heroName}`}>
+                  <div className={styles.mapHexaBG}>
+                    <span className={styles.mapHexaBGName}>{heroName}</span>
+                  </div>
+                </a>
+                {/* <div>{heroName}</div> */}
+              </div>
+            ))
           )}
         </div>
       </div>

@@ -8,32 +8,32 @@ const Navbar = () => {
   const paths = ["/", "/heroes", "/maps"];
   const title = "Heroes of the Storm";
 
-  window.addEventListener("beforeinstallprompt", (e) => {
-    let deferredPrompt;
-    const addBtn = document.querySelector("#addButton");
-    addBtn.style.display = "none";
-    console.log(addBtn);
-    e.preventDefault();
+  // window.addEventListener("beforeinstallprompt", (e) => {
+  //   let deferredPrompt;
+  //   const addBtn = document.querySelector("#addButton");
+  //   addBtn.style.display = "none";
+  //   console.log(addBtn);
+  //   e.preventDefault();
 
-    deferredPrompt = e;
+  //   deferredPrompt = e;
 
-    addBtn.style.display = "block";
+  //   addBtn.style.display = "block";
 
-    addBtn.addEventListener("click", (e) => {
-      addBtn.style.display = "none";
+  //   addBtn.addEventListener("click", (e) => {
+  //     addBtn.style.display = "none";
 
-      deferredPrompt.prompt();
+  //     deferredPrompt.prompt();
 
-      deferredPrompt.userChoice.then((choiceResult) => {
-        if (choiceResult.outcome === "accepted") {
-          console.log("User accepted the A2HS prompt");
-        } else {
-          console.log("User dismissed the A2HS prompt");
-        }
-        deferredPrompt = null;
-      });
-    });
-  });
+  //     deferredPrompt.userChoice.then((choiceResult) => {
+  //       if (choiceResult.outcome === "accepted") {
+  //         console.log("User accepted the A2HS prompt");
+  //       } else {
+  //         console.log("User dismissed the A2HS prompt");
+  //       }
+  //       deferredPrompt = null;
+  //     });
+  //   });
+  // });
 
   window.onscroll = () => {
     scrollFunction();
@@ -89,9 +89,9 @@ const Navbar = () => {
               </li>
             );
           })}
-          <li id="addButton" className={styles.activate}>
+          {/* <li id="addButton" className={styles.activate}>
             Install
-          </li>
+          </li> */}
         </ul>
       </footer>
     </>
