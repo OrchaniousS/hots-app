@@ -232,6 +232,34 @@
 /*SIDEHERO*/
 
 /* Filter */
+::placeholder {
+  color: #3479d9;
+  opacity: 1;
+}
+
+:-ms-input-placeholder,
+::-ms-input-placeholder {
+  color: #3479d9;
+}
+
+.searchFilter {
+  /* display: flex; */
+  justify-content: space-evenly;
+  text-align-last: center;
+  border: 0px solid;
+}
+
+.searchFilter input {
+  justify-content: space-evenly;
+  text-align-last: center;
+  color: #3479d9;
+  border: 1px solid #3479d9;
+  border: 25px;
+}
+
+.searchFilter input:focus {
+  outline: auto;
+}
 
 .filterWrapper {
   position: fixed;

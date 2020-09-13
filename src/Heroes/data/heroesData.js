@@ -18,6 +18,10 @@ const HeroesData = () => {
   const heroInfoJson = JSON.parse(JSON.stringify(data));
   const panelInfo = JSON.parse(JSON.stringify(dataPanel));
 
+  // useEffect(() => {
+  //   heroInfoJson.map(({ name }) => setIndexName(name));
+  // }, [heroInfoJson]);
+
   const windowScroll = () => {
     window.onscroll = () => {
       return document.querySelector("#heroPanelFixed") === ""
@@ -138,18 +142,30 @@ const HeroesData = () => {
   const rolesDisplayHandler = () =>
     setrolesHandler((rolesHandler) => !rolesHandler);
 
+  const [filterHeroes, setFilterHeroes] = useState("");
+
+  const filterHandler = (event) => {
+    setFilterHeroes(event.target.value);
+    console.log(filterHeroes);
+  };
+
   return (
     <MainContainer type="heroContainer">
-      <h2>Heroes</h2>
+      <div className={styles.searchFilter}>
+        <h2>Heroes</h2>
+        <input
+          placeholder="search heroes"
+          value={filterHeroes}
+          onChange={filterHandler}
+        />
+      </div>
       <div>
         <h2>{buttonRole === null ? null : buttonRole}</h2>
       </div>
       <div className={styles.filterWrapper}>
         <div className={styles.roleFilter}>
           <p
-            onClick={() => {
-              rolesDisplayHandler();
-            }}
+            onClick={() => rolesDisplayHandler()}
             className={styles.filterTitle}
           >
             Roles
@@ -199,20 +215,29 @@ const HeroesData = () => {
                       : null;
                   }}
                 >
-                  <div className={styles.heroPersonal}>
-                    {buttonRole === role ? (
+                  {filterHeroes.toLowerCase() === name.toLowerCase() ? (
+                    <div className={styles.heroPersonal}>
                       <div id={role} className={styles.heroPersonalImg}>
                         <div>{name}</div>
                         <img alt="heroIcon" src={logo}></img>
                       </div>
-                    ) : null}
-                    {buttonRole === null ? (
-                      <div id={role} className={styles.heroPersonalImg}>
-                        <div>{name}</div>
-                        <img alt="heroIcon" src={logo}></img>
-                      </div>
-                    ) : null}
-                  </div>
+                    </div>
+                  ) : (
+                    <div className={styles.heroPersonal}>
+                      {buttonRole === role ? (
+                        <div id={role} className={styles.heroPersonalImg}>
+                          <div>{name}</div>
+                          <img alt="heroIcon" src={logo}></img>
+                        </div>
+                      ) : null}
+                      {buttonRole === null ? (
+                        <div id={role} className={styles.heroPersonalImg}>
+                          <div>{name}</div>
+                          <img alt="heroIcon" src={logo}></img>
+                        </div>
+                      ) : null}
+                    </div>
+                  )}
                 </div>
               </React.Fragment>
             );

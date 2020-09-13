@@ -98,6 +98,7 @@
   }
 
   .displayInfoChildSkillImgContainer .displayInfoChildSkillVal {
-    margin-left: -68%;
+    margin-left: -150%;
+    width: 230px;
   }
 }

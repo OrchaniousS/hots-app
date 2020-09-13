@@ -3,16 +3,11 @@ import React, { useState, useEffect } from "react";
 import MainContainer from "../../Shared/components/mainContainer";
 import styles from "./home.module.css";
 
-// const scraperapiClient = require("scraperapi-sdk")(
-//   "0cee0c963a5f7029df77efe22f18c3f6"
-// );
-
 const Home = () => {
   const [textDate, setTextDate] = useState();
   const [monthDate, setMonthDate] = useState("");
   const [dayDate, setDayDate] = useState("");
   const [responseAPI, setResponseAPI] = useState();
-  // const bHTMLSPLIT = [];
 
   useEffect(() => {
     // need better month detector
@@ -48,13 +43,7 @@ const Home = () => {
     setMonthDate(month[dateToMonth]);
     setDayDate(d.getDate());
 
-    setTextDate(
-      dateToDay === 2
-        ? setMonthDate(month[dateToMonth]) &&
-            setDayDate(d.getUTCDate()) &&
-            monthDate + ", " + dayDate + " "
-        : monthDate + ", " + dayDate + " "
-    );
+    setTextDate(monthDate + " " + dayDate + ", " + weekday[dateToDay]);
 
     const request = require("request");
     request(

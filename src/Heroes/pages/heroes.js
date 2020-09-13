@@ -6,6 +6,7 @@ import MainContainer from "../../Shared/components/mainContainer";
 import HeroCouSyn from "../components/heroCouSyn";
 import HeroType from "../components/heroType";
 import HeroSkills from "../components/heroSkills";
+import HeroTrait from "../components/heroTraits";
 
 import styles from "./heroes.module.css";
 
@@ -38,15 +39,11 @@ const Heroes = ({ heroId, heroImage }) => {
   return (
     <MainContainer>
       <div className={styles.backHero}>
-        <Link
-          // onClick={() => heroClicker(null)}
-          to="/heroes"
-        >
-          Go Back To Heroes
-        </Link>
+        <Link to="/heroes">Go Back To Heroes</Link>
       </div>
       <Card>
         <HeroType heroImage={heroImage} heroIdTagger={heroId} />
+        <HeroTrait heroIdTagger={heroId} />
       </Card>
       <div onClick={() => displaySkillsHandler()}>
         <Card>
