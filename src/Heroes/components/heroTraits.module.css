@@ -22,9 +22,14 @@
   filter: drop-shadow(0 0 0.3rem black);
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
+  background: linear-gradient(
+    to right,
+    rgb(19, 123, 243) 0%,
+    rgba(1, 1, 1, 0) 100%
+  );
 }
 
-.traitHolder .traitAlt {
+.traitAlt {
   visibility: hidden;
   position: fixed;
   display: flex;
@@ -32,10 +37,10 @@
   width: fit-content;
   height: fit-content;
   text-align: center;
-  position: absolute;
   z-index: 1;
   filter: drop-shadow(0 0 0.3rem black);
   background-color: rgb(51, 131, 211);
+  max-width: 620px;
 }
 
 .traitHolder:hover .traitAlt {
@@ -47,7 +52,6 @@
   max-width: 60px;
 }
 
-.traitHolder,
 .traits > div,
 .trait {
   margin: -3% 15%;
@@ -56,15 +60,54 @@
 .traitImg,
 span > img {
   filter: drop-shadow(0 0 0.2rem rgba(255, 255, 255, 0.61));
+  margin: 2% 2%;
+}
+
+.titleDesc {
+  font-weight: 700;
+  color: greenyellow;
+  font-size: 1rem;
 }
 
 .titleDesc,
 .altDesc {
-  margin: 1% 1%;
+  text-align: left;
+  margin: 0 5%;
   filter: drop-shadow(0 0 5px black);
 }
 
+.altDesc {
+  margin: 2% 5%;
+}
+
+.specialAlt {
+  display: flex;
+  margin: 1%;
+}
+
+/* .specialAlt > div:nth-child(2n + 1) {
+  font-weight: 800;
+  filter: drop-shadow(0 0 0 0.1rem rgba(187, 255, 78, 0.322));
+  color: crimson;
+} */
+
+.specialAlt1 {
+  /* width: 80px; */
+  font-weight: 800;
+  color: gold;
+}
+
+.specialAlt2 {
+  font-weight: 700;
+  margin-top: 2%;
+  color: dodgerblue;
+  filter: drop-shadow(0 0 0.1rem black);
+}
+
 @media (min-width: 880px) {
+  .traitAlt {
+    transform: translate(10%, -90%);
+  }
   .traitContainer {
     margin: 2% 2%;
     max-width: 450px;
@@ -82,9 +125,16 @@ span > img {
     flex-direction: row;
     margin: 2% 4%;
   }
+
+  .traitHolder {
+    margin: -3% 15%;
+  }
 }
 
 @media (max-width: 880px) {
+  .traitAlt {
+    transform: translate(-30%, -130%);
+  }
   .traitContainer {
     margin: 5% 5%;
     padding: 2% 2%;
@@ -104,5 +154,9 @@ span > img {
   span > img {
     width: 30px;
     height: 30px;
+  }
+
+  .traitHolder {
+    margin: 10% 11%;
   }
 }

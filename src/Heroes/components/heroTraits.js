@@ -10,7 +10,7 @@ const HeroTrait = ({ heroIdTagger }) => {
   ];
 
   const heroTraitInfo = traitsData[heroIdTagger];
-  console.log(heroTalentsInfo);
+  // console.log(heroTalentsInfo);
   // console.log(traitsData[heroIdTagger].traits);
 
   return (
@@ -31,17 +31,63 @@ const HeroTrait = ({ heroIdTagger }) => {
                       />
                       <span className={styles.traitAlt}>
                         <img src={traitImg} alt={traitImg} />
-                        <div className={styles.titleDesc}>{traitAlt}</div>
-                        <div className={styles.altDesc}>
-                          {heroTalentsInfo[i].map((item) =>
-                            item.traitName === traitAlt ? (
-                              <>
-                                <div>
-                                  {item.traitDesc.replace("\n", `${(<br />)}`)}
+                        <div>
+                          <div className={styles.titleDesc}>{traitAlt}</div>
+                          <div className={styles.altDesc}>
+                            {heroTalentsInfo[i].map((item) =>
+                              item.traitName.split(" ")[0] ===
+                              traitAlt.split(" ")[0] ? (
+                                <div key={Math.random()}>
+                                  <div>
+                                    {item.traitDesc.split("\n")[0].split(":")
+                                      .length > 1 ? (
+                                      <div
+                                        key={Math.random()}
+                                        className={styles.specialAlt}
+                                      >
+                                        <div className={styles.specialAlt1}>
+                                          {item.traitDesc
+                                            .split("\n")[0]
+                                            .split(":")[0] + ":"}
+                                        </div>
+                                        <div>
+                                          {
+                                            item.traitDesc
+                                              .split("\n")[0]
+                                              .split(":")[1]
+                                          }
+                                        </div>
+                                      </div>
+                                    ) : (
+                                      item.traitDesc.split("\n")[0]
+                                    )}
+                                  </div>
+                                  {item.traitDesc
+                                    .split("\n")
+                                    .slice(1)
+                                    .map((items) => (
+                                      <div
+                                        key={items}
+                                        className={styles.specialAlt}
+                                      >
+                                        {items.split(":").length > 1 ? (
+                                          <>
+                                            <div className={styles.specialAlt1}>
+                                              {items.split(":")[0] + ":"}
+                                            </div>
+                                            <div>{items.split(":")[1]}</div>
+                                          </>
+                                        ) : (
+                                          <div className={styles.specialAlt2}>
+                                            [{items}]
+                                          </div>
+                                        )}
+                                      </div>
+                                    ))}
                                 </div>
-                              </>
-                            ) : null
-                          )}
+                              ) : null
+                            )}
+                          </div>
                         </div>
                       </span>
                     </div>
@@ -52,29 +98,6 @@ const HeroTrait = ({ heroIdTagger }) => {
           ))}
         </div>
       }
-
-      {/* {traitsData.map((info, i) =>
-        i === heroIdTagger ? (
-          <div className={styles.traitContainer} key={i}>
-            {info.traits.map(({ traitLevel, traitRow }) => (
-              <div key={traitLevel} className={styles.traitRow}>
-                <span>{traitLevel}</span>
-                <div className={styles.traits}>
-                  {traitRow.traitNames.map(({ traitAlt, traitImg }) => (
-                    <div className={styles.traitHolder} key={traitAlt}>
-                      <img src={traitImg} alt={traitImg} />
-                      <span className={styles.traitAlt}>
-                        <img src={traitImg} alt={traitImg} />
-                        <div>{traitAlt}</div>
-                      </span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-        ) : null
-      )} */}
     </>
   );
 };
