@@ -45,30 +45,26 @@ const Heroes = ({ heroId, heroImage }) => {
         <HeroType heroImage={heroImage} heroIdTagger={heroId} />
         <HeroTrait heroIdTagger={heroId} />
       </Card>
-      <div onClick={() => displaySkillsHandler()}>
-        <Card>
+      <div id={styles.clickableDiv} onClick={() => displaySkillsHandler()}>
+        <Card type="holder">
           <div className={styles.heroSections}>Skills</div>
         </Card>
       </div>
-      <Card>
-        {displaySkill === true ? (
-          <HeroSkills heroImage={heroImage} />
-        ) : (
-          "Click on Skills to expand"
-        )}
-      </Card>
-      <div onClick={() => displayCouSynHandler()}>
+      {displaySkill && (
         <Card>
+          <HeroSkills heroImage={heroImage} />
+        </Card>
+      )}
+      <div id={styles.clickableDiv} onClick={() => displayCouSynHandler()}>
+        <Card type="holder">
           <div className={styles.heroSections}>Synergies and Counters</div>
         </Card>
       </div>
-      <Card type="counter">
-        {displayCouSyn === true ? (
+      {displayCouSyn && (
+        <Card type="counter">
           <HeroCouSyn heroIdTagger={heroId} />
-        ) : (
-          "Click on Synergies and Counters to expand"
-        )}
-      </Card>
+        </Card>
+      )}
     </MainContainer>
   );
 };

@@ -37,9 +37,7 @@ const HeroStats = () => {
     <>
       <Switch>
         <BrowserRouter>
-          {/* {heroDisplay === null ? ( */}
           <Route exact path="/heroes" render={() => <HeroesData />} />
-          {/* ) : null} */}
           {heroURL()}
         </BrowserRouter>
       </Switch>

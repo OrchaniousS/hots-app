@@ -1,6 +1,5 @@
 .heroMainInfo,
 .heroInfoCounter {
-  cursor: pointer;
   display: flex;
   border: 1px solid #3479d9;
   place-items: center;
@@ -13,6 +12,23 @@
   filter: drop-shadow(0 0 0.32rem black);
   background: rgba(60, 27, 150, 0.223);
   box-shadow: 0 0 35px rgba(19, 49, 180, 0.205);
+}
+
+.heroMainHolder {
+  display: flex;
+  border: 1px solid white;
+  justify-content: center;
+  margin: 1% 1%;
+  padding: 2% 2%;
+  filter: drop-shadow(0 0 0.32rem black);
+  background: dodgerblue;
+  color: white;
+  box-shadow: 0 0 35px rgba(7, 38, 56, 0.534);
+}
+
+.heroMainHolder:hover {
+  background: white;
+  color: dodgerblue;
 }
 
 .heroInfoCounter {

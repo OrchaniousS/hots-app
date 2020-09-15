@@ -4,6 +4,10 @@
   filter: drop-shadow(0 0 0.4rem black);
 }
 
+#clickableDiv {
+  cursor: pointer;
+}
+
 @media (min-width: 960px) {
   .backHero {
     cursor: pointer;
@@ -26,36 +30,14 @@
 }
 
 @media (max-width: 960px) {
+  .heroSections {
+    font-size: 1.2rem;
+  }
+
   .backHero {
-    /* position: fixed;
-    z-index: 1;
-    padding: 3% 3%;
-    bottom: 5%;
-    right: 0;
-    left: 0;
-    text-align: center;
-    background-color: rgb(12, 100, 201);
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px; */
     display: none;
   }
-
-  .backHero a {
-    /* color: #fff;
-    font-weight: 700;
-    font-size: 1.2rem; */
-  }
 }
-
-/* @media (max-width: 360px) {
-  .backHero {
-    padding-bottom: 5%;
-    padding-top: 5%;
-  }
-  .backHero a {
-    font-size: 1.5rem;
-  }
-} */
 
 .backHero:hover {
   filter: drop-shadow(0 0 0.85rem crimson);
