@@ -38,7 +38,7 @@ const HeroTrait = ({ heroIdTagger }) => {
                               item.traitName.split(" ")[0] ===
                               traitAlt.split(" ")[0] ? (
                                 <div key={Math.random()}>
-                                  <div>
+                                  <>
                                     {item.traitDesc.split("\n")[0].split(":")
                                       .length > 1 ? (
                                       <div
@@ -50,7 +50,7 @@ const HeroTrait = ({ heroIdTagger }) => {
                                             .split("\n")[0]
                                             .split(":")[0] + ":"}
                                         </div>
-                                        <div>
+                                        <div className={styles.specialAlt11}>
                                           {
                                             item.traitDesc
                                               .split("\n")[0]
@@ -61,7 +61,7 @@ const HeroTrait = ({ heroIdTagger }) => {
                                     ) : (
                                       item.traitDesc.split("\n")[0]
                                     )}
-                                  </div>
+                                  </>
                                   {item.traitDesc
                                     .split("\n")
                                     .slice(1)

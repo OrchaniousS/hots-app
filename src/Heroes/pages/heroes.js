@@ -11,17 +11,10 @@ import HeroTrait from "../components/heroTraits";
 import styles from "./heroes.module.css";
 
 const Heroes = ({ heroId, heroImage }) => {
-  const [displaySkill, setDisplaySkill] = useState(false);
-  const [displayCouSyn, setDisplayCouSyn] = useState(false);
+  const [displaySkill, setDisplaySkill] = useState();
+  const [displayCouSyn, setDisplayCouSyn] = useState();
+  const [displayTalent, setDisplayTalent] = useState();
 
-  const displaySkillsHandler = () => {
-    displaySkill === true ? setDisplaySkill(false) : setDisplaySkill(true);
-  };
-  const displayCouSynHandler = () => {
-    displayCouSyn === true ? setDisplayCouSyn(false) : setDisplayCouSyn(true);
-  };
-
-  // const skillHeroName =
   //   heroImage
   //     .split("https://www.heroesfire.com/images/wikibase/icon/heroes/")[1]
   //     .split(".png")[0]
@@ -43,9 +36,24 @@ const Heroes = ({ heroId, heroImage }) => {
       </div>
       <Card>
         <HeroType heroImage={heroImage} heroIdTagger={heroId} />
-        <HeroTrait heroIdTagger={heroId} />
       </Card>
-      <div id={styles.clickableDiv} onClick={() => displaySkillsHandler()}>
+      <div
+        id={styles.clickableDiv}
+        onClick={() => setDisplayTalent((displayTalent) => !displayTalent)}
+      >
+        <Card type="holder">
+          <div className={styles.heroSections}>Talents</div>
+        </Card>
+      </div>
+      {displayTalent && (
+        <Card>
+          <HeroTrait heroIdTagger={heroId} />
+        </Card>
+      )}
+      <div
+        id={styles.clickableDiv}
+        onClick={() => setDisplaySkill((displaySkill) => !displaySkill)}
+      >
         <Card type="holder">
           <div className={styles.heroSections}>Skills</div>
         </Card>
@@ -55,7 +63,10 @@ const Heroes = ({ heroId, heroImage }) => {
           <HeroSkills heroImage={heroImage} />
         </Card>
       )}
-      <div id={styles.clickableDiv} onClick={() => displayCouSynHandler()}>
+      <div
+        id={styles.clickableDiv}
+        onClick={() => setDisplayCouSyn((displayCouSyn) => !displayCouSyn)}
+      >
         <Card type="holder">
           <div className={styles.heroSections}>Synergies and Counters</div>
         </Card>

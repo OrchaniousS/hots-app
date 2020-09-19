@@ -13,7 +13,7 @@ const App = () => {
   return (
     <HttpsRedirect>
       <BrowserRouter>
-        <div className={styles.app}>
+        <main className={styles.app}>
           <Navbar />
           <Switch>
             <Route path="/heroes" render={() => <HeroStats />} />
@@ -21,7 +21,7 @@ const App = () => {
             <Route path="/" render={() => <Home />} />
             <Route render={() => <Redirect to="/" />} />
           </Switch>
-        </div>
+        </main>
       </BrowserRouter>
     </HttpsRedirect>
   );

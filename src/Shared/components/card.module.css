@@ -7,23 +7,25 @@
   text-align: center;
   flex-direction: column;
   font-size: 14px;
-  margin: 1% 1%;
+  margin: 2% 1%;
   padding: 2% 2%;
   filter: drop-shadow(0 0 0.32rem black);
   background: rgba(60, 27, 150, 0.223);
   box-shadow: 0 0 35px rgba(19, 49, 180, 0.205);
+  /* border-radius: 25px; */
 }
 
 .heroMainHolder {
   display: flex;
   border: 1px solid white;
   justify-content: center;
-  margin: 1% 1%;
+  margin: 2% 1%;
   padding: 2% 2%;
   filter: drop-shadow(0 0 0.32rem black);
   background: dodgerblue;
   color: white;
   box-shadow: 0 0 35px rgba(7, 38, 56, 0.534);
+  /* border-radius: 25px; */
 }
 
 .heroMainHolder:hover {

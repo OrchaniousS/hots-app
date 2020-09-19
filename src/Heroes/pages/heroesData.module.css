@@ -1,3 +1,6 @@
+.heroC {
+  margin: 1% 0;
+}
 .heroContainer {
   display: flex;
   justify-content: space-between;

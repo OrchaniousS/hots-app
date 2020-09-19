@@ -151,101 +151,103 @@ const HeroesData = () => {
 
   return (
     <MainContainer type="heroContainer">
-      <div className={styles.searchFilter}>
-        <h2>Heroes</h2>
-        <input
-          placeholder="search heroes"
-          value={filterHeroes}
-          onChange={filterHandler}
-        />
-      </div>
-      <div>
-        <h2>{buttonRole === null ? null : buttonRole}</h2>
-      </div>
-      <div className={styles.filterWrapper}>
-        <div className={styles.roleFilter}>
-          <p
-            onClick={() => rolesDisplayHandler()}
-            className={styles.filterTitle}
-          >
-            Roles
-          </p>
-          {rolesHandler && (
-            <>
-              <p
-                onClick={() => setButtonRole(null)}
-                className={styles.filterTitle}
-              >
-                All
-              </p>
-              {roles.map(({ rolesType, rolesImg }) => (
-                <div
-                  id="roles"
-                  key={rolesType}
-                  onClick={() => {
-                    roleHandler(rolesType);
-                  }}
-                  className={
-                    rolesType === buttonRole
-                      ? `${styles.activeRole}`
-                      : `${styles.unActiveRole}`
-                  }
-                >
-                  <img alt={rolesImg} src={rolesImg} />
-                  <div>{rolesType}</div>
-                </div>
-              ))}
-            </>
-          )}
+      <div className={styles.heroC}>
+        <div className={styles.searchFilter}>
+          <h2>Heroes</h2>
+          <input
+            placeholder="search heroes"
+            value={filterHeroes}
+            onChange={filterHandler}
+          />
         </div>
-      </div>
-      <div className={styles.heroContainer}>
-        <div className={styles.heroGridRowColumon}>
-          {heroInfoJson.map(({ id, logo, name, role }) => {
-            return (
-              <React.Fragment key={id}>
-                <div
-                  id="filter"
-                  className={roleStyleHandler(role)}
-                  onClick={() => {
-                    setIndexNum(id);
-                    setIndexName(name);
-                    return window.innerWidth < 960
-                      ? (window.location.href = `/heroes/${name}`)
-                      : null;
-                  }}
+        <div>
+          <h2>{buttonRole === null ? null : buttonRole}</h2>
+        </div>
+        <div className={styles.filterWrapper}>
+          <div className={styles.roleFilter}>
+            <p
+              onClick={() => rolesDisplayHandler()}
+              className={styles.filterTitle}
+            >
+              Roles
+            </p>
+            {rolesHandler && (
+              <>
+                <p
+                  onClick={() => setButtonRole(null)}
+                  className={styles.filterTitle}
                 >
-                  {filterHeroes.toLowerCase() === name.toLowerCase() ? (
-                    <div className={styles.heroPersonal}>
-                      <div id={role} className={styles.heroPersonalImg}>
-                        <div>{name}</div>
-                        <img alt="heroIcon" src={logo}></img>
+                  All
+                </p>
+                {roles.map(({ rolesType, rolesImg }) => (
+                  <div
+                    id="roles"
+                    key={rolesType}
+                    onClick={() => {
+                      roleHandler(rolesType);
+                    }}
+                    className={
+                      rolesType === buttonRole
+                        ? `${styles.activeRole}`
+                        : `${styles.unActiveRole}`
+                    }
+                  >
+                    <img alt={rolesImg} src={rolesImg} />
+                    <div>{rolesType}</div>
+                  </div>
+                ))}
+              </>
+            )}
+          </div>
+        </div>
+        <div className={styles.heroContainer}>
+          <div className={styles.heroGridRowColumon}>
+            {heroInfoJson.map(({ id, logo, name, role }) => {
+              return (
+                <React.Fragment key={id}>
+                  <div
+                    id="filter"
+                    className={roleStyleHandler(role)}
+                    onClick={() => {
+                      setIndexNum(id);
+                      setIndexName(name);
+                      return window.innerWidth < 960
+                        ? (window.location.href = `/heroes/${name}`)
+                        : null;
+                    }}
+                  >
+                    {filterHeroes.toLowerCase() === name.toLowerCase() ? (
+                      <div className={styles.heroPersonal}>
+                        <div id={role} className={styles.heroPersonalImg}>
+                          <div>{name}</div>
+                          <img alt="heroIcon" src={logo}></img>
+                        </div>
                       </div>
-                    </div>
-                  ) : (
-                    <div className={styles.heroPersonal}>
-                      {buttonRole === role ? (
-                        <div id={role} className={styles.heroPersonalImg}>
-                          <div>{name}</div>
-                          <img alt="heroIcon" src={logo}></img>
-                        </div>
-                      ) : null}
-                      {buttonRole === null ? (
-                        <div id={role} className={styles.heroPersonalImg}>
-                          <div>{name}</div>
-                          <img alt="heroIcon" src={logo}></img>
-                        </div>
-                      ) : null}
-                    </div>
-                  )}
-                </div>
-              </React.Fragment>
-            );
-          })}
-        </div>
-        <div id="heroPanelC" className={styles.heroPanelContainer}>
-          <div className={styles.heroPanelMoveable}>
-            {heroSidePanelGenerator()}
+                    ) : (
+                      <div className={styles.heroPersonal}>
+                        {buttonRole === role ? (
+                          <div id={role} className={styles.heroPersonalImg}>
+                            <div>{name}</div>
+                            <img alt="heroIcon" src={logo}></img>
+                          </div>
+                        ) : null}
+                        {buttonRole === null ? (
+                          <div id={role} className={styles.heroPersonalImg}>
+                            <div>{name}</div>
+                            <img alt="heroIcon" src={logo}></img>
+                          </div>
+                        ) : null}
+                      </div>
+                    )}
+                  </div>
+                </React.Fragment>
+              );
+            })}
+          </div>
+          <div id="heroPanelC" className={styles.heroPanelContainer}>
+            <div className={styles.heroPanelMoveable}>
+              {heroSidePanelGenerator()}
+            </div>
           </div>
         </div>
       </div>

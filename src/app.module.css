@@ -37,12 +37,23 @@ code {
 }
 
 .app {
-  border: 3px solid #222;
+  /* border: 3px solid #222; */
   background: #141414;
   box-shadow: 0 0 35px rgba(0, 0, 0, 0.35);
-  margin: 2% 8% 2% 8%;
-  margin-top: 100px;
-  margin-bottom: 80px;
+}
+
+@media (min-width: 880px) {
+  .app {
+    margin: 2% 8%;
+    margin-top: 100px;
+    margin-bottom: 80px;
+  }
+}
+@media (max-width: 880px) {
+  .app {
+    margin-top: 55px;
+    margin-bottom: 50px;
+  }
 }
 
 /*-- General --*/

@@ -37,7 +37,7 @@
   width: fit-content;
   height: fit-content;
   text-align: center;
-  z-index: 1;
+  z-index: 4;
   filter: drop-shadow(0 0 0.3rem black);
   background-color: rgb(51, 131, 211);
   max-width: 620px;
@@ -82,31 +82,36 @@ span > img {
 
 .specialAlt {
   display: flex;
-  margin: 1%;
+  margin: 1% 0;
+  flex-wrap: wrap;
+  /* width: max-content; */
 }
 
-/* .specialAlt > div:nth-child(2n + 1) {
-  font-weight: 800;
-  filter: drop-shadow(0 0 0 0.1rem rgba(187, 255, 78, 0.322));
-  color: crimson;
-} */
+.specialAlt11 {
+  /* margin: 0% 2%; */
+  /* width: max-content; */
+}
+
+.specialAlt > div:nth-child(2n) {
+  /* width: max-content; */
+}
 
 .specialAlt1 {
-  /* width: 80px; */
   font-weight: 800;
   color: gold;
 }
 
 .specialAlt2 {
-  font-weight: 700;
-  margin-top: 2%;
-  color: dodgerblue;
-  filter: drop-shadow(0 0 0.1rem black);
+  font-weight: 600;
+  margin-top: 4%;
+  color: rgb(173, 173, 173);
+  filter: drop-shadow(0 0 0.41rem black);
 }
 
 @media (min-width: 880px) {
   .traitAlt {
-    transform: translate(10%, -90%);
+    /* font-size: 0.5rem; */
+    transform: translate(13%, -80%);
   }
   .traitContainer {
     margin: 2% 2%;
@@ -133,18 +138,25 @@ span > img {
 
 @media (max-width: 880px) {
   .traitAlt {
-    transform: translate(-30%, -130%);
+    font-size: 0.8rem;
+    transform: translate(-55%, -130%);
   }
+
   .traitContainer {
     margin: 5% 5%;
     padding: 2% 2%;
-    max-width: 270px;
-    width: 250px;
+    /* max-width: 270px; */
+    width: -webkit-fill-available;
+    max-width: 250px;
   }
 
   .traits {
     display: flex;
     padding: 0% 6%;
+  }
+
+  .trait {
+    max-width: 250px;
   }
 
   .traitImg {

@@ -10586,7 +10586,7 @@
             "traitImg": "https://static.wikia.nocookie.net/allstars_gamepedia/images/c/c8/Erik_The_Swift_Icon.png/revision/latest/scale-to-width-down/64?cb=20160712171317"
           },
           {
-            "traitName": "Its a Sabotage!",
+            "traitName": "It's a Sabotage!",
             "traitDesc": "Erik's Basic Attacks against Structures light them on fire for 5 seconds, causing 250 damage.\nType: Spell damage\nScaling: 4.00%\nAffects: Enemy Structures\nProperties: Damage over Time\nTickrate: 1.0 per second\nDamage per tick: 50",
             "traitImg": "https://static.wikia.nocookie.net/allstars_gamepedia/images/2/2b/Its_a_Sabotage%21_Icon.png/revision/latest/scale-to-width-down/64?cb=20160712171351"
           },

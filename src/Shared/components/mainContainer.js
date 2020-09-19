@@ -1,6 +1,5 @@
 import React from "react";
 
-// import styles from "../app.module.css";
 import styles from "./mainContainer.module.css";
 
 const MainContainer = ({ type, children }) => {

@@ -1,11 +1,10 @@
 .mapContainer {
   text-align: center;
-  padding-bottom: 4%;
+  margin: 2% 2%;
 }
 
 @media (max-width: 960px) {
   .mapHexCollage {
-    /* margin: 12% 15% 10% 15%; */
     transform: scale(0.9);
   }
 }
