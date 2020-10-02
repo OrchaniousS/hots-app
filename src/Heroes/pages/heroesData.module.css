@@ -1,6 +1,9 @@
 .heroC {
   margin: 1% 0;
+  position: relative;
+  z-index: 1;
 }
+
 .heroContainer {
   display: flex;
   justify-content: space-between;
@@ -44,15 +47,15 @@
 }
 
 .heroPersonalImg {
-  padding: 1px 1px;
-  filter: drop-shadow(0 0 0.3rem dodgerblue);
+  padding: 5px 1px;
+  /* filter: drop-shadow(0 0 0.3rem dodgerblue); */
 }
 
 .heroPersonalImg div {
   font-size: 1rem;
   padding: 4px 1px;
-  filter: drop-shadow(0 0 0.4rem dodgerblue);
-  text-shadow: 0 0 0.4rem dodgerblue;
+  filter: drop-shadow(0 0 0.8rem dodgerblue);
+  text-shadow: 0 0 1rem dodgerblue;
 }
 /*SIDEHERO*/
 
@@ -267,11 +270,15 @@
 .filterWrapper {
   position: fixed;
   z-index: 4;
-  left: 0;
   top: 50%;
   text-align-last: center;
 }
 
+@media (min-width: 880px) {
+  .filterWrapper {
+    left: 10px;
+  }
+}
 @media (max-width: 880px) {
   .filterWrapper {
     top: 18%;
@@ -284,17 +291,21 @@
 
 .filterTitle {
   margin: 5% 0;
-  padding: 5%;
-  background-color: rgba(30, 143, 255, 0.301);
-  filter: drop-shadow(0 0 0.75rem crimson);
+  padding: 3%;
+  background-color: rgba(30, 143, 255, 1);
+  /* filter: drop-shadow(0 0 0.3rem crimson); */
   border-radius: 15px;
 }
 
-.activeRole {
+.activeRole,
+.activeRole:focus,
+.unActiveRole:hover {
   background-color: crimson;
 }
 
-.unActiveRole {
+.unActiveRole,
+.unActiveRole:focus,
+.activeRole:hover {
   background-color: rgba(30, 143, 255, 0.582);
 }
 
@@ -309,16 +320,21 @@
   transition: fill 0.2s;
   height: 60px;
 }
+.roleFilter > p {
+  /* width: fit-content; */
+}
 
 .roleFilter img {
   align-content: center;
   display: none;
 }
 
-.roleFilter > div:hover,
+.roleFilter > p:hover,
 .filterTitle:hover {
   filter: drop-shadow(0 0 0.2rem crimson);
   box-shadow: 0px 0px 6px 0px crimson;
+  background-color: white;
+  color: dodgerblue;
   /* background-color: rgba(30, 143, 255, 0.212); */
 }
 

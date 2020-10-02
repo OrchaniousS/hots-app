@@ -4,8 +4,6 @@ import { Link } from "react-router-dom";
 import MainContainer from "../../Shared/components/mainContainer";
 import data from "./heroData.json";
 import dataPanel from "./heroPanel.json";
-
-// import styles from "../../app.module.css";
 import styles from "../pages/heroesData.module.css";
 
 const HeroesData = () => {
@@ -32,7 +30,7 @@ const HeroesData = () => {
     };
   };
 
-  const heroSidePanelGenerator = () => {
+  function heroSidePanelGenerator() {
     return indexNum === "" ? null : (
       <div className={styles.heroPanelMoveable}>
         <div
@@ -86,7 +84,7 @@ const HeroesData = () => {
         </div>
       </div>
     );
-  };
+  }
 
   const roleHandler = (roleValue) => {
     if (roleValue) {
@@ -132,6 +130,7 @@ const HeroesData = () => {
         "https://images.blz-contentstack.com/v3/assets/blta565ae3223b62a29/bltfb68c2acf0fe59ee/5e4dcaae0cabeb72b7783d67/role-bruiser.png",
     },
   ];
+
   const roleStyleHandler = (roleV) =>
     buttonRole === roleV
       ? `${styles.heroGrid}`
@@ -142,23 +141,23 @@ const HeroesData = () => {
   const rolesDisplayHandler = () =>
     setrolesHandler((rolesHandler) => !rolesHandler);
 
-  const [filterHeroes, setFilterHeroes] = useState("");
+  // const [filterHeroes, setFilterHeroes] = useState("");
 
-  const filterHandler = (event) => {
-    setFilterHeroes(event.target.value);
-    console.log(filterHeroes);
-  };
+  // const filterHandler = (event) => {
+  //   setFilterHeroes(event.target.value);
+  //   console.log(filterHeroes);
+  // };
 
   return (
     <MainContainer type="heroContainer">
       <div className={styles.heroC}>
         <div className={styles.searchFilter}>
           <h2>Heroes</h2>
-          <input
+          {/* <input
             placeholder="search heroes"
             value={filterHeroes}
             onChange={filterHandler}
-          />
+          /> */}
         </div>
         <div>
           <h2>{buttonRole === null ? null : buttonRole}</h2>
@@ -216,29 +215,28 @@ const HeroesData = () => {
                         : null;
                     }}
                   >
-                    {filterHeroes.toLowerCase() === name.toLowerCase() ? (
+                    {/* filterHeroes.toLowerCase() === name.toLowerCase() ? (
                       <div className={styles.heroPersonal}>
                         <div id={role} className={styles.heroPersonalImg}>
                           <div>{name}</div>
                           <img alt="heroIcon" src={logo}></img>
                         </div>
-                      </div>
-                    ) : (
-                      <div className={styles.heroPersonal}>
-                        {buttonRole === role ? (
-                          <div id={role} className={styles.heroPersonalImg}>
-                            <div>{name}</div>
-                            <img alt="heroIcon" src={logo}></img>
-                          </div>
-                        ) : null}
-                        {buttonRole === null ? (
-                          <div id={role} className={styles.heroPersonalImg}>
-                            <div>{name}</div>
-                            <img alt="heroIcon" src={logo}></img>
-                          </div>
-                        ) : null}
-                      </div>
-                    )}
+                      </div> */}
+
+                    <div className={styles.heroPersonal}>
+                      {buttonRole === role ? (
+                        <div id={role} className={styles.heroPersonalImg}>
+                          <div>{name}</div>
+                          <img alt="heroIcon" src={logo}></img>
+                        </div>
+                      ) : null}
+                      {buttonRole === null ? (
+                        <div id={role} className={styles.heroPersonalImg}>
+                          <div>{name}</div>
+                          <img alt="heroIcon" src={logo}></img>
+                        </div>
+                      ) : null}
+                    </div>
                   </div>
                 </React.Fragment>
               );

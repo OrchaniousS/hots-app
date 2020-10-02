@@ -1,9 +1,6 @@
 import React from "react";
 
-// import Card from "../../Shared/components/card";
 import RowCard from "../../Shared/components/rowCard";
-// import InfoDisplay from "../../Shared/components/infoDisplay";
-// import InfoDisplayHero from "../../Shared/components/infoDisplayHero";
 import InfoDisplayCard from "../../Shared/components/infoDisplayCard";
 
 import data from "../data/heroStats.json";

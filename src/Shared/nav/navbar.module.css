@@ -48,41 +48,45 @@ nav h2 a {
 @media (min-width: 375px) {
   .scrollTop {
     font-size: 3rem;
-    /* bottom: 70px; */
+    right: 1rem;
+    bottom: 3.2rem;
   }
 }
 
 @media (max-width: 375px) {
   .scrollTop {
     font-size: 1.5rem;
-    /* bottom: 70px; */
+    right: 0;
+    bottom: 3.2rem;
   }
 }
 
 .scrollTop {
   display: none;
   position: fixed;
-  right: 10px;
-  bottom: 0;
   z-index: 99;
   border: none;
   outline: none;
   background-color: #3479d9;
   color: white;
   cursor: pointer;
-  padding: 12px 15px;
-  /* border-radius: 50px; */
+  padding: 0.9rem;
 }
 
 .scrollTop:hover {
   background-color: #555;
 }
+
+.scrollTop > div {
+  filter: drop-shadow(0 0 0.1rem black);
+}
+
 /* SCROLL BUTTON */
 
 /* FOOTER */
 .navBarResponsive {
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   left: 0;
   right: 0;
   top: 0;
@@ -101,12 +105,12 @@ nav h2 a {
 
 .navMenu a {
   display: inline-block;
-  margin: 5px;
+  margin: 0.3rem;
   border: 1px solid black;
   text-decoration: none;
   text-align: center;
   border-radius: 5px;
-  padding: 3px 8px;
+  padding: 0.3rem 0.5rem;
   background-color: black;
   color: #fff;
 }
@@ -118,15 +122,9 @@ nav h2 a {
   cursor: pointer;
 }
 
-.activate {
+.active {
   background: #3479d9;
   background-image: linear-gradient(to bottom, #3479d9 0%, #10448f 78%);
-}
-
-@media (max-width: 425px) {
-  .titleLogo {
-    /* padding: ; */
-  }
 }
 
 .footerResponsive {
@@ -140,19 +138,12 @@ nav h2 a {
   justify-content: space-evenly;
   border-top: 1px solid #3479d9;
   background-color: rgb(7, 45, 92);
-  /* background: rgb(29, 29, 29); */
   background-image: linear-gradient(
     180deg,
     rgba(29, 29, 29, 0.165703781512605) 36%,
     rgba(0, 0, 0, 1) 100%,
     rgba(9, 21, 121, 0.8491771708683473) 100%
   );
-}
-
-.addButton {
-  position: absolute;
-  top: 1px;
-  left: 1px;
 }
 
 /* FOOTER */

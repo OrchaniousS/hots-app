@@ -1,39 +1,12 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { motion } from "framer-motion";
 
 import styles from "./navbar.module.css";
 
 const Navbar = () => {
-  const links = ["Home", "Heroes", "Maps"];
-  const paths = ["/", "/heroes", "/maps"];
+  const links = ["Home", "Heroes", "Builds", "Maps"];
+  const paths = ["/", "/heroes", "/builds", "/maps"];
   const title = "Heroes of the Storm";
-
-  // window.addEventListener("beforeinstallprompt", (e) => {
-  //   let deferredPrompt;
-  //   const addBtn = document.querySelector("#addButton");
-  //   addBtn.style.display = "none";
-  //   console.log(addBtn);
-  //   e.preventDefault();
-
-  //   deferredPrompt = e;
-
-  //   addBtn.style.display = "block";
-
-  //   addBtn.addEventListener("click", (e) => {
-  //     addBtn.style.display = "none";
-
-  //     deferredPrompt.prompt();
-
-  //     deferredPrompt.userChoice.then((choiceResult) => {
-  //       if (choiceResult.outcome === "accepted") {
-  //         console.log("User accepted the A2HS prompt");
-  //       } else {
-  //         console.log("User dismissed the A2HS prompt");
-  //       }
-  //       deferredPrompt = null;
-  //     });
-  //   });
-  // });
 
   window.onscroll = () => {
     scrollFunction();
@@ -51,48 +24,48 @@ const Navbar = () => {
       : document.body.scrollTop > 20 || document.documentElement.scrollTop > 20
       ? (backButton.style.display = "block")
       : (backButton.style.display = "none");
-
-    // if (
-    //   document.body.scrollTop > 20 ||
-    //   document.documentElement.scrollTop > 20
-    // ) {
-    //   backButton.style.display = "block";
-    // } else {
-    //   backButton.style.display = "none";
-    // }
   }
+
+  const list = {
+    visible: { opacity: 1, x: 0 },
+    hidden: { opacity: 0, x: 8000 },
+  };
+
   return (
     <>
+      <button id="backTop" className={styles.scrollTop} onClick={topFunction}>
+        <div> &#8593;</div>
+      </button>
       <header>
         <nav className={styles.navBarResponsive}>
           <div className={styles.titleLogo}>
             <h2>
-              <NavLink to={paths[0]}>{title}</NavLink>
+              <a href={paths[0]}>{title}</a>
             </h2>
           </div>
         </nav>
-        <button id="backTop" className={styles.scrollTop} onClick={topFunction}>
-          &#8593;
-        </button>
       </header>
       <footer className={styles.footerResponsive}>
-        <ul className={styles.navMenu}>
-          {paths.map((path, i) => {
-            return (
-              <li key={i}>
-                <a
-                  // activeClassName={styles.activate}
-                  href={path}
-                >
+        <motion.ul
+          className={styles.navMenu}
+          initial="hidden"
+          animate="visible"
+          variants={list}
+        >
+          {paths.map((path, i) => (
+            <motion.li key={i} variants={list}>
+              {path.split("/")[1] === document.location.href.split("/")[3] ? (
+                <a id="link" className={styles.active} href={path}>
                   {links[i]}
                 </a>
-              </li>
-            );
-          })}
-          {/* <li id="addButton" className={styles.activate}>
-            Install
-          </li> */}
-        </ul>
+              ) : (
+                <a id="link" href={path}>
+                  {links[i]}
+                </a>
+              )}
+            </motion.li>
+          ))}
+        </motion.ul>
       </footer>
     </>
   );
