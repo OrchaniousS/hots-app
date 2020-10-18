@@ -2,18 +2,18 @@
 nav {
   align-items: center;
   display: flex;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
   vertical-align: top;
   border-bottom: 1px solid #3479d9;
   background-color: rgb(7, 45, 92);
-  /* padding: 10px 15px; */
-  /* background: rgb(29, 29, 29); */
   background-image: linear-gradient(
     360deg,
     rgba(29, 29, 29, 0.165703781512605) 36%,
     rgba(0, 0, 0, 1) 100%,
     rgba(9, 21, 121, 0.8491771708683473) 100%
   );
+  margin-left: -10rem;
+  justify-content: center;
 }
 
 nav h2 a {
@@ -22,11 +22,10 @@ nav h2 a {
 }
 
 .titleLogo {
-  font-size: 1.6rem;
-  padding: 10px 10px;
+  display: flex;
   text-align-last: center;
   text-align: -webkit-center;
-  text-shadow: 0 0 22px dodgerblue;
+  text-shadow: 0 0.1rem 0.1rem black;
   filter: drop-shadow(0 0 0.5rem black);
 }
 
@@ -35,9 +34,30 @@ nav h2 a {
   filter: drop-shadow(0 0 0.8rem dodgerblue);
 }
 
+@media (min-width: 550px) {
+  .titleLogo {
+    flex-direction: row;
+  }
+
+  .titleLogo h2 {
+    font-size: 2.6rem;
+    padding: 0.9rem 0.9rem;
+    margin-left: 10rem;
+  }
+
+  .searchContainer {
+    padding: 1.9rem 1.9rem;
+    /* font-size: 2.6rem; */
+    /* padding: 0.9rem 0.9rem; */
+    /* margin-left: 10rem; */
+  }
+}
+
 @media (max-width: 550px) {
   .titleLogo {
     font-size: 1rem;
+    padding: 0.05rem 0.05rem;
+    flex-direction: column;
   }
 }
 

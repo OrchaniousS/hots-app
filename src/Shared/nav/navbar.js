@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 
 import styles from "./navbar.module.css";
+import SearchBar from "../components/searchbar/searchbar";
 
 const Navbar = () => {
   const links = ["Home", "Heroes", "Builds", "Maps"];
@@ -42,7 +43,11 @@ const Navbar = () => {
             <h2>
               <a href={paths[0]}>{title}</a>
             </h2>
-          </div>
+            <div className={styles.searchContainer}>
+            <SearchBar />
+            </div>
+          </div>   
+            
         </nav>
       </header>
       <footer className={styles.footerResponsive}>

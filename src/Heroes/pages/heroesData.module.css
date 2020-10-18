@@ -1,3 +1,7 @@
+* {
+  transition: all 0.5s;
+}
+
 .heroC {
   margin: 1% 0;
   position: relative;
@@ -7,9 +11,11 @@
 .heroContainer {
   display: flex;
   justify-content: space-between;
+  transition: all 0.5s;
 }
 
 .heroGrid {
+  transition: all 0.5s;
   cursor: pointer;
   transform: scale(0.89);
   padding: 12px 12px;
@@ -24,6 +30,7 @@
   transform: scale(1.2);
   border: 1px solid black;
   /* border-radius: 20px; */
+  transition: all 0.5s;
   z-index: 2;
 }
 
@@ -44,6 +51,7 @@
   flex-direction: row;
   place-content: center;
   line-height: 1.2;
+  transition: all 0.5s;
 }
 
 .heroPersonalImg {
@@ -56,6 +64,7 @@
   padding: 4px 1px;
   filter: drop-shadow(0 0 0.8rem dodgerblue);
   text-shadow: 0 0 1rem dodgerblue;
+  transition: all 0.5s;
 }
 /*SIDEHERO*/
 
@@ -65,6 +74,7 @@
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   filter: drop-shadow(0 0 0.4rem black);
+  transition: all 0.5s;
 }
 
 .heroPanelContainer {
@@ -128,6 +138,7 @@
   position: relative;
   text-align: center;
   background-color: #0a1133;
+  transition: all 0.5s;
 }
 
 .heroPanelInfo {
@@ -248,26 +259,8 @@
   color: #3479d9;
 }
 
-.searchFilter {
-  /* display: flex; */
-  justify-content: space-evenly;
-  text-align-last: center;
-  border: 0px solid;
-}
-
-.searchFilter input {
-  justify-content: space-evenly;
-  text-align-last: center;
-  color: #3479d9;
-  border: 1px solid #3479d9;
-  border: 25px;
-}
-
-.searchFilter input:focus {
-  outline: auto;
-}
-
 .filterWrapper {
+  transition: all 0.5s;
   position: fixed;
   z-index: 4;
   top: 50%;
@@ -287,9 +280,11 @@
 
 .filterView {
   display: none;
+  transition: all 0.5s;
 }
 
 .filterTitle {
+  transition: all 0.5s;
   margin: 5% 0;
   padding: 3%;
   background-color: rgba(30, 143, 255, 1);
