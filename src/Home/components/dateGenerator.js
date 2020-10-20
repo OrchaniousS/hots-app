@@ -41,7 +41,12 @@ const DateGenerator = () => {
     setTextDate(monthDate + " " + dayDate + ", " + weekday[dateToDay]);
   }, [monthDate, dayDate]);
 
-  return <h2>{`Weekly Rotation - [${textDate}]`}</h2>;
+  return (
+    <>
+      <h2>Weekly Rotation</h2>
+      <h2>{textDate}</h2>
+    </>
+  );
 };
 
 export default DateGenerator;

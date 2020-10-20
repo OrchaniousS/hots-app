@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import MainContainer from "../../Shared/components/mainContainer";
-import { Clickedmap } from "../components/Clickedmap";
+// import { Clickedmap } from "../components/Clickedmap";
 import mapData from "../data/hotsMaps.json";
 import styles from "./maps.module.css";
 
@@ -9,7 +9,7 @@ const Maps = () => {
   const mapJson = JSON.parse(JSON.stringify(mapData));
   const [mapHexId, setmapHexId] = useState("");
   const [bottomDisplayUnit, setbottomDisplayUnit] = useState("none");
-  console.log(<Clickedmap />);
+  // console.log(<Clickedmap />);
 
   const mapScroll = async () => {
     await document.querySelector("#mapScroll");

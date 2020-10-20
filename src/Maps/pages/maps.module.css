@@ -1,17 +1,19 @@
 .mapContainer {
   text-align: center;
-  margin: 2% 2%;
+  margin: 1rem;
 }
 
 @media (max-width: 960px) {
   .mapHexCollage {
     transform: scale(0.9);
+    padding: 0.51rem;
   }
 }
 
 @media (min-width: 960px) {
   .mapHexCollage {
     margin: 2% 5% 0% 5%;
+    padding: 1.8rem;
   }
 }
 
@@ -20,9 +22,6 @@
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
-
-  padding-bottom: 4%;
-  padding-top: 4%;
   border: 3px solid #222;
   background: #141414;
   box-shadow: 0 0 35px rgba(0, 0, 0, 0.35);

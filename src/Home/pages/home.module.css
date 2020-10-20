@@ -1,7 +1,12 @@
 /*-- Home page----*/
 
 .homeC {
-  margin: 1% 1%;
+  margin-top: 1rem;
+  margin-bottom: -2rem;
+}
+
+.weeklyAPI {
+  margin-top: -2rem;
 }
 
 .mapHexIconimg {

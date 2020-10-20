@@ -10,7 +10,9 @@ const Home = () => {
     <MainContainer>
       <div className={styles.homeC}>
         <DateGenerator />
-        <WeeklyApi styles={styles} />
+        <div className={styles.weeklyAPI}>
+          <WeeklyApi styles={styles} />
+        </div>
       </div>
     </MainContainer>
   );
