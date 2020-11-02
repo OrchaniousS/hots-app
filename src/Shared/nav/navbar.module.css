@@ -32,6 +32,11 @@ nav h2 a {
   text-shadow: 0 0 42px black;
   filter: drop-shadow(0 0 0.8rem dodgerblue);
 }
+.searchContainer {
+  cursor: pointer;
+}
+.searchContainer:hover {
+}
 
 @media (min-width: 550px) {
   .titleLogo {

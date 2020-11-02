@@ -140,7 +140,6 @@ const HeroesData = () => {
     <MainContainer type="heroContainer">
       <div className={styles.heroC}>
         <h2>Heroes</h2>
-
         <div>
           <h2>{buttonRole === null ? null : buttonRole}</h2>
         </div>

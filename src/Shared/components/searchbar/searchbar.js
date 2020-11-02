@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 import data from "../../../Heroes/data/heroData.json";
+import mapData from "../../../Maps/data/hotsMaps.json";
 import styles from "./searchbar.module.css";
 
 const SearchBar = () => {
@@ -12,10 +13,22 @@ const SearchBar = () => {
   };
 
   useEffect(() => {
-    const filterResults = data.filter((item) =>
-      item.name.toLowerCase().includes(filterBarTerm.toLowerCase())
+    const filterResults = data.filter((item, i) =>
+      Array.from(item.name.toLowerCase()).toString()[0] ===
+      Array.from(filterBarTerm.toLowerCase()).toString()[0]
+        ? item.name.toLowerCase().includes(filterBarTerm.toLowerCase())
+        : null
     );
-    setSearchBarResults(filterResults);
+
+    console.log(mapData.map((item) => item.mName));
+    const filterResultsMaps = mapData.filter((item, i) =>
+      Array.from(item.mName.toLowerCase()).toString()[0] ===
+      Array.from(filterBarTerm.toLowerCase()).toString()[0]
+        ? item.mName.toLowerCase().includes(filterBarTerm.toLowerCase())
+        : null
+    );
+    setSearchBarResults(filterResults && filterResultsMaps);
+    // console.log(searchBarResults);
   }, [filterBarTerm]);
 
   return (
@@ -41,13 +54,16 @@ const SearchBar = () => {
                 <a
                   key={i}
                   className={styles.searchResult}
-                  href={`/heroes/${item.name}`}
+                  href={
+                    item.name ? `/heroes/${item.name}` : `/maps/${item.mName}`
+                  }
                 >
                   <div className={styles.searchResultImg}>
                     <img alt={item.logo} src={item.logo} />
                   </div>
                   <div className={styles.searchResultName}>
-                    {item.name + " "}
+                    {item.name && item.name + " "}
+                    {item.mName && item.mName + " "}
                   </div>
                 </a>
               ))}

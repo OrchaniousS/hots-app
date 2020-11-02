@@ -1,0 +1,291 @@
+div > ::-webkit-scrollbar {
+  width: 12px;
+}
+
+div > ::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+div > ::-webkit-scrollbar-thumb {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+.buildsContainer,
+.buildContainer {
+  padding: 0.8rem;
+  margin: 1rem;
+}
+
+.heroFixedBuilds {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transition: ease-in-out 1s;
+}
+
+.heroContainer {
+  width: 40%;
+}
+
+.fixBuildContainer {
+  position: fixed;
+  left: 42%;
+  width: 45%;
+  max-height: 60%;
+  min-height: 20%;
+  overflow-y: scroll;
+  box-sizing: content-box;
+  padding: 1rem;
+  border-radius: 15px;
+  background: rgba(48, 46, 46, 0.404);
+  box-shadow: 0 0 0.2rem black;
+}
+
+.buildContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: ease-in-out 1s;
+}
+
+.heroGridRowColumon {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroGrid img {
+  transition: all 0.5s;
+  transform: scale(0.9);
+  display: flex;
+  border: 1px solid rgba(29, 112, 190, 0.829);
+  margin: 0.2rem;
+  background-color: rgba(60, 60, 131, 0.521);
+  justify-content: center;
+  align-items: center;
+  color: rgb(216, 223, 231);
+  box-shadow: 0 0 0.5rem black;
+}
+
+.heroGrid img:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 0.3rem black);
+}
+
+.heroPersonal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.heroPersonal img {
+  border-radius: 12px;
+}
+
+.buildContainer {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  /* width: 100%; */
+}
+
+.heroBuildNameHolder {
+  display: flex;
+  align-items: center;
+  place-content: center;
+  place-content: space-between;
+  border-bottom: 2px solid rgba(255, 249, 249, 0.575);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background: rgb(59, 103, 168);
+  padding: 0.2rem;
+  filter: drop-shadow(0 0 0.2rem black);
+}
+
+.emojiType {
+  font-size: 1.3rem;
+}
+
+.typeReco {
+  color: rgb(21, 250, 98);
+}
+
+.typeSitu {
+  color: rgb(219, 253, 27);
+}
+
+.typeNotReco {
+  color: rgb(253, 38, 38);
+}
+
+.typeReco,
+.typeSitu,
+.typeNotReco {
+  padding: 0.5rem;
+  font-weight: 600;
+  font-size: 1.3rem;
+  filter: drop-shadow(0 0 0.2rem rgb(0, 0, 0));
+}
+
+.heroBuildName {
+  padding: 0.2rem;
+}
+
+.heroBuildName,
+.heroName {
+  font-size: 2rem;
+}
+
+.heroName {
+  text-align: center;
+  margin-bottom: -1.3rem;
+}
+
+.heroName > a {
+  border: 1px solid dodgerblue;
+  padding: 0 0.2rem;
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: dodgerblue;
+  cursor: pointer;
+  filter: drop-shadow(0 0 0.1rem rgba(112, 109, 109, 0.568));
+}
+
+.heroName > a:hover {
+  background: rgb(62, 67, 71);
+
+  filter: drop-shadow(0 0 0.4rem black);
+}
+
+.singleBuildContainer {
+  border: 1px solid rgba(134, 133, 133, 0.26);
+  border-radius: 10px;
+  box-shadow: 0 0 0.4rem rgba(17, 73, 128, 0.479);
+  /* padding: 0.2rem 0; */
+  margin: 0.5rem;
+  background: rgba(23, 23, 24, 0.575);
+  width: fit-content;
+}
+
+.heroBuildTalentContainerGrid {
+  filter: drop-shadow(0 0 0.2rem black);
+}
+
+.visuals {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: auto;
+  width: auto;
+  align-items: flex-end;
+}
+
+.visualNo,
+.visualYes,
+.visualSituational {
+  margin: 0.2rem;
+  background: rgba(8, 6, 6, 0.616);
+}
+
+.visualYes {
+  width: 12px;
+  height: 12px;
+  background-color: rgb(20, 250, 20);
+}
+
+.visualNo,
+.visualSituational {
+  width: 10px;
+  height: 10px;
+}
+
+.visualSituational {
+  background-color: #ffb813;
+}
+
+.heroBuildTalent {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.selectedTalent {
+  margin: 1rem;
+  width: 80px;
+}
+
+.situationalTalent {
+  max-width: 130px;
+}
+
+.selectedTalent img {
+  width: 70px;
+  height: 70px;
+}
+
+.situationalTalent img {
+  width: 35px;
+  height: 35px;
+  margin: 0.25rem;
+}
+
+@media (min-width: 880px) {
+  .heroGridRowColumon {
+    /* width: 70%; */
+  }
+
+  .heroPersonal img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .heroBuildTalentContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    padding: 0.3rem;
+    margin: 0.3rem;
+  }
+
+  .heroBuildNameHolder {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 880px) {
+  .heroName {
+    display: flex;
+    flex-direction: column;
+  }
+  .heroPersonal img {
+    width: 42px;
+    height: 42px;
+  }
+
+  .heroBuildTalentContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 0.3rem;
+    margin: 0.3rem;
+  }
+
+  .heroBuildNameHolder {
+    flex-direction: column;
+  }
+}

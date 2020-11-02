@@ -50,7 +50,7 @@ const Heroes = ({ heroId, heroImage }) => {
           <HeroTrait heroIdTagger={heroId} />
         </Card>
       )}
-      <div
+      {/* <div
         id={styles.clickableDiv}
         onClick={() => setDisplaySkill((displaySkill) => !displaySkill)}
       >
@@ -62,7 +62,7 @@ const Heroes = ({ heroId, heroImage }) => {
         <Card>
           <HeroSkills heroImage={heroImage} />
         </Card>
-      )}
+      )} */}
       <div
         id={styles.clickableDiv}
         onClick={() => setDisplayCouSyn((displayCouSyn) => !displayCouSyn)}

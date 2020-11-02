@@ -1,7 +1,7 @@
 .heroCSingle {
   /* padding: 3px 3px; */
-  /* width: 120px; */
   /* height: 180px; */
+  align-self: center;
   filter: drop-shadow(0 0 0.2rem crimson);
 }
 
@@ -24,11 +24,23 @@
   font-size: 1.1rem;
   text-align: center;
   /* height: 28%; */
-  margin: 0.5rem;
-  width: 120px;
+  margin: 0.6rem;
+  /* width: 120px; */
 }
 
 .heroCSingle:hover,
 .heroCSingle img:hover {
   transform: scale(1);
+}
+
+@media (min-width: 880px) {
+  .heroCSingle {
+    width: 50%;
+    text-align: center;
+  }
+}
+@media (max-width: 880px) {
+  .heroCSingle {
+    width: 120px;
+  }
 }

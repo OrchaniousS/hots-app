@@ -23,17 +23,6 @@ const Maps = () => {
   const mapInfoGenerator = () =>
     mapHexId === "" ? null : (
       <div className={styles.mapBottomContainer}>
-        <div className={styles.mapInfo}>
-          <h1>{mapJson[mapHexId].mName}</h1>
-          <div className={styles.mapWider}>
-            <a rel="prefetch" href={mapJson[mapHexId].mapWider}>
-              <img
-                alt={`mini ${mapJson[mapHexId].mName}`}
-                src={mapJson[mapHexId].mapWider}
-              />
-            </a>
-          </div>
-        </div>
         <div className={styles.objTitle}>
           <h2>Map Objectives</h2>
         </div>
@@ -75,6 +64,17 @@ const Maps = () => {
             </div>
           </div>
         </div>
+        <div className={styles.mapInfo}>
+          <h1>{mapJson[mapHexId].mName}</h1>
+          <div className={styles.mapWider}>
+            <a rel="prefetch" href={mapJson[mapHexId].mapWider}>
+              <img
+                alt={`mini ${mapJson[mapHexId].mName}`}
+                src={mapJson[mapHexId].mapWider}
+              />
+            </a>
+          </div>
+        </div>
       </div>
     );
 
@@ -92,6 +92,7 @@ const Maps = () => {
                   setbottomDisplayUnit("block");
                   mapScroll();
                 }}
+                className={styles.fixedI}
               >
                 <div
                   className={

@@ -28,8 +28,20 @@ const Navbar = () => {
   }
 
   const list = {
-    visible: { opacity: 1, x: 0 },
-    hidden: { opacity: 0, x: 8000 },
+    hidden: { opacity: 0, y: 100 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        type: "Inertia",
+        delay: 0.5,
+        velocity: 220,
+      },
+      dragTransition: {
+        power: 0,
+        modifyTarget: (target) => Math.round(target / 50) * 50,
+      },
+    },
   };
 
   return (
@@ -44,18 +56,17 @@ const Navbar = () => {
               <a href={paths[0]}>{title}</a>
             </h2>
             <div className={styles.searchContainer}>
-            <SearchBar />
+              <SearchBar />
             </div>
-          </div>   
-            
+          </div>
         </nav>
       </header>
       <footer className={styles.footerResponsive}>
         <motion.ul
           className={styles.navMenu}
+          variants={list}
           initial="hidden"
           animate="visible"
-          variants={list}
         >
           {paths.map((path, i) => (
             <motion.li key={i} variants={list}>

@@ -13,11 +13,9 @@ const InfoDisplaySkill = (props) => {
             <div>
               <div className={styles.displayInfoChildSkillTitle}>{headVal}</div>
               <div className={styles.displayInfoChildSkillImgContainer}>
-                <img
-                  className={styles.displayInfoChildSkillImg}
-                  src={img}
-                  alt={img}
-                />
+                <div className={styles.displayInfoChildSkillImg}>
+                  <img src={img} alt={img} />
+                </div>
                 <span className={styles.displayInfoChildSkillVal}>{value}</span>
               </div>
             </div>
