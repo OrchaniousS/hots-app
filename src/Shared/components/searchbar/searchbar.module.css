@@ -3,7 +3,7 @@
   text-align-last: center;
   max-width: 270px;
   /* width: 270px; */
-  background: rgba(51, 51, 61, 0.568);
+  background: rgba(51, 51, 61, 0.616);
   padding: 0.3rem;
   border-radius: 20px;
 }
@@ -37,12 +37,13 @@
   position: fixed;
   transition: all 0.5s;
   max-height: 250px;
+  max-width: 210px;
+  min-width: 210px;
   /* overflow: hidden; */
   overflow-y: scroll;
   border: none;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  background: #171717;
+  border-radius: 5px;
+  background: rgba(51, 51, 61, 0.616);
   box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.5);
   white-space: normal;
   padding: 0.1rem;
@@ -84,7 +85,7 @@
   padding: 3px;
   background: rgba(66, 62, 62, 0.575);
   max-width: 150px;
-  width: 150px;
+  min-width: 168px;
   border-left: 2px solid rgba(253, 251, 251, 0.63);
 }
 

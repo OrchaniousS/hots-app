@@ -27,7 +27,7 @@ const SearchBar = () => {
         ? item.mName.toLowerCase().includes(filterBarTerm.toLowerCase())
         : null
     );
-    setSearchBarResults(filterResults && filterResultsMaps);
+    setSearchBarResults([...filterResults, ...filterResultsMaps]);
     // console.log(searchBarResults);
   }, [filterBarTerm]);
 
@@ -54,12 +54,17 @@ const SearchBar = () => {
                 <a
                   key={i}
                   className={styles.searchResult}
-                  href={
-                    item.name ? `/heroes/${item.name}` : `/maps/${item.mName}`
-                  }
+                  href={item.name ? `/heroes/${item.name}` : `/maps`}
                 >
                   <div className={styles.searchResultImg}>
-                    <img alt={item.logo} src={item.logo} />
+                    <img
+                      alt={item.logo}
+                      src={
+                        item.name
+                          ? item.logo
+                          : `../../images/maps/${item.mName}.jpg`
+                      }
+                    />
                   </div>
                   <div className={styles.searchResultName}>
                     {item.name && item.name + " "}
