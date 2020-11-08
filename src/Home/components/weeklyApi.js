@@ -14,7 +14,7 @@ const WeeklyApi = ({ styles }) => {
         setResponseAPI(JSON.parse(body));
       }
     );
-  });
+  }, []);
 
   return (
     <>

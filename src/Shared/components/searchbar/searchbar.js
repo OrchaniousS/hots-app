@@ -20,7 +20,6 @@ const SearchBar = () => {
         : null
     );
 
-    console.log(mapData.map((item) => item.mName));
     const filterResultsMaps = mapData.filter((item, i) =>
       Array.from(item.mName.toLowerCase()).toString()[0] ===
       Array.from(filterBarTerm.toLowerCase()).toString()[0]
@@ -28,20 +27,17 @@ const SearchBar = () => {
         : null
     );
     setSearchBarResults([...filterResults, ...filterResultsMaps]);
-    // console.log(searchBarResults);
   }, [filterBarTerm]);
 
   return (
     <>
       <div className={styles.searchFilter}>
         <div className={styles.inputContainer}>
-          <div>
-            <span aria-label="Search" role="img">
-              🔍
-            </span>
-          </div>
+          <span aria-label="Search" role="img">
+            🔍
+          </span>
           <input
-            className={styles}
+            className={styles.searchInput}
             placeholder="Search"
             value={filterBarTerm}
             onChange={filterHandler}

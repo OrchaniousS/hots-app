@@ -55,9 +55,9 @@ const Navbar = () => {
             <h2>
               <a href={paths[0]}>{title}</a>
             </h2>
-            <div className={styles.searchContainer}>
-              <SearchBar />
-            </div>
+          </div>
+          <div className={styles.searchContainer}>
+            <SearchBar />
           </div>
         </nav>
       </header>

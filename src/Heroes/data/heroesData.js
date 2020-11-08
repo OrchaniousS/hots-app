@@ -149,7 +149,7 @@ const HeroesData = () => {
               onClick={() => rolesDisplayHandler()}
               className={styles.filterTitle}
             >
-              Roles
+              Filter <br /> Roles
             </p>
             {rolesHandler && (
               <>
