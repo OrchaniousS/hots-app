@@ -255,22 +255,8 @@
 
 .filterWrapper {
   transition: all 0.5s;
-  /* position: fixed; */
   z-index: 4;
-  /* top: 50%; */
   text-align-last: center;
-}
-
-@media (min-width: 880px) {
-  .filterWrapper {
-    /* left: 10px; */
-    /* top: 10%; */
-  }
-}
-@media (max-width: 880px) {
-  .filterWrapper {
-    /* top: 18%; */
-  }
 }
 
 .filterView {
@@ -280,13 +266,8 @@
 
 .filterTitle {
   transition: all 0.5s;
-  /* margin: 5% 0; */
-  /* padding: 3%; */
+
   background-color: rgba(30, 143, 255, 1);
-  /* filter: drop-shadow(0 0 0.3rem crimson); */
-  /* border-radius: 15px; */
-  /* align-self: center; */
-  /* padding: ; */
 }
 
 .activeRole,
@@ -310,16 +291,13 @@
   justify-content: space-around;
   -webkit-transition: fill 0.2s;
   transition: fill 0.2s;
-  /* height: 60px; */
 }
 .roleFilter > p {
-  /* width: fit-content; */
   min-height: 40px;
 }
 
 .roleFilter img {
   align-content: center;
-  display: none;
 }
 
 .roleFilter > p:hover,
@@ -328,16 +306,11 @@
   box-shadow: 0px 0px 6px 0px crimson;
   background-color: white;
   color: dodgerblue;
-  /* background-color: rgba(30, 143, 255, 0.212); */
 }
 
 .roleFilter div {
   color: #fff;
   align-content: center;
-  /* margin: 5% 0; */
-  /* padding: 5px 0px; */
-  /* border: 1px solid dodgerblue; */
-  /* border-radius: 15px; */
   text-align: center;
 }
 
@@ -345,9 +318,14 @@
   .roleFilter div,
   .filterTitle {
     width: 130px;
-    height: 23px;
-    /* height: 40px; */
+    height: 60px;
     align-content: center;
+    margin: 1% 2%;
+  }
+
+  .roleFilter img {
+    width: 32px;
+    height: 32px;
   }
 }
 
@@ -363,8 +341,13 @@
   .roleFilter {
     height: unset;
   }
+
   .roleFilter > div > div {
     display: none;
+  }
+
+  #roles {
+    margin: 2%;
   }
 }
 
@@ -375,6 +358,7 @@
     width: 60px;
     height: 60px;
   }
+
   .filterTitle {
     width: 60px;
   }

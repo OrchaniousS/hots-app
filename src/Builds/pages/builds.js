@@ -8,7 +8,6 @@ import styles from "./builds.module.css";
 
 const Builds = () => {
   const [indexNum, setIndexNum] = useState("");
-  // const [indexName, setIndexName] = useState("");
 
   const heroD = [...JSON.parse(JSON.stringify(heroData))];
 
@@ -36,14 +35,9 @@ const Builds = () => {
                     className={styles.heroGrid}
                     onClick={() => {
                       setIndexNum(i);
-                      // setIndexName(heroName);
                     }}
                   >
                     <div className={styles.heroPersonal}>
-                      {/* <div>
-                        {heroName[0].toUpperCase() +
-                          heroName.slice(1).replaceAll("-", " ")}
-                      </div> */}
                       <img
                         alt="heroIcon"
                         src={`https://www.heroesfire.com/images/wikibase/icon/heroes/${
