@@ -4,13 +4,13 @@
 
 ## Introduction
 
-Responisve Website of MOBA game made with React.
-Fully PWA, SPA.
+MOBA game website made with React.
+Responisve Website, Fully PWA, SPA.
 Hosted by Firebase by google.
 
 ### Setup
 
-- `run npm i && npm start`
+- ` npm i && npm start`
 
 ## Home page
 
@@ -52,6 +52,7 @@ Hosted by Firebase by google.
 
 ### Packages used
 
+- React
 - Express
 - Firebase
 - Framer, Framer Motion
